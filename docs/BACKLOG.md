@@ -48,15 +48,15 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
   - [x] `telHref`/`waHref` normalisent correctement le numéro (`+33…` / `33…`)
 - **Réf. :** `ai_docs/content-reference.md`, `ai_docs/patterns.md`
 
-### [ ] LP-03 — Layout, providers & shell SEO
+### [x] LP-03 — Layout, providers & shell SEO
 
 **En tant que** visiteur, **je veux** un en-tête, un pied de page et un accès permanent à l'appel, **afin de** pouvoir contacter le chauffeur à tout moment.
 
 - **Inclus :** `app/layout.tsx` (metadata `<title>`/description, `QueryClientProvider`, JSON-LD `LocalBusiness`), `components/layout/{header,footer,sticky-call-button}.tsx`.
 - **Critères d'acceptation :**
-  - [ ] Bouton d'appel flottant visible en permanence sur mobile
-  - [ ] `<title>`, meta description et JSON-LD conformes à `content-reference.md`
-  - [ ] Un seul `<h1>` sur la page (dans le hero, ajouté plus tard)
+  - [x] Bouton d'appel flottant visible en permanence sur mobile
+  - [x] `<title>`, meta description et JSON-LD conformes à `content-reference.md`
+  - [x] Un seul `<h1>` sur la page (dans le hero, ajouté plus tard)
 - **Réf. :** `ai_docs/content-reference.md` (SEO), `ai_docs/patterns.md`
 
 ---
