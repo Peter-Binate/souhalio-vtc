@@ -61,7 +61,7 @@ export default function RouteMap({ route }: { route: RouteGeometry | null }) {
           type: "line",
           source: "route",
           layout: { "line-join": "round", "line-cap": "round" },
-          paint: { "line-color": "#111827", "line-width": 5 },
+          paint: { "line-color": "#1B1A19", "line-width": 5 },
         });
       }
       const coords = route.coordinates;

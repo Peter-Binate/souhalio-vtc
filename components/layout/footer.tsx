@@ -4,8 +4,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-deep-midnight pb-24 text-zinc-300 sm:pb-[80px]">
-      <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 px-6 py-12 sm:py-[80px] md:grid-cols-2 md:items-start">
+    <footer className="bg-primary pb-24 text-zinc-300 sm:pb-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-12 sm:py-20 md:grid-cols-2 md:items-start">
         <div className="space-y-4">
           <p className="font-headline text-2xl font-semibold text-white">{BUSINESS.name}</p>
           <p className="text-sm">

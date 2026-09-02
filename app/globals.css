@@ -9,10 +9,10 @@
  */
 :root {
   --background: #fdf8f8;
-  --foreground: #1c1b1b;
+  --foreground: #1B1A19;
 
-  --color-primary: #000000;
-  --color-deep-midnight: #0f1115;
+  --color-primary: #1B1A19;
+  --color-deep-midnight: #282726;
   --color-accent: #bfa15a;
   --color-surface: #ffffff;
   --color-surface-low: #f7f3f2;

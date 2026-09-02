@@ -39,7 +39,7 @@ export function About() {
       <div className="mx-auto max-w-7xl space-y-16 px-6 md:space-y-24">
         {/* Bloc 1 : le chauffeur */}
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-          <div className="relative order-2 aspect-[4/3] overflow-hidden rounded-card bg-surface-low md:order-1 dark:bg-zinc-900">
+          <div className="relative order-2 aspect-4/3 overflow-hidden rounded-card bg-surface-low md:order-1 dark:bg-zinc-900">
             <Image
               src="/images/chauffeur.jpg"
               alt={`Chauffeur privé VTC ${BUSINESS.city}`}
@@ -107,7 +107,7 @@ export function About() {
               ))}
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-card bg-surface-low dark:bg-zinc-900">
+          <div className="relative aspect-4/3 overflow-hidden rounded-card bg-surface-low dark:bg-zinc-900">
             <Image
               src="/images/kia-niro.jpg"
               alt="Kia Niro hybride gris foncé chauffeur VTC Île-de-France"
