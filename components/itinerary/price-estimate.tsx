@@ -49,7 +49,7 @@ export function PriceEstimate({
           <span aria-hidden="true" className="material-symbols-outlined text-base!">
             call
           </span>
-          Appeler pour réserver — {BUSINESS.phone}
+          Appeler pour réserver
         </a>
         <a
           href={waHref(BUSINESS.whatsapp)}

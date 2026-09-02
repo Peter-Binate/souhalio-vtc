@@ -3,10 +3,10 @@
 // ne jamais la coder en dur dans un composant. Cf. ai_docs/content-reference.md.
 
 export const BUSINESS = {
-  name: "Jhon Doe VTC",
-  phone: "[NUMÉRO DE TÉLÉPHONE]",
-  whatsapp: "[NUMÉRO WHATSAPP]",
-  email: "[ADRESSE EMAIL]",
+  name: "Soualiho VTC",
+  phone: "0673559197",
+  whatsapp: "0673559197",
+  email: "[EMAIL_ADDRESS]",
   address: "[ADRESSE POSTALE COMPLÈTE]",
   city: "L'Haÿ-les-Roses",
   postalCode: "94240",

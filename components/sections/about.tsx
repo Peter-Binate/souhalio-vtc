@@ -126,7 +126,7 @@ export function About() {
             <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
-            Réservez votre chauffeur — {BUSINESS.phone}
+            Réservez votre chauffeur
           </a>
         </div>
       </div>

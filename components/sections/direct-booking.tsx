@@ -126,7 +126,7 @@ export function DirectBooking() {
           <span aria-hidden="true" className="material-symbols-outlined text-base!">
             call
           </span>
-          Appelez maintenant pour réserver — {BUSINESS.phone}
+          Appelez maintenant pour réserver
         </a>
       </div>
     </section>

@@ -53,7 +53,7 @@ export function Zones() {
             <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
-            Votre adresse est-elle desservie ? Vérifiez en un appel — {BUSINESS.phone}
+            Votre adresse est-elle desservie ? Vérifiez en un appel
           </a>
         </div>
       </div>

@@ -94,7 +94,7 @@ export function AirportPricing() {
               <span aria-hidden="true" className="material-symbols-outlined text-base!">
                 call
               </span>
-              Réservez votre transfert aéroport — {BUSINESS.phone}
+              Réservez votre transfert aéroport
             </a>
           </div>
         </div>

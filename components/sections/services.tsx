@@ -73,7 +73,7 @@ export function Services() {
             <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
-            Un trajet en tête ? Appelez le {BUSINESS.phone}
+            Un trajet en tête ? Appelez nous
           </a>
         </div>
       </div>

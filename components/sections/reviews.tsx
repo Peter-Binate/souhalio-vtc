@@ -54,7 +54,7 @@ export function Reviews() {
             <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
-            Rejoignez des clients sereins — {BUSINESS.phone}
+            Rejoignez des clients sereins
           </a>
         </div>
       </div>

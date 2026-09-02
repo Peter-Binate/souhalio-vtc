@@ -20,10 +20,7 @@ export function HeroItinerary() {
               Votre chauffeur VTC en Île-de-France, 24h/24 et 7j/7
             </h1>
             <p className="max-w-lg text-base text-muted dark:text-zinc-400">
-              Réservation immédiate ou anticipée, transferts aéroports à prix fixe, trajets
-              affaires, gares et longue distance. Un chauffeur privé ponctuel et discret,
-              disponible jour et nuit, week-ends et jours fériés, pour des déplacements sans
-              stress dans tout l&apos;Île-de-France.
+              Déplacements professionnels, transferts aéroports ou trajets quotidiens. Fiabilité, discrétion et confort haut de gamme pour chacune de vos courses.
             </p>
 
             <div className="flex flex-col gap-3 pt-2 sm:flex-row">
@@ -34,7 +31,7 @@ export function HeroItinerary() {
                 <span aria-hidden="true" className="material-symbols-outlined text-base!">
                   call
                 </span>
-                Appeler pour réserver — {BUSINESS.phone}
+                Appeler pour réserver
               </a>
               <a
                 href={waHref(BUSINESS.whatsapp)}
