@@ -7,7 +7,7 @@ export function AirportPricing() {
     <section
       id="pricing"
       aria-labelledby="airport-pricing-heading"
-      className="border-y border-border bg-surface-low py-12 md:py-[80px] dark:border-zinc-800 dark:bg-zinc-900/40"
+      className="border-y border-border bg-surface-low py-12 md:py-20 dark:border-zinc-800 dark:bg-zinc-900/40"
     >
       <div className="mx-auto max-w-3xl px-6">
         <div className="mb-12 text-center">

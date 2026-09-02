@@ -12,9 +12,9 @@ export function Zones() {
   return (
     <section
       aria-labelledby="zones-heading"
-      className="border-t border-border bg-surface-low py-12 md:py-[80px] dark:border-zinc-800 dark:bg-zinc-900/40"
+      className="border-t border-border bg-surface-low py-12 md:py-20 dark:border-zinc-800 dark:bg-zinc-900/40"
     >
-      <div className="mx-auto max-w-[1280px] px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <h2
           id="zones-heading"
           className="font-headline text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50"

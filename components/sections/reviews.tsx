@@ -4,9 +4,9 @@ export function Reviews() {
   return (
     <section
       aria-labelledby="reviews-heading"
-      className="bg-surface py-12 md:py-[80px] dark:bg-zinc-950"
+      className="bg-surface py-12 md:py-20 dark:bg-zinc-950"
     >
-      <div className="mx-auto max-w-[1280px] px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <h2
           id="reviews-heading"
           className="font-headline text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BUSINESS, telHref } from "@/lib/constants";
 
 // Facts réels (BUSINESS) présentés en liste à puces, au lieu du dl d'origine —
@@ -9,21 +10,44 @@ const CHAUFFEUR_HIGHLIGHTS = [
   { icon: "event_available", text: `Disponibilité : ${BUSINESS.hours}` },
 ] as const;
 
+const VEHICLE_FEATURES = [
+  {
+    icon: "eco",
+    label: "Motorisation Hybride",
+  },
+  {
+    icon: "wifi",
+    label: "Wi-Fi & Chargeurs",
+  },
+  {
+    icon: "ac_unit",
+    label: "Climatisation Bi-zone",
+  },
+  {
+    icon: "luggage",
+    label: "Coffre Spacieux",
+  },
+] as const;
+
 export function About() {
   return (
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="bg-surface py-12 md:py-[80px] dark:bg-zinc-950"
+      className="bg-surface py-12 md:py-20 dark:bg-zinc-950"
     >
-      <div className="mx-auto max-w-[1280px] space-y-16 px-6 md:space-y-24">
+      <div className="mx-auto max-w-7xl space-y-16 px-6 md:space-y-24">
         {/* Bloc 1 : le chauffeur */}
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-          <div
-            role="img"
-            aria-label="Photo du chauffeur — à ajouter"
-            className="relative order-2 aspect-[4/3] overflow-hidden rounded-card bg-surface-low md:order-1 dark:bg-zinc-900"
-          />
+          <div className="relative order-2 aspect-[4/3] overflow-hidden rounded-card bg-surface-low md:order-1 dark:bg-zinc-900">
+            <Image
+              src="/images/chauffeur.jpg"
+              alt={`Chauffeur privé VTC ${BUSINESS.city}`}
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
           <div className="order-1 space-y-6 md:order-2 md:pl-12">
             <h2
               id="about-heading"
@@ -60,18 +84,38 @@ export function About() {
               Le Véhicule : Kia Niro Hybride
             </h3>
             <p className="text-lg text-muted dark:text-zinc-400">
-              Vous voyagez à bord d&apos;une <strong>Kia Niro hybride gris foncé</strong>,
-              récente, spacieuse et impeccablement entretenue. Un véhicule{" "}
-              <strong>hybride à faibles émissions</strong>, silencieux et confortable, pour des
-              trajets plus doux et plus respectueux de l&apos;environnement — sans rien
-              sacrifier au confort.
+              Voyagez à bord d&apos;un SUV moderne, spacieux et éco-responsable. Le Kia Niro Hybride
+              gris foncé offre une isolation acoustique premium et un confort d&apos;assise idéal
+              pour se détendre ou travailler pendant le trajet.
             </p>
+            <div className="grid grid-cols-2 gap-3 pt-2 sm:gap-4">
+              {VEHICLE_FEATURES.map((item) => (
+                <div
+                  key={item.label}
+                  className="flex flex-col items-center justify-center rounded-standard border border-border bg-surface p-4 text-center dark:border-zinc-800 dark:bg-zinc-900"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="material-symbols-outlined mb-2 text-2xl text-primary dark:text-zinc-50"
+                  >
+                    {item.icon}
+                  </span>
+                  <p className="text-xs font-semibold tracking-wider text-foreground uppercase dark:text-zinc-300">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div
-            role="img"
-            aria-label="Photo du véhicule — à ajouter"
-            className="relative aspect-[4/3] overflow-hidden rounded-card bg-surface-low dark:bg-zinc-900"
-          />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-card bg-surface-low dark:bg-zinc-900">
+            <Image
+              src="/images/kia-niro.jpg"
+              alt="Kia Niro hybride gris foncé chauffeur VTC Île-de-France"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
 
         <div className="text-center">

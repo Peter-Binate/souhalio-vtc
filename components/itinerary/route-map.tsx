@@ -80,7 +80,7 @@ export default function RouteMap({ route }: { route: RouteGeometry | null }) {
     <div
       ref={containerRef}
       aria-label="Carte de l'itinéraire"
-      className="h-[180px] w-full rounded-lg sm:h-[195px]"
+      className="h-45 w-full rounded-lg sm:h-48.75"
     />
   );
 }
