@@ -32,4 +32,10 @@ describe("waHref", () => {
   it("supprime tout séparateur (espaces, points, tirets, parenthèses)", () => {
     expect(waHref("+33 (6).12-34.56 78")).toBe("https://wa.me/33612345678");
   });
+
+  it("ajoute le texte optionnel encodé en query parameter", () => {
+    expect(waHref("06 12 34 56 78", "Bonjour, trajet de Paris à Orly")).toBe(
+      "https://wa.me/0612345678?text=Bonjour%2C%20trajet%20de%20Paris%20%C3%A0%20Orly"
+    );
+  });
 });

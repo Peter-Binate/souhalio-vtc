@@ -8,21 +8,64 @@ import { getFareEstimate } from "@/lib/pricing";
 import { BUSINESS, telHref } from "@/lib/constants";
 import { useState } from "react";
 
-export function ItinerarySimulator() {
-  const [from, setFrom] = useState<AddressValue | null>(null);
-  const [to, setTo] = useState<AddressValue | null>(null);
-  const { mutate, data, error, isPending, reset } = useRoute();
+export type ItinerarySimulatorProps = {
+  from?: AddressValue | null;
+  to?: AddressValue | null;
+  onFromChange?: (value: AddressValue | null) => void;
+  onToChange?: (value: AddressValue | null) => void;
+  onCalculate?: () => void;
+  isPending?: boolean;
+  canCalculate?: boolean;
+  error?: Error | null;
+  standalone?: boolean;
+};
 
-  const canCalculate = from !== null && to !== null;
+export function ItinerarySimulator(props: ItinerarySimulatorProps = {}) {
+  const isControlled = props.from !== undefined && props.to !== undefined;
 
-  function handleCalculate() {
-    if (!from || !to) return;
-    mutate({ from: from.coord, to: to.coord });
-  }
+  // État interne de repli si le composant est utilisé de manière autonome (non-contrôlée)
+  const [internalFrom, setInternalFrom] = useState<AddressValue | null>(null);
+  const [internalTo, setInternalTo] = useState<AddressValue | null>(null);
+  const internalRoute = useRoute();
+
+  const from = isControlled ? (props.from ?? null) : internalFrom;
+  const to = isControlled ? (props.to ?? null) : internalTo;
+  const isPending = props.isPending ?? internalRoute.isPending;
+  const error = props.error ?? internalRoute.error;
+  const canCalculate = props.canCalculate ?? (from !== null && to !== null);
+
+  const handleFromChange = (val: AddressValue | null) => {
+    if (props.onFromChange) {
+      props.onFromChange(val);
+    } else {
+      setInternalFrom(val);
+      internalRoute.reset();
+    }
+  };
+
+  const handleToChange = (val: AddressValue | null) => {
+    if (props.onToChange) {
+      props.onToChange(val);
+    } else {
+      setInternalTo(val);
+      internalRoute.reset();
+    }
+  };
+
+  const handleCalculate = () => {
+    if (props.onCalculate) {
+      props.onCalculate();
+    } else {
+      if (!from || !to) return;
+      internalRoute.mutate({ from: from.coord, to: to.coord });
+    }
+  };
+
+  const isStandalone = props.standalone ?? !isControlled;
 
   const fare =
-    data && from && to
-      ? getFareEstimate(from.coord, to.coord, data.distanceKm, data.durationMin)
+    isStandalone && internalRoute.data && from && to
+      ? getFareEstimate(from.coord, to.coord, internalRoute.data.distanceKm, internalRoute.data.durationMin)
       : null;
 
   return (
@@ -49,20 +92,14 @@ export function ItinerarySimulator() {
           placeholder="Adresse de départ"
           icon="location_on"
           value={from}
-          onChange={(value) => {
-            setFrom(value);
-            reset();
-          }}
+          onChange={handleFromChange}
         />
         <AddressAutocomplete
           label="Destination"
           placeholder="Adresse de destination"
           icon="near_me"
           value={to}
-          onChange={(value) => {
-            setTo(value);
-            reset();
-          }}
+          onChange={handleToChange}
         />
       </div>
 
@@ -70,7 +107,7 @@ export function ItinerarySimulator() {
         type="button"
         onClick={handleCalculate}
         disabled={!canCalculate || isPending}
-        className="mt-2.5 flex min-h-10 w-full items-center justify-center gap-2 rounded-standard bg-primary px-5 py-2.5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight disabled:cursor-not-allowed disabled:opacity-50 sm:min-h-11 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+        className="mt-3 flex min-h-11 w-full items-center justify-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 cursor-pointer"
       >
         {isPending && (
           <span
@@ -80,10 +117,6 @@ export function ItinerarySimulator() {
         )}
         {isPending ? "Calcul en cours…" : "Calculer l'itinéraire"}
       </button>
-
-      <div className="mt-2.5 overflow-hidden rounded-card">
-        <RouteMap route={data?.geometry ?? null} />
-      </div>
 
       {error && (
         <div
@@ -106,15 +139,23 @@ export function ItinerarySimulator() {
         </div>
       )}
 
-      {fare && data && (
-        <div className="mt-4">
-          <PriceEstimate
-            distanceKm={data.distanceKm}
-            durationMin={data.durationMin}
-            price={fare.amount}
-            isFixedAirportFare={fare.isFixedAirportFare}
-          />
-        </div>
+      {isStandalone && (
+        <>
+          <div className="mt-2.5 overflow-hidden rounded-card">
+            <RouteMap route={internalRoute.data?.geometry ?? null} />
+          </div>
+
+          {fare && internalRoute.data && (
+            <div className="mt-4">
+              <PriceEstimate
+                distanceKm={internalRoute.data.distanceKm}
+                durationMin={internalRoute.data.durationMin}
+                price={fare.amount}
+                isFixedAirportFare={fare.isFixedAirportFare}
+              />
+            </div>
+          )}
+        </>
       )}
     </div>
   );

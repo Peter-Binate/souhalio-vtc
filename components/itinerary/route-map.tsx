@@ -21,7 +21,13 @@ setWorkerUrl("/maplibre-gl-worker.mjs");
 
 type RouteGeometry = RouteResponse["geometry"];
 
-export default function RouteMap({ route }: { route: RouteGeometry | null }) {
+export default function RouteMap({
+  route,
+  className,
+}: {
+  route: RouteGeometry | null;
+  className?: string;
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
 
@@ -50,6 +56,7 @@ export default function RouteMap({ route }: { route: RouteGeometry | null }) {
     if (!map || !route) return;
 
     const draw = () => {
+      map.resize();
       const data = { type: "Feature", geometry: route, properties: {} } as const;
       const existing = map.getSource("route") as GeoJSONSource | undefined;
       if (existing) {
@@ -80,7 +87,7 @@ export default function RouteMap({ route }: { route: RouteGeometry | null }) {
     <div
       ref={containerRef}
       aria-label="Carte de l'itinéraire"
-      className="h-45 w-full rounded-lg sm:h-48.75"
+      className={className ?? "h-45 w-full rounded-lg sm:h-48.75"}
     />
   );
 }

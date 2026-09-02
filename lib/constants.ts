@@ -74,5 +74,7 @@ export const AIRPORTS = {
 
 // Helpers CTA — normalisent un numéro brut en lien tel:/wa.me exploitable.
 export const telHref = (raw: string) => `tel:${raw.replace(/[^\d+]/g, "")}`;
-export const waHref = (raw: string) =>
-  `https://wa.me/${raw.replace(/\D/g, "")}`;
+export const waHref = (raw: string, text?: string) => {
+  const base = `https://wa.me/${raw.replace(/\D/g, "")}`;
+  return text ? `${base}?text=${encodeURIComponent(text)}` : base;
+};
