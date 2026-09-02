@@ -67,7 +67,10 @@ describe("getDirections", () => {
     expect(mockedPost).toHaveBeenCalledWith(
       expect.stringContaining("openrouteservice.org"),
       expect.objectContaining({
-        headers: { Authorization: "test-key" },
+        headers: {
+          Authorization: "test-key",
+          Accept: "application/json, application/geo+json",
+        },
         json: { coordinates: [[2.35, 48.85], [2.55, 49.01]] },
       }),
     );

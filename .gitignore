@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# généré par scripts/copy-maplibre-worker.mjs (postinstall) à partir de node_modules
+/public/maplibre-gl-worker.mjs
+/public/maplibre-gl-shared.mjs
+
 # production
 /build
 

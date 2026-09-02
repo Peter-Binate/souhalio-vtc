@@ -1,5 +1,20 @@
 # Changelog
 
+## Fix — la carte MapLibre n'apparaît jamais (dev, Turbopack)
+
+- Cause identifiée via la console navigateur de l'utilisateur : `Failed to load module script: The server responded with a non-JavaScript MIME type of "text/html"`. `maplibre-gl` v6 déduit l'URL de son Web Worker (module ES) via `import.meta.url` au runtime ; Turbopack (`next dev`) ne la résout pas en une URL `http(s)` exploitable, Next.js répond alors avec sa page de fallback HTML, et le chargement des tuiles échoue silencieusement (aucune erreur `map.on("error")`, `style.json`/`sprite`/`tiles.json` chargent normalement mais aucune requête `.pbf` n'est jamais émise).
+- Correctif : l'URL du worker est désormais fixée explicitement via `setWorkerUrl("/maplibre-gl-worker.mjs")` dans `components/itinerary/route-map.tsx`, vers des assets statiques générés par `scripts/copy-maplibre-worker.mjs` (copie de `maplibre-gl-worker.mjs` **et** `maplibre-gl-shared.mjs` — importé en relatif par le worker — depuis `node_modules/maplibre-gl/dist/` vers `public/`), câblé en `predev`/`prebuild`/`postinstall` dans `package.json`. Les fichiers générés sont gitignorés et exclus du lint (`eslint.config.mjs`).
+- `ai_docs/maplibre-maptiler.md` mis à jour (nouvelle section « ⚠️ Carte qui n'apparaît jamais (tuiles jamais chargées) sous Turbopack ») pour éviter la régression.
+- Vérifié en conditions réelles (capture d'écran) : le worker et son import relatif se chargent avec `Content-Type: application/javascript` (200), les tuiles `.pbf` sont bien requêtées, et la carte s'affiche (routes, villes, aéroport CDG visibles). `npm run lint`/`npm test`/`npm run build` passent.
+
+## Fix — 502 « Calcul d'itinéraire indisponible » sur `/api/route`
+
+- Cause identifiée en local (log serveur temporaire) : `lib/ors.ts` appelait `https://api.openrouteservice.org/v2/directions/driving-car/geojson` sans header `Accept` explicite → ORS répondait **406 Not Acceptable** (le `Content-Type: application/json` posé automatiquement par `ky` via l'option `json` ne suffit pas), capturé par le `catch` générique du Route Handler et renvoyé en 502.
+- Correctif : ajout de `Accept: "application/json, application/geo+json"` aux headers de la requête ORS dans `lib/ors.ts`.
+- `ai_docs/openrouteservice.md` mis à jour (snippet + nouvelle section « ⚠️ Header `Accept` obligatoire ») pour éviter la régression.
+- `lib/ors.test.ts` mis à jour (assertion sur les headers envoyés).
+- Vérifié manuellement : `POST /api/route` avec des coordonnées réelles → 200 avec `geometry`/`distanceKm`/`durationMin` ; cas `400` (coordonnées invalides) toujours correct.
+
 ## LP-15 → LP-16 — SEO technique & audit responsive/accessibilité/performance (PRP `PRPs/LP-15-LP-16-seo-a11y-perf.md`)
 
 - **LP-15** : `app/layout.tsx` — ajout de `metadataBase` (`NEXT_PUBLIC_SITE_URL`) et `openGraph` (title/description/url/siteName/locale/type) ; `<title>`, description et JSON-LD `LocalBusiness` déjà conformes depuis LP-03, revérifiés sans modification.

@@ -5,12 +5,19 @@ import {
   MapLibreMap,
   NavigationControl,
   LngLatBounds,
+  setWorkerUrl,
   type GeoJSONSource,
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { RouteResponse } from "@/schemas/itinerary";
 
 const STYLE_URL = `https://api.maptiler.com/maps/streets-v2/style.json?key=${process.env.NEXT_PUBLIC_MAPTILER_KEY}`;
+
+// Turbopack ne résout pas l'URL du worker que maplibre-gl déduit via
+// `import.meta.url` (le serveur Next.js répond alors en text/html, et le
+// chargement des tuiles échoue silencieusement). On la fixe explicitement
+// vers l'asset statique généré par scripts/copy-maplibre-worker.mjs.
+setWorkerUrl("/maplibre-gl-worker.mjs");
 
 type RouteGeometry = RouteResponse["geometry"];
 

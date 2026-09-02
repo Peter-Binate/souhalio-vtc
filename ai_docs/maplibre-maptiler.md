@@ -147,3 +147,23 @@ export async function geocode(query: string) {
 - Modifier une source avant `load` → gérer via `map.once("load", …)` / `isStyleLoaded()`.
 - Confondre l'ordre `[lon, lat]` (MapLibre & ORS) et `[lat, lon]`.
 - Ne pas appeler `map.remove()` au démontage → fuites mémoire.
+
+## ⚠️ Carte qui n'apparaît jamais (tuiles jamais chargées) sous Turbopack
+
+`maplibre-gl` v6+ déduit l'URL de son Web Worker (module ES) via `import.meta.url` au runtime. Sous Turbopack (`next dev`), cette résolution échoue silencieusement : le serveur Next.js répond avec sa page HTML de fallback (`Content-Type: text/html`) au lieu du script, et la console affiche :
+
+```
+Failed to load module script: The server responded with a non-JavaScript MIME type of "text/html".
+```
+
+Symptôme côté carte : `style.json`/`sprite`/`tiles.json` se chargent bien (200), mais aucune requête de tuile (`.pbf`) n'est jamais émise, et la carte reste figée sur la couleur de fond du style (aucune erreur `map.on("error")` ne se déclenche).
+
+**Fix** : fixer explicitement l'URL du worker vers un asset statique servi par Next.js plutôt que de laisser `maplibre-gl` la déduire.
+
+1. `scripts/copy-maplibre-worker.mjs` copie `node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs` **et** `maplibre-gl-shared.mjs` vers `public/` (lancé via `"predev"`/`"prebuild"`/`"postinstall"` dans `package.json`, fichiers générés donc **gitignorés**). Les deux fichiers sont nécessaires : `maplibre-gl-worker.mjs` importe `./maplibre-gl-shared.mjs` en relatif — sans lui, le worker se charge (plus de MIME error) mais son propre import échoue à son tour, toujours silencieusement, et les tuiles ne se chargent toujours pas.
+2. Dans `components/itinerary/route-map.tsx`, avant toute création de `Map` :
+
+```ts
+import { setWorkerUrl } from "maplibre-gl";
+setWorkerUrl("/maplibre-gl-worker.mjs");
+```

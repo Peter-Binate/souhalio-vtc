@@ -11,7 +11,10 @@ export async function getDirections(
 ) {
   const json = await ky
     .post(ORS_BASE, {
-      headers: { Authorization: process.env.ORS_API_KEY! },
+      headers: {
+        Authorization: process.env.ORS_API_KEY!,
+        Accept: "application/json, application/geo+json",
+      },
       json: { coordinates: [from, to] },
       timeout: 10_000,
       retry: 1,

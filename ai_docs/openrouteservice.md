@@ -7,6 +7,10 @@ Documentation officielle : https://openrouteservice.org/dev/#/api-docs
 
 ORS attend des coordonnées au format **`[longitude, latitude]`** (l'inverse de l'usage courant lat/lon). Toujours vérifier l'ordre avant l'appel.
 
+## ⚠️ Header `Accept` obligatoire
+
+L'endpoint `/geojson` renvoie **`406 Not Acceptable`** si le header `Accept` n'est pas explicitement fourni (le `Content-Type: application/json` posé automatiquement par `ky` via l'option `json` ne suffit pas). Toujours envoyer `Accept: application/json, application/geo+json` en plus de `Authorization`.
+
 ## Endpoint Directions (GeoJSON)
 
 ```
@@ -92,7 +96,10 @@ export async function getDirections(
 ) {
   const json = await ky
     .post(ORS_BASE, {
-      headers: { Authorization: process.env.ORS_API_KEY! },
+      headers: {
+        Authorization: process.env.ORS_API_KEY!,
+        Accept: "application/json, application/geo+json",
+      },
       json: { coordinates: [from, to] },
       timeout: 10_000,
       retry: 1,
