@@ -181,6 +181,24 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
 
 ---
 
+## Phase 6 — Refonte visuelle
+
+### [x] LP-18 — Intégration CSS de la maquette Stitch (mobile-first)
+
+**En tant que** visiteur, **je veux** une landing page visuellement aboutie et professionnelle, **afin de** faire confiance au service dès la première impression et déclencher l'appel.
+
+- **Inclus :** restylage CSS/Tailwind de toutes les sections (`app/page.tsx` + `components/layout/*`) d'après l'export exact de la maquette Google Stitch « Midnight Elite » (`stitch_plateforme_vtc_professionnelle/code.html` + `DESIGN.md`) ; tokens de thème (couleurs, typographie Montserrat/Inter, rayons, ombre) dans `globals.css` ; icônes Material Symbols ; emplacements image vides `aspect-[4/3]` (chauffeur, véhicule) dans `about.tsx` ; approche mobile-first.
+- **Exclus :** toute logique métier, schéma Zod, champ de formulaire, route/API, contenu textuel, image réelle ; bloc « preuve sociale » fictif (avatars + « 1000 clients »), champs date/heure du hero (absents de l'app réelle), liens footer vers des pages inexistantes — cf. `CLAUDE.md` § À NE PAS faire et PRP § Exclus.
+- **Critères d'acceptation :**
+  - [x] Chaque section reflète fidèlement `code.html` (couleurs exactes, typographie, icônes, ombres) — vérifié visuellement en desktop (1440px)
+  - [x] `about.tsx` : 2 emplacements image vides `aspect-[4/3]`
+  - [x] Aucune régression fonctionnelle (`npm test` inchangé et vert, 45/45)
+  - [~] Mobile-first : classes Tailwind vérifiées par relecture de code (base non préfixée = mobile partout, `sm:`/`md:`/`lg:` pour le desktop) ; **rendu ≤ 380px non capturé visuellement** — le viewport du navigateur automatisé de cette session est resté bloqué à 1470px (`resize_window` sans effet sur `window.innerWidth`), à revérifier dans un vrai navigateur
+  - [x] `zones.tsx`/`reviews.tsx` restylés avec les mêmes tokens (confirmé : absents de la maquette)
+- **Réf. :** `PRPs/LP-18-integration-maquette-stitch.md`, `stitch_plateforme_vtc_professionnelle/`
+
+---
+
 ## Backlog « nice-to-have » (non planifié)
 
 - [ ] Estimation de prix chiffrée avec vraie grille tarifaire (remplacer la grille fictive)

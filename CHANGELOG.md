@@ -1,5 +1,18 @@
 # Changelog
 
+## LP-18 — Intégration CSS de la maquette Stitch « Midnight Elite »
+
+- Restylage CSS/Tailwind intégral de toutes les sections (header, hero+simulateur, tarifs aéroport, « Pourquoi nous choisir » en grille bento, services, à propos, zones, avis, contact, footer, bouton d'appel flottant) d'après l'export exact `stitch_plateforme_vtc_professionnelle/code.html` + `DESIGN.md` — **aucune logique métier touchée** (confirmé : `lib/`, `schemas/`, `app/api/` inchangés, `npm test` 45/45 sans modification).
+- Nouveaux tokens de thème dans `app/globals.css` (`@theme`) : couleurs (`primary` #000000, `accent`/or #bfa15a, `deep-midnight` #0f1115, `surface`/`surface-low`/`border`…), rayons (`rounded-standard`, `rounded-card`), ombre `ambient-shadow`/`hover-lift`.
+- Polices Montserrat (headlines) + Inter (corps) via `next/font/google` (remplace Geist), package `material-symbols` (self-hosted, `outlined.css`) pour les icônes — remplace les emojis des CTA.
+- `about.tsx` : 2 emplacements image vides (`role="img"`, `aspect-[4/3]`) pour la photo chauffeur et véhicule, dimensionnés d'après la maquette — toujours aucune image réelle codée en dur.
+- `address-autocomplete.tsx` : nouvelle prop optionnelle `icon` (purement visuelle) pour afficher une icône Material Symbols dans les champs départ/destination du simulateur.
+- **Exclusions délibérées** (contenu fabriqué présent dans l'export Stitch mais non repris) : bloc « preuve sociale » du hero (avatars + « 1000 clients satisfaits », chiffre inventé par l'IA) ; champs `date`/`heure` du formulaire hero (absents du simulateur réel — les ajouter aurait été une nouvelle fonctionnalité) ; liens footer vers des pages inexistantes (Privacy Policy, Terms, Legal Notice, Fleet).
+- `direct-booking.tsx` : les 5 avantages existants (`ADVANTAGES`) reformatés en grille bento asymétrique reprenant la structure de la maquette, contenu inchangé.
+- `contact.tsx` : mise en page « split » 2 colonnes (cartes de contact cliquables + carte formulaire), **les 7 champs et toute la logique `react-hook-form`/Zod/Formspree restent strictement identiques**.
+- Nouvelle dépendance : `material-symbols` (icônes, self-hosted).
+- Vérifié : `npm run lint`, `npm test` (45/45, aucun test modifié), `npm run build` passent. Rendu visuel comparé section par section à la maquette en desktop (1440px) via navigateur — très fidèle. **Rendu mobile ≤ 380px non vérifié visuellement** (limite de l'environnement de test : le viewport du navigateur automatisé est resté bloqué à 1470px malgré `resize_window`) ; le mobile-first a été vérifié par relecture de code (classes Tailwind non préfixées = mobile, `sm:`/`md:`/`lg:` pour le desktop, cohérent sur tout le diff) — à confirmer visuellement dans un vrai navigateur.
+
 ## LP-17 — Vérification & fiabilisation des estimations de durée de trajet
 
 - **Mesure** (2026-09-02, PRP `PRPs/LP-17-verification-duree-trajet.md`) : comparaison réelle ORS (`/api/route`) vs Google Maps sur 5 trajets Île-de-France (`curl` réel, hors suite automatisée). Constat : ORS reste proche de Google Maps sur autoroute/longue distance (écart −3 % à −7 %), mais sous-estime fortement les trajets urbains courts (−31 % à −34 %) — cohérent avec l'absence de trafic temps réel dans le profil `driving-car` (vitesses moyennes statiques OSM). Deux mesures (banlieue→Paris, Paris→CDG) partiellement biaisées par des incidents temps réel ponctuels côté Google (fermeture de route, accident), non imputables à ORS.

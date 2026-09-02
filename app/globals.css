@@ -1,14 +1,46 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens — maquette Stitch "Midnight Elite"
+ * (stitch_plateforme_vtc_professionnelle/code.html + DESIGN.md, LP-18).
+ * borderRadius.full de code.html (0.75rem) est une incohérence de l'export :
+ * on suit l'intention de DESIGN.md (cercle/pilule complet) via le
+ * `rounded-full` natif de Tailwind, déjà correct.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf8f8;
+  --foreground: #1c1b1b;
+
+  --color-primary: #000000;
+  --color-deep-midnight: #0f1115;
+  --color-accent: #bfa15a;
+  --color-surface: #ffffff;
+  --color-surface-low: #f7f3f2;
+  --color-border: #e5e2e1;
+  --color-border-input: #c4c7c7;
+  --color-muted: #444748;
+
+  --radius-standard: 0.25rem; /* boutons, inputs — DESIGN.md */
+  --radius-card: 0.5rem; /* cartes, simulateur, images — DESIGN.md */
+  --shadow-ambient: 0px 10px 30px rgba(0, 0, 0, 0.04);
+  --shadow-ambient-hover: 0px 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-primary: var(--color-primary);
+  --color-deep-midnight: var(--color-deep-midnight);
+  --color-accent: var(--color-accent);
+  --color-surface: var(--color-surface);
+  --color-surface-low: var(--color-surface-low);
+  --color-border: var(--color-border);
+  --color-border-input: var(--color-border-input);
+  --color-muted: var(--color-muted);
+  --radius-standard: var(--radius-standard);
+  --radius-card: var(--radius-card);
+  --font-sans: var(--font-inter);
+  --font-headline: var(--font-montserrat);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,5 +54,20 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.ambient-shadow {
+  box-shadow: var(--shadow-ambient);
+}
+
+.hover-lift {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-ambient-hover);
 }

@@ -12,39 +12,51 @@ export function Zones() {
   return (
     <section
       aria-labelledby="zones-heading"
-      className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+      className="border-t border-border bg-surface-low py-12 md:py-[80px] dark:border-zinc-800 dark:bg-zinc-900/40"
     >
-      <h2
-        id="zones-heading"
-        className="text-2xl font-semibold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50"
-      >
-        Une couverture complète, de {BUSINESS.city} à toute la France
-      </h2>
-      <p className="mt-4 max-w-2xl text-base text-zinc-600 dark:text-zinc-400">
-        Basé à <strong>{BUSINESS.city} (Val-de-Marne)</strong>, votre chauffeur VTC intervient
-        dans <strong>toute l&apos;Île-de-France</strong> — Paris et l&apos;ensemble des
-        départements franciliens — ainsi que sur les <strong>trajets longue distance en
-        province</strong>. Aucune destination n&apos;est trop loin, aucune heure n&apos;est trop
-        tardive.
-      </p>
+      <div className="mx-auto max-w-[1280px] px-6">
+        <h2
+          id="zones-heading"
+          className="font-headline text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50"
+        >
+          Une couverture complète, de {BUSINESS.city} à toute la France
+        </h2>
+        <p className="mt-4 max-w-2xl text-lg text-muted dark:text-zinc-400">
+          Basé à <strong>{BUSINESS.city} (Val-de-Marne)</strong>, votre chauffeur VTC intervient
+          dans <strong>toute l&apos;Île-de-France</strong> — Paris et l&apos;ensemble des
+          départements franciliens — ainsi que sur les <strong>trajets longue distance en
+          province</strong>. Aucune destination n&apos;est trop loin, aucune heure n&apos;est
+          trop tardive.
+        </p>
 
-      <div className="mt-6">
-        <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
-          Gares desservies
-        </h3>
-        <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-600 dark:text-zinc-400">
-          {GARES.map((gare) => (
-            <li key={gare}>{gare}</li>
-          ))}
-        </ul>
+        <div className="mt-8 rounded-card border border-border bg-surface p-6 ambient-shadow md:p-8 dark:border-zinc-800 dark:bg-zinc-950">
+          <h3 className="text-xs font-semibold tracking-widest text-muted uppercase dark:text-zinc-400">
+            Gares desservies
+          </h3>
+          <ul className="mt-4 space-y-3">
+            {GARES.map((gare) => (
+              <li key={gare} className="flex items-center gap-3">
+                <span aria-hidden="true" className="material-symbols-outlined text-accent">
+                  train
+                </span>
+                <span className="text-sm text-foreground dark:text-zinc-300">{gare}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-8">
+          <a
+            href={telHref(BUSINESS.phone)}
+            className="inline-flex min-h-11 items-center gap-2 rounded-standard bg-primary px-6 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+          >
+            <span aria-hidden="true" className="material-symbols-outlined text-base">
+              call
+            </span>
+            Votre adresse est-elle desservie ? Vérifiez en un appel — {BUSINESS.phone}
+          </a>
+        </div>
       </div>
-
-      <a
-        href={telHref(BUSINESS.phone)}
-        className="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-6 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
-      >
-        Votre adresse est-elle desservie ? 📞 Vérifiez en un appel — {BUSINESS.phone}
-      </a>
     </section>
   );
 }

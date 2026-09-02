@@ -17,39 +17,48 @@ export function PriceEstimate({
     <div
       role="status"
       aria-live="polite"
-      className="rounded-lg border border-zinc-200 bg-zinc-50 p-4 dark:border-zinc-700 dark:bg-zinc-900"
+      className="rounded-standard border border-border bg-surface-low p-4 text-center dark:border-zinc-700 dark:bg-zinc-900"
     >
-      <p className="text-base text-zinc-900 dark:text-zinc-50">
-        Distance : {distanceKm.toFixed(1)} km · Durée estimée : {Math.round(durationMin)} min ·{" "}
-        <strong>
-          {isFixedAirportFare ? "Tarif fixe" : "Estimation"} : {price} €
-        </strong>
+      <span className="block text-xs font-semibold tracking-widest text-muted uppercase dark:text-zinc-400">
+        {isFixedAirportFare ? "Tarif fixe" : "Prix estimé"}
+      </span>
+      <span className="font-headline block text-2xl font-bold text-primary dark:text-zinc-50">
+        {price} €
+      </span>
+      <p className="mt-1 text-sm text-muted dark:text-zinc-400">
+        Distance : {distanceKm.toFixed(1)} km · Durée estimée : {Math.round(durationMin)} min
       </p>
 
       {isFixedAirportFare ? (
-        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        <p className="mt-2 text-xs text-muted dark:text-zinc-400">
           Transfert aéroport : tarif fixe garanti, prioritaire sur l&apos;estimation calculée
           (au départ de Paris et proche banlieue).
         </p>
       ) : (
-        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        <p className="mt-2 text-xs text-muted dark:text-zinc-400">
           Estimation indicative — votre tarif est confirmé lors de la réservation. Appelez
           pour réserver.
         </p>
       )}
 
-      <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-center">
         <a
           href={telHref(BUSINESS.phone)}
-          className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
-          📞 Appeler pour réserver — {BUSINESS.phone}
+          <span aria-hidden="true" className="material-symbols-outlined text-base">
+            call
+          </span>
+          Appeler pour réserver — {BUSINESS.phone}
         </a>
         <a
           href={waHref(BUSINESS.whatsapp)}
-          className="inline-flex min-h-11 items-center justify-center rounded-full border border-zinc-300 px-5 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-800"
+          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-standard border border-border-input px-5 text-xs font-semibold tracking-widest text-primary uppercase transition-colors hover:bg-surface dark:border-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-800"
         >
-          💬 Réserver par WhatsApp
+          <span aria-hidden="true" className="material-symbols-outlined text-base">
+            chat
+          </span>
+          Réserver par WhatsApp
         </a>
       </div>
     </div>

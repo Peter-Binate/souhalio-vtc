@@ -26,18 +26,28 @@ export function ItinerarySimulator() {
       : null;
 
   return (
-    <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm sm:p-6 dark:border-zinc-800 dark:bg-zinc-950">
-      <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
+    <div className="rounded-card border border-border bg-surface p-6 ambient-shadow md:p-8 dark:border-zinc-800 dark:bg-zinc-950">
+      <div className="mb-6 flex items-center justify-between">
+        <h2 className="font-headline text-xl font-semibold text-primary dark:text-zinc-50">
+          Estimer un trajet
+        </h2>
+        <span aria-hidden="true" className="material-symbols-outlined text-muted">
+          calculate
+        </span>
+      </div>
+
+      <p className="mb-4 text-sm text-muted dark:text-zinc-400">
         Indiquez votre point de départ et votre destination : l&apos;itinéraire, la distance et
         la durée s&apos;affichent instantanément. Pour un transfert aéroport, le tarif est fixe
         et connu d&apos;avance. Pour tout autre trajet, confirmez votre tarif en un appel — sans
         engagement.
       </p>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="space-y-4">
         <AddressAutocomplete
           label="Départ"
           placeholder="Adresse de départ"
+          icon="location_on"
           value={from}
           onChange={(value) => {
             setFrom(value);
@@ -47,6 +57,7 @@ export function ItinerarySimulator() {
         <AddressAutocomplete
           label="Destination"
           placeholder="Adresse de destination"
+          icon="near_me"
           value={to}
           onChange={(value) => {
             setTo(value);
@@ -59,7 +70,7 @@ export function ItinerarySimulator() {
         type="button"
         onClick={handleCalculate}
         disabled={!canCalculate || isPending}
-        className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-zinc-900 px-5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+        className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-standard bg-primary px-5 py-4 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
       >
         {isPending && (
           <span
@@ -70,24 +81,27 @@ export function ItinerarySimulator() {
         {isPending ? "Calcul en cours…" : "Calculer l'itinéraire"}
       </button>
 
-      <div className="mt-4">
+      <div className="mt-4 overflow-hidden rounded-card">
         <RouteMap route={data?.geometry ?? null} />
       </div>
 
       {error && (
         <div
           role="alert"
-          className="mt-4 rounded-lg border border-zinc-300 bg-zinc-50 p-4 dark:border-zinc-700 dark:bg-zinc-900"
+          className="mt-4 rounded-standard border border-border bg-surface-low p-4 dark:border-zinc-700 dark:bg-zinc-900"
         >
-          <p className="text-sm text-zinc-700 dark:text-zinc-300">
+          <p className="text-sm text-muted dark:text-zinc-300">
             Le calcul d&apos;itinéraire est momentanément indisponible. Appelez pour connaître
             votre tarif.
           </p>
           <a
             href={telHref(BUSINESS.phone)}
-            className="mt-3 inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+            className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
-            📞 Appeler pour réserver — {BUSINESS.phone}
+            <span aria-hidden="true" className="material-symbols-outlined text-base">
+              call
+            </span>
+            Appeler pour réserver — {BUSINESS.phone}
           </a>
         </div>
       )}

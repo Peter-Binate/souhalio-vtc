@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>John Doe VTC - Chauffeur Privé Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1c1b1b",
+                        "secondary-container": "#fedc8f",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#e6e2df",
+                        "on-secondary-fixed": "#251a00",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-fixed": "#ffdf98",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-white": "#ffffff",
+                        "background": "#fdf8f8",
+                        "primary-container": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "secondary": "#735b1b",
+                        "secondary-fixed-dim": "#e3c378",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#785f1f",
+                        "primary": "#000000",
+                        "outline": "#747878",
+                        "surface-bright": "#fdf8f8",
+                        "on-surface-variant": "#444748",
+                        "surface-dim": "#ddd9d8",
+                        "muted-gold": "#bfa15a",
+                        "surface-container-high": "#ebe7e6",
+                        "on-error": "#ffffff",
+                        "deep-midnight": "#0f1115",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-primary-container": "#858383",
+                        "tertiary": "#000000",
+                        "status-blue": "#2563eb",
+                        "outline-variant": "#c4c7c7",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "surface-tint": "#5f5e5e",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#313030",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container-low": "#f7f3f2",
+                        "surface-container-highest": "#e5e2e1",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "tertiary-container": "#1c1b1a",
+                        "tertiary-fixed-dim": "#cac6c4",
+                        "on-secondary-fixed-variant": "#594403",
+                        "on-tertiary-container": "#868382",
+                        "on-surface": "#1c1b1b",
+                        "inverse-on-surface": "#f4f0ef",
+                        "surface": "#fdf8f8",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container": "#f1edec"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "section-padding-mobile": "48px",
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "section-padding": "80px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Montserrat", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "label-caps": ["Inter", "sans-serif"],
+                        "headline-lg-mobile": ["Montserrat", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "headline-lg": ["Montserrat", "sans-serif"],
+                        "price-display": ["Montserrat", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "price-display": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        .ambient-shadow { box-shadow: 0px 10px 30px rgba(0,0,0,0.04); }
+        .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .hover-lift:hover { transform: translateY(-2px); box-shadow: 0px 15px 40px rgba(0,0,0,0.08); }
+        
+        /* Loader Animation */
+        .loader-spin { animation: spin 1s linear infinite; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-surface-white text-on-background font-body-md antialiased selection:bg-muted-gold selection:text-primary">
+<!-- JSON: TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-primary/90 border-b border-surface-variant dark:border-outline-variant shadow-sm transition-all duration-300" id="top-nav">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="text-headline-lg font-headline-lg font-bold text-primary dark:text-surface-bright flex items-center gap-2" href="#">
+                John Doe VTC
+            </a>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-surface-bright hover:opacity-80 transition-all duration-200 uppercase tracking-widest" href="#services">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-surface-bright hover:opacity-80 transition-all duration-200 uppercase tracking-widest" href="#pricing">Pricing</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-surface-bright hover:opacity-80 transition-all duration-200 uppercase tracking-widest" href="#about">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-surface-bright hover:opacity-80 transition-all duration-200 uppercase tracking-widest" href="#contact">Contact</a>
+</div>
+<a class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-deep-midnight transition-colors active:scale-95" href="tel:+33600000000">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                Call Now
+            </a>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Menu" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Section 01: Hero / Simulator -->
+<section class="pt-32 pb-section-padding md:pt-48 md:pb-section-padding px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg lg:gap-16 items-center">
+<!-- Left: Value Prop -->
+<div class="space-y-stack-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined text-muted-gold text-sm">star</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Premium Chauffeur Service</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary text-balance">
+                    Votre Chauffeur Privé à L'Haÿ-les-Roses &amp; IDF
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Déplacements professionnels, transferts aéroports ou trajets quotidiens. Fiabilité, discrétion et confort haut de gamme pour chacune de vos courses.
+                </p>
+<div class="flex items-center gap-stack-md pt-4">
+<div class="flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-2 border-surface-white object-cover" data-alt="A close up of a professional chauffeur wearing a black suit and white shirt, smiling slightly, high-end corporate photography style, bright lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5HVNPkx5seU6_4xGk8ntyVTi9gI5Un5iMdfU0xStPd0WqW_22ib637Odw-tyKU16f3F6TbjxI4VzoaQ2YxOiK1nEC53cYI4yjHeIpibxUIJUdz2SxmvPL4fLG88oQXGDiC-nUe1ZX90UuSBWu_H5N8dnyV1gc1wpTNE_Ha_AdeZMS4JzC5U-BGtCjVmWzAaJkGp0FrMkpYuiih57YsKhXtZOlHfYC5kIkpMvt_Jva95WR-p-rSbqr"/>
+<img class="w-12 h-12 rounded-full border-2 border-surface-white object-cover" data-alt="A detail shot of a luxury car interior showing a leather steering wheel and modern dashboard, premium automotive aesthetic, subtle dark tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsPH-rOkZ9wU10GaXjQRBY1FNdpbQ4vxfptL8kR9kn0dpa7nF_y3V7Ps03uoLXwBc1TpIUN0V4wt8nF1Otu-Ybb5eLFmR9WT_MJ-ydRK4iSiZPjcFeX8dsKFB6gJJYRi0Gt_Y7GnYoEioe7CzfRidrDIsO7fMCBagWgVmZ6h6nj8ERqnfAyk1lU-trB5JS0kqKbyGmIKxeE9V0AVH6J0ExXIGjllxRxM7S7rxo-qkdZNTwsUFAmJ8T"/>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">Plus de 1000 clients satisfaits</span>
+</div>
+</div>
+<!-- Right: Simulator Card -->
+<div class="bg-surface-white border border-surface-variant rounded-xl p-6 md:p-8 ambient-shadow relative z-10">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Estimer un trajet</h2>
+<span class="material-symbols-outlined text-outline">calculate</span>
+</div>
+<form class="space-y-stack-md" id="simulator-form">
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">location_on</span>
+</div>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body-md text-on-background placeholder:text-outline" placeholder="Adresse de départ" type="text"/>
+</div>
+<div class="flex justify-center -my-2 relative z-10">
+<div class="bg-surface-white border border-outline-variant rounded-full p-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">swap_vert</span>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">near_me</span>
+</div>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body-md text-on-background placeholder:text-outline" placeholder="Adresse d'arrivée" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-stack-sm pt-2">
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">schedule</span>
+</div>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary outline-none font-body-md text-on-background" type="time"/>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">event</span>
+</div>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary outline-none font-body-md text-on-background" type="date"/>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-DEFAULT font-label-caps text-label-caps uppercase tracking-wider hover:bg-deep-midnight transition-colors mt-4 flex justify-center items-center gap-2" id="calc-btn" type="submit">
+<span>Calculer le prix</span>
+<span class="material-symbols-outlined hidden loader-spin" id="calc-loader">progress_activity</span>
+</button>
+<div class="hidden mt-4 text-center p-4 bg-surface-container-low rounded-DEFAULT border border-surface-variant" id="price-result">
+<span class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Prix Estimé</span>
+<span class="font-price-display text-price-display text-primary">~ 45€ - 60€</span>
+<p class="font-body-md text-xs text-outline mt-2">*Prix indicatif soumis à variation selon le trafic.</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Section 02: Tarifs Aéroport (Receipt Style) -->
+<section class="py-section-padding bg-surface-container-low border-y border-surface-variant" id="pricing">
+<div class="max-w-3xl mx-auto px-gutter">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Forfaits Aéroports</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Des prix fixes, transparents et sans surprise au départ de L'Haÿ-les-Roses.</p>
+</div>
+<div class="bg-surface-white border border-surface-variant rounded-xl p-8 ambient-shadow relative overflow-hidden">
+<!-- Receipt jagged edge effect via SVG pattern or simple CSS (omitted for clean modern look, keeping it minimalist as requested) -->
+<div class="absolute top-0 right-0 p-6 opacity-10">
+<span class="material-symbols-outlined" style="font-size: 120px;">flight_takeoff</span>
+</div>
+<div class="relative z-10 space-y-6">
+<div class="flex justify-between items-center border-b border-surface-variant pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-muted-gold">flight_takeoff</span>
+<span class="font-body-lg text-body-lg text-primary font-semibold">Aéroport d'Orly (ORY)</span>
+</div>
+<span class="font-price-display text-price-display text-primary">50€</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-variant pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-muted-gold">flight_takeoff</span>
+<span class="font-body-lg text-body-lg text-primary font-semibold">Roissy Charles de Gaulle (CDG)</span>
+</div>
+<span class="font-price-display text-price-display text-primary">65€</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-variant pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-muted-gold">flight_takeoff</span>
+<span class="font-body-lg text-body-lg text-primary font-semibold">Aéroport de Paris-Beauvais</span>
+</div>
+<span class="font-price-display text-price-display text-primary">120€</span>
+</div>
+</div>
+<div class="mt-8 text-center">
+<a class="inline-flex items-center gap-2 bg-muted-gold text-primary px-8 py-4 rounded-DEFAULT font-label-caps text-label-caps uppercase hover:bg-secondary-fixed-dim transition-colors active:scale-95" href="tel:+33600000000">
+<span class="material-symbols-outlined">call</span>
+                        Réserver un transfert
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 03: Direct Booking Arguments (Bento) -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto">
+<div class="mb-12 text-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Pourquoi nous choisir ?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-md">
+<!-- Arg 1 -->
+<div class="bg-surface-white border border-surface-variant rounded-xl p-6 hover-lift lg:col-span-2">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold mb-2">Sécurité &amp; Confiance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Chauffeur professionnel agréé, véhicule régulièrement révisé pour votre tranquillité.</p>
+</div>
+<!-- Arg 2 -->
+<div class="bg-primary text-on-primary border border-primary rounded-xl p-6 hover-lift lg:col-span-1 flex flex-col justify-between">
+<span class="material-symbols-outlined text-3xl text-muted-gold mb-4">person</span>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold mb-2">Service Personnalisé</h3>
+<p class="font-body-md text-body-md text-inverse-primary text-sm">À l'écoute de vos besoins spécifiques.</p>
+</div>
+</div>
+<!-- Arg 3 -->
+<div class="bg-surface-white border border-surface-variant rounded-xl p-6 hover-lift lg:col-span-2">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">schedule</span>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold mb-2">Ponctualité Absolue</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Votre temps est précieux. Nous garantissons une arrivée en avance à chaque rendez-vous.</p>
+</div>
+<!-- Arg 4 -->
+<div class="bg-surface-white border border-surface-variant rounded-xl p-6 hover-lift lg:col-span-3 flex items-center gap-6">
+<div class="bg-surface-container-high p-4 rounded-full hidden md:block">
+<span class="material-symbols-outlined text-4xl text-primary">directions_car</span>
+</div>
+<div>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold mb-2">Véhicule Premium</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Confort optimal à bord d'un SUV hybride moderne, climatisé et silencieux.</p>
+</div>
+</div>
+<!-- Arg 5 -->
+<div class="bg-surface-white border border-surface-variant rounded-xl p-6 hover-lift lg:col-span-2">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">event_available</span>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold mb-2">Disponibilité</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Réservation facile et rapide pour tous vos événements.</p>
+</div>
+</div>
+</section>
+<!-- Section 04: Services -->
+<section class="py-section-padding bg-surface-container-lowest border-t border-surface-variant" id="services">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12 text-center">Nos Prestations</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<!-- Service 1 -->
+<div class="group flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant rounded-DEFAULT group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors">bolt</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-bold">Départ Immédiat</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Course à la demande pour vos urgences dans le secteur sud parisien.</p>
+</div>
+<!-- Service 2 -->
+<div class="group flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant rounded-DEFAULT group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors">flight</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-bold">Transferts Aéroports</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Orly, CDG, Beauvais. Accueil avec pancarte personnalisé à l'arrivée.</p>
+</div>
+<!-- Service 3 -->
+<div class="group flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant rounded-DEFAULT group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors">train</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-bold">Gares Parisiennes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Gare de Lyon, Montparnasse, Nord, Est, Austerlitz. Dépose au plus près des quais.</p>
+</div>
+<!-- Service 4 -->
+<div class="group flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant rounded-DEFAULT group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors">work</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-bold">Déplacements Affaires</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mise à disposition à l'heure ou à la demi-journée pour vos rendez-vous B2B.</p>
+</div>
+<!-- Service 5 -->
+<div class="group flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant rounded-DEFAULT group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors">map</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-bold">Longue Distance / Province</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trajets sur mesure dans toute la France. Confort optimal garanti sur la durée.</p>
+</div>
+<!-- Service 6 -->
+<div class="group flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant rounded-DEFAULT group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors">schedule</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-bold">Service 24/7</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Disponible jour et nuit, week-ends et jours fériés sur réservation préalable.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 06: About & Vehicle (Alternating) -->
+<section class="py-section-padding bg-surface-white" id="about">
+<div class="max-w-container-max mx-auto px-gutter space-y-24">
+<!-- Block 1: The Chauffeur -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 md:order-1 relative aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A professional male chauffeur standing proudly in an elegant Parisian street next to a dark grey luxury SUV. He is wearing a perfectly tailored black suit, white shirt, and black tie. Bright natural daytime lighting, high-end corporate photography style, premium and trustworthy mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhZENd7AxrnQgs0M_nq4nweGYS5b75cjM9xHZv2iCsxitX8XuEG36ZLKoqm-aJ5znbODGYDRvkC-jiov1F_wavDQ81iRb7X_0T3BhOkG6xBUZm04Ay7FFtjM3A1YY0KjeqxHiPcqqVQ04EmphBbCgdmkvklmjYrpXjZh9IeCovq4VaaurJ41rceFUYh6sjaaOX_dnVXqIqBeyoeSbW7WKBUfUuDiwID_OAJWvTOgmwKoNQjSUsdWSZ"/>
+</div>
+<div class="order-1 md:order-2 space-y-6 md:pl-12">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Votre Chauffeur Privé</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Fort de 4 années d'expérience sur les routes d'Île-de-France, je mets mon expertise à votre service. Connaissance parfaite du trafic parisien, conduite souple et sens de l'accueil sont les maîtres mots de mon engagement quotidien.
+                    </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md text-body-md">Carte professionnelle VTC valide</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md text-body-md">Assurance transport de personnes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md text-body-md">Discrétion absolue garantie</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Block 2: The Vehicle -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-6 md:pr-12">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Le Véhicule : Kia Niro Hybride</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Voyagez à bord d'un SUV moderne, spacieux et éco-responsable. Le Kia Niro Hybride gris foncé offre une isolation acoustique premium et un confort d'assise idéal pour se détendre ou travailler pendant le trajet.
+                    </p>
+<div class="grid grid-cols-2 gap-4 pt-4">
+<div class="border border-surface-variant p-4 rounded-DEFAULT text-center">
+<span class="material-symbols-outlined text-2xl text-primary mb-2">eco</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Motorisation Hybride</p>
+</div>
+<div class="border border-surface-variant p-4 rounded-DEFAULT text-center">
+<span class="material-symbols-outlined text-2xl text-primary mb-2">wifi</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Wi-Fi &amp; Chargeurs</p>
+</div>
+<div class="border border-surface-variant p-4 rounded-DEFAULT text-center">
+<span class="material-symbols-outlined text-2xl text-primary mb-2">ac_unit</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Climatisation Bi-zone</p>
+</div>
+<div class="border border-surface-variant p-4 rounded-DEFAULT text-center">
+<span class="material-symbols-outlined text-2xl text-primary mb-2">luggage</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Coffre Spacieux</p>
+</div>
+</div>
+</div>
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A pristine dark grey Kia Niro hybrid SUV parked in a modern, clean urban environment in Paris. The focus is on the gleaming paint and sleek modern design lines. Cinematic lighting highlighting the vehicle's curves. Minimalist, corporate, and sophisticated luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAN7s5SpobUj0ReQNdmEWtBajil6Hr32O5MMC752T51f5wCLFBnEY-t6O28VR1b1yE4TL7cVk4kfS6PrEdZA9lOTf4erOYK57Nv0vO3XnQ0gj7Ou5Hi4G7yRy9tuolrrnxc0elh4DTEdvvsYGWT7QheqAm3ajjWC473r0UofR0E70-VYWT93jN6aKzfs5X7rLBrgRwpSMRJisIJmQsdIgkbhnC-oYn8FHhqqqkLiWiaHYeoqL_OzVU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 08: Contact (Split) -->
+<section class="py-section-padding bg-surface-container-low border-t border-surface-variant" id="contact">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg lg:gap-24">
+<!-- Left: Info -->
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Contact &amp; Réservation</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Pour toute demande de devis spécifique ou réservation immédiate, n'hésitez pas à nous joindre directement.</p>
+</div>
+<div class="space-y-6">
+<a class="flex items-center gap-4 p-4 bg-surface-white border border-surface-variant rounded-DEFAULT hover-lift" href="tel:+33600000000">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Téléphone Direct</p>
+<p class="font-body-lg text-body-lg text-primary font-bold">+33 6 00 00 00 00</p>
+</div>
+</a>
+<a class="flex items-center gap-4 p-4 bg-surface-white border border-surface-variant rounded-DEFAULT hover-lift" href="#">
+<div class="w-12 h-12 bg-[#25D366] text-white rounded-full flex items-center justify-center">
+<!-- Using generic chat icon since whatsapp isn't standard material symbol, but close enough for visual context -->
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">WhatsApp</p>
+<p class="font-body-lg text-body-lg text-primary font-bold">Envoyer un message</p>
+</div>
+</a>
+<a class="flex items-center gap-4 p-4 bg-surface-white border border-surface-variant rounded-DEFAULT hover-lift" href="mailto:contact@johndoevtc.fr">
+<div class="w-12 h-12 bg-surface-container-high text-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Email</p>
+<p class="font-body-lg text-body-lg text-primary font-bold">contact@johndoevtc.fr</p>
+</div>
+</a>
+</div>
+</div>
+<!-- Right: Form -->
+<div class="bg-surface-white border border-surface-variant rounded-xl p-8 ambient-shadow">
+<h3 class="font-body-lg text-body-lg text-primary font-bold mb-6">Demande de devis</h3>
+<form class="space-y-4">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Nom Complet</label>
+<input class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary outline-none font-body-md text-on-background" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Téléphone</label>
+<input class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary outline-none font-body-md text-on-background" type="tel"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Email</label>
+<input class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary outline-none font-body-md text-on-background" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Détails du trajet</label>
+<textarea class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:border-primary outline-none font-body-md text-on-background resize-none" rows="4"></textarea>
+</div>
+<div class="flex items-start gap-2 py-2">
+<input class="mt-1 rounded text-primary focus:ring-primary border-outline-variant" id="rgpd" type="checkbox"/>
+<label class="font-body-md text-xs text-on-surface-variant leading-tight" for="rgpd">J'accepte que mes données soient utilisées pour traiter ma demande conformément à la politique de confidentialité.</label>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-DEFAULT font-label-caps text-label-caps uppercase tracking-wider hover:bg-deep-midnight transition-colors mt-2" type="submit">
+                            Envoyer la demande
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile Floating Action Button (FAB) as requested -->
+<a class="fixed bottom-6 right-6 z-50 md:hidden bg-muted-gold text-primary p-4 rounded-full shadow-lg hover:scale-105 transition-transform flex items-center justify-center" href="tel:+33600000000">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">call</span>
+</a>
+<!-- JSON: Footer -->
+<footer class="bg-deep-midnight dark:bg-primary-container w-full py-section-padding flat no shadows pb-24 md:pb-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter max-w-container-max mx-auto">
+<div class="md:col-span-1 space-y-4">
+<div class="font-headline-lg text-headline-lg text-on-primary">
+                    John Doe VTC
+                </div>
+<p class="font-body-md text-body-md text-on-primary-container">
+                    © 2024 John Doe VTC. All rights reserved. Premium Chauffeur Services Île-de-France.
+                </p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start pt-2">
+<a class="font-body-md text-body-md text-on-primary-container dark:text-primary-fixed-dim hover:text-on-primary hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-primary-container dark:text-primary-fixed-dim hover:text-on-primary hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-primary-container dark:text-primary-fixed-dim hover:text-on-primary hover:text-secondary-fixed transition-colors" href="#">Legal Notice</a>
+<a class="font-body-md text-body-md text-on-primary-container dark:text-primary-fixed-dim hover:text-on-primary hover:text-secondary-fixed transition-colors" href="#">Fleet</a>
+<a class="font-body-md text-body-md text-on-primary-container dark:text-primary-fixed-dim hover:text-on-primary hover:text-secondary-fixed transition-colors" href="#">Airport Transfers</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Top Nav Background transition on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.add('shadow-sm');
+                nav.classList.remove('shadow-md');
+            }
+        });
+
+        // Fake Simulator Loading
+        document.getElementById('simulator-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('calc-btn');
+            const loader = document.getElementById('calc-loader');
+            const result = document.getElementById('price-result');
+            
+            loader.classList.remove('hidden');
+            result.classList.add('hidden');
+            
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                result.classList.remove('hidden');
+            }, 1500);
+        });
+    </script>
+</body></html>

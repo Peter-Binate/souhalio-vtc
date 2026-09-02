@@ -12,6 +12,8 @@ type AddressAutocompleteProps = {
   placeholder?: string;
   value: AddressValue | null;
   onChange: (value: AddressValue | null) => void;
+  /** Icône Material Symbols affichée à gauche du champ (purement visuel). */
+  icon?: string;
 };
 
 // Débounce la saisie (pas le fetch) : le fetch reste dans useQuery, câblé sur la valeur débouncée.
@@ -29,6 +31,7 @@ export function AddressAutocomplete({
   placeholder,
   value,
   onChange,
+  icon,
 }: AddressAutocompleteProps) {
   const inputId = useId();
   const listboxId = useId();
@@ -57,41 +60,51 @@ export function AddressAutocomplete({
     <div className="relative w-full">
       <label
         htmlFor={inputId}
-        className="mb-1 block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+        className="mb-1 block text-xs font-semibold tracking-widest text-muted uppercase dark:text-zinc-300"
       >
         {label}
       </label>
-      <input
-        id={inputId}
-        type="text"
-        role="combobox"
-        aria-expanded={showListbox}
-        aria-controls={listboxId}
-        aria-autocomplete="list"
-        autoComplete="off"
-        placeholder={placeholder}
-        value={query}
-        onChange={(e) => {
-          setQuery(e.target.value);
-          setIsOpen(true);
-          if (value) onChange(null);
-        }}
-        onFocus={() => setIsOpen(true)}
-        onBlur={() => setTimeout(() => setIsOpen(false), 150)}
-        onKeyDown={(e) => {
-          if (e.key === "Escape") setIsOpen(false);
-          if (e.key === "Enter" && suggestions.length > 0) {
-            e.preventDefault();
-            selectSuggestion(suggestions[0]);
-          }
-        }}
-        className="min-h-11 w-full rounded-lg border border-zinc-300 px-4 py-2 text-base text-zinc-900 outline-none focus:border-zinc-900 focus-visible:ring-2 focus-visible:ring-zinc-900 focus-visible:ring-offset-2 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus:border-zinc-100 dark:focus-visible:ring-zinc-100 dark:focus-visible:ring-offset-zinc-950"
-      />
+      <div className="relative">
+        {icon && (
+          <span
+            aria-hidden="true"
+            className="material-symbols-outlined pointer-events-none absolute inset-y-0 left-3 flex items-center text-lg text-muted"
+          >
+            {icon}
+          </span>
+        )}
+        <input
+          id={inputId}
+          type="text"
+          role="combobox"
+          aria-expanded={showListbox}
+          aria-controls={listboxId}
+          aria-autocomplete="list"
+          autoComplete="off"
+          placeholder={placeholder}
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setIsOpen(true);
+            if (value) onChange(null);
+          }}
+          onFocus={() => setIsOpen(true)}
+          onBlur={() => setTimeout(() => setIsOpen(false), 150)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setIsOpen(false);
+            if (e.key === "Enter" && suggestions.length > 0) {
+              e.preventDefault();
+              selectSuggestion(suggestions[0]);
+            }
+          }}
+          className={`min-h-11 w-full rounded-standard border border-border-input bg-surface px-4 py-3 text-base text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus:border-zinc-100 ${icon ? "pl-10" : ""}`}
+        />
+      </div>
       {showListbox && (
         <ul
           id={listboxId}
           role="listbox"
-          className="absolute z-10 mt-1 max-h-64 w-full overflow-auto rounded-lg border border-zinc-200 bg-white shadow-lg dark:border-zinc-700 dark:bg-zinc-900"
+          className="absolute z-10 mt-1 max-h-64 w-full overflow-auto rounded-standard border border-border bg-surface ambient-shadow dark:border-zinc-700 dark:bg-zinc-900"
         >
           {suggestions.map((feature) => (
             <li key={`${feature.center[0]},${feature.center[1]}`} role="option" aria-selected={false}>
@@ -99,7 +112,7 @@ export function AddressAutocomplete({
                 type="button"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => selectSuggestion(feature)}
-                className="min-h-11 w-full px-4 py-2 text-left text-sm text-zinc-900 hover:bg-zinc-100 dark:text-zinc-50 dark:hover:bg-zinc-800"
+                className="min-h-11 w-full px-4 py-2 text-left text-sm text-foreground hover:bg-surface-low dark:text-zinc-50 dark:hover:bg-zinc-800"
               >
                 {feature.place_name}
               </button>
