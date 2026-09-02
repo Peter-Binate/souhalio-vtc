@@ -51,6 +51,20 @@ export const AIRPORT_FARES = {
   BEAUVAIS: 120,
 } as const;
 
+// Correction de la durée de trajet renvoyée par ORS (lib/ors.ts) — ORS n'utilise pas
+// de trafic temps réel (vitesses moyennes statiques par type de route) et sous-estime
+// donc surtout les trajets urbains courts (feux, congestion), tout en restant proche
+// de la réalité sur autoroute/longue distance où les vitesses sont prévisibles.
+// Calibré le 2026-09-02 par comparaison réelle ORS vs Google Maps sur 5 trajets
+// Île-de-France (voir PRPs/LP-17-verification-duree-trajet.md) : palier par distance
+// plutôt qu'une régression continue, car seulement 3 points de mesure fiables
+// (6,3 km → ×1,52 ; 10,9 km → ×1,07 ; 133 km → ×1,03). À revalider périodiquement.
+export const ROUTE_DURATION_CORRECTION = [
+  { maxDistanceKm: 8, factor: 1.5 }, // urbain court
+  { maxDistanceKm: 20, factor: 1.1 }, // banlieue / trajet mixte
+  { maxDistanceKm: Infinity, factor: 1.0 }, // autoroute / longue distance
+] as const;
+
 // Coordonnées réelles des aéroports (pas un placeholder) — utilisées pour détecter un trajet aéroport.
 export const AIRPORTS = {
   ORLY: { name: "Paris-Orly", coord: [2.3794, 48.7233] },

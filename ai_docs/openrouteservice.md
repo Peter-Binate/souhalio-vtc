@@ -108,13 +108,16 @@ export async function getDirections(
 
   const parsed = orsDirectionsSchema.parse(json);
   const feature = parsed.features[0];
+  const distanceKm = feature.properties.summary.distance / 1000;
   return {
     geometry: feature.geometry,
-    distanceKm: feature.properties.summary.distance / 1000,
-    durationMin: feature.properties.summary.duration / 60,
+    distanceKm,
+    durationMin: correctDurationMin(feature.properties.summary.duration / 60, distanceKm),
   };
 }
 ```
+
+⚠️ Voir « Limites & bonnes pratiques » ci-dessous : `correctDurationMin()` corrige un biais connu d'ORS sur les trajets urbains courts.
 
 ## Route Handler (proxy)
 
@@ -147,6 +150,7 @@ export async function POST(req: Request) {
 
 - **Quota** : le plan gratuit ORS est limité (req/min et req/jour). Le proxy protège la clé mais pas le quota — envisager un throttling léger côté client (désactiver le bouton pendant le calcul).
 - **Erreurs** : ne jamais renvoyer le message d'erreur ORS brut au client ; renvoyer un message générique.
+- **⚠️ Pas de trafic temps réel** : le profil `driving-car` utilise des vitesses moyennes statiques par type de route (OSM), sans données de trafic en direct — contrairement à Google Maps. Mesure réelle (2026-09-02, voir `PRPs/LP-17-verification-duree-trajet.md`) : ORS reste proche de Google Maps sur autoroute/longue distance (écart −3 % à −7 %), mais sous-estime fortement les trajets urbains courts (−31 % à −34 %, feux/congestion non modélisés). `getDirections()` applique donc `correctDurationMin()` (`lib/ors.ts`), un facteur par palier de distance calibré sur cette mesure et défini dans `ROUTE_DURATION_CORRECTION` (`lib/constants.ts`) : ×1,5 en dessous de 8 km, ×1,1 entre 8 et 20 km, ×1,0 au-delà. À revalider périodiquement (les vitesses moyennes OSM/ORS évoluent).
 - **Profil** : `driving-car` convient au VTC. Ne pas changer sans raison.
 
 ## Géocodage

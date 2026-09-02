@@ -165,6 +165,22 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
 
 ---
 
+## Phase 5 — Fiabilité
+
+### [x] LP-17 — Vérification & fiabilisation des estimations de durée de trajet
+
+**En tant que** visiteur, **je veux** une durée de trajet réaliste dans le simulateur, **afin de** faire confiance à l'estimation de prix affichée avant d'appeler.
+
+- **Inclus :** mesure de l'écart entre `durationMin` (ORS `driving-car`) et Google Maps sur ≥ 5 trajets réels Île-de-France représentatifs ; documentation ; correctif conditionnel (facteur calibré dans `lib/ors.ts`/`lib/constants.ts`) si l'écart est significatif et systématique.
+- **Exclus :** changement de fournisseur de routing, offre ORS payante avec trafic temps réel, révision de la grille tarifaire (`PRICING`).
+- **Critères d'acceptation :**
+  - [x] Tableau de mesures (ORS vs Google Maps) produit et documenté, avec conclusion chiffrée
+  - [x] Point d'arrêt : facteur de correction éventuel confirmé avec l'utilisateur avant application (impacte le prix affiché)
+  - [x] Si correctif : calibré sur mesure réelle, testé (`lib/ors.test.ts`), documenté (`ai_docs/openrouteservice.md`)
+- **Réf. :** `PRPs/LP-17-verification-duree-trajet.md`, `ai_docs/openrouteservice.md`
+
+---
+
 ## Backlog « nice-to-have » (non planifié)
 
 - [ ] Estimation de prix chiffrée avec vraie grille tarifaire (remplacer la grille fictive)

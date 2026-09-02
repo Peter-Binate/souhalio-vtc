@@ -1,5 +1,13 @@
 # Changelog
 
+## LP-17 — Vérification & fiabilisation des estimations de durée de trajet
+
+- **Mesure** (2026-09-02, PRP `PRPs/LP-17-verification-duree-trajet.md`) : comparaison réelle ORS (`/api/route`) vs Google Maps sur 5 trajets Île-de-France (`curl` réel, hors suite automatisée). Constat : ORS reste proche de Google Maps sur autoroute/longue distance (écart −3 % à −7 %), mais sous-estime fortement les trajets urbains courts (−31 % à −34 %) — cohérent avec l'absence de trafic temps réel dans le profil `driving-car` (vitesses moyennes statiques OSM). Deux mesures (banlieue→Paris, Paris→CDG) partiellement biaisées par des incidents temps réel ponctuels côté Google (fermeture de route, accident), non imputables à ORS.
+- **Correctif** : `lib/constants.ts` — nouvelle constante `ROUTE_DURATION_CORRECTION` (facteur par palier de distance : ×1,5 < 8 km, ×1,1 entre 8 et 20 km, ×1,0 au-delà — pas de régression continue, seulement 3 points de mesure fiables). Appliquée dans `lib/ors.ts` (`correctDurationMin()`) juste après la conversion `s → min`, donc propagée automatiquement au prix affiché (`lib/pricing.ts` consomme `durationMin`) sans modification de la formule de pricing ni de l'UI.
+- Tests : `lib/ors.test.ts` (TDD, 4 nouveaux cas couvrant les 3 paliers + la frontière à 8 km) ; `ai_docs/openrouteservice.md` mis à jour (nouvelle limite documentée dans « Limites & bonnes pratiques »).
+- Vérifié : re-test réel des 5 trajets après correctif — l'urbain court (Gare de Lyon → Gare du Nord) passe de 18,4 à 27,6 min (Google : 28 min) ; L'Haÿ-les-Roses → Orly passe de 21,5 à 23,6 min (Google : 23 min). `npm run lint`/`npm test` (45/45)/`npm run build` passent.
+- `docs/BACKLOG.md` : `LP-17` coché `[x]`.
+
 ## Fix — la carte MapLibre n'apparaît jamais (dev, Turbopack)
 
 - Cause identifiée via la console navigateur de l'utilisateur : `Failed to load module script: The server responded with a non-JavaScript MIME type of "text/html"`. `maplibre-gl` v6 déduit l'URL de son Web Worker (module ES) via `import.meta.url` au runtime ; Turbopack (`next dev`) ne la résout pas en une URL `http(s)` exploitable, Next.js répond alors avec sa page de fallback HTML, et le chargement des tuiles échoue silencieusement (aucune erreur `map.on("error")`, `style.json`/`sprite`/`tiles.json` chargent normalement mais aucune requête `.pbf` n'est jamais émise).
