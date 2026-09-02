@@ -17,10 +17,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const TITLE = "Chauffeur VTC L'Haÿ-les-Roses & Île-de-France 24h/24 | Jhon Doe";
+const DESCRIPTION =
+  "Chauffeur privé VTC à L'Haÿ-les-Roses et en Île-de-France, 24h/24 et 7j/7. Transferts aéroport à prix fixe (Orly, CDG, Beauvais), gares, affaires, province. Réservez en direct.";
+
 export const metadata: Metadata = {
-  title: "Chauffeur VTC L'Haÿ-les-Roses & Île-de-France 24h/24 | Jhon Doe",
-  description:
-    "Chauffeur privé VTC à L'Haÿ-les-Roses et en Île-de-France, 24h/24 et 7j/7. Transferts aéroport à prix fixe (Orly, CDG, Beauvais), gares, affaires, province. Réservez en direct.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
+    siteName: BUSINESS.name,
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 const localBusinessJsonLd = {

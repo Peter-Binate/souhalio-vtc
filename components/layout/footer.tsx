@@ -33,7 +33,7 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 text-xs text-zinc-500">
+        <p className="mt-10 text-xs text-zinc-400">
           © {year} {BUSINESS.name}. Tous droits réservés.
         </p>
       </div>

@@ -29,6 +29,7 @@ Fonctionnalité phare : un **simulateur d'itinéraire** (carte + estimation de p
 - Node.js ≥ 20
 - Un compte **MapTiler** (clé API, restreinte par domaine)
 - Un compte **OpenRouteService** (clé API)
+- Un compte **Formspree** (formulaire de contact, LP-14) — [formspree.io](https://formspree.io)
 
 ---
 
@@ -57,6 +58,8 @@ Voir `.env.local.example`.
 |---|---|---|
 | `NEXT_PUBLIC_MAPTILER_KEY` | **Client** (publique) | Fond de carte MapLibre + géocodage. **À restreindre par domaine** dans le dashboard MapTiler. |
 | `ORS_API_KEY` | **Serveur uniquement** | Appels OpenRouteService depuis le Route Handler. **Ne jamais préfixer `NEXT_PUBLIC_`.** |
+| `NEXT_PUBLIC_FORMSPREE_FORM_ID` | **Client** (publique) | Formulaire de contact (LP-14) — endpoint public Formspree, posté directement depuis le navigateur. |
+| `NEXT_PUBLIC_SITE_URL` | **Client** (publique) | URL canonique du site (LP-15) — `metadataBase`, OpenGraph, `robots.txt`, `sitemap.xml`. À remplacer par le vrai domaine avant mise en production. |
 
 > 🔒 La clé ORS ne doit **jamais** transiter côté navigateur. Tout appel ORS passe par `app/api/route`.
 

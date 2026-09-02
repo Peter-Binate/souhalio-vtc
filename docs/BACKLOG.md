@@ -63,48 +63,48 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
 
 ## Phase 2 — Simulateur d'itinéraire
 
-### [ ] LP-04 — Proxy OpenRouteService (Route Handler)
+### [x] LP-04 — Proxy OpenRouteService (Route Handler)
 
 **En tant que** front-end, **je veux** un endpoint interne qui calcule un itinéraire, **afin de** garder la clé ORS secrète.
 
 - **Inclus :** `app/api/route/route.ts`, `lib/ors.ts`, schémas Zod (`schemas/itinerary.ts`), instance `ky` serveur.
 - **Critères d'acceptation :**
-  - [ ] `POST /api/route` renvoie `{ geometry, distanceKm, durationMin }` pour des coordonnées valides
-  - [ ] Entrée invalide → 400 ; échec ORS → 502 avec message générique (jamais l'erreur brute)
-  - [ ] `ORS_API_KEY` utilisée uniquement côté serveur (absente du bundle client)
+  - [x] `POST /api/route` renvoie `{ geometry, distanceKm, durationMin }` pour des coordonnées valides
+  - [x] Entrée invalide → 400 ; échec ORS → 502 avec message générique (jamais l'erreur brute)
+  - [x] `ORS_API_KEY` utilisée uniquement côté serveur (absente du bundle client)
 - **Réf. :** `ai_docs/openrouteservice.md`, `ai_docs/patterns.md`, `ai_docs/testing.md`
 
-### [ ] LP-05 — Logique de tarification
+### [x] LP-05 — Logique de tarification
 
 **En tant que** visiteur, **je veux** une estimation de prix, **afin de** connaître un ordre de grandeur avant d'appeler.
 
 - **Inclus :** `lib/pricing.ts` (`estimatePrice`), override tarif fixe aéroport, majoration nuit/férié. **TDD.**
 - **Exclus :** l'UI (ticket LP-07).
 - **Critères d'acceptation :**
-  - [ ] Table de cas limites écrite avant le code (min de course, majoration, arrondi)
-  - [ ] Trajet aéroport (Orly/CDG/Beauvais depuis Paris/proche banlieue) → tarif fixe prioritaire
+  - [x] Table de cas limites écrite avant le code (min de course, majoration, arrondi)
+  - [x] Trajet aéroport (Orly/CDG/Beauvais depuis Paris/proche banlieue) → tarif fixe prioritaire
 - **Réf. :** `ai_docs/itinerary-feature.md`, `ai_docs/testing.md`
 
-### [ ] LP-06 — Carte MapLibre & géocodage MapTiler
+### [x] LP-06 — Carte MapLibre & géocodage MapTiler
 
 **En tant que** visiteur, **je veux** saisir des adresses et voir le tracé sur une carte, **afin de** visualiser mon trajet.
 
 - **Inclus :** `components/itinerary/{route-map-loader,route-map,address-autocomplete}.tsx`, `lib/maptiler.ts` (géocodage debouncé).
 - **Critères d'acceptation :**
-  - [ ] Carte rendue en client-only (`dynamic ssr:false` + CSS), aucun crash SSR
-  - [ ] Autocomplétion FR biaisée Île-de-France, ≥ 3 caractères, debounce ~300 ms
-  - [ ] Tracé GeoJSON affiché avec `fitBounds` ; ordre `[lon, lat]` respecté
+  - [x] Carte rendue en client-only (`dynamic ssr:false` + CSS), aucun crash SSR
+  - [x] Autocomplétion FR biaisée Île-de-France, ≥ 3 caractères, debounce ~300 ms
+  - [x] Tracé GeoJSON affiché avec `fitBounds` ; ordre `[lon, lat]` respecté
 - **Réf. :** `ai_docs/maplibre-maptiler.md`, `ai_docs/patterns.md`
 
-### [ ] LP-07 — Section Hero + assemblage du simulateur
+### [x] LP-07 — Section Hero + assemblage du simulateur
 
 **En tant que** visiteur, **je veux** un hero qui accroche et un simulateur fonctionnel, **afin d'**être incité à réserver.
 
 - **Inclus :** `components/sections/hero-itinerary.tsx`, `components/itinerary/{itinerary-simulator,price-estimate}.tsx`, hook `useRoute` (TanStack Query).
 - **Critères d'acceptation :**
-  - [ ] Bouton « Calculer » désactivé tant que les 2 points ne sont pas résolus ; spinner sur `isPending`
-  - [ ] Panneau « Distance · Durée · Estimation » + mention « estimation indicative » + CTA appel/WhatsApp
-  - [ ] Sur erreur → message générique + repli sur CTA téléphone
+  - [x] Bouton « Calculer » désactivé tant que les 2 points ne sont pas résolus ; spinner sur `isPending`
+  - [x] Panneau « Distance · Durée · Estimation » + mention « estimation indicative » + CTA appel/WhatsApp
+  - [x] Sur erreur → message générique + repli sur CTA téléphone
 - **Réf. :** `ai_docs/itinerary-feature.md`, `wording.md`
 
 ---
@@ -113,54 +113,54 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
 
 > Toutes ces sections sont des Server Components statiques, textes issus de `wording.md`, chacune terminée par un CTA. Réf. commune : `ai_docs/content-reference.md`.
 
-### [ ] LP-08 — Tarifs aéroports (prix fixes)
+### [x] LP-08 — Tarifs aéroports (prix fixes)
 
-- [ ] Tableau Orly 50 € / CDG 65 € / Beauvais 120 € + mention « départ Paris & proche banlieue » + CTA
+- [x] Tableau Orly 50 € / CDG 65 € / Beauvais 120 € + mention « départ Paris & proche banlieue » + CTA
 
-### [ ] LP-09 — Réserver en direct (engagements)
+### [x] LP-09 — Réserver en direct (engagements)
 
-- [ ] 5 avantages (tarif stable, interlocuteur unique, ponctualité, 24/7, véhicule dédié) + CTA appel
+- [x] 5 avantages (tarif stable, interlocuteur unique, ponctualité, 24/7, véhicule dédié) + CTA appel
 
-### [ ] LP-10 — Services
+### [x] LP-10 — Services
 
-- [ ] Grille de services par segment (immédiat/anticipé, aéroports, gares, affaires, province, 24/7) + CTA
+- [x] Grille de services par segment (immédiat/anticipé, aéroports, gares, affaires, province, 24/7) + CTA
 
-### [ ] LP-11 — Zones & gares desservies
+### [x] LP-11 — Zones & gares desservies
 
-- [ ] Base L'Haÿ-les-Roses (94), IDF + province, liste des gares ; wording SEO local + CTA
+- [x] Base L'Haÿ-les-Roses (94), IDF + province, liste des gares ; wording SEO local + CTA
 
-### [ ] LP-12 — À propos & véhicule
+### [x] LP-12 — À propos & véhicule
 
-- [ ] 4 ans d'expérience, Kia Niro hybride gris foncé, paiement espèces, langue français + CTA
+- [x] 4 ans d'expérience, Kia Niro hybride gris foncé, paiement espèces, langue français + CTA
 
-### [ ] LP-13 — Avis clients
+### [x] LP-13 — Avis clients
 
-- [ ] Avis **fictifs** balisés depuis `REVIEWS` (`lib/constants.ts`) ; emplacement prévu pour lien Google + CTA
+- [x] Avis **fictifs** balisés depuis `REVIEWS` (`lib/constants.ts`) ; emplacement prévu pour lien Google + CTA
 
-### [ ] LP-14 — Contact & formulaire (RGPD)
+### [x] LP-14 — Contact & formulaire (RGPD)
 
 **En tant que** visiteur, **je veux** un moyen de contact clair, **afin de** réserver.
 
 - **Inclus :** `components/sections/contact.tsx`, formulaire (react-hook-form + `zodResolver`), coordonnées, horaires.
 - **Critères d'acceptation :**
-  - [ ] Téléphone (prioritaire), WhatsApp, email, horaires 24/7
-  - [ ] Formulaire validé par Zod ; **RGPD** : pas de persistance de PII, mention de consentement/traitement
-  - [ ] Cible du formulaire documentée (mailto ou service tiers) — pas de back-end
+  - [x] Téléphone (prioritaire), WhatsApp, email, horaires 24/7
+  - [x] Formulaire validé par Zod ; **RGPD** : pas de persistance de PII, mention de consentement/traitement
+  - [x] Cible du formulaire documentée (mailto ou service tiers) — pas de back-end
 - **Réf. :** `ai_docs/content-reference.md`, `ai_docs/patterns.md`
 
 ---
 
 ## Phase 4 — Conversion, SEO & finitions
 
-### [ ] LP-15 — SEO & données structurées (audit final)
+### [x] LP-15 — SEO & données structurées (audit final)
 
-- [ ] `<title>`/description, JSON-LD `LocalBusiness` complet, `alt` images véhicule, OpenGraph, `robots`/`sitemap`
+- [x] `<title>`/description, JSON-LD `LocalBusiness` complet, `alt` images véhicule, OpenGraph, `robots`/`sitemap`
 - **Réf. :** `ai_docs/content-reference.md`
 
-### [ ] LP-16 — Audit responsive, accessibilité & performance
+### [x] LP-16 — Audit responsive, accessibilité & performance
 
-- [ ] Passe mobile (≤ 380px), contrastes AA, focus visibles, la carte ne piège pas le scroll mobile
-- [ ] Lighthouse (perf/a11y/SEO) relevé et écarts traités ou consignés
+- [x] Passe mobile (≤ 380px), contrastes AA, focus visibles, la carte ne piège pas le scroll mobile
+- [x] Lighthouse (perf/a11y/SEO) relevé et écarts traités ou consignés
 - **Réf. :** `ai_docs/testing.md`
 
 ---

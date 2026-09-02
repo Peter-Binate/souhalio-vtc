@@ -51,6 +51,13 @@ export const AIRPORT_FARES = {
   BEAUVAIS: 120,
 } as const;
 
+// Coordonnées réelles des aéroports (pas un placeholder) — utilisées pour détecter un trajet aéroport.
+export const AIRPORTS = {
+  ORLY: { name: "Paris-Orly", coord: [2.3794, 48.7233] },
+  CDG: { name: "Paris-Charles de Gaulle (Roissy)", coord: [2.5479, 49.0097] },
+  BEAUVAIS: { name: "Paris-Beauvais", coord: [2.1128, 49.4544] },
+} as const;
+
 // Helpers CTA — normalisent un numéro brut en lien tel:/wa.me exploitable.
 export const telHref = (raw: string) => `tel:${raw.replace(/[^\d+]/g, "")}`;
 export const waHref = (raw: string) =>
