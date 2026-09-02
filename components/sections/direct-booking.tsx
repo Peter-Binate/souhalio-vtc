@@ -76,7 +76,7 @@ export function DirectBooking() {
               <>
                 <span
                   aria-hidden="true"
-                  className="material-symbols-outlined hidden rounded-full bg-surface-low p-4 text-4xl text-primary md:block dark:bg-zinc-900 dark:text-zinc-50"
+                  className="material-symbols-outlined hidden rounded-full bg-surface-low p-4 text-4xl! text-primary md:block dark:bg-zinc-900 dark:text-zinc-50"
                 >
                   {advantage.icon}
                 </span>
@@ -91,7 +91,7 @@ export function DirectBooking() {
               <>
                 <span
                   aria-hidden="true"
-                  className={`material-symbols-outlined mb-4 block text-3xl ${advantage.dark ? "text-accent" : "text-primary dark:text-zinc-50"}`}
+                  className={`material-symbols-outlined mb-4 block text-3xl! ${advantage.dark ? "text-accent" : "text-primary dark:text-zinc-50"}`}
                 >
                   {advantage.icon}
                 </span>
@@ -112,7 +112,7 @@ export function DirectBooking() {
           href={telHref(BUSINESS.phone)}
           className="inline-flex min-h-11 items-center gap-2 rounded-standard bg-primary px-6 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
-          <span aria-hidden="true" className="material-symbols-outlined text-base">
+          <span aria-hidden="true" className="material-symbols-outlined text-base!">
             call
           </span>
           Appelez maintenant pour réserver — {BUSINESS.phone}

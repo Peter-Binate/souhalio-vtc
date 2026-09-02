@@ -46,7 +46,7 @@ export function PriceEstimate({
           href={telHref(BUSINESS.phone)}
           className="inline-flex min-h-11 items-center justify-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
-          <span aria-hidden="true" className="material-symbols-outlined text-base">
+          <span aria-hidden="true" className="material-symbols-outlined text-base!">
             call
           </span>
           Appeler pour réserver — {BUSINESS.phone}
@@ -55,7 +55,7 @@ export function PriceEstimate({
           href={waHref(BUSINESS.whatsapp)}
           className="inline-flex min-h-11 items-center justify-center gap-2 rounded-standard border border-border-input px-5 text-xs font-semibold tracking-widest text-primary uppercase transition-colors hover:bg-surface dark:border-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-800"
         >
-          <span aria-hidden="true" className="material-symbols-outlined text-base">
+          <span aria-hidden="true" className="material-symbols-outlined text-base!">
             chat
           </span>
           Réserver par WhatsApp

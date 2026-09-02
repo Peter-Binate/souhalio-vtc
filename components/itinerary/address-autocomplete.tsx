@@ -68,9 +68,9 @@ export function AddressAutocomplete({
         {icon && (
           <span
             aria-hidden="true"
-            className="material-symbols-outlined pointer-events-none absolute inset-y-0 left-3 flex items-center text-lg text-muted"
+            className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-lg text-muted"
           >
-            {icon}
+            <span className="material-symbols-outlined text-lg!">{icon}</span>
           </span>
         )}
         <input

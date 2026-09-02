@@ -98,7 +98,7 @@ export function ItinerarySimulator() {
             href={telHref(BUSINESS.phone)}
             className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
-            <span aria-hidden="true" className="material-symbols-outlined text-base">
+            <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
             Appeler pour réserver — {BUSINESS.phone}

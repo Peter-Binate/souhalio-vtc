@@ -21,7 +21,7 @@ export function Footer() {
             href={telHref(BUSINESS.phone)}
             className="inline-flex min-h-11 items-center gap-2 rounded-standard bg-accent px-5 text-xs font-semibold tracking-widest text-primary uppercase transition-colors hover:opacity-90"
           >
-            <span aria-hidden="true" className="material-symbols-outlined text-base">
+            <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
             Appeler : {BUSINESS.phone}
@@ -30,7 +30,7 @@ export function Footer() {
             href={waHref(BUSINESS.whatsapp)}
             className="inline-flex min-h-11 items-center gap-2 rounded-standard border border-zinc-600 px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-zinc-800"
           >
-            <span aria-hidden="true" className="material-symbols-outlined text-base">
+            <span aria-hidden="true" className="material-symbols-outlined text-base!">
               chat
             </span>
             WhatsApp : {BUSINESS.whatsapp}

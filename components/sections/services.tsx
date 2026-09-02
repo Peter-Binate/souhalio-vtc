@@ -53,9 +53,9 @@ export function Services() {
             <li key={service.title} className="group flex flex-col gap-4">
               <span
                 aria-hidden="true"
-                className="material-symbols-outlined flex h-12 w-12 items-center justify-center rounded-standard bg-surface-low text-primary transition-colors group-hover:bg-primary group-hover:text-white dark:bg-zinc-900 dark:text-zinc-50"
+                className="flex h-12 w-12 items-center justify-center rounded-standard bg-surface-low text-primary transition-colors group-hover:bg-primary group-hover:text-white dark:bg-zinc-900 dark:text-zinc-50"
               >
-                {service.icon}
+                <span className="material-symbols-outlined">{service.icon}</span>
               </span>
               <strong className="font-headline text-lg font-bold text-primary dark:text-zinc-50">
                 {service.title}
@@ -70,7 +70,7 @@ export function Services() {
             href={telHref(BUSINESS.phone)}
             className="inline-flex min-h-11 items-center gap-2 rounded-standard bg-primary px-6 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
-            <span aria-hidden="true" className="material-symbols-outlined text-base">
+            <span aria-hidden="true" className="material-symbols-outlined text-base!">
               call
             </span>
             Un trajet en tête ? Appelez le {BUSINESS.phone}

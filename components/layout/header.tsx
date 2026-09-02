@@ -29,7 +29,7 @@ export function Header() {
           href={telHref(BUSINESS.phone)}
           className="hidden min-h-11 items-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight sm:inline-flex dark:bg-white dark:text-zinc-900"
         >
-          <span aria-hidden="true" className="material-symbols-outlined text-base">
+          <span aria-hidden="true" className="material-symbols-outlined text-base!">
             call
           </span>
           Appeler

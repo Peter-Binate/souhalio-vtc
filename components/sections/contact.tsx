@@ -136,9 +136,9 @@ export function Contact() {
               >
                 <span
                   aria-hidden="true"
-                  className={`material-symbols-outlined flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${channel.iconBg}`}
+                  className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${channel.iconBg}`}
                 >
-                  {channel.icon}
+                  <span className="material-symbols-outlined">{channel.icon}</span>
                 </span>
                 <span>
                   <span className="block text-xs font-semibold tracking-widest text-muted uppercase dark:text-zinc-400">
@@ -272,7 +272,7 @@ export function Contact() {
                   href={telHref(BUSINESS.phone)}
                   className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-standard bg-primary px-5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
                 >
-                  <span aria-hidden="true" className="material-symbols-outlined text-base">
+                  <span aria-hidden="true" className="material-symbols-outlined text-base!">
                     call
                   </span>
                   Appeler pour réserver — {BUSINESS.phone}

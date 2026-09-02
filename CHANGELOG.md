@@ -1,5 +1,16 @@
 # Changelog
 
+## Fix — alignement/taille des icônes (suite LP-18)
+
+- **Cause** : le package `material-symbols/outlined.css` déclare `.material-symbols-outlined` (`display: inline-block`, `font-size: 24px`, etc.) **hors `@layer`**, alors que toutes les classes Tailwind (`flex`, `text-base`, `text-lg`, `text-3xl`, `text-4xl`, `text-[120px]`…) vivent dans `@layer utilities`. Par construction CSS, une règle hors `@layer` gagne **toujours** face à une règle dans un layer, quel que soit l'ordre d'import — donc chaque fois qu'une classe de taille/alignement était posée sur le **même élément** que `material-symbols-outlined`, elle était silencieusement ignorée.
+- **Symptôme repéré par l'utilisateur** : icônes mal alignées dans `services.tsx` et `contact.tsx` (le conteneur `flex items-center justify-center` portait aussi la classe `material-symbols-outlined`, donc `display:flex` perdait face à `display:inline-block`).
+- **Portée réelle du bug** (trouvée en creusant) : au-delà de l'alignement, **toutes** les tailles d'icônes personnalisées (`text-base`, `text-lg`, `text-3xl`, `text-4xl`, `text-[120px]`) du restylage LP-18 étaient inopérantes — chaque icône retombait au 24px par défaut du package, y compris la grande icône décorative de `airport-pricing.tsx` censée faire 120px.
+- **Correctif** :
+  - `services.tsx` / `contact.tsx` (icônes dans une boîte `flex` centrée) : séparation en deux éléments — le conteneur garde `flex items-center justify-center` + les styles de boîte, l'icône (`material-symbols-outlined`, sans autre classe) vit dans un `<span>` imbriqué, qui n'entre donc plus en collision.
+  - Partout ailleurs (icônes avec une taille custom sans conflit de `display`) : ajout du modifier Tailwind v4 `!` sur la classe de taille (ex. `text-base!`, `text-lg!`, `text-3xl!`, `text-4xl!`, `text-[120px]!`) — une déclaration `!important`, même dans un `@layer`, regagne la priorité face à une règle non importante hors `@layer`.
+  - Fichiers concernés : `header.tsx`, `footer.tsx`, `sticky-call-button.tsx`, `hero-itinerary.tsx`, `airport-pricing.tsx`, `direct-booking.tsx`, `about.tsx`, `zones.tsx`, `reviews.tsx`, `contact.tsx`, `services.tsx`, `price-estimate.tsx`, `itinerary-simulator.tsx`, `address-autocomplete.tsx`.
+- Vérifié : `npm run lint`/`npm test` (45/45)/`npm run build` passent ; tailles calculées confirmées dans le navigateur (`text-base!` → 16px, `text-lg!` → 18px, `text-[120px]!` → 120px, contre 24px partout avant le correctif) ; rendu visuel des sections Services et Contact confirmé aligné.
+
 ## LP-18 — Intégration CSS de la maquette Stitch « Midnight Elite »
 
 - Restylage CSS/Tailwind intégral de toutes les sections (header, hero+simulateur, tarifs aéroport, « Pourquoi nous choisir » en grille bento, services, à propos, zones, avis, contact, footer, bouton d'appel flottant) d'après l'export exact `stitch_plateforme_vtc_professionnelle/code.html` + `DESIGN.md` — **aucune logique métier touchée** (confirmé : `lib/`, `schemas/`, `app/api/` inchangés, `npm test` 45/45 sans modification).

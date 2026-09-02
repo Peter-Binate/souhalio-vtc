@@ -29,7 +29,7 @@ export function AirportPricing() {
         <div className="relative overflow-hidden rounded-card border border-border bg-surface p-8 ambient-shadow dark:border-zinc-800 dark:bg-zinc-950">
           <span
             aria-hidden="true"
-            className="material-symbols-outlined pointer-events-none absolute top-0 right-0 p-6 text-[120px] text-primary opacity-10 dark:text-zinc-50"
+            className="material-symbols-outlined pointer-events-none absolute top-0 right-0 p-6 text-[120px]! text-primary opacity-10 dark:text-zinc-50"
           >
             flight_takeoff
           </span>
@@ -91,7 +91,7 @@ export function AirportPricing() {
               href={telHref(BUSINESS.phone)}
               className="inline-flex min-h-11 items-center gap-2 rounded-standard bg-accent px-8 py-4 text-xs font-semibold tracking-widest text-primary uppercase transition-colors hover:opacity-90"
             >
-              <span aria-hidden="true" className="material-symbols-outlined text-base">
+              <span aria-hidden="true" className="material-symbols-outlined text-base!">
                 call
               </span>
               Réservez votre transfert aéroport — {BUSINESS.phone}
