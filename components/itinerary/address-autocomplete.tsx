@@ -97,7 +97,7 @@ export function AddressAutocomplete({
               selectSuggestion(suggestions[0]);
             }
           }}
-          className={`min-h-11 w-full rounded-standard border border-border-input bg-surface px-4 py-3 text-base text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus:border-zinc-100 ${icon ? "pl-10" : ""}`}
+          className={`min-h-10 sm:min-h-11 w-full rounded-standard border border-border-input bg-surface px-4 py-2.5 text-sm sm:text-base text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus:border-zinc-100 ${icon ? "pl-10" : ""}`}
         />
       </div>
       {showListbox && (

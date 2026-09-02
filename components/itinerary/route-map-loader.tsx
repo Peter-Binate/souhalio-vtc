@@ -8,7 +8,7 @@ export const RouteMap = dynamic(() => import("./route-map"), {
     <div
       role="status"
       aria-label="Chargement de la carte"
-      className="h-[360px] w-full animate-pulse rounded-lg bg-zinc-200 dark:bg-zinc-800"
+      className="h-[180px] w-full animate-pulse rounded-lg bg-zinc-200 sm:h-[195px] dark:bg-zinc-800"
     />
   ),
 });

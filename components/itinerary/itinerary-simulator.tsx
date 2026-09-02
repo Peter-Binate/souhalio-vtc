@@ -26,9 +26,9 @@ export function ItinerarySimulator() {
       : null;
 
   return (
-    <div className="rounded-card border border-border bg-surface p-6 ambient-shadow md:p-8 dark:border-zinc-800 dark:bg-zinc-950">
-      <div className="mb-6 flex items-center justify-between">
-        <h2 className="font-headline text-xl font-semibold text-primary dark:text-zinc-50">
+    <div className="rounded-card border border-border bg-surface p-4 sm:p-5 ambient-shadow md:p-6 dark:border-zinc-800 dark:bg-zinc-950">
+      <div className="mb-2.5 flex items-center justify-between">
+        <h2 className="font-headline text-lg font-semibold text-primary sm:text-xl dark:text-zinc-50">
           Estimer un trajet
         </h2>
         <span aria-hidden="true" className="material-symbols-outlined text-muted">
@@ -36,14 +36,14 @@ export function ItinerarySimulator() {
         </span>
       </div>
 
-      <p className="mb-4 text-sm text-muted dark:text-zinc-400">
+      <p className="mb-3 text-xs leading-relaxed text-muted sm:text-sm dark:text-zinc-400">
         Indiquez votre point de départ et votre destination : l&apos;itinéraire, la distance et
         la durée s&apos;affichent instantanément. Pour un transfert aéroport, le tarif est fixe
         et connu d&apos;avance. Pour tout autre trajet, confirmez votre tarif en un appel — sans
         engagement.
       </p>
 
-      <div className="space-y-4">
+      <div className="space-y-2.5">
         <AddressAutocomplete
           label="Départ"
           placeholder="Adresse de départ"
@@ -70,7 +70,7 @@ export function ItinerarySimulator() {
         type="button"
         onClick={handleCalculate}
         disabled={!canCalculate || isPending}
-        className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-standard bg-primary px-5 py-4 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+        className="mt-2.5 flex min-h-10 w-full items-center justify-center gap-2 rounded-standard bg-primary px-5 py-2.5 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight disabled:cursor-not-allowed disabled:opacity-50 sm:min-h-11 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
       >
         {isPending && (
           <span
@@ -81,7 +81,7 @@ export function ItinerarySimulator() {
         {isPending ? "Calcul en cours…" : "Calculer l'itinéraire"}
       </button>
 
-      <div className="mt-4 overflow-hidden rounded-card">
+      <div className="mt-2.5 overflow-hidden rounded-card">
         <RouteMap route={data?.geometry ?? null} />
       </div>
 
