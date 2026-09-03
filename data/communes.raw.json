@@ -1,0 +1,5085 @@
+[
+  {
+    "nom": "Paris",
+    "code": "75056",
+    "codesPostaux": [
+      "75001",
+      "75002",
+      "75003",
+      "75004",
+      "75005",
+      "75006",
+      "75007",
+      "75008",
+      "75009",
+      "75010",
+      "75011",
+      "75012",
+      "75013",
+      "75014",
+      "75015",
+      "75016",
+      "75017",
+      "75018",
+      "75019",
+      "75020",
+      "75116"
+    ],
+    "population": 2103778,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.347,
+        48.8589
+      ]
+    },
+    "departement": {
+      "code": "75",
+      "nom": "Paris"
+    }
+  },
+  {
+    "nom": "Avon",
+    "code": "77014",
+    "codesPostaux": [
+      "77210"
+    ],
+    "population": 13651,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7337,
+        48.4124
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Brie-Comte-Robert",
+    "code": "77053",
+    "codesPostaux": [
+      "77170"
+    ],
+    "population": 19003,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6131,
+        48.6904
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Bussy-Saint-Georges",
+    "code": "77058",
+    "codesPostaux": [
+      "77600"
+    ],
+    "population": 27498,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7091,
+        48.8297
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Cesson",
+    "code": "77067",
+    "codesPostaux": [
+      "77240"
+    ],
+    "population": 11222,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5898,
+        48.5693
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Champs-sur-Marne",
+    "code": "77083",
+    "codesPostaux": [
+      "77420"
+    ],
+    "population": 27451,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.594,
+        48.8485
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Chelles",
+    "code": "77108",
+    "codesPostaux": [
+      "77500"
+    ],
+    "population": 54620,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5954,
+        48.8845
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Claye-Souilly",
+    "code": "77118",
+    "codesPostaux": [
+      "77410"
+    ],
+    "population": 13353,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.68,
+        48.941
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Combs-la-Ville",
+    "code": "77122",
+    "codesPostaux": [
+      "77380"
+    ],
+    "population": 23350,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5765,
+        48.6602
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Coulommiers",
+    "code": "77131",
+    "codesPostaux": [
+      "77120"
+    ],
+    "population": 16374,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        3.0918,
+        48.8096
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Dammarie-les-Lys",
+    "code": "77152",
+    "codesPostaux": [
+      "77190"
+    ],
+    "population": 23559,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6199,
+        48.5147
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Dammartin-en-Goële",
+    "code": "77153",
+    "codesPostaux": [
+      "77230"
+    ],
+    "population": 11907,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6777,
+        49.0504
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "La Ferté-sous-Jouarre",
+    "code": "77183",
+    "codesPostaux": [
+      "77260"
+    ],
+    "population": 10254,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        3.1349,
+        48.9562
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Fontainebleau",
+    "code": "77186",
+    "codesPostaux": [
+      "77300"
+    ],
+    "population": 15583,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6817,
+        48.4236
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Lagny-sur-Marne",
+    "code": "77243",
+    "codesPostaux": [
+      "77400"
+    ],
+    "population": 21461,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7045,
+        48.8716
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Lieusaint",
+    "code": "77251",
+    "codesPostaux": [
+      "77127"
+    ],
+    "population": 14017,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.549,
+        48.6277
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Lognes",
+    "code": "77258",
+    "codesPostaux": [
+      "77185"
+    ],
+    "population": 15074,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6366,
+        48.8325
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Meaux",
+    "code": "77284",
+    "codesPostaux": [
+      "77100"
+    ],
+    "population": 56905,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.9035,
+        48.9573
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Le Mée-sur-Seine",
+    "code": "77285",
+    "codesPostaux": [
+      "77350"
+    ],
+    "population": 19527,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6301,
+        48.5401
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Melun",
+    "code": "77288",
+    "codesPostaux": [
+      "77000"
+    ],
+    "population": 45995,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6552,
+        48.5421
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Mitry-Mory",
+    "code": "77294",
+    "codesPostaux": [
+      "77290"
+    ],
+    "population": 20456,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6116,
+        48.9796
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Moissy-Cramayel",
+    "code": "77296",
+    "codesPostaux": [
+      "77550"
+    ],
+    "population": 18511,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5958,
+        48.6247
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Montereau-Fault-Yonne",
+    "code": "77305",
+    "codesPostaux": [
+      "77130"
+    ],
+    "population": 22279,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.962,
+        48.3887
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Montévrain",
+    "code": "77307",
+    "codesPostaux": [
+      "77144"
+    ],
+    "population": 15687,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7511,
+        48.8673
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Moret-Loing-et-Orvanne",
+    "code": "77316",
+    "codesPostaux": [
+      "77250"
+    ],
+    "population": 12810,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.8233,
+        48.3545
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Nemours",
+    "code": "77333",
+    "codesPostaux": [
+      "77140"
+    ],
+    "population": 12889,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7187,
+        48.2633
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Noisiel",
+    "code": "77337",
+    "codesPostaux": [
+      "77186"
+    ],
+    "population": 16053,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6187,
+        48.8461
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Ozoir-la-Ferrière",
+    "code": "77350",
+    "codesPostaux": [
+      "77330"
+    ],
+    "population": 21238,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6753,
+        48.7631
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Pontault-Combault",
+    "code": "77373",
+    "codesPostaux": [
+      "77340"
+    ],
+    "population": 39096,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6173,
+        48.7885
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Provins",
+    "code": "77379",
+    "codesPostaux": [
+      "77160"
+    ],
+    "population": 11632,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        3.2845,
+        48.5629
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Roissy-en-Brie",
+    "code": "77390",
+    "codesPostaux": [
+      "77680"
+    ],
+    "population": 23229,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6647,
+        48.7913
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Saint-Fargeau-Ponthierry",
+    "code": "77407",
+    "codesPostaux": [
+      "77310"
+    ],
+    "population": 15724,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5291,
+        48.541
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Savigny-le-Temple",
+    "code": "77445",
+    "codesPostaux": [
+      "77176"
+    ],
+    "population": 31148,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5759,
+        48.5846
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Serris",
+    "code": "77449",
+    "codesPostaux": [
+      "77700"
+    ],
+    "population": 10326,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7873,
+        48.8453
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Thorigny-sur-Marne",
+    "code": "77464",
+    "codesPostaux": [
+      "77400"
+    ],
+    "population": 10440,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.7117,
+        48.8928
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Torcy",
+    "code": "77468",
+    "codesPostaux": [
+      "77200"
+    ],
+    "population": 22810,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6476,
+        48.8534
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Vaires-sur-Marne",
+    "code": "77479",
+    "codesPostaux": [
+      "77360"
+    ],
+    "population": 13931,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6332,
+        48.8703
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Vaux-le-Pénil",
+    "code": "77487",
+    "codesPostaux": [
+      "77000"
+    ],
+    "population": 11474,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6985,
+        48.5242
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Villeparisis",
+    "code": "77514",
+    "codesPostaux": [
+      "77270"
+    ],
+    "population": 26946,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.6178,
+        48.9408
+      ]
+    },
+    "departement": {
+      "code": "77",
+      "nom": "Seine-et-Marne"
+    }
+  },
+  {
+    "nom": "Achères",
+    "code": "78005",
+    "codesPostaux": [
+      "78260"
+    ],
+    "population": 22241,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1095,
+        48.9817
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Andrésy",
+    "code": "78015",
+    "codesPostaux": [
+      "78570"
+    ],
+    "population": 13834,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0496,
+        48.9778
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Aubergenville",
+    "code": "78029",
+    "codesPostaux": [
+      "78410"
+    ],
+    "population": 12723,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.844,
+        48.9609
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Bois-d'Arcy",
+    "code": "78073",
+    "codesPostaux": [
+      "78390"
+    ],
+    "population": 16586,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0223,
+        48.806
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Carrières-sous-Poissy",
+    "code": "78123",
+    "codesPostaux": [
+      "78955"
+    ],
+    "population": 20825,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0264,
+        48.9469
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Carrières-sur-Seine",
+    "code": "78124",
+    "codesPostaux": [
+      "78420"
+    ],
+    "population": 14791,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1812,
+        48.9128
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "La Celle-Saint-Cloud",
+    "code": "78126",
+    "codesPostaux": [
+      "78170"
+    ],
+    "population": 20460,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1342,
+        48.8498
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Chanteloup-les-Vignes",
+    "code": "78138",
+    "codesPostaux": [
+      "78570"
+    ],
+    "population": 10861,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0336,
+        48.9773
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Chatou",
+    "code": "78146",
+    "codesPostaux": [
+      "78400"
+    ],
+    "population": 30598,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1502,
+        48.8964
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Le Chesnay-Rocquencourt",
+    "code": "78158",
+    "codesPostaux": [
+      "78150"
+    ],
+    "population": 30689,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1188,
+        48.8285
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Les Clayes-sous-Bois",
+    "code": "78165",
+    "codesPostaux": [
+      "78340"
+    ],
+    "population": 16804,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.9835,
+        48.8168
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Conflans-Sainte-Honorine",
+    "code": "78172",
+    "codesPostaux": [
+      "78700"
+    ],
+    "population": 36958,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0992,
+        49.0016
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Croissy-sur-Seine",
+    "code": "78190",
+    "codesPostaux": [
+      "78290"
+    ],
+    "population": 11013,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1342,
+        48.8805
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Élancourt",
+    "code": "78208",
+    "codesPostaux": [
+      "78990"
+    ],
+    "population": 26365,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.9612,
+        48.7771
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Fontenay-le-Fleury",
+    "code": "78242",
+    "codesPostaux": [
+      "78330"
+    ],
+    "population": 13680,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0477,
+        48.8169
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Guyancourt",
+    "code": "78297",
+    "codesPostaux": [
+      "78280"
+    ],
+    "population": 29778,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0745,
+        48.7735
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Houilles",
+    "code": "78311",
+    "codesPostaux": [
+      "78800"
+    ],
+    "population": 33983,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1866,
+        48.9266
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Limay",
+    "code": "78335",
+    "codesPostaux": [
+      "78520"
+    ],
+    "population": 17885,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.7367,
+        48.9911
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Maisons-Laffitte",
+    "code": "78358",
+    "codesPostaux": [
+      "78600"
+    ],
+    "population": 23093,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1533,
+        48.9503
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Mantes-la-Jolie",
+    "code": "78361",
+    "codesPostaux": [
+      "78200"
+    ],
+    "population": 43526,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.6918,
+        48.9961
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Mantes-la-Ville",
+    "code": "78362",
+    "codesPostaux": [
+      "78711"
+    ],
+    "population": 22332,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.7103,
+        48.9752
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Marly-le-Roi",
+    "code": "78372",
+    "codesPostaux": [
+      "78160"
+    ],
+    "population": 16756,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0892,
+        48.866
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Maurepas",
+    "code": "78383",
+    "codesPostaux": [
+      "78310"
+    ],
+    "population": 20629,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.925,
+        48.7712
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Montesson",
+    "code": "78418",
+    "codesPostaux": [
+      "78360"
+    ],
+    "population": 14549,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1381,
+        48.919
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Montigny-le-Bretonneux",
+    "code": "78423",
+    "codesPostaux": [
+      "78180"
+    ],
+    "population": 32465,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0252,
+        48.7776
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Les Mureaux",
+    "code": "78440",
+    "codesPostaux": [
+      "78130"
+    ],
+    "population": 34632,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.911,
+        48.9877
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Le Pecq",
+    "code": "78481",
+    "codesPostaux": [
+      "78230"
+    ],
+    "population": 16059,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1022,
+        48.8924
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Plaisir",
+    "code": "78490",
+    "codesPostaux": [
+      "78370"
+    ],
+    "population": 31811,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.9483,
+        48.8129
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Poissy",
+    "code": "78498",
+    "codesPostaux": [
+      "78300"
+    ],
+    "population": 40983,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.025,
+        48.9241
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Rambouillet",
+    "code": "78517",
+    "codesPostaux": [
+      "78120"
+    ],
+    "population": 27724,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.8339,
+        48.6538
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Saint-Cyr-l'École",
+    "code": "78545",
+    "codesPostaux": [
+      "78210"
+    ],
+    "population": 21268,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0657,
+        48.8064
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Saint-Germain-en-Laye",
+    "code": "78551",
+    "codesPostaux": [
+      "78100",
+      "78112"
+    ],
+    "population": 45931,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1052,
+        48.931
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Sartrouville",
+    "code": "78586",
+    "codesPostaux": [
+      "78500"
+    ],
+    "population": 52763,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1744,
+        48.9374
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Trappes",
+    "code": "78621",
+    "codesPostaux": [
+      "78190"
+    ],
+    "population": 34689,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.9964,
+        48.7738
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Triel-sur-Seine",
+    "code": "78624",
+    "codesPostaux": [
+      "78510"
+    ],
+    "population": 12206,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0055,
+        48.976
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Vélizy-Villacoublay",
+    "code": "78640",
+    "codesPostaux": [
+      "78140"
+    ],
+    "population": 23011,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1956,
+        48.784
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Verneuil-sur-Seine",
+    "code": "78642",
+    "codesPostaux": [
+      "78480"
+    ],
+    "population": 16280,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.9659,
+        48.9874
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Versailles",
+    "code": "78646",
+    "codesPostaux": [
+      "78000"
+    ],
+    "population": 84095,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1191,
+        48.8039
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Le Vésinet",
+    "code": "78650",
+    "codesPostaux": [
+      "78110"
+    ],
+    "population": 15554,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1312,
+        48.8928
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Villepreux",
+    "code": "78674",
+    "codesPostaux": [
+      "78450"
+    ],
+    "population": 11931,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0127,
+        48.8306
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Viroflay",
+    "code": "78686",
+    "codesPostaux": [
+      "78220"
+    ],
+    "population": 17237,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1725,
+        48.8017
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Voisins-le-Bretonneux",
+    "code": "78688",
+    "codesPostaux": [
+      "78960"
+    ],
+    "population": 10624,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.047,
+        48.7598
+      ]
+    },
+    "departement": {
+      "code": "78",
+      "nom": "Yvelines"
+    }
+  },
+  {
+    "nom": "Arpajon",
+    "code": "91021",
+    "codesPostaux": [
+      "91290"
+    ],
+    "population": 11698,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2462,
+        48.5894
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Athis-Mons",
+    "code": "91027",
+    "codesPostaux": [
+      "91200"
+    ],
+    "population": 36613,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3848,
+        48.7093
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Bondoufle",
+    "code": "91086",
+    "codesPostaux": [
+      "91070"
+    ],
+    "population": 10767,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3795,
+        48.6155
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Brétigny-sur-Orge",
+    "code": "91103",
+    "codesPostaux": [
+      "91220"
+    ],
+    "population": 26658,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2989,
+        48.601
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Brunoy",
+    "code": "91114",
+    "codesPostaux": [
+      "91800"
+    ],
+    "population": 25643,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5059,
+        48.6948
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Chilly-Mazarin",
+    "code": "91161",
+    "codesPostaux": [
+      "91380"
+    ],
+    "population": 20443,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3103,
+        48.7051
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Corbeil-Essonnes",
+    "code": "91174",
+    "codesPostaux": [
+      "91100"
+    ],
+    "population": 54471,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4646,
+        48.5973
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Dourdan",
+    "code": "91200",
+    "codesPostaux": [
+      "91410"
+    ],
+    "population": 11415,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        1.9924,
+        48.532
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Draveil",
+    "code": "91201",
+    "codesPostaux": [
+      "91210"
+    ],
+    "population": 30098,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4249,
+        48.6777
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Épinay-sous-Sénart",
+    "code": "91215",
+    "codesPostaux": [
+      "91860"
+    ],
+    "population": 11611,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5152,
+        48.6885
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Épinay-sur-Orge",
+    "code": "91216",
+    "codesPostaux": [
+      "91360"
+    ],
+    "population": 10722,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3194,
+        48.6719
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Étampes",
+    "code": "91223",
+    "codesPostaux": [
+      "91150"
+    ],
+    "population": 26857,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1524,
+        48.4227
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Évry-Courcouronnes",
+    "code": "91228",
+    "codesPostaux": [
+      "91000",
+      "91080"
+    ],
+    "population": 66919,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4313,
+        48.6287
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Fleury-Mérogis",
+    "code": "91235",
+    "codesPostaux": [
+      "91700"
+    ],
+    "population": 13721,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3712,
+        48.6327
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Gif-sur-Yvette",
+    "code": "91272",
+    "codesPostaux": [
+      "91190"
+    ],
+    "population": 22544,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1342,
+        48.6964
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Grigny",
+    "code": "91286",
+    "codesPostaux": [
+      "91350"
+    ],
+    "population": 26842,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3861,
+        48.6584
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Igny",
+    "code": "91312",
+    "codesPostaux": [
+      "91430"
+    ],
+    "population": 10833,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2229,
+        48.7375
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Juvisy-sur-Orge",
+    "code": "91326",
+    "codesPostaux": [
+      "91260"
+    ],
+    "population": 19292,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3722,
+        48.6917
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Longjumeau",
+    "code": "91345",
+    "codesPostaux": [
+      "91160"
+    ],
+    "population": 21996,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3057,
+        48.6923
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Massy",
+    "code": "91377",
+    "codesPostaux": [
+      "91300"
+    ],
+    "population": 51729,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2696,
+        48.7263
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Mennecy",
+    "code": "91386",
+    "codesPostaux": [
+      "91540"
+    ],
+    "population": 16433,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4362,
+        48.5592
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Montgeron",
+    "code": "91421",
+    "codesPostaux": [
+      "91230"
+    ],
+    "population": 24022,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4638,
+        48.6952
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Morangis",
+    "code": "91432",
+    "codesPostaux": [
+      "91420"
+    ],
+    "population": 14129,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3361,
+        48.7022
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Morsang-sur-Orge",
+    "code": "91434",
+    "codesPostaux": [
+      "91390"
+    ],
+    "population": 21667,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3513,
+        48.6564
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Orsay",
+    "code": "91471",
+    "codesPostaux": [
+      "91400"
+    ],
+    "population": 16498,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1896,
+        48.6972
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Palaiseau",
+    "code": "91477",
+    "codesPostaux": [
+      "91120"
+    ],
+    "population": 37471,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2293,
+        48.7155
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Ris-Orangis",
+    "code": "91521",
+    "codesPostaux": [
+      "91130"
+    ],
+    "population": 31189,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4104,
+        48.6457
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Sainte-Geneviève-des-Bois",
+    "code": "91549",
+    "codesPostaux": [
+      "91700"
+    ],
+    "population": 35438,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3272,
+        48.643
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Saint-Germain-lès-Arpajon",
+    "code": "91552",
+    "codesPostaux": [
+      "91180"
+    ],
+    "population": 11623,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2644,
+        48.5982
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Saint-Michel-sur-Orge",
+    "code": "91570",
+    "codesPostaux": [
+      "91240"
+    ],
+    "population": 21776,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.313,
+        48.6326
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Saint-Pierre-du-Perray",
+    "code": "91573",
+    "codesPostaux": [
+      "91280"
+    ],
+    "population": 11993,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5152,
+        48.6075
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Savigny-sur-Orge",
+    "code": "91589",
+    "codesPostaux": [
+      "91600"
+    ],
+    "population": 37601,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3493,
+        48.6851
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Verrières-le-Buisson",
+    "code": "91645",
+    "codesPostaux": [
+      "91370"
+    ],
+    "population": 15057,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2545,
+        48.7511
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Vigneux-sur-Seine",
+    "code": "91657",
+    "codesPostaux": [
+      "91270"
+    ],
+    "population": 31466,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4274,
+        48.7021
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Villebon-sur-Yvette",
+    "code": "91661",
+    "codesPostaux": [
+      "91140"
+    ],
+    "population": 10291,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2366,
+        48.6965
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Viry-Châtillon",
+    "code": "91687",
+    "codesPostaux": [
+      "91170"
+    ],
+    "population": 30838,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3758,
+        48.6662
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Yerres",
+    "code": "91691",
+    "codesPostaux": [
+      "91330"
+    ],
+    "population": 27906,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4932,
+        48.7129
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Les Ulis",
+    "code": "91692",
+    "codesPostaux": [
+      "91940"
+    ],
+    "population": 25886,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1864,
+        48.6817
+      ]
+    },
+    "departement": {
+      "code": "91",
+      "nom": "Essonne"
+    }
+  },
+  {
+    "nom": "Antony",
+    "code": "92002",
+    "codesPostaux": [
+      "92160"
+    ],
+    "population": 64263,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2976,
+        48.7507
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Asnières-sur-Seine",
+    "code": "92004",
+    "codesPostaux": [
+      "92600"
+    ],
+    "population": 93941,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2935,
+        48.9181
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Bagneux",
+    "code": "92007",
+    "codesPostaux": [
+      "92220"
+    ],
+    "population": 44572,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3093,
+        48.798
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Bois-Colombes",
+    "code": "92009",
+    "codesPostaux": [
+      "92270"
+    ],
+    "population": 28909,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2688,
+        48.9151
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Boulogne-Billancourt",
+    "code": "92012",
+    "codesPostaux": [
+      "92100"
+    ],
+    "population": 119019,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2429,
+        48.8375
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Bourg-la-Reine",
+    "code": "92014",
+    "codesPostaux": [
+      "92340"
+    ],
+    "population": 21019,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3167,
+        48.7801
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Châtenay-Malabry",
+    "code": "92019",
+    "codesPostaux": [
+      "92290"
+    ],
+    "population": 35825,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2603,
+        48.7697
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Châtillon",
+    "code": "92020",
+    "codesPostaux": [
+      "92320"
+    ],
+    "population": 36705,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2887,
+        48.8031
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Chaville",
+    "code": "92022",
+    "codesPostaux": [
+      "92370"
+    ],
+    "population": 20594,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.191,
+        48.8091
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Clamart",
+    "code": "92023",
+    "codesPostaux": [
+      "92140"
+    ],
+    "population": 58576,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2518,
+        48.7957
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Clichy",
+    "code": "92024",
+    "codesPostaux": [
+      "92110"
+    ],
+    "population": 64410,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3041,
+        48.9041
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Colombes",
+    "code": "92025",
+    "codesPostaux": [
+      "92700"
+    ],
+    "population": 91053,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2469,
+        48.9218
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Courbevoie",
+    "code": "92026",
+    "codesPostaux": [
+      "92400"
+    ],
+    "population": 82902,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2574,
+        48.8976
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Fontenay-aux-Roses",
+    "code": "92032",
+    "codesPostaux": [
+      "92260"
+    ],
+    "population": 24070,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2876,
+        48.7895
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Garches",
+    "code": "92033",
+    "codesPostaux": [
+      "92380"
+    ],
+    "population": 17743,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1861,
+        48.8469
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "La Garenne-Colombes",
+    "code": "92035",
+    "codesPostaux": [
+      "92250"
+    ],
+    "population": 30197,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2437,
+        48.9071
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Gennevilliers",
+    "code": "92036",
+    "codesPostaux": [
+      "92230"
+    ],
+    "population": 50979,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.288,
+        48.9319
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Issy-les-Moulineaux",
+    "code": "92040",
+    "codesPostaux": [
+      "92130"
+    ],
+    "population": 67669,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2628,
+        48.824
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Levallois-Perret",
+    "code": "92044",
+    "codesPostaux": [
+      "92300"
+    ],
+    "population": 68092,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2874,
+        48.8946
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Malakoff",
+    "code": "92046",
+    "codesPostaux": [
+      "92240"
+    ],
+    "population": 30557,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2943,
+        48.817
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Meudon",
+    "code": "92048",
+    "codesPostaux": [
+      "92190",
+      "92360"
+    ],
+    "population": 46334,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2288,
+        48.8028
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Montrouge",
+    "code": "92049",
+    "codesPostaux": [
+      "92120"
+    ],
+    "population": 46324,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3163,
+        48.8159
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Nanterre",
+    "code": "92050",
+    "codesPostaux": [
+      "92000"
+    ],
+    "population": 97783,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2018,
+        48.8974
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Neuilly-sur-Seine",
+    "code": "92051",
+    "codesPostaux": [
+      "92200"
+    ],
+    "population": 59538,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2651,
+        48.8862
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Le Plessis-Robinson",
+    "code": "92060",
+    "codesPostaux": [
+      "92350"
+    ],
+    "population": 28848,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2592,
+        48.7815
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Puteaux",
+    "code": "92062",
+    "codesPostaux": [
+      "92800"
+    ],
+    "population": 44002,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2384,
+        48.8824
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Rueil-Malmaison",
+    "code": "92063",
+    "codesPostaux": [
+      "92500"
+    ],
+    "population": 82874,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1806,
+        48.8717
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Saint-Cloud",
+    "code": "92064",
+    "codesPostaux": [
+      "92210"
+    ],
+    "population": 29855,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2032,
+        48.844
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Sceaux",
+    "code": "92071",
+    "codesPostaux": [
+      "92330"
+    ],
+    "population": 20884,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2963,
+        48.776
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Sèvres",
+    "code": "92072",
+    "codesPostaux": [
+      "92310"
+    ],
+    "population": 22303,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2056,
+        48.8223
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Suresnes",
+    "code": "92073",
+    "codesPostaux": [
+      "92150"
+    ],
+    "population": 48956,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2183,
+        48.871
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Vanves",
+    "code": "92075",
+    "codesPostaux": [
+      "92170"
+    ],
+    "population": 28622,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2869,
+        48.8214
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Ville-d'Avray",
+    "code": "92077",
+    "codesPostaux": [
+      "92410"
+    ],
+    "population": 11089,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1759,
+        48.8215
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Villeneuve-la-Garenne",
+    "code": "92078",
+    "codesPostaux": [
+      "92390"
+    ],
+    "population": 26021,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3231,
+        48.9354
+      ]
+    },
+    "departement": {
+      "code": "92",
+      "nom": "Hauts-de-Seine"
+    }
+  },
+  {
+    "nom": "Aubervilliers",
+    "code": "93001",
+    "codesPostaux": [
+      "93300"
+    ],
+    "population": 88365,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3886,
+        48.9128
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Aulnay-sous-Bois",
+    "code": "93005",
+    "codesPostaux": [
+      "93600"
+    ],
+    "population": 87599,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4918,
+        48.9457
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Bagnolet",
+    "code": "93006",
+    "codesPostaux": [
+      "93170"
+    ],
+    "population": 43086,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4252,
+        48.8671
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Le Blanc-Mesnil",
+    "code": "93007",
+    "codesPostaux": [
+      "93150"
+    ],
+    "population": 62376,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4576,
+        48.9372
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Bobigny",
+    "code": "93008",
+    "codesPostaux": [
+      "93000"
+    ],
+    "population": 56927,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4432,
+        48.9073
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Bondy",
+    "code": "93010",
+    "codesPostaux": [
+      "93140"
+    ],
+    "population": 50595,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4846,
+        48.9036
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Le Bourget",
+    "code": "93013",
+    "codesPostaux": [
+      "93350"
+    ],
+    "population": 15925,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4287,
+        48.9378
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Clichy-sous-Bois",
+    "code": "93014",
+    "codesPostaux": [
+      "93390"
+    ],
+    "population": 29354,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5432,
+        48.9081
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "La Courneuve",
+    "code": "93027",
+    "codesPostaux": [
+      "93120"
+    ],
+    "population": 47167,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3986,
+        48.9341
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Drancy",
+    "code": "93029",
+    "codesPostaux": [
+      "93700"
+    ],
+    "population": 72390,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4446,
+        48.925
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Dugny",
+    "code": "93030",
+    "codesPostaux": [
+      "93440"
+    ],
+    "population": 11700,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4255,
+        48.9494
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Épinay-sur-Seine",
+    "code": "93031",
+    "codesPostaux": [
+      "93800"
+    ],
+    "population": 52833,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3172,
+        48.9544
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Gagny",
+    "code": "93032",
+    "codesPostaux": [
+      "93220"
+    ],
+    "population": 42313,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.545,
+        48.8826
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Les Lilas",
+    "code": "93045",
+    "codesPostaux": [
+      "93260"
+    ],
+    "population": 23843,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4207,
+        48.8821
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Livry-Gargan",
+    "code": "93046",
+    "codesPostaux": [
+      "93190"
+    ],
+    "population": 47228,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5351,
+        48.9184
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Montfermeil",
+    "code": "93047",
+    "codesPostaux": [
+      "93370"
+    ],
+    "population": 28703,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5678,
+        48.8976
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Montreuil",
+    "code": "93048",
+    "codesPostaux": [
+      "93100"
+    ],
+    "population": 111934,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4491,
+        48.8637
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Neuilly-Plaisance",
+    "code": "93049",
+    "codesPostaux": [
+      "93360"
+    ],
+    "population": 21941,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5097,
+        48.8641
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Neuilly-sur-Marne",
+    "code": "93050",
+    "codesPostaux": [
+      "93330"
+    ],
+    "population": 39800,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5419,
+        48.8645
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Noisy-le-Grand",
+    "code": "93051",
+    "codesPostaux": [
+      "93160"
+    ],
+    "population": 72978,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.556,
+        48.8327
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Noisy-le-Sec",
+    "code": "93053",
+    "codesPostaux": [
+      "93130"
+    ],
+    "population": 45510,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4578,
+        48.8917
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Pantin",
+    "code": "93055",
+    "codesPostaux": [
+      "93500"
+    ],
+    "population": 61929,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4085,
+        48.9006
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Les Pavillons-sous-Bois",
+    "code": "93057",
+    "codesPostaux": [
+      "93320"
+    ],
+    "population": 25804,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5057,
+        48.907
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Le Pré-Saint-Gervais",
+    "code": "93061",
+    "codesPostaux": [
+      "93310"
+    ],
+    "population": 16993,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4054,
+        48.884
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Le Raincy",
+    "code": "93062",
+    "codesPostaux": [
+      "93340"
+    ],
+    "population": 14735,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5196,
+        48.8959
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Romainville",
+    "code": "93063",
+    "codesPostaux": [
+      "93230"
+    ],
+    "population": 37152,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4391,
+        48.8849
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Rosny-sous-Bois",
+    "code": "93064",
+    "codesPostaux": [
+      "93110"
+    ],
+    "population": 47180,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4872,
+        48.8744
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Saint-Denis",
+    "code": "93066",
+    "codesPostaux": [
+      "93200",
+      "93210",
+      "93380"
+    ],
+    "population": 149077,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3657,
+        48.9378
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Saint-Ouen-sur-Seine",
+    "code": "93070",
+    "codesPostaux": [
+      "93400"
+    ],
+    "population": 53615,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3329,
+        48.9118
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Sevran",
+    "code": "93071",
+    "codesPostaux": [
+      "93270"
+    ],
+    "population": 52535,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5311,
+        48.9378
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Stains",
+    "code": "93072",
+    "codesPostaux": [
+      "93240"
+    ],
+    "population": 41388,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3868,
+        48.9578
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Tremblay-en-France",
+    "code": "93073",
+    "codesPostaux": [
+      "93290"
+    ],
+    "population": 38348,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5481,
+        48.9744
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Villemomble",
+    "code": "93077",
+    "codesPostaux": [
+      "93250"
+    ],
+    "population": 29795,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5085,
+        48.8866
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Villepinte",
+    "code": "93078",
+    "codesPostaux": [
+      "93420"
+    ],
+    "population": 41470,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5323,
+        48.956
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Villetaneuse",
+    "code": "93079",
+    "codesPostaux": [
+      "93430"
+    ],
+    "population": 12530,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3441,
+        48.9574
+      ]
+    },
+    "departement": {
+      "code": "93",
+      "nom": "Seine-Saint-Denis"
+    }
+  },
+  {
+    "nom": "Alfortville",
+    "code": "94002",
+    "codesPostaux": [
+      "94140"
+    ],
+    "population": 45531,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4214,
+        48.7963
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Arcueil",
+    "code": "94003",
+    "codesPostaux": [
+      "94110"
+    ],
+    "population": 22200,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3328,
+        48.8053
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Boissy-Saint-Léger",
+    "code": "94004",
+    "codesPostaux": [
+      "94470"
+    ],
+    "population": 17325,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5251,
+        48.7453
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Bonneuil-sur-Marne",
+    "code": "94011",
+    "codesPostaux": [
+      "94380"
+    ],
+    "population": 18270,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.493,
+        48.7721
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Bry-sur-Marne",
+    "code": "94015",
+    "codesPostaux": [
+      "94360"
+    ],
+    "population": 18503,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5224,
+        48.8392
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Cachan",
+    "code": "94016",
+    "codesPostaux": [
+      "94230"
+    ],
+    "population": 31103,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3318,
+        48.7914
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Champigny-sur-Marne",
+    "code": "94017",
+    "codesPostaux": [
+      "94500"
+    ],
+    "population": 78072,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5206,
+        48.8173
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Charenton-le-Pont",
+    "code": "94018",
+    "codesPostaux": [
+      "94220"
+    ],
+    "population": 28830,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.405,
+        48.8229
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Chennevières-sur-Marne",
+    "code": "94019",
+    "codesPostaux": [
+      "94430"
+    ],
+    "population": 18710,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5443,
+        48.7951
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Chevilly-Larue",
+    "code": "94021",
+    "codesPostaux": [
+      "94550"
+    ],
+    "population": 19826,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3507,
+        48.7679
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Choisy-le-Roi",
+    "code": "94022",
+    "codesPostaux": [
+      "94600"
+    ],
+    "population": 45946,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4202,
+        48.7635
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Créteil",
+    "code": "94028",
+    "codesPostaux": [
+      "94000"
+    ],
+    "population": 93397,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4523,
+        48.7845
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Fontenay-sous-Bois",
+    "code": "94033",
+    "codesPostaux": [
+      "94120"
+    ],
+    "population": 53757,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4736,
+        48.8503
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Fresnes",
+    "code": "94034",
+    "codesPostaux": [
+      "94260"
+    ],
+    "population": 29528,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3263,
+        48.7572
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Gentilly",
+    "code": "94037",
+    "codesPostaux": [
+      "94250"
+    ],
+    "population": 19963,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3426,
+        48.812
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "L'Haÿ-les-Roses",
+    "code": "94038",
+    "codesPostaux": [
+      "94240"
+    ],
+    "population": 31188,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3416,
+        48.7777
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Ivry-sur-Seine",
+    "code": "94041",
+    "codesPostaux": [
+      "94200"
+    ],
+    "population": 65064,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3872,
+        48.8125
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Joinville-le-Pont",
+    "code": "94042",
+    "codesPostaux": [
+      "94340"
+    ],
+    "population": 20525,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4685,
+        48.8199
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Le Kremlin-Bicêtre",
+    "code": "94043",
+    "codesPostaux": [
+      "94270"
+    ],
+    "population": 24110,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.356,
+        48.8087
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Limeil-Brévannes",
+    "code": "94044",
+    "codesPostaux": [
+      "94450"
+    ],
+    "population": 27406,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4924,
+        48.7463
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Maisons-Alfort",
+    "code": "94046",
+    "codesPostaux": [
+      "94700"
+    ],
+    "population": 56799,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.44,
+        48.8017
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Nogent-sur-Marne",
+    "code": "94052",
+    "codesPostaux": [
+      "94130"
+    ],
+    "population": 32455,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4811,
+        48.837
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Orly",
+    "code": "94054",
+    "codesPostaux": [
+      "94310"
+    ],
+    "population": 24658,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.403,
+        48.7402
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Ormesson-sur-Marne",
+    "code": "94055",
+    "codesPostaux": [
+      "94490"
+    ],
+    "population": 10977,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5371,
+        48.7873
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Le Perreux-sur-Marne",
+    "code": "94058",
+    "codesPostaux": [
+      "94170"
+    ],
+    "population": 35260,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5045,
+        48.8433
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Le Plessis-Trévise",
+    "code": "94059",
+    "codesPostaux": [
+      "94420"
+    ],
+    "population": 21112,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5763,
+        48.808
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "La Queue-en-Brie",
+    "code": "94060",
+    "codesPostaux": [
+      "94510"
+    ],
+    "population": 12241,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5855,
+        48.7769
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Saint-Mandé",
+    "code": "94067",
+    "codesPostaux": [
+      "94160"
+    ],
+    "population": 21071,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4195,
+        48.8414
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Saint-Maur-des-Fossés",
+    "code": "94068",
+    "codesPostaux": [
+      "94100",
+      "94210"
+    ],
+    "population": 76572,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4921,
+        48.7999
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Saint-Maurice",
+    "code": "94069",
+    "codesPostaux": [
+      "94410"
+    ],
+    "population": 14506,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4423,
+        48.8179
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Sucy-en-Brie",
+    "code": "94071",
+    "codesPostaux": [
+      "94370"
+    ],
+    "population": 27764,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5374,
+        48.7688
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Thiais",
+    "code": "94073",
+    "codesPostaux": [
+      "94320"
+    ],
+    "population": 32918,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3869,
+        48.7605
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Valenton",
+    "code": "94074",
+    "codesPostaux": [
+      "94460"
+    ],
+    "population": 14406,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.46,
+        48.7497
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Villecresnes",
+    "code": "94075",
+    "codesPostaux": [
+      "94440"
+    ],
+    "population": 11647,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5328,
+        48.7221
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Villejuif",
+    "code": "94076",
+    "codesPostaux": [
+      "94800"
+    ],
+    "population": 60183,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3603,
+        48.7934
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Villeneuve-le-Roi",
+    "code": "94077",
+    "codesPostaux": [
+      "94290"
+    ],
+    "population": 21000,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4076,
+        48.732
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Villeneuve-Saint-Georges",
+    "code": "94078",
+    "codesPostaux": [
+      "94190"
+    ],
+    "population": 36221,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4493,
+        48.7389
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Villiers-sur-Marne",
+    "code": "94079",
+    "codesPostaux": [
+      "94350"
+    ],
+    "population": 33162,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5482,
+        48.8278
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Vincennes",
+    "code": "94080",
+    "codesPostaux": [
+      "94300"
+    ],
+    "population": 48193,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4383,
+        48.8471
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Vitry-sur-Seine",
+    "code": "94081",
+    "codesPostaux": [
+      "94400"
+    ],
+    "population": 93963,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3951,
+        48.7893
+      ]
+    },
+    "departement": {
+      "code": "94",
+      "nom": "Val-de-Marne"
+    }
+  },
+  {
+    "nom": "Argenteuil",
+    "code": "95018",
+    "codesPostaux": [
+      "95100"
+    ],
+    "population": 106130,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2478,
+        48.9501
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Arnouville",
+    "code": "95019",
+    "codesPostaux": [
+      "95400"
+    ],
+    "population": 15023,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4168,
+        48.9867
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Beaumont-sur-Oise",
+    "code": "95052",
+    "codesPostaux": [
+      "95260"
+    ],
+    "population": 10232,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2953,
+        49.1372
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Bezons",
+    "code": "95063",
+    "codesPostaux": [
+      "95870"
+    ],
+    "population": 36434,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2147,
+        48.925
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Cergy",
+    "code": "95127",
+    "codesPostaux": [
+      "95000",
+      "95800"
+    ],
+    "population": 70906,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0455,
+        49.0373
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Cormeilles-en-Parisis",
+    "code": "95176",
+    "codesPostaux": [
+      "95240"
+    ],
+    "population": 27292,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.201,
+        48.9701
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Deuil-la-Barre",
+    "code": "95197",
+    "codesPostaux": [
+      "95170"
+    ],
+    "population": 23099,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.327,
+        48.9704
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Domont",
+    "code": "95199",
+    "codesPostaux": [
+      "95330"
+    ],
+    "population": 16065,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3243,
+        49.0289
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Eaubonne",
+    "code": "95203",
+    "codesPostaux": [
+      "95600"
+    ],
+    "population": 26211,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2781,
+        48.9912
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Enghien-les-Bains",
+    "code": "95210",
+    "codesPostaux": [
+      "95880"
+    ],
+    "population": 11432,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.305,
+        48.9706
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Éragny-sur-Oise",
+    "code": "95218",
+    "codesPostaux": [
+      "95610"
+    ],
+    "population": 18436,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1002,
+        49.0224
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Ermont",
+    "code": "95219",
+    "codesPostaux": [
+      "95120"
+    ],
+    "population": 29489,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.258,
+        48.9891
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Fosses",
+    "code": "95250",
+    "codesPostaux": [
+      "95470"
+    ],
+    "population": 10570,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5043,
+        49.1003
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Franconville",
+    "code": "95252",
+    "codesPostaux": [
+      "95130"
+    ],
+    "population": 37754,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2235,
+        48.9879
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Garges-lès-Gonesse",
+    "code": "95268",
+    "codesPostaux": [
+      "95140"
+    ],
+    "population": 41791,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4035,
+        48.9696
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Gonesse",
+    "code": "95277",
+    "codesPostaux": [
+      "95500"
+    ],
+    "population": 27707,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4602,
+        48.9856
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Goussainville",
+    "code": "95280",
+    "codesPostaux": [
+      "95190"
+    ],
+    "population": 31301,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4683,
+        49.0266
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Herblay-sur-Seine",
+    "code": "95306",
+    "codesPostaux": [
+      "95220"
+    ],
+    "population": 31779,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1556,
+        49.0052
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "L'Isle-Adam",
+    "code": "95313",
+    "codesPostaux": [
+      "95290"
+    ],
+    "population": 12493,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2352,
+        49.1078
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Jouy-le-Moutier",
+    "code": "95323",
+    "codesPostaux": [
+      "95280"
+    ],
+    "population": 17854,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0357,
+        49.0118
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Louvres",
+    "code": "95351",
+    "codesPostaux": [
+      "95380"
+    ],
+    "population": 12560,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.5011,
+        49.0444
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Montigny-lès-Cormeilles",
+    "code": "95424",
+    "codesPostaux": [
+      "95370"
+    ],
+    "population": 22457,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1937,
+        48.9934
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Montmagny",
+    "code": "95427",
+    "codesPostaux": [
+      "95360"
+    ],
+    "population": 15105,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3471,
+        48.9677
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Montmorency",
+    "code": "95428",
+    "codesPostaux": [
+      "95160"
+    ],
+    "population": 21763,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.322,
+        48.9922
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Osny",
+    "code": "95476",
+    "codesPostaux": [
+      "95520"
+    ],
+    "population": 17954,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0618,
+        49.0668
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Persan",
+    "code": "95487",
+    "codesPostaux": [
+      "95340"
+    ],
+    "population": 14359,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2672,
+        49.1479
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Pierrelaye",
+    "code": "95488",
+    "codesPostaux": [
+      "95220",
+      "95480"
+    ],
+    "population": 10130,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1629,
+        49.0185
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Pontoise",
+    "code": "95500",
+    "codesPostaux": [
+      "95000",
+      "95300"
+    ],
+    "population": 31970,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0996,
+        49.0488
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Saint-Brice-sous-Forêt",
+    "code": "95539",
+    "codesPostaux": [
+      "95350"
+    ],
+    "population": 15063,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3453,
+        49.0034
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Saint-Gratien",
+    "code": "95555",
+    "codesPostaux": [
+      "95210"
+    ],
+    "population": 21336,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.285,
+        48.9679
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Saint-Leu-la-Forêt",
+    "code": "95563",
+    "codesPostaux": [
+      "95320"
+    ],
+    "population": 16138,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.243,
+        49.0211
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Saint-Ouen-l'Aumône",
+    "code": "95572",
+    "codesPostaux": [
+      "95310"
+    ],
+    "population": 25578,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.1293,
+        49.045
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Sannois",
+    "code": "95582",
+    "codesPostaux": [
+      "95110"
+    ],
+    "population": 26924,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2509,
+        48.9731
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Sarcelles",
+    "code": "95585",
+    "codesPostaux": [
+      "95200"
+    ],
+    "population": 59173,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3858,
+        48.9925
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Soisy-sous-Montmorency",
+    "code": "95598",
+    "codesPostaux": [
+      "95230"
+    ],
+    "population": 18008,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.3003,
+        48.9888
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Taverny",
+    "code": "95607",
+    "codesPostaux": [
+      "95150"
+    ],
+    "population": 27593,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.2179,
+        49.0274
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Vauréal",
+    "code": "95637",
+    "codesPostaux": [
+      "95490"
+    ],
+    "population": 16079,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.0254,
+        49.0293
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  },
+  {
+    "nom": "Villiers-le-Bel",
+    "code": "95680",
+    "codesPostaux": [
+      "95400"
+    ],
+    "population": 30053,
+    "centre": {
+      "type": "Point",
+      "coordinates": [
+        2.4036,
+        49.008
+      ]
+    },
+    "departement": {
+      "code": "95",
+      "nom": "Val-d'Oise"
+    }
+  }
+]

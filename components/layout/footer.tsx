@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BUSINESS, telHref, waHref } from "@/lib/constants";
 
 export function Footer() {
@@ -39,6 +40,10 @@ export function Footer() {
 
         <p className="text-xs text-zinc-400 md:col-span-2">
           © {year} {BUSINESS.name}. Tous droits réservés.
+          {" · "}
+          <Link href="/vtc" className="underline hover:text-white">
+            Nos zones d&apos;intervention
+          </Link>
         </p>
       </div>
     </footer>

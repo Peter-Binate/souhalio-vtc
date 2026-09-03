@@ -16,6 +16,11 @@ function correctDurationMin(durationMin: number, distanceKm: number): number {
 export async function getDirections(
   from: [number, number], // [lon, lat]
   to: [number, number], // [lon, lat]
+  // Rayon de rattachement à une route (mètres), optionnel — ORS échoue par défaut
+  // (350 m) sur certains centroïdes de commune isolés (ex. forêt de Fontainebleau).
+  // Non utilisé par le simulateur de la home (comportement inchangé) ; utilisé par
+  // scripts/enrich-communes.ts (LP-19) pour les cas limites.
+  opts?: { radiuses?: [number, number] },
 ) {
   const json = await ky
     .post(ORS_BASE, {
@@ -23,7 +28,11 @@ export async function getDirections(
         Authorization: process.env.ORS_API_KEY!,
         Accept: "application/json, application/geo+json",
       },
-      json: { coordinates: [from, to] },
+      json: {
+        coordinates: [from, to],
+        // ORS attend un rayon par coordonnée (2 waypoints ici), pas un tableau imbriqué.
+        ...(opts?.radiuses ? { radiuses: opts.radiuses } : {}),
+      },
       timeout: 10_000,
       retry: 1,
     })

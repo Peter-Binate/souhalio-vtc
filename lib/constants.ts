@@ -72,6 +72,19 @@ export const AIRPORTS = {
   BEAUVAIS: { name: "Paris-Beauvais", coord: [2.1128, 49.4544] },
 } as const;
 
+// Départements d'Île-de-France (référence géographique stable, pas une donnée métier) —
+// utilisé par les pages ville (LP-19, data/communes.json ne stocke que le code).
+export const IDF_DEPARTEMENTS: Record<string, string> = {
+  "75": "Paris",
+  "77": "Seine-et-Marne",
+  "78": "Yvelines",
+  "91": "Essonne",
+  "92": "Hauts-de-Seine",
+  "93": "Seine-Saint-Denis",
+  "94": "Val-de-Marne",
+  "95": "Val-d'Oise",
+};
+
 // Helpers CTA — normalisent un numéro brut en lien tel:/wa.me exploitable.
 export const telHref = (raw: string) => `tel:${raw.replace(/[^\d+]/g, "")}`;
 export const waHref = (raw: string, text?: string) => {

@@ -1,0 +1,1118 @@
+[
+  {
+    "insee": "75056",
+    "slug": "paris",
+    "nom": "Paris",
+    "codePostal": "75001",
+    "departement": "75",
+    "population": 2103778,
+    "lat": 48.8589,
+    "lon": 2.347,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 18.5,
+        "min": 40
+      },
+      "cdg": {
+        "km": 27.3,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 85.5,
+        "min": 75
+      }
+    },
+    "parisCentre": {
+      "km": 0,
+      "min": 0
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77014",
+    "slug": "avon",
+    "nom": "Avon",
+    "codePostal": "77210",
+    "departement": "77",
+    "population": 13651,
+    "lat": 48.4124,
+    "lon": 2.7337,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 57.3,
+        "min": 57
+      },
+      "cdg": {
+        "km": 90.3,
+        "min": 82
+      },
+      "beauvais": {
+        "km": 161.6,
+        "min": 125
+      }
+    },
+    "parisCentre": {
+      "km": 70.6,
+      "min": 70
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77053",
+    "slug": "brie-comte-robert",
+    "nom": "Brie-Comte-Robert",
+    "codePostal": "77170",
+    "departement": "77",
+    "population": 19003,
+    "lat": 48.6904,
+    "lon": 2.6131,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 28.3,
+        "min": 34
+      },
+      "cdg": {
+        "km": 55.1,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 126.5,
+        "min": 91
+      }
+    },
+    "parisCentre": {
+      "km": 41.1,
+      "min": 44
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77058",
+    "slug": "bussy-saint-georges",
+    "nom": "Bussy-Saint-Georges",
+    "codePostal": "77600",
+    "departement": "77",
+    "population": 27498,
+    "lat": 48.8297,
+    "lon": 2.7091,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 46,
+        "min": 41
+      },
+      "cdg": {
+        "km": 49.6,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 121,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 42.5,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77067",
+    "slug": "cesson",
+    "nom": "Cesson",
+    "codePostal": "77240",
+    "departement": "77",
+    "population": 11222,
+    "lat": 48.5693,
+    "lon": 2.5898,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 28.3,
+        "min": 34
+      },
+      "cdg": {
+        "km": 73.7,
+        "min": 63
+      },
+      "beauvais": {
+        "km": 145,
+        "min": 106
+      }
+    },
+    "parisCentre": {
+      "km": 52,
+      "min": 56
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77083",
+    "slug": "champs-sur-marne",
+    "nom": "Champs-sur-Marne",
+    "codePostal": "77420",
+    "departement": "77",
+    "population": 27451,
+    "lat": 48.8485,
+    "lon": 2.594,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 26.9,
+        "min": 32
+      },
+      "cdg": {
+        "km": 34.1,
+        "min": 34
+      },
+      "beauvais": {
+        "km": 105.7,
+        "min": 78
+      }
+    },
+    "parisCentre": {
+      "km": 23.4,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77108",
+    "slug": "chelles",
+    "nom": "Chelles",
+    "codePostal": "77500",
+    "departement": "77",
+    "population": 54620,
+    "lat": 48.8845,
+    "lon": 2.5954,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 31.7,
+        "min": 43
+      },
+      "cdg": {
+        "km": 29.6,
+        "min": 30
+      },
+      "beauvais": {
+        "km": 101,
+        "min": 73
+      }
+    },
+    "parisCentre": {
+      "km": 28.2,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77118",
+    "slug": "claye-souilly",
+    "nom": "Claye-Souilly",
+    "codePostal": "77410",
+    "departement": "77",
+    "population": 13353,
+    "lat": 48.941,
+    "lon": 2.68,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 45.2,
+        "min": 45
+      },
+      "cdg": {
+        "km": 17.1,
+        "min": 26
+      },
+      "beauvais": {
+        "km": 91.5,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 41.7,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77122",
+    "slug": "combs-la-ville",
+    "nom": "Combs-la-Ville",
+    "codePostal": "77380",
+    "departement": "77",
+    "population": 23350,
+    "lat": 48.6602,
+    "lon": 2.5765,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 22.2,
+        "min": 30
+      },
+      "cdg": {
+        "km": 65.2,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 136.6,
+        "min": 100
+      }
+    },
+    "parisCentre": {
+      "km": 51.2,
+      "min": 53
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77131",
+    "slug": "coulommiers",
+    "nom": "Coulommiers",
+    "codePostal": "77120",
+    "departement": "77",
+    "population": 16374,
+    "lat": 48.8096,
+    "lon": 3.0918,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 65.9,
+        "min": 63
+      },
+      "cdg": {
+        "km": 69.4,
+        "min": 61
+      },
+      "beauvais": {
+        "km": 140.8,
+        "min": 104
+      }
+    },
+    "parisCentre": {
+      "km": 62.3,
+      "min": 61
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77152",
+    "slug": "dammarie-les-lys",
+    "nom": "Dammarie-les-Lys",
+    "codePostal": "77190",
+    "departement": "77",
+    "population": 23559,
+    "lat": 48.5147,
+    "lon": 2.6199,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 38.9,
+        "min": 44
+      },
+      "cdg": {
+        "km": 77.6,
+        "min": 67
+      },
+      "beauvais": {
+        "km": 149,
+        "min": 110
+      }
+    },
+    "parisCentre": {
+      "km": 52.2,
+      "min": 56
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77153",
+    "slug": "dammartin-en-goele",
+    "nom": "Dammartin-en-Goële",
+    "codePostal": "77230",
+    "departement": "77",
+    "population": 11907,
+    "lat": 49.0504,
+    "lon": 2.6777,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 53.8,
+        "min": 51
+      },
+      "cdg": {
+        "km": 14.2,
+        "min": 20
+      },
+      "beauvais": {
+        "km": 88.6,
+        "min": 59
+      }
+    },
+    "parisCentre": {
+      "km": 40.8,
+      "min": 45
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77183",
+    "slug": "la-ferte-sous-jouarre",
+    "nom": "La Ferté-sous-Jouarre",
+    "codePostal": "77260",
+    "departement": "77",
+    "population": 10254,
+    "lat": 48.9562,
+    "lon": 3.1349,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 72,
+        "min": 61
+      },
+      "cdg": {
+        "km": 61.6,
+        "min": 59
+      },
+      "beauvais": {
+        "km": 135.9,
+        "min": 100
+      }
+    },
+    "parisCentre": {
+      "km": 68.5,
+      "min": 59
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77186",
+    "slug": "fontainebleau",
+    "nom": "Fontainebleau",
+    "codePostal": "77300",
+    "departement": "77",
+    "population": 15583,
+    "lat": 48.4236,
+    "lon": 2.6817,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 53.3,
+        "min": 53
+      },
+      "cdg": {
+        "km": 95.9,
+        "min": 80
+      },
+      "beauvais": {
+        "km": 167.5,
+        "min": 124
+      }
+    },
+    "parisCentre": {
+      "km": 66.7,
+      "min": 66
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77243",
+    "slug": "lagny-sur-marne",
+    "nom": "Lagny-sur-Marne",
+    "codePostal": "77400",
+    "departement": "77",
+    "population": 21461,
+    "lat": 48.8716,
+    "lon": 2.7045,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.2,
+        "min": 38
+      },
+      "cdg": {
+        "km": 32.7,
+        "min": 29
+      },
+      "beauvais": {
+        "km": 104.1,
+        "min": 72
+      }
+    },
+    "parisCentre": {
+      "km": 33.7,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77251",
+    "slug": "lieusaint",
+    "nom": "Lieusaint",
+    "codePostal": "77127",
+    "departement": "77",
+    "population": 14017,
+    "lat": 48.6277,
+    "lon": 2.549,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 21.7,
+        "min": 27
+      },
+      "cdg": {
+        "km": 69.8,
+        "min": 58
+      },
+      "beauvais": {
+        "km": 141.2,
+        "min": 101
+      }
+    },
+    "parisCentre": {
+      "km": 45.4,
+      "min": 48
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77258",
+    "slug": "lognes",
+    "nom": "Lognes",
+    "codePostal": "77185",
+    "departement": "77",
+    "population": 15074,
+    "lat": 48.8325,
+    "lon": 2.6366,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 29.3,
+        "min": 31
+      },
+      "cdg": {
+        "km": 36.5,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 108.6,
+        "min": 76
+      }
+    },
+    "parisCentre": {
+      "km": 25.8,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77284",
+    "slug": "meaux",
+    "nom": "Meaux",
+    "codePostal": "77100",
+    "departement": "77",
+    "population": 56905,
+    "lat": 48.9573,
+    "lon": 2.9035,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 59.3,
+        "min": 53
+      },
+      "cdg": {
+        "km": 33.1,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 107.4,
+        "min": 81
+      }
+    },
+    "parisCentre": {
+      "km": 55.8,
+      "min": 51
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77285",
+    "slug": "le-mee-sur-seine",
+    "nom": "Le Mée-sur-Seine",
+    "codePostal": "77350",
+    "departement": "77",
+    "population": 19527,
+    "lat": 48.5401,
+    "lon": 2.6301,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 34.5,
+        "min": 37
+      },
+      "cdg": {
+        "km": 73.4,
+        "min": 61
+      },
+      "beauvais": {
+        "km": 144.8,
+        "min": 104
+      }
+    },
+    "parisCentre": {
+      "km": 59.4,
+      "min": 57
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77288",
+    "slug": "melun",
+    "nom": "Melun",
+    "codePostal": "77000",
+    "departement": "77",
+    "population": 45995,
+    "lat": 48.5421,
+    "lon": 2.6552,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 34.7,
+        "min": 36
+      },
+      "cdg": {
+        "km": 73.7,
+        "min": 60
+      },
+      "beauvais": {
+        "km": 145.1,
+        "min": 103
+      }
+    },
+    "parisCentre": {
+      "km": 59.6,
+      "min": 56
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77294",
+    "slug": "mitry-mory",
+    "nom": "Mitry-Mory",
+    "codePostal": "77290",
+    "departement": "77",
+    "population": 20456,
+    "lat": 48.9796,
+    "lon": 2.6116,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49.1,
+        "min": 47
+      },
+      "cdg": {
+        "km": 11.8,
+        "min": 20
+      },
+      "beauvais": {
+        "km": 86.2,
+        "min": 60
+      }
+    },
+    "parisCentre": {
+      "km": 33.2,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77296",
+    "slug": "moissy-cramayel",
+    "nom": "Moissy-Cramayel",
+    "codePostal": "77550",
+    "departement": "77",
+    "population": 18511,
+    "lat": 48.6247,
+    "lon": 2.5958,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 24.3,
+        "min": 32
+      },
+      "cdg": {
+        "km": 65.9,
+        "min": 56
+      },
+      "beauvais": {
+        "km": 137.3,
+        "min": 99
+      }
+    },
+    "parisCentre": {
+      "km": 51.8,
+      "min": 52
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77305",
+    "slug": "montereau-fault-yonne",
+    "nom": "Montereau-Fault-Yonne",
+    "codePostal": "77130",
+    "departement": "77",
+    "population": 22279,
+    "lat": 48.3887,
+    "lon": 2.962,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 67.3,
+        "min": 56
+      },
+      "cdg": {
+        "km": 105.8,
+        "min": 80
+      },
+      "beauvais": {
+        "km": 177.2,
+        "min": 123
+      }
+    },
+    "parisCentre": {
+      "km": 91.8,
+      "min": 76
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77307",
+    "slug": "montevrain",
+    "nom": "Montévrain",
+    "codePostal": "77144",
+    "departement": "77",
+    "population": 15687,
+    "lat": 48.8673,
+    "lon": 2.7511,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 43.8,
+        "min": 42
+      },
+      "cdg": {
+        "km": 37.5,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 108.9,
+        "min": 80
+      }
+    },
+    "parisCentre": {
+      "km": 40.2,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77316",
+    "slug": "moret-loing-et-orvanne",
+    "nom": "Moret-Loing-et-Orvanne",
+    "codePostal": "77250",
+    "departement": "77",
+    "population": 12810,
+    "lat": 48.3545,
+    "lon": 2.8233,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 68.7,
+        "min": 66
+      },
+      "cdg": {
+        "km": 111.3,
+        "min": 93
+      },
+      "beauvais": {
+        "km": 182.9,
+        "min": 137
+      }
+    },
+    "parisCentre": {
+      "km": 82.1,
+      "min": 79
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77333",
+    "slug": "nemours",
+    "nom": "Nemours",
+    "codePostal": "77140",
+    "departement": "77",
+    "population": 12889,
+    "lat": 48.2633,
+    "lon": 2.7187,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 66.7,
+        "min": 53
+      },
+      "cdg": {
+        "km": 109.3,
+        "min": 80
+      },
+      "beauvais": {
+        "km": 180.9,
+        "min": 124
+      }
+    },
+    "parisCentre": {
+      "km": 80.1,
+      "min": 66
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77337",
+    "slug": "noisiel",
+    "nom": "Noisiel",
+    "codePostal": "77186",
+    "departement": "77",
+    "population": 16053,
+    "lat": 48.8461,
+    "lon": 2.6187,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 29.9,
+        "min": 33
+      },
+      "cdg": {
+        "km": 37.1,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 108.6,
+        "min": 79
+      }
+    },
+    "parisCentre": {
+      "km": 26.4,
+      "min": 31
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77350",
+    "slug": "ozoir-la-ferriere",
+    "nom": "Ozoir-la-Ferrière",
+    "codePostal": "77330",
+    "departement": "77",
+    "population": 21238,
+    "lat": 48.7631,
+    "lon": 2.6753,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 39.1,
+        "min": 42
+      },
+      "cdg": {
+        "km": 49.6,
+        "min": 44
+      },
+      "beauvais": {
+        "km": 121,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 35.6,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77373",
+    "slug": "pontault-combault",
+    "nom": "Pontault-Combault",
+    "codePostal": "77340",
+    "departement": "77",
+    "population": 39096,
+    "lat": 48.7885,
+    "lon": 2.6173,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 35.1,
+        "min": 38
+      },
+      "cdg": {
+        "km": 45.6,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 117,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 31.6,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77379",
+    "slug": "provins",
+    "nom": "Provins",
+    "codePostal": "77160",
+    "departement": "77",
+    "population": 11632,
+    "lat": 48.5629,
+    "lon": 3.2845,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 80.2,
+        "min": 81
+      },
+      "cdg": {
+        "km": 98.3,
+        "min": 83
+      },
+      "beauvais": {
+        "km": 169.7,
+        "min": 126
+      }
+    },
+    "parisCentre": {
+      "km": 91.4,
+      "min": 79
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77390",
+    "slug": "roissy-en-brie",
+    "nom": "Roissy-en-Brie",
+    "codePostal": "77680",
+    "departement": "77",
+    "population": 23229,
+    "lat": 48.7913,
+    "lon": 2.6647,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 34.8,
+        "min": 40
+      },
+      "cdg": {
+        "km": 42,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 113.4,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 31.3,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77407",
+    "slug": "saint-fargeau-ponthierry",
+    "nom": "Saint-Fargeau-Ponthierry",
+    "codePostal": "77310",
+    "departement": "77",
+    "population": 15724,
+    "lat": 48.541,
+    "lon": 2.5291,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 33.1,
+        "min": 38
+      },
+      "cdg": {
+        "km": 75.7,
+        "min": 64
+      },
+      "beauvais": {
+        "km": 147.3,
+        "min": 108
+      }
+    },
+    "parisCentre": {
+      "km": 46.5,
+      "min": 50
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77445",
+    "slug": "savigny-le-temple",
+    "nom": "Savigny-le-Temple",
+    "codePostal": "77176",
+    "departement": "77",
+    "population": 31148,
+    "lat": 48.5846,
+    "lon": 2.5759,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 25.9,
+        "min": 33
+      },
+      "cdg": {
+        "km": 73.9,
+        "min": 64
+      },
+      "beauvais": {
+        "km": 145.3,
+        "min": 107
+      }
+    },
+    "parisCentre": {
+      "km": 47.8,
+      "min": 54
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77449",
+    "slug": "serris",
+    "nom": "Serris",
+    "codePostal": "77700",
+    "departement": "77",
+    "population": 10326,
+    "lat": 48.8453,
+    "lon": 2.7873,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 41.1,
+        "min": 38
+      },
+      "cdg": {
+        "km": 44.6,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 116,
+        "min": 80
+      }
+    },
+    "parisCentre": {
+      "km": 37.5,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77464",
+    "slug": "thorigny-sur-marne",
+    "nom": "Thorigny-sur-Marne",
+    "codePostal": "77400",
+    "departement": "77",
+    "population": 10440,
+    "lat": 48.8928,
+    "lon": 2.7117,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40.7,
+        "min": 42
+      },
+      "cdg": {
+        "km": 31.5,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 100.5,
+        "min": 74
+      }
+    },
+    "parisCentre": {
+      "km": 37.2,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": []
+  },
+  {
+    "insee": "77468",
+    "slug": "torcy",
+    "nom": "Torcy",
+    "codePostal": "77200",
+    "departement": "77",
+    "population": 22810,
+    "lat": 48.8534,
+    "lon": 2.6476,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 30.9,
+        "min": 35
+      },
+      "cdg": {
+        "km": 33,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 104.4,
+        "min": 75
+      }
+    },
+    "parisCentre": {
+      "km": 27.4,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": []
+  }
+]

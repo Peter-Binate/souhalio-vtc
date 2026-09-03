@@ -76,6 +76,26 @@ describe("getDirections", () => {
     );
   });
 
+  it("ajoute `radiuses` seulement si fourni (option pour scripts/enrich-communes.ts)", async () => {
+    mockOrsResponse({
+      features: [
+        {
+          geometry: { type: "LineString", coordinates: [[2.35, 48.85]] },
+          properties: { summary: { distance: 1000, duration: 60 } },
+        },
+      ],
+    });
+
+    await getDirections([2.35, 48.85], [2.55, 49.01], { radiuses: [1000, 1000] });
+
+    expect(mockedPost).toHaveBeenCalledWith(
+      expect.stringContaining("openrouteservice.org"),
+      expect.objectContaining({
+        json: { coordinates: [[2.35, 48.85], [2.55, 49.01]], radiuses: [1000, 1000] },
+      }),
+    );
+  });
+
   it("rejette une réponse ORS qui ne respecte pas le contrat attendu (features vide)", async () => {
     mockOrsResponse({ features: [] });
 

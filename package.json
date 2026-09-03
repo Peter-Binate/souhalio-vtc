@@ -10,7 +10,9 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "postinstall": "node scripts/copy-maplibre-worker.mjs"
+    "postinstall": "node scripts/copy-maplibre-worker.mjs",
+    "data:fetch-communes": "node --import ./scripts/register-ts-paths.mjs scripts/fetch-communes.ts",
+    "data:enrich-communes": "node --env-file=.env.local --import ./scripts/register-ts-paths.mjs scripts/enrich-communes.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
