@@ -131,3 +131,5 @@ Le dossier [`ai_docs/`](./ai_docs) contient la documentation de référence :
 - [`openrouteservice.md`](./ai_docs/openrouteservice.md) — contrat d'API ORS (directions)
 - [`maplibre-maptiler.md`](./ai_docs/maplibre-maptiler.md) — intégration carte dans Next.js
 - [`content-reference.md`](./ai_docs/content-reference.md) — sections & textes de la page
+
+Voir aussi [`docs/tutoriel-resend.md`](./docs/tutoriel-resend.md) — tutoriel complet Resend (compte, connexion au site, test local, mise en production).
