@@ -56,8 +56,9 @@ export type Commune = {
 
 Pour éviter le contenu dupliqué, chaque commune reçoit des **données de trajet réelles**, calculées **une fois** par un script, puis stockées dans `data/communes.json`. **Ne pas** appeler ORS au build à chaque fois (quota + lenteur).
 
-- Pour chaque commune : `getDirections` (cf. `ai_docs/openrouteservice.md`) vers Orly, CDG, Beauvais et le centre de Paris → distance/durée.
-- **Respecter le quota ORS** (plan gratuit ~40 req/min, ~2 000/jour) : throttling + reprise ; ~communes IDF × 4 trajets. Étaler si besoin.
+- **Utiliser l'endpoint ORS Matrix, pas Directions** (`getMatrix`, cf. `ai_docs/openrouteservice.md`) : une requête calcule N×M trajets. Un appel Directions par trajet demande ~1 000 requêtes pour l'IDF et **épuise le quota gratuit avant la fin** — l'erreur a été commise deux fois (LP-19 puis LP-21), avec des runs bloqués à 36 puis 84 communes. Avec Matrix : **5 requêtes** pour les 266 communes. Les valeurs sont identiques (même graphe de routage).
+- Destinations : Orly, CDG, Beauvais et le centre de Paris → distance/durée.
+- Matrix n'accepte pas l'option `radiuses` et **échoue en bloc** si un point n'est pas routable : `scripts/ors-throttle.ts` dichotomise le lot en échec puis retombe sur Directions à rayon élargi pour la source fautive.
 - `inFixedZone` = département ∈ {75, 92, 93, 94} (proche banlieue) → la page peut afficher les tarifs fixes aéroport ; sinon estimation/sur devis.
 - `nearby` = N communes les plus proches (distance à vol d'oiseau sur lat/lon), pour le maillage interne (§6).
 
@@ -109,7 +110,7 @@ Structure recommandée :
 - **Gares / points proches** si renseignés.
 - **CTA** appel (primaire) + WhatsApp (secondaire), depuis `BUSINESS`.
 - **Maillage interne** (§6) : communes proches + lien vers l'accueil et la page hub.
-- **JSON-LD** `LocalBusiness` avec `areaServed` = la commune (§7).
+- **JSON-LD** : un `Service` rattaché à l'entreprise, `areaServed` = la commune, + `BreadcrumbList` et `FAQPage` (§7).
 
 > Éviter le simulateur interactif sur ces pages (composant client, alourdit) : garder le simulateur sur la home, et sur les pages ville se contenter des données statiques + CTA.
 
@@ -122,6 +123,22 @@ Le maillage est décisif en SEO programmatique.
 - **Sur chaque page ville :** liens vers `nearby` (communes proches) + lien « Toutes les villes desservies » (hub) + lien vers l'accueil.
 - **Page hub** `app/vtc/page.tsx` : liste toutes les communes couvertes, **groupées par département**, chacune liée à sa page. Sert de point d'entrée et distribue le PageRank interne.
 - Ajouter un lien discret vers le hub depuis le **footer** global.
+
+### Familles de pages livrées (état actuel)
+
+| Famille | Route | Nombre | Contenu unique |
+| --- | --- | --- | --- |
+| Ville | `/vtc/{ville}` | 266 | Distances/durées ORS vers les 3 aéroports et Paris, tarif fixe conditionnel, communes proches, FAQ |
+| Département | `/vtc/departement/{dep}` | 7 | Agrégats réels (communes, population, durées moyennes), table commune par commune |
+| Aéroport | `/vtc/aeroport/{aeroport}` | 3 | Tarif fixe, terminaux, deux tables de durées (zone tarif fixe / hors zone) |
+| Gare | `/vtc/gare/{gare}` | 9 | Destinations desservies, durées vers les aéroports, correspondances de gare à gare |
+| Hubs | `/vtc`, `/vtc/departement`, `/vtc/aeroport`, `/vtc/gare` | 4 | Points d'entrée et distribution du maillage |
+
+**Deux exclusions volontaires**, au nom du garde-fou « pas de contenu mince » :
+- **Département de Paris (75)** : une seule commune couverte → la page ferait doublon avec `/vtc/paris`. Le hub renvoie directement vers la page ville.
+- **Gare TGV de Roissy-CDG** : couverte par la page aéroport CDG ; une page gare dédiée créerait une ambiguïté tarifaire (la gare est dans l'aéroport, mais son département la placerait en « zone tarif fixe »).
+
+Le footer liste les **4 hubs** sur toutes les pages du site.
 
 ---
 
@@ -149,7 +166,12 @@ export async function generateMetadata(
 ```
 
 ### JSON-LD (dans la page)
-`LocalBusiness`/`TaxiService` avec `name`, `telephone`, `areaServed: { "@type": "City", "name": c.nom }`, `openingHours` 24/7. Injecté via `<script type="application/ld+json">`.
+
+⚠️ **Ne pas ré-émettre un `LocalBusiness` par page.** Le layout racine en émet déjà un ; un second avec un `areaServed` différent décrit *deux entreprises contradictoires*. Modèle retenu (`lib/jsonld.ts`) :
+
+- Layout : **un** `LocalBusiness` avec un `@id` stable (`{SITE_URL}/#business`).
+- Chaque page programmatique : un **`Service`** (`serviceType: "Chauffeur privé VTC"`) rattaché par `provider: { "@id": … }`, portant sa propre zone (`City` / `AdministrativeArea` / `Place`) et — **seulement là où le tarif fixe s'applique** — ses `Offer`.
+- Plus un `BreadcrumbList` (doublé d'un fil d'Ariane visible) et une `FAQPage`.
 
 ### Sitemap (volumineux → chunké)
 ```ts
@@ -213,14 +235,16 @@ Le seul piège, cohérent avec **ADR-0001** : le site a un **Route Handler** (`/
 
 ## 10. Checklist
 
-- [ ] `data/communes.json` généré (IDF), enrichi ORS (trajets aéroports/Paris), commité
-- [ ] `app/vtc/[ville]/page.tsx` : `generateStaticParams` + `dynamicParams = false`
-- [ ] Pages ville en Server Components purs (pas de composant client)
-- [ ] Contenu unique par ville (données ORS) ; tarifs fixes seulement si `inFixedZone`
-- [ ] `generateMetadata` (title/description/canonical) par ville
-- [ ] Maillage : `nearby` + page hub `app/vtc/page.tsx` + lien footer
-- [ ] JSON-LD `LocalBusiness` avec `areaServed` = la commune
-- [ ] `app/sitemap.ts` (chunké) + `app/robots.ts`
-- [ ] Un seul `<h1>` par page
+- [x] `data/communes.json` généré (IDF), enrichi ORS **via Matrix** (trajets aéroports/Paris), commité — 266/266
+- [x] `app/vtc/[ville]/page.tsx` : `generateStaticParams` + `dynamicParams = false`
+- [x] Pages ville en Server Components purs (pas de composant client)
+- [x] Contenu unique par ville (données ORS) ; tarifs fixes seulement si `inFixedZone`
+- [x] `generateMetadata` (title/description/canonical) par page
+- [x] Maillage : `nearby` + hubs (`/vtc`, département, aéroport, gare) + liens footer
+- [x] JSON-LD : un `LocalBusiness` (layout) + `Service`/`BreadcrumbList`/`FAQPage` par page
+- [x] `app/sitemap.ts` (290 URLs) + `app/robots.ts`
+- [x] Un seul `<h1>` par page (vérifié sur le HTML généré)
+- [x] Familles aéroport / gare / département livrées, avec exclusions volontaires (Paris 75, gare CDG)
+- [ ] `NEXT_PUBLIC_SITE_URL` renseigné avec le vrai domaine (canonical/OpenGraph/sitemap en dépendent)
 - [ ] Déploiement Vercel (jamais `output: 'export'` à cause de `/api/route`)
-- [ ] Périmètre honnête (zone réellement desservie) ; suivi Search Console
+- [ ] Suivi Search Console (indexation, requêtes par famille de pages) avant toute nouvelle extension
