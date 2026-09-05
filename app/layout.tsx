@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Inter, Montserrat } from "next/font/google";
-import { AIRPORT_FARES, BUSINESS } from "@/lib/constants";
+import { BUSINESS } from "@/lib/constants";
+import { localBusinessJsonLd } from "@/lib/jsonld";
 import { Providers } from "@/lib/query-client";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -42,53 +43,6 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: BUSINESS.name,
-  telephone: BUSINESS.phone,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: BUSINESS.city,
-    postalCode: BUSINESS.postalCode,
-    addressCountry: "FR",
-  },
-  areaServed: ["Île-de-France", "France"],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
-    ],
-    opens: "00:00",
-    closes: "23:59",
-  },
-  makesOffer: [
-    {
-      "@type": "Offer",
-      name: "Transfert aéroport Paris-Orly (prix fixe)",
-      price: AIRPORT_FARES.ORLY,
-      priceCurrency: "EUR",
-    },
-    {
-      "@type": "Offer",
-      name: "Transfert aéroport Paris-Charles de Gaulle / Roissy (prix fixe)",
-      price: AIRPORT_FARES.CDG,
-      priceCurrency: "EUR",
-    },
-    {
-      "@type": "Offer",
-      name: "Transfert aéroport Paris-Beauvais (prix fixe)",
-      price: AIRPORT_FARES.BEAUVAIS,
-      priceCurrency: "EUR",
-    },
-  ],
-} as const;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -100,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd),
+            __html: JSON.stringify(localBusinessJsonLd()),
           }}
         />
         <Providers>

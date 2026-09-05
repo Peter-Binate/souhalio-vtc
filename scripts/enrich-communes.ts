@@ -1,11 +1,13 @@
 // One-off : enrichit data/communes.raw.json avec des données de trajet réelles (ORS) —
 // distance/durée vers Orly, CDG, Beauvais et Paris centre — puis écrit data/communes.json
-// (committé, lu par app/vtc/[ville]/page.tsx et app/vtc/page.tsx au build).
+// (committé, lu par app/vtc/** au build).
 //
-// Consomme le quota ORS réel (~4 requêtes/commune, throttlées) : action manuelle et
-// délibérée du développeur, jamais automatisée dans predev/prebuild/CI.
+// Utilise l'endpoint Matrix par lots (cf. scripts/ors-throttle.ts) : ~7 requêtes ORS pour
+// les 266 communes, là où un appel Directions par trajet en demandait plus de 1 000 et
+// épuisait le quota gratuit en cours de route.
 //
-//   node --env-file=.env.local --import ./scripts/register-ts-paths.mjs scripts/enrich-communes.ts
+//   npm run data:enrich-communes
+//   npm run data:enrich-communes -- --departements=94,92,93   (priorise la zone tarif fixe)
 //
 // Reprenable : une commune déjà présente dans data/communes.json (par code INSEE) n'est
 // pas re-enrichie si le script est relancé après une interruption.
@@ -13,27 +15,28 @@
 // cf. programmatic-seo.md §3 et PRPs/LP-19-seo-programmatique-villes.md.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { z } from "zod";
-import { getDirections } from "@/lib/ors";
 import { AIRPORTS } from "@/lib/constants";
-import { communeApiSchema, communeSchema, type Commune, type Leg } from "@/schemas/commune";
+import { communeApiSchema, communeSchema, type Commune } from "@/schemas/commune";
+import { matrixLegs } from "@/scripts/ors-throttle";
+import { computeNearby } from "@/scripts/nearby";
 
 const RAW_PATH = new URL("../data/communes.raw.json", import.meta.url);
 const OUT_PATH = new URL("../data/communes.json", import.meta.url);
-const THROTTLE_MS = 2_500; // marge de sécurité sous ~40 req/min du plan gratuit ORS
-const QUOTA_BACKOFF_MS = [15_000, 30_000, 60_000, 120_000]; // paliers de repli si "Quota exceeded"
 const FIXED_ZONE_DEPARTEMENTS = new Set(["75", "92", "93", "94"]);
-const NEARBY_COUNT = 5;
+
+// Taille d'un lot Matrix : 40 sources × 4 destinations = 44 points, 160 trajets par requête —
+// largement sous les limites du plan gratuit, et assez petit pour qu'un échec de lot
+// (point non routable) ne coûte qu'une dichotomie courte.
+const BATCH_SIZE = 40;
 
 // AIRPORTS.ORLY/BEAUVAIS.coord (lib/constants.ts) servent au rayon de détection
 // "trajet aéroport" (lib/pricing.ts) et ne sont PAS des points routables — ORS renvoie
 // 404 ("Could not find routable point…") dessus (déjà rencontré en LP-17 pour Orly).
-// Coordonnées de substitution vérifiées routables (géocodage MapTiler/Nominatim réel,
-// testées via getDirections avant ce run) — CDG, lui, est routable tel quel.
-const AIRPORT_ROUTING_COORDS: Record<"ORLY" | "CDG" | "BEAUVAIS", [number, number]> = {
-  ORLY: [2.393586, 48.73118], // Aéroport Paris-Orly (MapTiler)
-  CDG: AIRPORTS.CDG.coord as [number, number],
-  BEAUVAIS: [2.1116687, 49.4543222], // Aéroport de Beauvais-Tillé (Nominatim, centroïde aérodrome)
-};
+// Coordonnées de substitution vérifiées routables (géocodage MapTiler/Nominatim réel).
+// CDG, lui, est routable tel quel.
+const ORLY: [number, number] = [2.393586, 48.73118];
+const CDG = AIRPORTS.CDG.coord as [number, number];
+const BEAUVAIS: [number, number] = [2.1116687, 49.4543222];
 
 function slugify(nom: string): string {
   return nom
@@ -56,131 +59,91 @@ function makeUniqueSlugs(raw: readonly { nom: string; departement: { code: strin
   });
 }
 
-function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
-  const R = 6371;
-  const dLat = ((lat2 - lat1) * Math.PI) / 180;
-  const dLon = ((lon2 - lon1) * Math.PI) / 180;
-  const a =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(a));
-}
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-// Certains centroïdes de commune (ex. Fontainebleau, en forêt) ne sont pas assez proches
-// d'une route pour le rayon de rattachement par défaut d'ORS (350 m, erreur code 2010) —
-// on élargit le rayon en repli plutôt que de planter tout le run pour un cas limite isolé.
-async function fetchLeg(from: [number, number], to: [number, number]): Promise<Leg> {
-  let result;
-  try {
-    result = await getDirections(from, to);
-  } catch (err) {
-    console.warn(`[enrich-communes]   rayon par défaut insuffisant, réessai à 2 km (${(err as Error).message})`);
-    result = await getDirections(from, to, { radiuses: [2000, 2000] });
-  }
-  return { km: Math.round(result.distanceKm * 10) / 10, min: Math.round(result.durationMin) };
-}
-
-// Le plan gratuit ORS renvoie occasionnellement "Quota exceeded" (limite par minute) même
-// avec le throttling — repli avec palier d'attente croissant plutôt que d'arrêter tout le
-// run (la sauvegarde incrémentale permet de toute façon de reprendre si besoin).
-async function toLeg(from: [number, number], to: [number, number]): Promise<Leg> {
-  for (let attempt = 0; ; attempt++) {
-    try {
-      return await fetchLeg(from, to);
-    } catch (err) {
-      if (attempt >= QUOTA_BACKOFF_MS.length) throw err;
-      const wait = QUOTA_BACKOFF_MS[attempt];
-      console.warn(
-        `[enrich-communes]   échec (${(err as Error).message}), attente ${wait / 1000}s avant nouvelle tentative…`,
-      );
-      await sleep(wait);
-    }
-  }
-}
-
 async function main() {
   if (!process.env.ORS_API_KEY) {
-    throw new Error(
-      "ORS_API_KEY manquante — lancer avec `node --env-file=.env.local --import ./scripts/register-ts-paths.mjs scripts/enrich-communes.ts`",
-    );
+    throw new Error("ORS_API_KEY manquante — lancer via `npm run data:enrich-communes`");
   }
 
   const raw = z.array(communeApiSchema).parse(JSON.parse(readFileSync(RAW_PATH, "utf-8")));
   const slugs = makeUniqueSlugs(raw);
 
+  // Le quota ORS gratuit peut ne pas suffire en une fois : cet argument permet de traiter
+  // d'abord les départements à plus forte valeur (75/92/93/94, la zone à tarif fixe).
+  const filterArg = process.argv.find((a) => a.startsWith("--departements="));
+  const only = filterArg
+    ? new Set(filterArg.slice("--departements=".length).split(",").map((d) => d.trim()))
+    : null;
+  if (only) console.log(`[enrich-communes] départements ciblés : ${[...only].join(", ")}`);
+
   const paris = raw.find((c) => c.code === "75056");
   if (!paris) throw new Error("Commune Paris (75056) introuvable dans communes.raw.json");
-  const parisCentreCoord = paris.centre.coordinates;
+  const parisCentre = paris.centre.coordinates as [number, number];
+  const destinations: [number, number][] = [ORLY, CDG, BEAUVAIS, parisCentre];
 
   const already: Commune[] = existsSync(OUT_PATH)
     ? z.array(communeSchema).parse(JSON.parse(readFileSync(OUT_PATH, "utf-8")))
     : [];
   const doneByInsee = new Map(already.map((c) => [c.insee, c]));
 
+  // Ordre de sortie = ordre du fichier source, que la commune vienne du cache ou d'un
+  // nouveau calcul → data/communes.json reste stable d'un run à l'autre (diff lisible).
   const enriched: Commune[] = [];
+  const todo: { index: number; coord: [number, number] }[] = [];
 
-  for (let i = 0; i < raw.length; i++) {
-    const c = raw[i];
-    const slug = slugs[i];
+  for (const [index, c] of raw.entries()) {
     const existing = doneByInsee.get(c.code);
     if (existing) {
       enriched.push(existing);
       continue;
     }
+    if (only && !only.has(c.departement.code)) continue;
+    todo.push({ index, coord: c.centre.coordinates as [number, number] });
+  }
 
-    console.log(`[enrich-communes] (${i + 1}/${raw.length}) ${c.nom}…`);
-    const [lon, lat] = c.centre.coordinates;
+  console.log(
+    `[enrich-communes] ${already.length} commune(s) déjà enrichie(s), ${todo.length} à traiter ` +
+      `(${Math.ceil(todo.length / BATCH_SIZE)} requête(s) Matrix)`,
+  );
 
-    const [orly, cdg, beauvais, parisCentre] = await (async () => {
-      const orlyLeg = await toLeg([lon, lat], AIRPORT_ROUTING_COORDS.ORLY);
-      await sleep(THROTTLE_MS);
-      const cdgLeg = await toLeg([lon, lat], AIRPORT_ROUTING_COORDS.CDG);
-      await sleep(THROTTLE_MS);
-      const beauvaisLeg = await toLeg([lon, lat], AIRPORT_ROUTING_COORDS.BEAUVAIS);
-      await sleep(THROTTLE_MS);
-      const parisLeg = await toLeg([lon, lat], parisCentreCoord);
-      await sleep(THROTTLE_MS);
-      return [orlyLeg, cdgLeg, beauvaisLeg, parisLeg];
-    })();
+  for (let start = 0; start < todo.length; start += BATCH_SIZE) {
+    const batch = todo.slice(start, start + BATCH_SIZE);
+    console.log(
+      `[enrich-communes] lot ${start / BATCH_SIZE + 1} : ${raw[batch[0].index].nom} → ` +
+        `${raw[batch[batch.length - 1].index].nom}`,
+    );
 
-    enriched.push({
-      insee: c.code,
-      slug,
-      nom: c.nom,
-      codePostal: c.codesPostaux[0],
-      departement: c.departement.code,
-      population: c.population,
-      lat,
-      lon,
-      inFixedZone: FIXED_ZONE_DEPARTEMENTS.has(c.departement.code),
-      airports: { orly, cdg, beauvais },
-      parisCentre,
-      gares: [],
-      nearby: [],
+    const rows = await matrixLegs(batch.map((b) => b.coord), destinations);
+
+    batch.forEach((item, i) => {
+      const c = raw[item.index];
+      const [orly, cdg, beauvais, parisLeg] = rows[i];
+      enriched.push({
+        insee: c.code,
+        slug: slugs[item.index],
+        nom: c.nom,
+        codePostal: c.codesPostaux[0],
+        departement: c.departement.code,
+        population: c.population,
+        lat: item.coord[1],
+        lon: item.coord[0],
+        inFixedZone: FIXED_ZONE_DEPARTEMENTS.has(c.departement.code),
+        airports: { orly, cdg, beauvais },
+        parisCentre: parisLeg,
+        gares: [],
+        nearby: [],
+      });
     });
 
-    // Sauvegarde incrémentale : une interruption ne perd pas le travail déjà fait.
+    // Sauvegarde incrémentale : une interruption (quota ORS) ne perd pas les lots déjà faits.
+    computeNearby(enriched);
     writeFileSync(OUT_PATH, `${JSON.stringify(enriched, null, 2)}\n`, "utf-8");
   }
 
-  // Maillage interne : calculé une fois toutes les communes enrichies (nécessite lat/lon
-  // de l'ensemble du jeu de données).
-  for (const c of enriched) {
-    const distances = enriched
-      .filter((other) => other.insee !== c.insee)
-      .map((other) => ({ slug: other.slug, d: haversineKm(c.lat, c.lon, other.lat, other.lon) }))
-      .sort((a, b) => a.d - b.d)
-      .slice(0, NEARBY_COUNT)
-      .map((x) => x.slug);
-    c.nearby = distances;
-  }
-
+  // Maillage interne : dépend de l'ensemble du jeu, donc recalculé en fin de run.
+  // Rejouable seul via `npm run data:link-communes`.
+  computeNearby(enriched);
   writeFileSync(OUT_PATH, `${JSON.stringify(enriched, null, 2)}\n`, "utf-8");
-  console.log(`[enrich-communes] terminé : ${enriched.length} communes écrites dans ${OUT_PATH.pathname}`);
+  console.log(`[enrich-communes] terminé : ${enriched.length} communes écrites`);
 }
 
 main().catch((err) => {

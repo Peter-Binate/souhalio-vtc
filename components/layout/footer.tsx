@@ -1,6 +1,15 @@
 import Link from "next/link";
 import { BUSINESS, telHref, waHref } from "@/lib/constants";
 
+// Maillage interne global vers les hubs SEO (LP-19 à LP-23) : le footer distribue le
+// PageRank vers les familles de pages programmatiques depuis toutes les pages du site.
+const FOOTER_LINKS = [
+  { href: "/vtc", label: "Nos zones d'intervention" },
+  { href: "/vtc/departement", label: "VTC par département" },
+  { href: "/vtc/aeroport", label: "Transferts aéroport" },
+  { href: "/vtc/gare", label: "Transferts gare" },
+] as const;
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -38,12 +47,20 @@ export function Footer() {
           </a>
         </div>
 
+        <nav aria-label="Pages du site" className="md:col-span-2">
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {FOOTER_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="underline-offset-4 hover:text-white hover:underline">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         <p className="text-xs text-zinc-400 md:col-span-2">
           © {year} {BUSINESS.name}. Tous droits réservés.
-          {" · "}
-          <Link href="/vtc" className="underline hover:text-white">
-            Nos zones d&apos;intervention
-          </Link>
         </p>
       </div>
     </footer>

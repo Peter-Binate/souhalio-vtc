@@ -40,6 +40,14 @@ export const orsDirectionsSchema = z.object({
     .min(1),
 });
 
+// Réponse brute d'OpenRouteService (Matrix) — parsée avant tout usage.
+// Le service renvoie une matrice sources × destinations ; une case peut être `null`
+// lorsqu'aucun itinéraire n'est trouvé entre les deux points.
+export const orsMatrixSchema = z.object({
+  distances: z.array(z.array(z.number().nullable())), // mètres
+  durations: z.array(z.array(z.number().nullable())), // secondes
+});
+
 // Réponse brute du géocodage MapTiler — parsée avant tout usage.
 export const geocodeFeatureSchema = z.object({
   place_name: z.string(),

@@ -91,3 +91,6 @@ export const waHref = (raw: string, text?: string) => {
   const base = `https://wa.me/${raw.replace(/\D/g, "")}`;
   return text ? `${base}?text=${encodeURIComponent(text)}` : base;
 };
+
+// URL canonique du site (SSG : évaluée au build). Repli localhost pour le dev.
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";

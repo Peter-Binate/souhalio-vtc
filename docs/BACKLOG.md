@@ -201,19 +201,57 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
 
 ## Phase 7 — SEO programmatique
 
-### [~] LP-19 — Pages ville Île-de-France (SSG)
+### [x] LP-19 — Pages ville Île-de-France (SSG)
 
 **En tant que** visiteur cherchant un VTC dans sa commune, **je veux** trouver une page dédiée à ma ville, **afin de** vérifier rapidement la desserte et le tarif avant d'appeler.
 
 - **Inclus :** `data/communes.json` (communes IDF > 10 000 habitants, enrichi ORS : distances/durées Orly/CDG/Beauvais/Paris) ; `app/vtc/[ville]/page.tsx` (SSG, `generateStaticParams`) ; page hub `app/vtc/page.tsx` ; maillage interne + lien footer ; `generateMetadata`/JSON-LD par ville ; extension `app/sitemap.ts`.
 - **Exclus (ce ticket) :** extension province/longue distance (reportée) ; simulateur interactif sur les pages ville ; tarif fixe hors zone `inFixedZone` (75/92/93/94) ; `output: 'export'`.
 - **Critères d'acceptation :**
-  - [~] `data/communes.json` committé, données ORS réelles — **36/266 communes enrichies** ; le reste est bloqué par un incident externe ORS (« 403 Quota exceeded » persistant malgré quota tableau de bord disponible — bug documenté côté ORS, cf. rapport final). Reprendre avec `npm run data:enrich-communes` (reprise automatique par code INSEE) une fois l'incident résorbé.
-  - [x] `npm run build` pré-rend une page statique par commune (36) + le hub, vérifié
+  - [x] `data/communes.json` committé, données ORS réelles — **266/266 communes enrichies** (débloqué en LP-21 par la bascule sur l'endpoint ORS **Matrix** : 5 requêtes au lieu de ~1 000, cf. CHANGELOG)
+  - [x] `npm run build` pré-rend une page statique par commune (266) + le hub, vérifié
   - [x] Tarif fixe affiché seulement si `inFixedZone`, sinon estimation/sur devis — vérifié (Paris vs Avon)
-  - [x] Maillage hub + accueil fonctionnel sur chaque page ville ; maillage `nearby` (communes proches) pas encore calculé (dépend de l'enrichissement complet), vide sans casser la page
-  - [x] Aucune régression : `npm test` vert (47/47, dont 2 nouveaux tests pour l'option `radiuses` de `getDirections`), `/api/route` inchangé
+  - [x] Maillage hub + accueil fonctionnel sur chaque page ville ; maillage `nearby` calculé pour les 266 communes (rejouable seul via `npm run data:link-communes`, sans ORS)
+  - [x] Aucune régression : `npm test` vert (138/138), `/api/route` et le simulateur de la home inchangés
 - **Réf. :** `PRPs/LP-19-seo-programmatique-villes.md`, `programmatic-seo.md`
+
+### [x] LP-21 — Pages aéroport (Orly, Roissy-CDG, Beauvais)
+
+**En tant que** voyageur cherchant un transfert aéroport, **je veux** une page dédiée à mon aéroport, **afin de** connaître le tarif et le temps de trajet avant d'appeler.
+
+- **Inclus :** `data/aeroports.ts` (faits publics : implantation, terminaux, code IATA) ; `app/vtc/aeroport/[aeroport]/page.tsx` (SSG) + hub `app/vtc/aeroport/page.tsx` ; tableaux de durées/distances réelles depuis les communes (zone tarif fixe / hors zone) ; JSON-LD `Service` + `Offer` + `FAQPage` + `BreadcrumbList` ; sitemap étendu.
+- **Critères d'acceptation :**
+  - [x] 3 pages aéroport + hub générées en SSG, un seul `<h1>` par page
+  - [x] Tarif fixe présenté explicitement comme « départ Paris et proche banlieue », sur devis au-delà
+  - [x] Contenu unique par aéroport (données ORS réelles, pas un gabarit dupliqué)
+  - [x] Vérification visuelle navigateur (page Orly)
+- **Réf. :** `programmatic-seo.md`, `CHANGELOG.md`
+
+### [x] LP-22 — Pages gare (grandes gares parisiennes + TGV franciliennes)
+
+**En tant que** voyageur en partance ou en arrivée de train, **je veux** une page dédiée à ma gare, **afin de** réserver une prise en charge au bon endroit.
+
+- **Inclus :** `scripts/fetch-gares.ts` (SNCF Open Data « gares-de-voyageurs », coordonnées officielles) + `scripts/enrich-gares.ts` (ORS Matrix) → `data/gares.json` ; `schemas/gare.ts` ; `app/vtc/gare/[gare]/page.tsx` (SSG) + hub ; correspondances de gare à gare calculées dans les deux sens.
+- **Exclus :** gare TGV de Roissy-CDG (couverte par la page aéroport CDG, une page dédiée créerait une ambiguïté tarifaire) ; toute gare hors liste curatée (risque de *doorway pages*).
+- **Critères d'acceptation :**
+  - [x] 9 pages gare + hub générées en SSG
+  - [x] Coordonnées issues d'une source officielle (le géocodage MapTiler est inexploitable sur les noms de gare)
+  - [x] Tarif fixe affiché uniquement pour les gares en zone (Paris) ; sur devis pour Massy TGV et Marne-la-Vallée Chessy
+  - [x] Vérification visuelle navigateur (page Gare du Nord)
+- **⚠️ À confirmer avec le client :** intitulé exact « Marne-la-Vallée Chessy » (déjà signalé dans `ai_docs/content-reference.md`) et pertinence de « Massy TGV » plutôt que « Massy-Palaiseau » (les deux gares sont distinctes et distantes de quelques centaines de mètres).
+- **Réf. :** `programmatic-seo.md`, `CHANGELOG.md`
+
+### [x] LP-23 — Hubs par département
+
+**En tant que** visiteur, **je veux** une page par département francilien, **afin de** situer la desserte et le tarif à l'échelle de mon département.
+
+- **Inclus :** `app/vtc/departement/[departement]/page.tsx` (SSG) + hub `app/vtc/departement/page.tsx` ; agrégats réels (communes, population, durées moyennes, zone tarifaire) ; table commune par commune ; maillage hub → département → ville.
+- **Exclus :** Paris (75), qui ne couvre qu'une commune — la page ferait doublon avec `/vtc/paris` (contenu mince / *doorway page*). Le hub renvoie directement vers la page ville.
+- **Critères d'acceptation :**
+  - [x] 7 pages département + hub générées en SSG
+  - [x] Un département n'est en « zone tarif fixe » que si **toutes** ses communes le sont (testé)
+  - [x] Vérification visuelle navigateur (page Val-de-Marne)
+- **Réf. :** `programmatic-seo.md`, `CHANGELOG.md`
 
 ---
 

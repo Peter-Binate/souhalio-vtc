@@ -1,4 +1,4 @@
-# OpenRouteService — Directions
+# OpenRouteService — Directions & Matrix
 
 Utilisé **uniquement côté serveur** (Route Handler `app/api/route/route.ts`), avec `ORS_API_KEY`.
 Documentation officielle : https://openrouteservice.org/dev/#/api-docs
@@ -152,6 +152,23 @@ export async function POST(req: Request) {
 - **Erreurs** : ne jamais renvoyer le message d'erreur ORS brut au client ; renvoyer un message générique.
 - **⚠️ Pas de trafic temps réel** : le profil `driving-car` utilise des vitesses moyennes statiques par type de route (OSM), sans données de trafic en direct — contrairement à Google Maps. Mesure réelle (2026-09-02, voir `PRPs/LP-17-verification-duree-trajet.md`) : ORS reste proche de Google Maps sur autoroute/longue distance (écart −3 % à −7 %), mais sous-estime fortement les trajets urbains courts (−31 % à −34 %, feux/congestion non modélisés). `getDirections()` applique donc `correctDurationMin()` (`lib/ors.ts`), un facteur par palier de distance calibré sur cette mesure et défini dans `ROUTE_DURATION_CORRECTION` (`lib/constants.ts`) : ×1,5 en dessous de 8 km, ×1,1 entre 8 et 20 km, ×1,0 au-delà. À revalider périodiquement (les vitesses moyennes OSM/ORS évoluent).
 - **Profil** : `driving-car` convient au VTC. Ne pas changer sans raison.
+
+## Endpoint Matrix — pour les scripts de données uniquement
+
+`POST https://api.openrouteservice.org/v2/matrix/driving-car` calcule **N×M trajets en une seule requête**. C'est ce qui rend le SEO programmatique tenable : enrichir 266 communes × 4 destinations avec Directions demande ~1 000 requêtes et épuise le quota gratuit en cours de route (constaté deux fois en LP-19/LP-21) ; avec Matrix, il en faut **5**.
+
+```ts
+// lib/ors.ts — getMatrix(sources, destinations)
+// Corps envoyé : locations = [...sources, ...destinations], et des index
+// sources: [0..n-1] / destinations: [n..n+m-1] qui pointent dans ce tableau unique.
+{ locations, sources, destinations, metrics: ["distance", "duration"], units: "m" }
+// Réponse : { distances: number[][], durations: number[][] } — validée par `orsMatrixSchema`.
+```
+
+- **Mêmes valeurs que Directions** (même graphe de routage) — vérifié sur trajets réels : Paris→CDG donne 27 274 m / 2 199,8 s avec les deux endpoints. `getMatrix()` applique la même correction `correctDurationMin()` que `getDirections()`.
+- **Quota séparé** de celui de Directions : Matrix répondait encore `200` alors que Directions renvoyait `403 Quota exceeded`.
+- **Pas d'option `radiuses`** : un point non routable fait échouer **toute** la requête (pas une case nulle). `scripts/ors-throttle.ts` gère ce cas — dichotomie du lot en échec, puis repli sur `getDirections(..., { radiuses: [2000, 2000] })` pour la source fautive. Une case `null` dans la réponse (couple sans itinéraire) est repassée en Directions plutôt que transformée en `0` silencieux.
+- **Réservé aux scripts one-off** (`scripts/enrich-communes.ts`, `scripts/enrich-gares.ts`). Le simulateur de la home continue d'utiliser `getDirections` via `/api/route` — il lui faut la géométrie du tracé, que Matrix ne renvoie pas.
 
 ## Géocodage
 

@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import ky from "ky";
-import { getDirections } from "./ors";
+import { getDirections, getMatrix } from "./ors";
 
 vi.mock("ky", () => ({
   default: {
@@ -182,5 +182,71 @@ describe("getDirections", () => {
 
       expect(result.durationMin).toBeCloseTo(15, 5); // 10 * 1.5
     });
+  });
+});
+
+describe("getMatrix", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    process.env.ORS_API_KEY = "test-key";
+  });
+
+  it("indexe sources et destinations dans la liste concaténée envoyée à ORS", async () => {
+    mockOrsResponse({ distances: [[1000, 2000]], durations: [[600, 900]] });
+
+    await getMatrix(
+      [[2.35, 48.85]],
+      [
+        [2.39, 48.73],
+        [2.54, 49.0],
+      ],
+    );
+
+    const body = mockedPost.mock.calls[0][1] as { json: Record<string, unknown> };
+    expect(body.json.locations).toEqual([
+      [2.35, 48.85],
+      [2.39, 48.73],
+      [2.54, 49.0],
+    ]);
+    expect(body.json.sources).toEqual([0]);
+    expect(body.json.destinations).toEqual([1, 2]);
+    expect(body.json.metrics).toEqual(["distance", "duration"]);
+  });
+
+  it("convertit m→km (1 décimale) et s→min arrondies, correction de durée appliquée", async () => {
+    // 27,3 km → palier ×1,0 : 2199,8 s = 36,66 min → 37
+    // 18,5 km → palier ×1,1 : 2161,0 s = 36,02 min × 1,1 = 39,6 → 40
+    // 6,0 km  → palier ×1,5 : 600 s = 10 min × 1,5 = 15
+    mockOrsResponse({
+      distances: [[27274, 18515.61, 6000]],
+      durations: [[2199.8, 2161.03, 600]],
+    });
+
+    const [row] = await getMatrix([[2.35, 48.85]], [
+      [2.54, 49.0],
+      [2.39, 48.73],
+      [2.3, 48.8],
+    ]);
+
+    expect(row[0]).toEqual({ km: 27.3, min: 37 });
+    expect(row[1]).toEqual({ km: 18.5, min: 40 });
+    expect(row[2]).toEqual({ km: 6, min: 15 });
+  });
+
+  it("renvoie null pour une case sans itinéraire plutôt qu'un 0 silencieux", async () => {
+    mockOrsResponse({ distances: [[null, 1000]], durations: [[null, 600]] });
+
+    const [row] = await getMatrix([[2.35, 48.85]], [
+      [0, 0],
+      [2.39, 48.73],
+    ]);
+
+    expect(row[0]).toBeNull();
+    expect(row[1]).not.toBeNull();
+  });
+
+  it("rejette une réponse ORS qui ne respecte pas le schéma", async () => {
+    mockOrsResponse({ durations: [[600]] }); // `distances` manquant
+    await expect(getMatrix([[2.35, 48.85]], [[2.39, 48.73]])).rejects.toThrow();
   });
 });

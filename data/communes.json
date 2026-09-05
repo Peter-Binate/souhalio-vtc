@@ -28,7 +28,13 @@
       "min": 0
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "le-pre-saint-gervais",
+      "gentilly",
+      "montrouge",
+      "le-kremlin-bicetre",
+      "saint-mande"
+    ]
   },
   {
     "insee": "77014",
@@ -59,7 +65,13 @@
       "min": 70
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "fontainebleau",
+      "moret-loing-et-orvanne",
+      "vaux-le-penil",
+      "dammarie-les-lys",
+      "melun"
+    ]
   },
   {
     "insee": "77053",
@@ -90,7 +102,13 @@
       "min": 44
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "combs-la-ville",
+      "villecresnes",
+      "epinay-sous-senart",
+      "moissy-cramayel",
+      "brunoy"
+    ]
   },
   {
     "insee": "77058",
@@ -121,7 +139,13 @@
       "min": 39
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "lagny-sur-marne",
+      "montevrain",
+      "torcy",
+      "lognes",
+      "roissy-en-brie"
+    ]
   },
   {
     "insee": "77067",
@@ -152,7 +176,13 @@
       "min": 56
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "savigny-le-temple",
+      "le-mee-sur-seine",
+      "saint-fargeau-ponthierry",
+      "melun",
+      "moissy-cramayel"
+    ]
   },
   {
     "insee": "77083",
@@ -183,7 +213,13 @@
       "min": 30
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "noisiel",
+      "noisy-le-grand",
+      "lognes",
+      "vaires-sur-marne",
+      "torcy"
+    ]
   },
   {
     "insee": "77108",
@@ -214,7 +250,13 @@
       "min": 41
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "montfermeil",
+      "vaires-sur-marne",
+      "gagny",
+      "champs-sur-marne",
+      "neuilly-sur-marne"
+    ]
   },
   {
     "insee": "77118",
@@ -245,7 +287,13 @@
       "min": 43
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "villeparisis",
+      "thorigny-sur-marne",
+      "mitry-mory",
+      "lagny-sur-marne",
+      "vaires-sur-marne"
+    ]
   },
   {
     "insee": "77122",
@@ -276,7 +324,13 @@
       "min": 53
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "lieusaint",
+      "moissy-cramayel",
+      "brie-comte-robert",
+      "epinay-sous-senart",
+      "brunoy"
+    ]
   },
   {
     "insee": "77131",
@@ -307,7 +361,13 @@
       "min": 61
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "la-ferte-sous-jouarre",
+      "meaux",
+      "serris",
+      "montevrain",
+      "bussy-saint-georges"
+    ]
   },
   {
     "insee": "77152",
@@ -338,7 +398,13 @@
       "min": 56
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "le-mee-sur-seine",
+      "melun",
+      "vaux-le-penil",
+      "cesson",
+      "saint-fargeau-ponthierry"
+    ]
   },
   {
     "insee": "77153",
@@ -369,7 +435,13 @@
       "min": 45
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "mitry-mory",
+      "claye-souilly",
+      "tremblay-en-france",
+      "louvres",
+      "villeparisis"
+    ]
   },
   {
     "insee": "77183",
@@ -400,7 +472,13 @@
       "min": 59
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "coulommiers",
+      "meaux",
+      "serris",
+      "montevrain",
+      "thorigny-sur-marne"
+    ]
   },
   {
     "insee": "77186",
@@ -431,7 +509,13 @@
       "min": 66
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "avon",
+      "dammarie-les-lys",
+      "vaux-le-penil",
+      "moret-loing-et-orvanne",
+      "melun"
+    ]
   },
   {
     "insee": "77243",
@@ -462,7 +546,13 @@
       "min": 36
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "thorigny-sur-marne",
+      "montevrain",
+      "torcy",
+      "bussy-saint-georges",
+      "vaires-sur-marne"
+    ]
   },
   {
     "insee": "77251",
@@ -493,7 +583,13 @@
       "min": 48
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "saint-pierre-du-perray",
+      "moissy-cramayel",
+      "combs-la-ville",
+      "savigny-le-temple",
+      "corbeil-essonnes"
+    ]
   },
   {
     "insee": "77258",
@@ -524,7 +620,13 @@
       "min": 29
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "noisiel",
+      "torcy",
+      "champs-sur-marne",
+      "vaires-sur-marne",
+      "roissy-en-brie"
+    ]
   },
   {
     "insee": "77284",
@@ -555,7 +657,13 @@
       "min": 51
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "montevrain",
+      "serris",
+      "thorigny-sur-marne",
+      "claye-souilly",
+      "la-ferte-sous-jouarre"
+    ]
   },
   {
     "insee": "77285",
@@ -586,7 +694,13 @@
       "min": 57
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "melun",
+      "dammarie-les-lys",
+      "cesson",
+      "vaux-le-penil",
+      "savigny-le-temple"
+    ]
   },
   {
     "insee": "77288",
@@ -617,7 +731,13 @@
       "min": 56
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "le-mee-sur-seine",
+      "vaux-le-penil",
+      "dammarie-les-lys",
+      "cesson",
+      "savigny-le-temple"
+    ]
   },
   {
     "insee": "77294",
@@ -648,7 +768,13 @@
       "min": 41
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "villeparisis",
+      "tremblay-en-france",
+      "villepinte",
+      "claye-souilly",
+      "sevran"
+    ]
   },
   {
     "insee": "77296",
@@ -679,7 +805,13 @@
       "min": 52
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "lieusaint",
+      "combs-la-ville",
+      "savigny-le-temple",
+      "cesson",
+      "saint-pierre-du-perray"
+    ]
   },
   {
     "insee": "77305",
@@ -710,7 +842,13 @@
       "min": 76
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "moret-loing-et-orvanne",
+      "avon",
+      "fontainebleau",
+      "nemours",
+      "vaux-le-penil"
+    ]
   },
   {
     "insee": "77307",
@@ -741,7 +879,13 @@
       "min": 41
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "lagny-sur-marne",
+      "serris",
+      "thorigny-sur-marne",
+      "bussy-saint-georges",
+      "torcy"
+    ]
   },
   {
     "insee": "77316",
@@ -772,7 +916,13 @@
       "min": 79
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "avon",
+      "montereau-fault-yonne",
+      "nemours",
+      "fontainebleau",
+      "vaux-le-penil"
+    ]
   },
   {
     "insee": "77333",
@@ -803,7 +953,13 @@
       "min": 66
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "moret-loing-et-orvanne",
+      "avon",
+      "fontainebleau",
+      "montereau-fault-yonne",
+      "dammarie-les-lys"
+    ]
   },
   {
     "insee": "77337",
@@ -834,7 +990,13 @@
       "min": 31
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "champs-sur-marne",
+      "lognes",
+      "torcy",
+      "vaires-sur-marne",
+      "chelles"
+    ]
   },
   {
     "insee": "77350",
@@ -865,7 +1027,13 @@
       "min": 41
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "roissy-en-brie",
+      "pontault-combault",
+      "la-queue-en-brie",
+      "bussy-saint-georges",
+      "lognes"
+    ]
   },
   {
     "insee": "77373",
@@ -896,7 +1064,13 @@
       "min": 36
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "la-queue-en-brie",
+      "roissy-en-brie",
+      "le-plessis-trevise",
+      "lognes",
+      "ozoir-la-ferriere"
+    ]
   },
   {
     "insee": "77379",
@@ -927,7 +1101,13 @@
       "min": 79
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "montereau-fault-yonne",
+      "coulommiers",
+      "moret-loing-et-orvanne",
+      "vaux-le-penil",
+      "avon"
+    ]
   },
   {
     "insee": "77390",
@@ -958,7 +1138,13 @@
       "min": 39
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "ozoir-la-ferriere",
+      "pontault-combault",
+      "lognes",
+      "bussy-saint-georges",
+      "la-queue-en-brie"
+    ]
   },
   {
     "insee": "77407",
@@ -989,7 +1175,13 @@
       "min": 50
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "cesson",
+      "savigny-le-temple",
+      "mennecy",
+      "dammarie-les-lys",
+      "le-mee-sur-seine"
+    ]
   },
   {
     "insee": "77445",
@@ -1020,7 +1212,13 @@
       "min": 54
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "cesson",
+      "moissy-cramayel",
+      "saint-pierre-du-perray",
+      "lieusaint",
+      "saint-fargeau-ponthierry"
+    ]
   },
   {
     "insee": "77449",
@@ -1051,7 +1249,13 @@
       "min": 36
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "montevrain",
+      "bussy-saint-georges",
+      "lagny-sur-marne",
+      "thorigny-sur-marne",
+      "torcy"
+    ]
   },
   {
     "insee": "77464",
@@ -1082,7 +1286,13 @@
       "min": 41
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "lagny-sur-marne",
+      "montevrain",
+      "claye-souilly",
+      "vaires-sur-marne",
+      "torcy"
+    ]
   },
   {
     "insee": "77468",
@@ -1113,6 +1323,8522 @@
       "min": 33
     },
     "gares": [],
-    "nearby": []
+    "nearby": [
+      "vaires-sur-marne",
+      "noisiel",
+      "lognes",
+      "champs-sur-marne",
+      "lagny-sur-marne"
+    ]
+  },
+  {
+    "insee": "77479",
+    "slug": "vaires-sur-marne",
+    "nom": "Vaires-sur-Marne",
+    "codePostal": "77360",
+    "departement": "77",
+    "population": 13931,
+    "lat": 48.8703,
+    "lon": 2.6332,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.3,
+        "min": 39
+      },
+      "cdg": {
+        "km": 35.1,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 106.5,
+        "min": 76
+      }
+    },
+    "parisCentre": {
+      "km": 33.8,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "torcy",
+      "noisiel",
+      "chelles",
+      "champs-sur-marne",
+      "lognes"
+    ]
+  },
+  {
+    "insee": "77487",
+    "slug": "vaux-le-penil",
+    "nom": "Vaux-le-Pénil",
+    "codePostal": "77000",
+    "departement": "77",
+    "population": 11474,
+    "lat": 48.5242,
+    "lon": 2.6985,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 38.2,
+        "min": 42
+      },
+      "cdg": {
+        "km": 77.1,
+        "min": 66
+      },
+      "beauvais": {
+        "km": 148.5,
+        "min": 109
+      }
+    },
+    "parisCentre": {
+      "km": 63.1,
+      "min": 62
+    },
+    "gares": [],
+    "nearby": [
+      "melun",
+      "le-mee-sur-seine",
+      "dammarie-les-lys",
+      "cesson",
+      "savigny-le-temple"
+    ]
+  },
+  {
+    "insee": "77514",
+    "slug": "villeparisis",
+    "nom": "Villeparisis",
+    "codePostal": "77270",
+    "departement": "77",
+    "population": 26946,
+    "lat": 48.9408,
+    "lon": 2.6178,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 44.8,
+        "min": 43
+      },
+      "cdg": {
+        "km": 22.6,
+        "min": 22
+      },
+      "beauvais": {
+        "km": 94,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 25.9,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "mitry-mory",
+      "claye-souilly",
+      "montfermeil",
+      "tremblay-en-france",
+      "sevran"
+    ]
+  },
+  {
+    "insee": "78005",
+    "slug": "acheres",
+    "nom": "Achères",
+    "codePostal": "78260",
+    "departement": "78",
+    "population": 22241,
+    "lat": 48.9817,
+    "lon": 2.1095,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 66.6,
+        "min": 70
+      },
+      "cdg": {
+        "km": 49.3,
+        "min": 44
+      },
+      "beauvais": {
+        "km": 72.9,
+        "min": 53
+      }
+    },
+    "parisCentre": {
+      "km": 37.8,
+      "min": 50
+    },
+    "gares": [],
+    "nearby": [
+      "conflans-sainte-honorine",
+      "herblay-sur-seine",
+      "andresy",
+      "eragny-sur-oise",
+      "maisons-laffitte"
+    ]
+  },
+  {
+    "insee": "78015",
+    "slug": "andresy",
+    "nom": "Andrésy",
+    "codePostal": "78570",
+    "departement": "78",
+    "population": 13834,
+    "lat": 48.9778,
+    "lon": 2.0496,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 56.3,
+        "min": 65
+      },
+      "cdg": {
+        "km": 50.5,
+        "min": 50
+      },
+      "beauvais": {
+        "km": 74.1,
+        "min": 59
+      }
+    },
+    "parisCentre": {
+      "km": 35.2,
+      "min": 52
+    },
+    "gares": [],
+    "nearby": [
+      "chanteloup-les-vignes",
+      "triel-sur-seine",
+      "carrieres-sous-poissy",
+      "jouy-le-moutier",
+      "acheres"
+    ]
+  },
+  {
+    "insee": "78029",
+    "slug": "aubergenville",
+    "nom": "Aubergenville",
+    "codePostal": "78410",
+    "departement": "78",
+    "population": 12723,
+    "lat": 48.9609,
+    "lon": 1.844,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 60.6,
+        "min": 58
+      },
+      "cdg": {
+        "km": 63.9,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 94.4,
+        "min": 80
+      }
+    },
+    "parisCentre": {
+      "km": 42.9,
+      "min": 47
+    },
+    "gares": [],
+    "nearby": [
+      "les-mureaux",
+      "limay",
+      "verneuil-sur-seine",
+      "mantes-la-ville",
+      "mantes-la-jolie"
+    ]
+  },
+  {
+    "insee": "78073",
+    "slug": "bois-d-arcy",
+    "nom": "Bois-d'Arcy",
+    "codePostal": "78390",
+    "departement": "78",
+    "population": 16586,
+    "lat": 48.806,
+    "lon": 2.0223,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 36.5,
+        "min": 40
+      },
+      "cdg": {
+        "km": 53.6,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 107.7,
+        "min": 86
+      }
+    },
+    "parisCentre": {
+      "km": 30.1,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "fontenay-le-fleury",
+      "villepreux",
+      "les-clayes-sous-bois",
+      "montigny-le-bretonneux",
+      "saint-cyr-l-ecole"
+    ]
+  },
+  {
+    "insee": "78123",
+    "slug": "carrieres-sous-poissy",
+    "nom": "Carrières-sous-Poissy",
+    "codePostal": "78955",
+    "departement": "78",
+    "population": 20825,
+    "lat": 48.9469,
+    "lon": 2.0264,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 52.2,
+        "min": 59
+      },
+      "cdg": {
+        "km": 52.1,
+        "min": 56
+      },
+      "beauvais": {
+        "km": 79.3,
+        "min": 67
+      }
+    },
+    "parisCentre": {
+      "km": 31.1,
+      "min": 46
+    },
+    "gares": [],
+    "nearby": [
+      "poissy",
+      "chanteloup-les-vignes",
+      "triel-sur-seine",
+      "andresy",
+      "saint-germain-en-laye"
+    ]
+  },
+  {
+    "insee": "78124",
+    "slug": "carrieres-sur-seine",
+    "nom": "Carrières-sur-Seine",
+    "codePostal": "78420",
+    "departement": "78",
+    "population": 14791,
+    "lat": 48.9128,
+    "lon": 2.1812,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40.3,
+        "min": 52
+      },
+      "cdg": {
+        "km": 34.6,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 82.2,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 16.6,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "houilles",
+      "nanterre",
+      "sartrouville",
+      "bezons",
+      "chatou"
+    ]
+  },
+  {
+    "insee": "78126",
+    "slug": "la-celle-saint-cloud",
+    "nom": "La Celle-Saint-Cloud",
+    "codePostal": "78170",
+    "departement": "78",
+    "population": 20460,
+    "lat": 48.8498,
+    "lon": 2.1342,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 33.9,
+        "min": 43
+      },
+      "cdg": {
+        "km": 41.9,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 92.7,
+        "min": 73
+      }
+    },
+    "parisCentre": {
+      "km": 21.3,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "le-chesnay-rocquencourt",
+      "croissy-sur-seine",
+      "marly-le-roi",
+      "garches",
+      "rueil-malmaison"
+    ]
+  },
+  {
+    "insee": "78138",
+    "slug": "chanteloup-les-vignes",
+    "nom": "Chanteloup-les-Vignes",
+    "codePostal": "78570",
+    "departement": "78",
+    "population": 10861,
+    "lat": 48.9773,
+    "lon": 2.0336,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 56.8,
+        "min": 63
+      },
+      "cdg": {
+        "km": 51.9,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 75.5,
+        "min": 62
+      }
+    },
+    "parisCentre": {
+      "km": 35.5,
+      "min": 52
+    },
+    "gares": [],
+    "nearby": [
+      "andresy",
+      "triel-sur-seine",
+      "carrieres-sous-poissy",
+      "jouy-le-moutier",
+      "verneuil-sur-seine"
+    ]
+  },
+  {
+    "insee": "78146",
+    "slug": "chatou",
+    "nom": "Chatou",
+    "codePostal": "78400",
+    "departement": "78",
+    "population": 30598,
+    "lat": 48.8964,
+    "lon": 2.1502,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.7,
+        "min": 46
+      },
+      "cdg": {
+        "km": 38.4,
+        "min": 43
+      },
+      "beauvais": {
+        "km": 89.2,
+        "min": 69
+      }
+    },
+    "parisCentre": {
+      "km": 17.5,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "le-vesinet",
+      "croissy-sur-seine",
+      "montesson",
+      "carrieres-sur-seine",
+      "rueil-malmaison"
+    ]
+  },
+  {
+    "insee": "78158",
+    "slug": "le-chesnay-rocquencourt",
+    "nom": "Le Chesnay-Rocquencourt",
+    "codePostal": "78150",
+    "departement": "78",
+    "population": 30689,
+    "lat": 48.8285,
+    "lon": 2.1188,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 33.9,
+        "min": 40
+      },
+      "cdg": {
+        "km": 44.8,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 99,
+        "min": 78
+      }
+    },
+    "parisCentre": {
+      "km": 21.3,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "la-celle-saint-cloud",
+      "versailles",
+      "ville-d-avray",
+      "saint-cyr-l-ecole",
+      "marly-le-roi"
+    ]
+  },
+  {
+    "insee": "78165",
+    "slug": "les-clayes-sous-bois",
+    "nom": "Les Clayes-sous-Bois",
+    "codePostal": "78340",
+    "departement": "78",
+    "population": 16804,
+    "lat": 48.8168,
+    "lon": 1.9835,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.9,
+        "min": 49
+      },
+      "cdg": {
+        "km": 58.4,
+        "min": 65
+      },
+      "beauvais": {
+        "km": 94.6,
+        "min": 91
+      }
+    },
+    "parisCentre": {
+      "km": 34.9,
+      "min": 48
+    },
+    "gares": [],
+    "nearby": [
+      "plaisir",
+      "villepreux",
+      "bois-d-arcy",
+      "fontenay-le-fleury",
+      "elancourt"
+    ]
+  },
+  {
+    "insee": "78172",
+    "slug": "conflans-sainte-honorine",
+    "nom": "Conflans-Sainte-Honorine",
+    "codePostal": "78700",
+    "departement": "78",
+    "population": 36958,
+    "lat": 49.0016,
+    "lon": 2.0992,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 58.9,
+        "min": 65
+      },
+      "cdg": {
+        "km": 46.1,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 69.7,
+        "min": 50
+      }
+    },
+    "parisCentre": {
+      "km": 30.1,
+      "min": 45
+    },
+    "gares": [],
+    "nearby": [
+      "eragny-sur-oise",
+      "acheres",
+      "herblay-sur-seine",
+      "andresy",
+      "jouy-le-moutier"
+    ]
+  },
+  {
+    "insee": "78190",
+    "slug": "croissy-sur-seine",
+    "nom": "Croissy-sur-Seine",
+    "codePostal": "78290",
+    "departement": "78",
+    "population": 11013,
+    "lat": 48.8805,
+    "lon": 2.1342,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.6,
+        "min": 48
+      },
+      "cdg": {
+        "km": 40.2,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 91,
+        "min": 74
+      }
+    },
+    "parisCentre": {
+      "km": 19.4,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "le-vesinet",
+      "chatou",
+      "le-pecq",
+      "la-celle-saint-cloud",
+      "rueil-malmaison"
+    ]
+  },
+  {
+    "insee": "78208",
+    "slug": "elancourt",
+    "nom": "Élancourt",
+    "codePostal": "78990",
+    "departement": "78",
+    "population": 26365,
+    "lat": 48.7771,
+    "lon": 1.9612,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40,
+        "min": 41
+      },
+      "cdg": {
+        "km": 58.1,
+        "min": 59
+      },
+      "beauvais": {
+        "km": 112.2,
+        "min": 88
+      }
+    },
+    "parisCentre": {
+      "km": 34.6,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "trappes",
+      "maurepas",
+      "plaisir",
+      "montigny-le-bretonneux",
+      "les-clayes-sous-bois"
+    ]
+  },
+  {
+    "insee": "78242",
+    "slug": "fontenay-le-fleury",
+    "nom": "Fontenay-le-Fleury",
+    "codePostal": "78330",
+    "departement": "78",
+    "population": 13680,
+    "lat": 48.8169,
+    "lon": 2.0477,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 33.7,
+        "min": 43
+      },
+      "cdg": {
+        "km": 54,
+        "min": 60
+      },
+      "beauvais": {
+        "km": 108.1,
+        "min": 89
+      }
+    },
+    "parisCentre": {
+      "km": 30.5,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "saint-cyr-l-ecole",
+      "bois-d-arcy",
+      "villepreux",
+      "montigny-le-bretonneux",
+      "les-clayes-sous-bois"
+    ]
+  },
+  {
+    "insee": "78297",
+    "slug": "guyancourt",
+    "nom": "Guyancourt",
+    "codePostal": "78280",
+    "departement": "78",
+    "population": 29778,
+    "lat": 48.7735,
+    "lon": 2.0745,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 31.3,
+        "min": 37
+      },
+      "cdg": {
+        "km": 55.8,
+        "min": 59
+      },
+      "beauvais": {
+        "km": 110,
+        "min": 89
+      }
+    },
+    "parisCentre": {
+      "km": 32.3,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "voisins-le-bretonneux",
+      "montigny-le-bretonneux",
+      "saint-cyr-l-ecole",
+      "versailles",
+      "fontenay-le-fleury"
+    ]
+  },
+  {
+    "insee": "78311",
+    "slug": "houilles",
+    "nom": "Houilles",
+    "codePostal": "78800",
+    "departement": "78",
+    "population": 33983,
+    "lat": 48.9266,
+    "lon": 2.1866,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 44.7,
+        "min": 56
+      },
+      "cdg": {
+        "km": 33.9,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 81.4,
+        "min": 64
+      }
+    },
+    "parisCentre": {
+      "km": 15.9,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "sartrouville",
+      "carrieres-sur-seine",
+      "bezons",
+      "nanterre",
+      "maisons-laffitte"
+    ]
+  },
+  {
+    "insee": "78335",
+    "slug": "limay",
+    "nom": "Limay",
+    "codePostal": "78520",
+    "departement": "78",
+    "population": 17885,
+    "lat": 48.9911,
+    "lon": 1.7367,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 72.4,
+        "min": 64
+      },
+      "cdg": {
+        "km": 75.6,
+        "min": 63
+      },
+      "beauvais": {
+        "km": 103.4,
+        "min": 84
+      }
+    },
+    "parisCentre": {
+      "km": 54.6,
+      "min": 53
+    },
+    "gares": [],
+    "nearby": [
+      "mantes-la-ville",
+      "mantes-la-jolie",
+      "aubergenville",
+      "les-mureaux",
+      "verneuil-sur-seine"
+    ]
+  },
+  {
+    "insee": "78358",
+    "slug": "maisons-laffitte",
+    "nom": "Maisons-Laffitte",
+    "codePostal": "78600",
+    "departement": "78",
+    "population": 23093,
+    "lat": 48.9503,
+    "lon": 2.1533,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 45.3,
+        "min": 61
+      },
+      "cdg": {
+        "km": 36.6,
+        "min": 46
+      },
+      "beauvais": {
+        "km": 80.3,
+        "min": 66
+      }
+    },
+    "parisCentre": {
+      "km": 19.1,
+      "min": 45
+    },
+    "gares": [],
+    "nearby": [
+      "sartrouville",
+      "houilles",
+      "montesson",
+      "saint-germain-en-laye",
+      "cormeilles-en-parisis"
+    ]
+  },
+  {
+    "insee": "78361",
+    "slug": "mantes-la-jolie",
+    "nom": "Mantes-la-Jolie",
+    "codePostal": "78200",
+    "departement": "78",
+    "population": 43526,
+    "lat": 48.9961,
+    "lon": 1.6918,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 73.3,
+        "min": 66
+      },
+      "cdg": {
+        "km": 76.6,
+        "min": 66
+      },
+      "beauvais": {
+        "km": 107.7,
+        "min": 91
+      }
+    },
+    "parisCentre": {
+      "km": 55.6,
+      "min": 55
+    },
+    "gares": [],
+    "nearby": [
+      "mantes-la-ville",
+      "limay",
+      "aubergenville",
+      "les-mureaux",
+      "verneuil-sur-seine"
+    ]
+  },
+  {
+    "insee": "78362",
+    "slug": "mantes-la-ville",
+    "nom": "Mantes-la-Ville",
+    "codePostal": "78711",
+    "departement": "78",
+    "population": 22332,
+    "lat": 48.9752,
+    "lon": 1.7103,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 70.1,
+        "min": 60
+      },
+      "cdg": {
+        "km": 73.4,
+        "min": 60
+      },
+      "beauvais": {
+        "km": 104.5,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 52.3,
+      "min": 49
+    },
+    "gares": [],
+    "nearby": [
+      "limay",
+      "mantes-la-jolie",
+      "aubergenville",
+      "les-mureaux",
+      "verneuil-sur-seine"
+    ]
+  },
+  {
+    "insee": "78372",
+    "slug": "marly-le-roi",
+    "nom": "Marly-le-Roi",
+    "codePostal": "78160",
+    "departement": "78",
+    "population": 16756,
+    "lat": 48.866,
+    "lon": 2.0892,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.4,
+        "min": 47
+      },
+      "cdg": {
+        "km": 45.3,
+        "min": 54
+      },
+      "beauvais": {
+        "km": 86.7,
+        "min": 77
+      }
+    },
+    "parisCentre": {
+      "km": 24.8,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "le-pecq",
+      "croissy-sur-seine",
+      "la-celle-saint-cloud",
+      "le-vesinet",
+      "le-chesnay-rocquencourt"
+    ]
+  },
+  {
+    "insee": "78383",
+    "slug": "maurepas",
+    "nom": "Maurepas",
+    "codePostal": "78310",
+    "departement": "78",
+    "population": 20629,
+    "lat": 48.7712,
+    "lon": 1.925,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 46,
+        "min": 49
+      },
+      "cdg": {
+        "km": 64.9,
+        "min": 68
+      },
+      "beauvais": {
+        "km": 119.1,
+        "min": 98
+      }
+    },
+    "parisCentre": {
+      "km": 41.4,
+      "min": 51
+    },
+    "gares": [],
+    "nearby": [
+      "elancourt",
+      "plaisir",
+      "trappes",
+      "les-clayes-sous-bois",
+      "montigny-le-bretonneux"
+    ]
+  },
+  {
+    "insee": "78418",
+    "slug": "montesson",
+    "nom": "Montesson",
+    "codePostal": "78360",
+    "departement": "78",
+    "population": 14549,
+    "lat": 48.919,
+    "lon": 2.1381,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40.4,
+        "min": 52
+      },
+      "cdg": {
+        "km": 38.9,
+        "min": 46
+      },
+      "beauvais": {
+        "km": 82.6,
+        "min": 69
+      }
+    },
+    "parisCentre": {
+      "km": 20.2,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "chatou",
+      "saint-germain-en-laye",
+      "le-vesinet",
+      "carrieres-sur-seine",
+      "sartrouville"
+    ]
+  },
+  {
+    "insee": "78423",
+    "slug": "montigny-le-bretonneux",
+    "nom": "Montigny-le-Bretonneux",
+    "codePostal": "78180",
+    "departement": "78",
+    "population": 32465,
+    "lat": 48.7776,
+    "lon": 2.0252,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 35.7,
+        "min": 39
+      },
+      "cdg": {
+        "km": 54.4,
+        "min": 56
+      },
+      "beauvais": {
+        "km": 108.6,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 30.9,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "trappes",
+      "voisins-le-bretonneux",
+      "bois-d-arcy",
+      "guyancourt",
+      "saint-cyr-l-ecole"
+    ]
+  },
+  {
+    "insee": "78440",
+    "slug": "les-mureaux",
+    "nom": "Les Mureaux",
+    "codePostal": "78130",
+    "departement": "78",
+    "population": 34632,
+    "lat": 48.9877,
+    "lon": 1.911,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 56.2,
+        "min": 53
+      },
+      "cdg": {
+        "km": 59.5,
+        "min": 53
+      },
+      "beauvais": {
+        "km": 88.8,
+        "min": 71
+      }
+    },
+    "parisCentre": {
+      "km": 38.5,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "verneuil-sur-seine",
+      "aubergenville",
+      "triel-sur-seine",
+      "chanteloup-les-vignes",
+      "jouy-le-moutier"
+    ]
+  },
+  {
+    "insee": "78481",
+    "slug": "le-pecq",
+    "nom": "Le Pecq",
+    "codePostal": "78230",
+    "departement": "78",
+    "population": 16059,
+    "lat": 48.8924,
+    "lon": 2.1022,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40.3,
+        "min": 51
+      },
+      "cdg": {
+        "km": 42,
+        "min": 50
+      },
+      "beauvais": {
+        "km": 82.3,
+        "min": 69
+      }
+    },
+    "parisCentre": {
+      "km": 21.2,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "le-vesinet",
+      "croissy-sur-seine",
+      "marly-le-roi",
+      "chatou",
+      "montesson"
+    ]
+  },
+  {
+    "insee": "78490",
+    "slug": "plaisir",
+    "nom": "Plaisir",
+    "codePostal": "78370",
+    "departement": "78",
+    "population": 31811,
+    "lat": 48.8129,
+    "lon": 1.9483,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 41.7,
+        "min": 44
+      },
+      "cdg": {
+        "km": 60.6,
+        "min": 63
+      },
+      "beauvais": {
+        "km": 114.7,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 37.1,
+      "min": 46
+    },
+    "gares": [],
+    "nearby": [
+      "les-clayes-sous-bois",
+      "elancourt",
+      "maurepas",
+      "villepreux",
+      "bois-d-arcy"
+    ]
+  },
+  {
+    "insee": "78498",
+    "slug": "poissy",
+    "nom": "Poissy",
+    "codePostal": "78300",
+    "departement": "78",
+    "population": 40983,
+    "lat": 48.9241,
+    "lon": 2.025,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49.1,
+        "min": 52
+      },
+      "cdg": {
+        "km": 48.4,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 81.9,
+        "min": 70
+      }
+    },
+    "parisCentre": {
+      "km": 27.4,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "carrieres-sous-poissy",
+      "saint-germain-en-laye",
+      "triel-sur-seine",
+      "chanteloup-les-vignes",
+      "andresy"
+    ]
+  },
+  {
+    "insee": "78517",
+    "slug": "rambouillet",
+    "nom": "Rambouillet",
+    "codePostal": "78120",
+    "departement": "78",
+    "population": 27724,
+    "lat": 48.6538,
+    "lon": 1.8339,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 56.5,
+        "min": 57
+      },
+      "cdg": {
+        "km": 75.2,
+        "min": 74
+      },
+      "beauvais": {
+        "km": 129.4,
+        "min": 103
+      }
+    },
+    "parisCentre": {
+      "km": 51.7,
+      "min": 57
+    },
+    "gares": [],
+    "nearby": [
+      "maurepas",
+      "elancourt",
+      "dourdan",
+      "trappes",
+      "plaisir"
+    ]
+  },
+  {
+    "insee": "78545",
+    "slug": "saint-cyr-l-ecole",
+    "nom": "Saint-Cyr-l'École",
+    "codePostal": "78210",
+    "departement": "78",
+    "population": 21268,
+    "lat": 48.8064,
+    "lon": 2.0657,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 31.6,
+        "min": 38
+      },
+      "cdg": {
+        "km": 53,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 107.2,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 29.5,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "fontenay-le-fleury",
+      "bois-d-arcy",
+      "guyancourt",
+      "versailles",
+      "montigny-le-bretonneux"
+    ]
+  },
+  {
+    "insee": "78551",
+    "slug": "saint-germain-en-laye",
+    "nom": "Saint-Germain-en-Laye",
+    "codePostal": "78100",
+    "departement": "78",
+    "population": 45931,
+    "lat": 48.931,
+    "lon": 2.1052,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 44.7,
+        "min": 60
+      },
+      "cdg": {
+        "km": 55.3,
+        "min": 53
+      },
+      "beauvais": {
+        "km": 78.9,
+        "min": 63
+      }
+    },
+    "parisCentre": {
+      "km": 24.8,
+      "min": 48
+    },
+    "gares": [],
+    "nearby": [
+      "montesson",
+      "maisons-laffitte",
+      "le-pecq",
+      "le-vesinet",
+      "chatou"
+    ]
+  },
+  {
+    "insee": "78586",
+    "slug": "sartrouville",
+    "nom": "Sartrouville",
+    "codePostal": "78500",
+    "departement": "78",
+    "population": 52763,
+    "lat": 48.9374,
+    "lon": 2.1744,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 43.5,
+        "min": 57
+      },
+      "cdg": {
+        "km": 35.4,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 79.3,
+        "min": 64
+      }
+    },
+    "parisCentre": {
+      "km": 17.3,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "houilles",
+      "maisons-laffitte",
+      "carrieres-sur-seine",
+      "bezons",
+      "montesson"
+    ]
+  },
+  {
+    "insee": "78621",
+    "slug": "trappes",
+    "nom": "Trappes",
+    "codePostal": "78190",
+    "departement": "78",
+    "population": 34689,
+    "lat": 48.7738,
+    "lon": 1.9964,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.1,
+        "min": 38
+      },
+      "cdg": {
+        "km": 55.8,
+        "min": 55
+      },
+      "beauvais": {
+        "km": 109.9,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 32.3,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "montigny-le-bretonneux",
+      "elancourt",
+      "voisins-le-bretonneux",
+      "bois-d-arcy",
+      "les-clayes-sous-bois"
+    ]
+  },
+  {
+    "insee": "78624",
+    "slug": "triel-sur-seine",
+    "nom": "Triel-sur-Seine",
+    "codePostal": "78510",
+    "departement": "78",
+    "population": 12206,
+    "lat": 48.976,
+    "lon": 2.0055,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 56.8,
+        "min": 63
+      },
+      "cdg": {
+        "km": 54,
+        "min": 59
+      },
+      "beauvais": {
+        "km": 77.6,
+        "min": 68
+      }
+    },
+    "parisCentre": {
+      "km": 35,
+      "min": 52
+    },
+    "gares": [],
+    "nearby": [
+      "chanteloup-les-vignes",
+      "verneuil-sur-seine",
+      "andresy",
+      "carrieres-sous-poissy",
+      "jouy-le-moutier"
+    ]
+  },
+  {
+    "insee": "78640",
+    "slug": "velizy-villacoublay",
+    "nom": "Vélizy-Villacoublay",
+    "codePostal": "78140",
+    "departement": "78",
+    "population": 23011,
+    "lat": 48.784,
+    "lon": 2.1956,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 24.3,
+        "min": 33
+      },
+      "cdg": {
+        "km": 57.9,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 102.8,
+        "min": 84
+      }
+    },
+    "parisCentre": {
+      "km": 20.2,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "viroflay",
+      "chaville",
+      "meudon",
+      "clamart",
+      "sevres"
+    ]
+  },
+  {
+    "insee": "78642",
+    "slug": "verneuil-sur-seine",
+    "nom": "Verneuil-sur-Seine",
+    "codePostal": "78480",
+    "departement": "78",
+    "population": 16280,
+    "lat": 48.9874,
+    "lon": 1.9659,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 61.7,
+        "min": 63
+      },
+      "cdg": {
+        "km": 65,
+        "min": 63
+      },
+      "beauvais": {
+        "km": 82.5,
+        "min": 74
+      }
+    },
+    "parisCentre": {
+      "km": 44,
+      "min": 52
+    },
+    "gares": [],
+    "nearby": [
+      "triel-sur-seine",
+      "les-mureaux",
+      "chanteloup-les-vignes",
+      "jouy-le-moutier",
+      "andresy"
+    ]
+  },
+  {
+    "insee": "78646",
+    "slug": "versailles",
+    "nom": "Versailles",
+    "codePostal": "78000",
+    "departement": "78",
+    "population": 84095,
+    "lat": 48.8039,
+    "lon": 2.1191,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 28.1,
+        "min": 33
+      },
+      "cdg": {
+        "km": 45.5,
+        "min": 54
+      },
+      "beauvais": {
+        "km": 100,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 22,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "le-chesnay-rocquencourt",
+      "viroflay",
+      "saint-cyr-l-ecole",
+      "ville-d-avray",
+      "guyancourt"
+    ]
+  },
+  {
+    "insee": "78650",
+    "slug": "le-vesinet",
+    "nom": "Le Vésinet",
+    "codePostal": "78110",
+    "departement": "78",
+    "population": 15554,
+    "lat": 48.8928,
+    "lon": 2.1312,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 38.6,
+        "min": 48
+      },
+      "cdg": {
+        "km": 39.3,
+        "min": 45
+      },
+      "beauvais": {
+        "km": 90.1,
+        "min": 71
+      }
+    },
+    "parisCentre": {
+      "km": 18.4,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "croissy-sur-seine",
+      "chatou",
+      "le-pecq",
+      "montesson",
+      "carrieres-sur-seine"
+    ]
+  },
+  {
+    "insee": "78674",
+    "slug": "villepreux",
+    "nom": "Villepreux",
+    "codePostal": "78450",
+    "departement": "78",
+    "population": 11931,
+    "lat": 48.8306,
+    "lon": 2.0127,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 36.8,
+        "min": 46
+      },
+      "cdg": {
+        "km": 52.7,
+        "min": 59
+      },
+      "beauvais": {
+        "km": 91.4,
+        "min": 82
+      }
+    },
+    "parisCentre": {
+      "km": 29.2,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "les-clayes-sous-bois",
+      "bois-d-arcy",
+      "fontenay-le-fleury",
+      "saint-cyr-l-ecole",
+      "plaisir"
+    ]
+  },
+  {
+    "insee": "78686",
+    "slug": "viroflay",
+    "nom": "Viroflay",
+    "codePostal": "78220",
+    "departement": "78",
+    "population": 17237,
+    "lat": 48.8017,
+    "lon": 2.1725,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 25.5,
+        "min": 35
+      },
+      "cdg": {
+        "km": 42.1,
+        "min": 56
+      },
+      "beauvais": {
+        "km": 100.2,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 17.5,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "chaville",
+      "ville-d-avray",
+      "velizy-villacoublay",
+      "sevres",
+      "versailles"
+    ]
+  },
+  {
+    "insee": "78688",
+    "slug": "voisins-le-bretonneux",
+    "nom": "Voisins-le-Bretonneux",
+    "codePostal": "78960",
+    "departement": "78",
+    "population": 10624,
+    "lat": 48.7598,
+    "lon": 2.047,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 34.6,
+        "min": 39
+      },
+      "cdg": {
+        "km": 57.1,
+        "min": 60
+      },
+      "beauvais": {
+        "km": 111.2,
+        "min": 90
+      }
+    },
+    "parisCentre": {
+      "km": 33.6,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "guyancourt",
+      "montigny-le-bretonneux",
+      "trappes",
+      "saint-cyr-l-ecole",
+      "bois-d-arcy"
+    ]
+  },
+  {
+    "insee": "91021",
+    "slug": "arpajon",
+    "nom": "Arpajon",
+    "codePostal": "91290",
+    "departement": "91",
+    "population": 11698,
+    "lat": 48.5894,
+    "lon": 2.2462,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 29.3,
+        "min": 41
+      },
+      "cdg": {
+        "km": 62.9,
+        "min": 65
+      },
+      "beauvais": {
+        "km": 134.5,
+        "min": 109
+      }
+    },
+    "parisCentre": {
+      "km": 34,
+      "min": 51
+    },
+    "gares": [],
+    "nearby": [
+      "saint-germain-les-arpajon",
+      "bretigny-sur-orge",
+      "saint-michel-sur-orge",
+      "sainte-genevieve-des-bois",
+      "bondoufle"
+    ]
+  },
+  {
+    "insee": "91027",
+    "slug": "athis-mons",
+    "nom": "Athis-Mons",
+    "codePostal": "91200",
+    "departement": "91",
+    "population": 36613,
+    "lat": 48.7093,
+    "lon": 2.3848,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 4.5,
+        "min": 15
+      },
+      "cdg": {
+        "km": 45.6,
+        "min": 45
+      },
+      "beauvais": {
+        "km": 117.2,
+        "min": 89
+      }
+    },
+    "parisCentre": {
+      "km": 19.7,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "juvisy-sur-orge",
+      "villeneuve-le-roi",
+      "vigneux-sur-seine",
+      "morangis",
+      "orly"
+    ]
+  },
+  {
+    "insee": "91086",
+    "slug": "bondoufle",
+    "nom": "Bondoufle",
+    "codePostal": "91070",
+    "departement": "91",
+    "population": 10767,
+    "lat": 48.6155,
+    "lon": 2.3795,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 21.6,
+        "min": 31
+      },
+      "cdg": {
+        "km": 64.2,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 135.8,
+        "min": 101
+      }
+    },
+    "parisCentre": {
+      "km": 35,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "fleury-merogis",
+      "ris-orangis",
+      "evry-courcouronnes",
+      "grigny",
+      "sainte-genevieve-des-bois"
+    ]
+  },
+  {
+    "insee": "91103",
+    "slug": "bretigny-sur-orge",
+    "nom": "Brétigny-sur-Orge",
+    "codePostal": "91220",
+    "departement": "91",
+    "population": 26658,
+    "lat": 48.601,
+    "lon": 2.2989,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 27.3,
+        "min": 38
+      },
+      "cdg": {
+        "km": 69.9,
+        "min": 64
+      },
+      "beauvais": {
+        "km": 141.5,
+        "min": 108
+      }
+    },
+    "parisCentre": {
+      "km": 40.7,
+      "min": 50
+    },
+    "gares": [],
+    "nearby": [
+      "saint-germain-les-arpajon",
+      "saint-michel-sur-orge",
+      "arpajon",
+      "sainte-genevieve-des-bois",
+      "bondoufle"
+    ]
+  },
+  {
+    "insee": "91114",
+    "slug": "brunoy",
+    "nom": "Brunoy",
+    "codePostal": "91800",
+    "departement": "91",
+    "population": 25643,
+    "lat": 48.6948,
+    "lon": 2.5059,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 13.8,
+        "min": 23
+      },
+      "cdg": {
+        "km": 48,
+        "min": 51
+      },
+      "beauvais": {
+        "km": 119.6,
+        "min": 95
+      }
+    },
+    "parisCentre": {
+      "km": 29.7,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "epinay-sous-senart",
+      "yerres",
+      "montgeron",
+      "villecresnes",
+      "boissy-saint-leger"
+    ]
+  },
+  {
+    "insee": "91161",
+    "slug": "chilly-mazarin",
+    "nom": "Chilly-Mazarin",
+    "codePostal": "91380",
+    "departement": "91",
+    "population": 20443,
+    "lat": 48.7051,
+    "lon": 2.3103,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 10.4,
+        "min": 24
+      },
+      "cdg": {
+        "km": 50.8,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 122.4,
+        "min": 91
+      }
+    },
+    "parisCentre": {
+      "km": 21.6,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "longjumeau",
+      "morangis",
+      "savigny-sur-orge",
+      "epinay-sur-orge",
+      "massy"
+    ]
+  },
+  {
+    "insee": "91174",
+    "slug": "corbeil-essonnes",
+    "nom": "Corbeil-Essonnes",
+    "codePostal": "91100",
+    "departement": "91",
+    "population": 54471,
+    "lat": 48.5973,
+    "lon": 2.4646,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 20.3,
+        "min": 33
+      },
+      "cdg": {
+        "km": 67.1,
+        "min": 59
+      },
+      "beauvais": {
+        "km": 138.7,
+        "min": 104
+      }
+    },
+    "parisCentre": {
+      "km": 37.9,
+      "min": 45
+    },
+    "gares": [],
+    "nearby": [
+      "saint-pierre-du-perray",
+      "evry-courcouronnes",
+      "mennecy",
+      "bondoufle",
+      "ris-orangis"
+    ]
+  },
+  {
+    "insee": "91200",
+    "slug": "dourdan",
+    "nom": "Dourdan",
+    "codePostal": "91410",
+    "departement": "91",
+    "population": 11415,
+    "lat": 48.532,
+    "lon": 1.9924,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49.8,
+        "min": 46
+      },
+      "cdg": {
+        "km": 83.4,
+        "min": 71
+      },
+      "beauvais": {
+        "km": 155,
+        "min": 115
+      }
+    },
+    "parisCentre": {
+      "km": 54.5,
+      "min": 57
+    },
+    "gares": [],
+    "nearby": [
+      "etampes",
+      "rambouillet",
+      "arpajon",
+      "gif-sur-yvette",
+      "saint-germain-les-arpajon"
+    ]
+  },
+  {
+    "insee": "91201",
+    "slug": "draveil",
+    "nom": "Draveil",
+    "codePostal": "91210",
+    "departement": "91",
+    "population": 30098,
+    "lat": 48.6777,
+    "lon": 2.4249,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 11.3,
+        "min": 21
+      },
+      "cdg": {
+        "km": 46.8,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 118.4,
+        "min": 96
+      }
+    },
+    "parisCentre": {
+      "km": 28.5,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "vigneux-sur-seine",
+      "montgeron",
+      "grigny",
+      "ris-orangis",
+      "viry-chatillon"
+    ]
+  },
+  {
+    "insee": "91215",
+    "slug": "epinay-sous-senart",
+    "nom": "Épinay-sous-Sénart",
+    "codePostal": "91860",
+    "departement": "91",
+    "population": 11611,
+    "lat": 48.6885,
+    "lon": 2.5152,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 14.1,
+        "min": 24
+      },
+      "cdg": {
+        "km": 49.5,
+        "min": 55
+      },
+      "beauvais": {
+        "km": 121.2,
+        "min": 99
+      }
+    },
+    "parisCentre": {
+      "km": 31.3,
+      "min": 46
+    },
+    "gares": [],
+    "nearby": [
+      "brunoy",
+      "yerres",
+      "montgeron",
+      "villecresnes",
+      "combs-la-ville"
+    ]
+  },
+  {
+    "insee": "91216",
+    "slug": "epinay-sur-orge",
+    "nom": "Épinay-sur-Orge",
+    "codePostal": "91360",
+    "departement": "91",
+    "population": 10722,
+    "lat": 48.6719,
+    "lon": 2.3194,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 12.1,
+        "min": 27
+      },
+      "cdg": {
+        "km": 54.8,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 126.4,
+        "min": 96
+      }
+    },
+    "parisCentre": {
+      "km": 25.6,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "longjumeau",
+      "savigny-sur-orge",
+      "morsang-sur-orge",
+      "sainte-genevieve-des-bois",
+      "morangis"
+    ]
+  },
+  {
+    "insee": "91223",
+    "slug": "etampes",
+    "nom": "Étampes",
+    "codePostal": "91150",
+    "departement": "91",
+    "population": 26857,
+    "lat": 48.4227,
+    "lon": 2.1524,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49.3,
+        "min": 53
+      },
+      "cdg": {
+        "km": 82.8,
+        "min": 78
+      },
+      "beauvais": {
+        "km": 154.4,
+        "min": 122
+      }
+    },
+    "parisCentre": {
+      "km": 54,
+      "min": 64
+    },
+    "gares": [],
+    "nearby": [
+      "dourdan",
+      "arpajon",
+      "saint-germain-les-arpajon",
+      "bretigny-sur-orge",
+      "mennecy"
+    ]
+  },
+  {
+    "insee": "91228",
+    "slug": "evry-courcouronnes",
+    "nom": "Évry-Courcouronnes",
+    "codePostal": "91000",
+    "departement": "91",
+    "population": 66919,
+    "lat": 48.6287,
+    "lon": 2.4313,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 15.8,
+        "min": 30
+      },
+      "cdg": {
+        "km": 61.9,
+        "min": 54
+      },
+      "beauvais": {
+        "km": 133.5,
+        "min": 98
+      }
+    },
+    "parisCentre": {
+      "km": 32.7,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "ris-orangis",
+      "bondoufle",
+      "corbeil-essonnes",
+      "fleury-merogis",
+      "grigny"
+    ]
+  },
+  {
+    "insee": "91235",
+    "slug": "fleury-merogis",
+    "nom": "Fleury-Mérogis",
+    "codePostal": "91700",
+    "departement": "91",
+    "population": 13721,
+    "lat": 48.6327,
+    "lon": 2.3712,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 16.9,
+        "min": 31
+      },
+      "cdg": {
+        "km": 59.4,
+        "min": 55
+      },
+      "beauvais": {
+        "km": 131,
+        "min": 99
+      }
+    },
+    "parisCentre": {
+      "km": 30.2,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "bondoufle",
+      "morsang-sur-orge",
+      "grigny",
+      "ris-orangis",
+      "sainte-genevieve-des-bois"
+    ]
+  },
+  {
+    "insee": "91272",
+    "slug": "gif-sur-yvette",
+    "nom": "Gif-sur-Yvette",
+    "codePostal": "91190",
+    "departement": "91",
+    "population": 22544,
+    "lat": 48.6964,
+    "lon": 2.1342,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 28.8,
+        "min": 41
+      },
+      "cdg": {
+        "km": 62.3,
+        "min": 65
+      },
+      "beauvais": {
+        "km": 120.3,
+        "min": 104
+      }
+    },
+    "parisCentre": {
+      "km": 33.1,
+      "min": 49
+    },
+    "gares": [],
+    "nearby": [
+      "orsay",
+      "les-ulis",
+      "palaiseau",
+      "villebon-sur-yvette",
+      "igny"
+    ]
+  },
+  {
+    "insee": "91286",
+    "slug": "grigny",
+    "nom": "Grigny",
+    "codePostal": "91350",
+    "departement": "91",
+    "population": 26842,
+    "lat": 48.6584,
+    "lon": 2.3861,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 11.5,
+        "min": 25
+      },
+      "cdg": {
+        "km": 56.8,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 128.4,
+        "min": 96
+      }
+    },
+    "parisCentre": {
+      "km": 27.6,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "viry-chatillon",
+      "ris-orangis",
+      "morsang-sur-orge",
+      "fleury-merogis",
+      "draveil"
+    ]
+  },
+  {
+    "insee": "91312",
+    "slug": "igny",
+    "nom": "Igny",
+    "codePostal": "91430",
+    "departement": "91",
+    "population": 10833,
+    "lat": 48.7375,
+    "lon": 2.2229,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 21.2,
+        "min": 27
+      },
+      "cdg": {
+        "km": 54.7,
+        "min": 51
+      },
+      "beauvais": {
+        "km": 110.2,
+        "min": 90
+      }
+    },
+    "parisCentre": {
+      "km": 23,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "palaiseau",
+      "verrieres-le-buisson",
+      "massy",
+      "chatenay-malabry",
+      "villebon-sur-yvette"
+    ]
+  },
+  {
+    "insee": "91326",
+    "slug": "juvisy-sur-orge",
+    "nom": "Juvisy-sur-Orge",
+    "codePostal": "91260",
+    "departement": "91",
+    "population": 19292,
+    "lat": 48.6917,
+    "lon": 2.3722,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 7,
+        "min": 21
+      },
+      "cdg": {
+        "km": 46.7,
+        "min": 46
+      },
+      "beauvais": {
+        "km": 118.3,
+        "min": 90
+      }
+    },
+    "parisCentre": {
+      "km": 20.8,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "savigny-sur-orge",
+      "athis-mons",
+      "viry-chatillon",
+      "morangis",
+      "grigny"
+    ]
+  },
+  {
+    "insee": "91345",
+    "slug": "longjumeau",
+    "nom": "Longjumeau",
+    "codePostal": "91160",
+    "departement": "91",
+    "population": 21996,
+    "lat": 48.6923,
+    "lon": 2.3057,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 16.7,
+        "min": 25
+      },
+      "cdg": {
+        "km": 50.2,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 121.8,
+        "min": 91
+      }
+    },
+    "parisCentre": {
+      "km": 21,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "chilly-mazarin",
+      "epinay-sur-orge",
+      "morangis",
+      "savigny-sur-orge",
+      "massy"
+    ]
+  },
+  {
+    "insee": "91377",
+    "slug": "massy",
+    "nom": "Massy",
+    "codePostal": "91300",
+    "departement": "91",
+    "population": 51729,
+    "lat": 48.7263,
+    "lon": 2.2696,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 18.6,
+        "min": 27
+      },
+      "cdg": {
+        "km": 52.2,
+        "min": 49
+      },
+      "beauvais": {
+        "km": 123.8,
+        "min": 93
+      }
+    },
+    "parisCentre": {
+      "km": 23.3,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "verrieres-le-buisson",
+      "palaiseau",
+      "antony",
+      "igny",
+      "chilly-mazarin"
+    ]
+  },
+  {
+    "insee": "91386",
+    "slug": "mennecy",
+    "nom": "Mennecy",
+    "codePostal": "91540",
+    "departement": "91",
+    "population": 16433,
+    "lat": 48.5592,
+    "lon": 2.4362,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 32.1,
+        "min": 37
+      },
+      "cdg": {
+        "km": 74.7,
+        "min": 64
+      },
+      "beauvais": {
+        "km": 146.3,
+        "min": 108
+      }
+    },
+    "parisCentre": {
+      "km": 45.5,
+      "min": 50
+    },
+    "gares": [],
+    "nearby": [
+      "corbeil-essonnes",
+      "saint-fargeau-ponthierry",
+      "bondoufle",
+      "evry-courcouronnes",
+      "saint-pierre-du-perray"
+    ]
+  },
+  {
+    "insee": "91421",
+    "slug": "montgeron",
+    "nom": "Montgeron",
+    "codePostal": "91230",
+    "departement": "91",
+    "population": 24022,
+    "lat": 48.6952,
+    "lon": 2.4638,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 10.3,
+        "min": 21
+      },
+      "cdg": {
+        "km": 45.8,
+        "min": 53
+      },
+      "beauvais": {
+        "km": 117.4,
+        "min": 97
+      }
+    },
+    "parisCentre": {
+      "km": 27.5,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "vigneux-sur-seine",
+      "yerres",
+      "brunoy",
+      "draveil",
+      "epinay-sous-senart"
+    ]
+  },
+  {
+    "insee": "91432",
+    "slug": "morangis",
+    "nom": "Morangis",
+    "codePostal": "91420",
+    "departement": "91",
+    "population": 14129,
+    "lat": 48.7022,
+    "lon": 2.3361,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 8.4,
+        "min": 19
+      },
+      "cdg": {
+        "km": 52.2,
+        "min": 49
+      },
+      "beauvais": {
+        "km": 123.9,
+        "min": 93
+      }
+    },
+    "parisCentre": {
+      "km": 23.1,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "chilly-mazarin",
+      "savigny-sur-orge",
+      "longjumeau",
+      "juvisy-sur-orge",
+      "epinay-sur-orge"
+    ]
+  },
+  {
+    "insee": "91434",
+    "slug": "morsang-sur-orge",
+    "nom": "Morsang-sur-Orge",
+    "codePostal": "91390",
+    "departement": "91",
+    "population": 21667,
+    "lat": 48.6564,
+    "lon": 2.3513,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 12.7,
+        "min": 28
+      },
+      "cdg": {
+        "km": 55.5,
+        "min": 53
+      },
+      "beauvais": {
+        "km": 127.1,
+        "min": 97
+      }
+    },
+    "parisCentre": {
+      "km": 26.3,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "viry-chatillon",
+      "sainte-genevieve-des-bois",
+      "grigny",
+      "epinay-sur-orge",
+      "fleury-merogis"
+    ]
+  },
+  {
+    "insee": "91471",
+    "slug": "orsay",
+    "nom": "Orsay",
+    "codePostal": "91400",
+    "departement": "91",
+    "population": 16498,
+    "lat": 48.6972,
+    "lon": 2.1896,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 26.1,
+        "min": 32
+      },
+      "cdg": {
+        "km": 59.6,
+        "min": 57
+      },
+      "beauvais": {
+        "km": 118.2,
+        "min": 95
+      }
+    },
+    "parisCentre": {
+      "km": 31,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "les-ulis",
+      "villebon-sur-yvette",
+      "palaiseau",
+      "gif-sur-yvette",
+      "igny"
+    ]
+  },
+  {
+    "insee": "91477",
+    "slug": "palaiseau",
+    "nom": "Palaiseau",
+    "codePostal": "91120",
+    "departement": "91",
+    "population": 37471,
+    "lat": 48.7155,
+    "lon": 2.2293,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 20.8,
+        "min": 26
+      },
+      "cdg": {
+        "km": 54.4,
+        "min": 50
+      },
+      "beauvais": {
+        "km": 126,
+        "min": 94
+      }
+    },
+    "parisCentre": {
+      "km": 25.5,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "villebon-sur-yvette",
+      "igny",
+      "massy",
+      "orsay",
+      "verrieres-le-buisson"
+    ]
+  },
+  {
+    "insee": "91521",
+    "slug": "ris-orangis",
+    "nom": "Ris-Orangis",
+    "codePostal": "91130",
+    "departement": "91",
+    "population": 31189,
+    "lat": 48.6457,
+    "lon": 2.4104,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 13.2,
+        "min": 27
+      },
+      "cdg": {
+        "km": 59.7,
+        "min": 55
+      },
+      "beauvais": {
+        "km": 131.3,
+        "min": 99
+      }
+    },
+    "parisCentre": {
+      "km": 30.5,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "grigny",
+      "evry-courcouronnes",
+      "fleury-merogis",
+      "viry-chatillon",
+      "draveil"
+    ]
+  },
+  {
+    "insee": "91549",
+    "slug": "sainte-genevieve-des-bois",
+    "nom": "Sainte-Geneviève-des-Bois",
+    "codePostal": "91700",
+    "departement": "91",
+    "population": 35438,
+    "lat": 48.643,
+    "lon": 2.3272,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 14.4,
+        "min": 31
+      },
+      "cdg": {
+        "km": 57.1,
+        "min": 55
+      },
+      "beauvais": {
+        "km": 128.7,
+        "min": 99
+      }
+    },
+    "parisCentre": {
+      "km": 27.9,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "saint-michel-sur-orge",
+      "morsang-sur-orge",
+      "epinay-sur-orge",
+      "fleury-merogis",
+      "viry-chatillon"
+    ]
+  },
+  {
+    "insee": "91552",
+    "slug": "saint-germain-les-arpajon",
+    "nom": "Saint-Germain-lès-Arpajon",
+    "codePostal": "91180",
+    "departement": "91",
+    "population": 11623,
+    "lat": 48.5982,
+    "lon": 2.2644,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 29.4,
+        "min": 41
+      },
+      "cdg": {
+        "km": 63,
+        "min": 65
+      },
+      "beauvais": {
+        "km": 134.6,
+        "min": 109
+      }
+    },
+    "parisCentre": {
+      "km": 34.1,
+      "min": 51
+    },
+    "gares": [],
+    "nearby": [
+      "arpajon",
+      "bretigny-sur-orge",
+      "saint-michel-sur-orge",
+      "sainte-genevieve-des-bois",
+      "bondoufle"
+    ]
+  },
+  {
+    "insee": "91570",
+    "slug": "saint-michel-sur-orge",
+    "nom": "Saint-Michel-sur-Orge",
+    "codePostal": "91240",
+    "departement": "91",
+    "population": 21776,
+    "lat": 48.6326,
+    "lon": 2.313,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 16.4,
+        "min": 36
+      },
+      "cdg": {
+        "km": 59.2,
+        "min": 60
+      },
+      "beauvais": {
+        "km": 130.8,
+        "min": 104
+      }
+    },
+    "parisCentre": {
+      "km": 30,
+      "min": 46
+    },
+    "gares": [],
+    "nearby": [
+      "sainte-genevieve-des-bois",
+      "bretigny-sur-orge",
+      "morsang-sur-orge",
+      "fleury-merogis",
+      "epinay-sur-orge"
+    ]
+  },
+  {
+    "insee": "91573",
+    "slug": "saint-pierre-du-perray",
+    "nom": "Saint-Pierre-du-Perray",
+    "codePostal": "91280",
+    "departement": "91",
+    "population": 11993,
+    "lat": 48.6075,
+    "lon": 2.5152,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 23.8,
+        "min": 31
+      },
+      "cdg": {
+        "km": 71.9,
+        "min": 62
+      },
+      "beauvais": {
+        "km": 143.3,
+        "min": 105
+      }
+    },
+    "parisCentre": {
+      "km": 41.5,
+      "min": 49
+    },
+    "gares": [],
+    "nearby": [
+      "lieusaint",
+      "corbeil-essonnes",
+      "savigny-le-temple",
+      "moissy-cramayel",
+      "evry-courcouronnes"
+    ]
+  },
+  {
+    "insee": "91589",
+    "slug": "savigny-sur-orge",
+    "nom": "Savigny-sur-Orge",
+    "codePostal": "91600",
+    "departement": "91",
+    "population": 37601,
+    "lat": 48.6851,
+    "lon": 2.3493,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 8.6,
+        "min": 17
+      },
+      "cdg": {
+        "km": 53.6,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 125.3,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 24.5,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "juvisy-sur-orge",
+      "morangis",
+      "epinay-sur-orge",
+      "viry-chatillon",
+      "morsang-sur-orge"
+    ]
+  },
+  {
+    "insee": "91645",
+    "slug": "verrieres-le-buisson",
+    "nom": "Verrières-le-Buisson",
+    "codePostal": "91370",
+    "departement": "91",
+    "population": 15057,
+    "lat": 48.7511,
+    "lon": 2.2545,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 16.1,
+        "min": 31
+      },
+      "cdg": {
+        "km": 49.6,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 111.5,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 16,
+      "min": 44
+    },
+    "gares": [],
+    "nearby": [
+      "chatenay-malabry",
+      "igny",
+      "massy",
+      "antony",
+      "le-plessis-robinson"
+    ]
+  },
+  {
+    "insee": "91657",
+    "slug": "vigneux-sur-seine",
+    "nom": "Vigneux-sur-Seine",
+    "codePostal": "91270",
+    "departement": "91",
+    "population": 31466,
+    "lat": 48.7021,
+    "lon": 2.4274,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 8,
+        "min": 18
+      },
+      "cdg": {
+        "km": 43.5,
+        "min": 50
+      },
+      "beauvais": {
+        "km": 115.1,
+        "min": 94
+      }
+    },
+    "parisCentre": {
+      "km": 25.2,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "draveil",
+      "montgeron",
+      "athis-mons",
+      "villeneuve-le-roi",
+      "juvisy-sur-orge"
+    ]
+  },
+  {
+    "insee": "91661",
+    "slug": "villebon-sur-yvette",
+    "nom": "Villebon-sur-Yvette",
+    "codePostal": "91140",
+    "departement": "91",
+    "population": 10291,
+    "lat": 48.6965,
+    "lon": 2.2366,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 25,
+        "min": 28
+      },
+      "cdg": {
+        "km": 58.5,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 130.1,
+        "min": 96
+      }
+    },
+    "parisCentre": {
+      "km": 29.7,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "palaiseau",
+      "orsay",
+      "les-ulis",
+      "massy",
+      "igny"
+    ]
+  },
+  {
+    "insee": "91687",
+    "slug": "viry-chatillon",
+    "nom": "Viry-Châtillon",
+    "codePostal": "91170",
+    "departement": "91",
+    "population": 30838,
+    "lat": 48.6662,
+    "lon": 2.3758,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 10.2,
+        "min": 21
+      },
+      "cdg": {
+        "km": 56.1,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 127.7,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 26.9,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "grigny",
+      "morsang-sur-orge",
+      "juvisy-sur-orge",
+      "savigny-sur-orge",
+      "ris-orangis"
+    ]
+  },
+  {
+    "insee": "91691",
+    "slug": "yerres",
+    "nom": "Yerres",
+    "codePostal": "91330",
+    "departement": "91",
+    "population": 27906,
+    "lat": 48.7129,
+    "lon": 2.4932,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 9,
+        "min": 20
+      },
+      "cdg": {
+        "km": 45.2,
+        "min": 46
+      },
+      "beauvais": {
+        "km": 116.8,
+        "min": 90
+      }
+    },
+    "parisCentre": {
+      "km": 26.9,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "brunoy",
+      "montgeron",
+      "villecresnes",
+      "epinay-sous-senart",
+      "limeil-brevannes"
+    ]
+  },
+  {
+    "insee": "91692",
+    "slug": "les-ulis",
+    "nom": "Les Ulis",
+    "codePostal": "91940",
+    "departement": "91",
+    "population": 25886,
+    "lat": 48.6817,
+    "lon": 2.1864,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 25.3,
+        "min": 31
+      },
+      "cdg": {
+        "km": 58.9,
+        "min": 56
+      },
+      "beauvais": {
+        "km": 119.7,
+        "min": 95
+      }
+    },
+    "parisCentre": {
+      "km": 32.5,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "orsay",
+      "villebon-sur-yvette",
+      "gif-sur-yvette",
+      "palaiseau",
+      "igny"
+    ]
+  },
+  {
+    "insee": "92002",
+    "slug": "antony",
+    "nom": "Antony",
+    "codePostal": "92160",
+    "departement": "92",
+    "population": 64263,
+    "lat": 48.7507,
+    "lon": 2.2976,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 12.6,
+        "min": 26
+      },
+      "cdg": {
+        "km": 46.1,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 117.7,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 13.3,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "fresnes",
+      "sceaux",
+      "verrieres-le-buisson",
+      "massy",
+      "chatenay-malabry"
+    ]
+  },
+  {
+    "insee": "92004",
+    "slug": "asnieres-sur-seine",
+    "nom": "Asnières-sur-Seine",
+    "codePostal": "92600",
+    "departement": "92",
+    "population": 93941,
+    "lat": 48.9181,
+    "lon": 2.2935,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 32.3,
+        "min": 51
+      },
+      "cdg": {
+        "km": 28.2,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 77.8,
+        "min": 57
+      }
+    },
+    "parisCentre": {
+      "km": 10.1,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "gennevilliers",
+      "clichy",
+      "bois-colombes",
+      "levallois-perret",
+      "villeneuve-la-garenne"
+    ]
+  },
+  {
+    "insee": "92007",
+    "slug": "bagneux",
+    "nom": "Bagneux",
+    "codePostal": "92220",
+    "departement": "92",
+    "population": 44572,
+    "lat": 48.798,
+    "lon": 2.3093,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 15.5,
+        "min": 29
+      },
+      "cdg": {
+        "km": 36,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 96.3,
+        "min": 89
+      }
+    },
+    "parisCentre": {
+      "km": 8.4,
+      "min": 25
+    },
+    "gares": [],
+    "nearby": [
+      "chatillon",
+      "cachan",
+      "fontenay-aux-roses",
+      "arcueil",
+      "montrouge"
+    ]
+  },
+  {
+    "insee": "92009",
+    "slug": "bois-colombes",
+    "nom": "Bois-Colombes",
+    "codePostal": "92270",
+    "departement": "92",
+    "population": 28909,
+    "lat": 48.9151,
+    "lon": 2.2688,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.8,
+        "min": 50
+      },
+      "cdg": {
+        "km": 29.3,
+        "min": 34
+      },
+      "beauvais": {
+        "km": 80.1,
+        "min": 60
+      }
+    },
+    "parisCentre": {
+      "km": 10.7,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "colombes",
+      "asnieres-sur-seine",
+      "la-garenne-colombes",
+      "courbevoie",
+      "gennevilliers"
+    ]
+  },
+  {
+    "insee": "92012",
+    "slug": "boulogne-billancourt",
+    "nom": "Boulogne-Billancourt",
+    "codePostal": "92100",
+    "departement": "92",
+    "population": 119019,
+    "lat": 48.8375,
+    "lon": 2.2429,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 22,
+        "min": 32
+      },
+      "cdg": {
+        "km": 34.4,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 89.1,
+        "min": 76
+      }
+    },
+    "parisCentre": {
+      "km": 10,
+      "min": 23
+    },
+    "gares": [],
+    "nearby": [
+      "issy-les-moulineaux",
+      "saint-cloud",
+      "sevres",
+      "vanves",
+      "meudon"
+    ]
+  },
+  {
+    "insee": "92014",
+    "slug": "bourg-la-reine",
+    "nom": "Bourg-la-Reine",
+    "codePostal": "92340",
+    "departement": "92",
+    "population": 21019,
+    "lat": 48.7801,
+    "lon": 2.3167,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.1,
+        "min": 26
+      },
+      "cdg": {
+        "km": 46.7,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 118.3,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 9.7,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "sceaux",
+      "cachan",
+      "l-hay-les-roses",
+      "bagneux",
+      "fontenay-aux-roses"
+    ]
+  },
+  {
+    "insee": "92019",
+    "slug": "chatenay-malabry",
+    "nom": "Châtenay-Malabry",
+    "codePostal": "92290",
+    "departement": "92",
+    "population": 35825,
+    "lat": 48.7697,
+    "lon": 2.2603,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 16.9,
+        "min": 30
+      },
+      "cdg": {
+        "km": 50.4,
+        "min": 51
+      },
+      "beauvais": {
+        "km": 107.7,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 14.6,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "le-plessis-robinson",
+      "verrieres-le-buisson",
+      "sceaux",
+      "clamart",
+      "fontenay-aux-roses"
+    ]
+  },
+  {
+    "insee": "92020",
+    "slug": "chatillon",
+    "nom": "Châtillon",
+    "codePostal": "92320",
+    "departement": "92",
+    "population": 36705,
+    "lat": 48.8031,
+    "lon": 2.2887,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 19,
+        "min": 31
+      },
+      "cdg": {
+        "km": 36.9,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 93.8,
+        "min": 86
+      }
+    },
+    "parisCentre": {
+      "km": 9.1,
+      "min": 25
+    },
+    "gares": [],
+    "nearby": [
+      "fontenay-aux-roses",
+      "malakoff",
+      "bagneux",
+      "vanves",
+      "montrouge"
+    ]
+  },
+  {
+    "insee": "92022",
+    "slug": "chaville",
+    "nom": "Chaville",
+    "codePostal": "92370",
+    "departement": "92",
+    "population": 20594,
+    "lat": 48.8091,
+    "lon": 2.191,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 24.4,
+        "min": 32
+      },
+      "cdg": {
+        "km": 40,
+        "min": 53
+      },
+      "beauvais": {
+        "km": 94.8,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 15.3,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "viroflay",
+      "ville-d-avray",
+      "sevres",
+      "velizy-villacoublay",
+      "meudon"
+    ]
+  },
+  {
+    "insee": "92023",
+    "slug": "clamart",
+    "nom": "Clamart",
+    "codePostal": "92140",
+    "departement": "92",
+    "population": 58576,
+    "lat": 48.7957,
+    "lon": 2.2518,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 20.6,
+        "min": 29
+      },
+      "cdg": {
+        "km": 54.2,
+        "min": 54
+      },
+      "beauvais": {
+        "km": 107.9,
+        "min": 88
+      }
+    },
+    "parisCentre": {
+      "km": 13,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "le-plessis-robinson",
+      "meudon",
+      "fontenay-aux-roses",
+      "chatillon",
+      "chatenay-malabry"
+    ]
+  },
+  {
+    "insee": "92024",
+    "slug": "clichy",
+    "nom": "Clichy",
+    "codePostal": "92110",
+    "departement": "92",
+    "population": 64410,
+    "lat": 48.9041,
+    "lon": 2.3041,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 30.8,
+        "min": 47
+      },
+      "cdg": {
+        "km": 26.7,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 79.7,
+        "min": 60
+      }
+    },
+    "parisCentre": {
+      "km": 8.5,
+      "min": 25
+    },
+    "gares": [],
+    "nearby": [
+      "levallois-perret",
+      "asnieres-sur-seine",
+      "saint-ouen-sur-seine",
+      "bois-colombes",
+      "gennevilliers"
+    ]
+  },
+  {
+    "insee": "92025",
+    "slug": "colombes",
+    "nom": "Colombes",
+    "codePostal": "92700",
+    "departement": "92",
+    "population": 91053,
+    "lat": 48.9218,
+    "lon": 2.2469,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 33.3,
+        "min": 51
+      },
+      "cdg": {
+        "km": 29.6,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 80.4,
+        "min": 59
+      }
+    },
+    "parisCentre": {
+      "km": 13,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "la-garenne-colombes",
+      "bois-colombes",
+      "bezons",
+      "courbevoie",
+      "argenteuil"
+    ]
+  },
+  {
+    "insee": "92026",
+    "slug": "courbevoie",
+    "nom": "Courbevoie",
+    "codePostal": "92400",
+    "departement": "92",
+    "population": 82902,
+    "lat": 48.8976,
+    "lon": 2.2574,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 29.5,
+        "min": 46
+      },
+      "cdg": {
+        "km": 30.6,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 82.1,
+        "min": 62
+      }
+    },
+    "parisCentre": {
+      "km": 9.3,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "neuilly-sur-seine",
+      "la-garenne-colombes",
+      "bois-colombes",
+      "puteaux",
+      "levallois-perret"
+    ]
+  },
+  {
+    "insee": "92032",
+    "slug": "fontenay-aux-roses",
+    "nom": "Fontenay-aux-Roses",
+    "codePostal": "92260",
+    "departement": "92",
+    "population": 24070,
+    "lat": 48.7895,
+    "lon": 2.2876,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 17.5,
+        "min": 32
+      },
+      "cdg": {
+        "km": 38.7,
+        "min": 51
+      },
+      "beauvais": {
+        "km": 97,
+        "min": 91
+      }
+    },
+    "parisCentre": {
+      "km": 10.3,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "chatillon",
+      "sceaux",
+      "bagneux",
+      "le-plessis-robinson",
+      "bourg-la-reine"
+    ]
+  },
+  {
+    "insee": "92033",
+    "slug": "garches",
+    "nom": "Garches",
+    "codePostal": "92380",
+    "departement": "92",
+    "population": 17743,
+    "lat": 48.8469,
+    "lon": 2.1861,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 29.8,
+        "min": 42
+      },
+      "cdg": {
+        "km": 37.1,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 90.1,
+        "min": 78
+      }
+    },
+    "parisCentre": {
+      "km": 14.2,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "saint-cloud",
+      "rueil-malmaison",
+      "ville-d-avray",
+      "sevres",
+      "suresnes"
+    ]
+  },
+  {
+    "insee": "92035",
+    "slug": "la-garenne-colombes",
+    "nom": "La Garenne-Colombes",
+    "codePostal": "92250",
+    "departement": "92",
+    "population": 30197,
+    "lat": 48.9071,
+    "lon": 2.2437,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.9,
+        "min": 48
+      },
+      "cdg": {
+        "km": 33,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 81.4,
+        "min": 63
+      }
+    },
+    "parisCentre": {
+      "km": 11.7,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "courbevoie",
+      "colombes",
+      "bois-colombes",
+      "puteaux",
+      "neuilly-sur-seine"
+    ]
+  },
+  {
+    "insee": "92036",
+    "slug": "gennevilliers",
+    "nom": "Gennevilliers",
+    "codePostal": "92230",
+    "departement": "92",
+    "population": 50979,
+    "lat": 48.9319,
+    "lon": 2.288,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 42.4,
+        "min": 50
+      },
+      "cdg": {
+        "km": 26.5,
+        "min": 29
+      },
+      "beauvais": {
+        "km": 77.3,
+        "min": 55
+      }
+    },
+    "parisCentre": {
+      "km": 11.8,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "asnieres-sur-seine",
+      "bois-colombes",
+      "villeneuve-la-garenne",
+      "colombes",
+      "epinay-sur-seine"
+    ]
+  },
+  {
+    "insee": "92040",
+    "slug": "issy-les-moulineaux",
+    "nom": "Issy-les-Moulineaux",
+    "codePostal": "92130",
+    "departement": "92",
+    "population": 67669,
+    "lat": 48.824,
+    "lon": 2.2628,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 21.2,
+        "min": 31
+      },
+      "cdg": {
+        "km": 36.4,
+        "min": 44
+      },
+      "beauvais": {
+        "km": 91.1,
+        "min": 79
+      }
+    },
+    "parisCentre": {
+      "km": 9.7,
+      "min": 23
+    },
+    "gares": [],
+    "nearby": [
+      "vanves",
+      "boulogne-billancourt",
+      "malakoff",
+      "chatillon",
+      "clamart"
+    ]
+  },
+  {
+    "insee": "92044",
+    "slug": "levallois-perret",
+    "nom": "Levallois-Perret",
+    "codePostal": "92300",
+    "departement": "92",
+    "population": 68092,
+    "lat": 48.8946,
+    "lon": 2.2874,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 29.4,
+        "min": 44
+      },
+      "cdg": {
+        "km": 29,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 81,
+        "min": 61
+      }
+    },
+    "parisCentre": {
+      "km": 7.4,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "clichy",
+      "neuilly-sur-seine",
+      "courbevoie",
+      "asnieres-sur-seine",
+      "bois-colombes"
+    ]
+  },
+  {
+    "insee": "92046",
+    "slug": "malakoff",
+    "nom": "Malakoff",
+    "codePostal": "92240",
+    "departement": "92",
+    "population": 30557,
+    "lat": 48.817,
+    "lon": 2.2943,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 18.4,
+        "min": 29
+      },
+      "cdg": {
+        "km": 36.3,
+        "min": 45
+      },
+      "beauvais": {
+        "km": 93.4,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 7.4,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "vanves",
+      "chatillon",
+      "montrouge",
+      "bagneux",
+      "issy-les-moulineaux"
+    ]
+  },
+  {
+    "insee": "92048",
+    "slug": "meudon",
+    "nom": "Meudon",
+    "codePostal": "92190",
+    "departement": "92",
+    "population": 46334,
+    "lat": 48.8028,
+    "lon": 2.2288,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 21.4,
+        "min": 32
+      },
+      "cdg": {
+        "km": 39.2,
+        "min": 54
+      },
+      "beauvais": {
+        "km": 94,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 14.1,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "clamart",
+      "sevres",
+      "chaville",
+      "velizy-villacoublay",
+      "le-plessis-robinson"
+    ]
+  },
+  {
+    "insee": "92049",
+    "slug": "montrouge",
+    "nom": "Montrouge",
+    "codePostal": "92120",
+    "departement": "92",
+    "population": 46324,
+    "lat": 48.8159,
+    "lon": 2.3163,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 16.4,
+        "min": 25
+      },
+      "cdg": {
+        "km": 34.3,
+        "min": 42
+      },
+      "beauvais": {
+        "km": 93.7,
+        "min": 84
+      }
+    },
+    "parisCentre": {
+      "km": 5.9,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "malakoff",
+      "arcueil",
+      "gentilly",
+      "bagneux",
+      "vanves"
+    ]
+  },
+  {
+    "insee": "92050",
+    "slug": "nanterre",
+    "nom": "Nanterre",
+    "codePostal": "92000",
+    "departement": "92",
+    "population": 97783,
+    "lat": 48.8974,
+    "lon": 2.2018,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 38.7,
+        "min": 48
+      },
+      "cdg": {
+        "km": 34,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 84.8,
+        "min": 62
+      }
+    },
+    "parisCentre": {
+      "km": 13,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "carrieres-sur-seine",
+      "puteaux",
+      "suresnes",
+      "bezons",
+      "la-garenne-colombes"
+    ]
+  },
+  {
+    "insee": "92051",
+    "slug": "neuilly-sur-seine",
+    "nom": "Neuilly-sur-Seine",
+    "codePostal": "92200",
+    "departement": "92",
+    "population": 59538,
+    "lat": 48.8862,
+    "lon": 2.2651,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 28.3,
+        "min": 42
+      },
+      "cdg": {
+        "km": 29.5,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 82.9,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 8.1,
+      "min": 22
+    },
+    "gares": [],
+    "nearby": [
+      "courbevoie",
+      "levallois-perret",
+      "puteaux",
+      "la-garenne-colombes",
+      "bois-colombes"
+    ]
+  },
+  {
+    "insee": "92060",
+    "slug": "le-plessis-robinson",
+    "nom": "Le Plessis-Robinson",
+    "codePostal": "92350",
+    "departement": "92",
+    "population": 28848,
+    "lat": 48.7815,
+    "lon": 2.2592,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 17.7,
+        "min": 30
+      },
+      "cdg": {
+        "km": 51.2,
+        "min": 51
+      },
+      "beauvais": {
+        "km": 108.2,
+        "min": 86
+      }
+    },
+    "parisCentre": {
+      "km": 12.9,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "chatenay-malabry",
+      "clamart",
+      "fontenay-aux-roses",
+      "sceaux",
+      "chatillon"
+    ]
+  },
+  {
+    "insee": "92062",
+    "slug": "puteaux",
+    "nom": "Puteaux",
+    "codePostal": "92800",
+    "departement": "92",
+    "population": 44002,
+    "lat": 48.8824,
+    "lon": 2.2384,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.6,
+        "min": 44
+      },
+      "cdg": {
+        "km": 32.1,
+        "min": 38
+      },
+      "beauvais": {
+        "km": 84.4,
+        "min": 66
+      }
+    },
+    "parisCentre": {
+      "km": 9.9,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "suresnes",
+      "neuilly-sur-seine",
+      "courbevoie",
+      "la-garenne-colombes",
+      "nanterre"
+    ]
+  },
+  {
+    "insee": "92063",
+    "slug": "rueil-malmaison",
+    "nom": "Rueil-Malmaison",
+    "codePostal": "92500",
+    "departement": "92",
+    "population": 82874,
+    "lat": 48.8717,
+    "lon": 2.1806,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.5,
+        "min": 47
+      },
+      "cdg": {
+        "km": 39.6,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 90.4,
+        "min": 73
+      }
+    },
+    "parisCentre": {
+      "km": 14.3,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "suresnes",
+      "garches",
+      "nanterre",
+      "saint-cloud",
+      "croissy-sur-seine"
+    ]
+  },
+  {
+    "insee": "92064",
+    "slug": "saint-cloud",
+    "nom": "Saint-Cloud",
+    "codePostal": "92210",
+    "departement": "92",
+    "population": 29855,
+    "lat": 48.844,
+    "lon": 2.2032,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 28.5,
+        "min": 39
+      },
+      "cdg": {
+        "km": 36.9,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 89.9,
+        "min": 76
+      }
+    },
+    "parisCentre": {
+      "km": 14.1,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "garches",
+      "sevres",
+      "boulogne-billancourt",
+      "suresnes",
+      "ville-d-avray"
+    ]
+  },
+  {
+    "insee": "92071",
+    "slug": "sceaux",
+    "nom": "Sceaux",
+    "codePostal": "92330",
+    "departement": "92",
+    "population": 20884,
+    "lat": 48.776,
+    "lon": 2.2963,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.7,
+        "min": 27
+      },
+      "cdg": {
+        "km": 47.3,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 112.1,
+        "min": 92
+      }
+    },
+    "parisCentre": {
+      "km": 11.4,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "bourg-la-reine",
+      "fontenay-aux-roses",
+      "bagneux",
+      "chatenay-malabry",
+      "le-plessis-robinson"
+    ]
+  },
+  {
+    "insee": "92072",
+    "slug": "sevres",
+    "nom": "Sèvres",
+    "codePostal": "92310",
+    "departement": "92",
+    "population": 22303,
+    "lat": 48.8223,
+    "lon": 2.2056,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 24,
+        "min": 34
+      },
+      "cdg": {
+        "km": 37.6,
+        "min": 47
+      },
+      "beauvais": {
+        "km": 92.5,
+        "min": 81
+      }
+    },
+    "parisCentre": {
+      "km": 13,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "chaville",
+      "ville-d-avray",
+      "saint-cloud",
+      "meudon",
+      "garches"
+    ]
+  },
+  {
+    "insee": "92073",
+    "slug": "suresnes",
+    "nom": "Suresnes",
+    "codePostal": "92150",
+    "departement": "92",
+    "population": 48956,
+    "lat": 48.871,
+    "lon": 2.2183,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 29.7,
+        "min": 42
+      },
+      "cdg": {
+        "km": 33.9,
+        "min": 42
+      },
+      "beauvais": {
+        "km": 88.4,
+        "min": 70
+      }
+    },
+    "parisCentre": {
+      "km": 11,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "puteaux",
+      "rueil-malmaison",
+      "nanterre",
+      "saint-cloud",
+      "garches"
+    ]
+  },
+  {
+    "insee": "92075",
+    "slug": "vanves",
+    "nom": "Vanves",
+    "codePostal": "92170",
+    "departement": "92",
+    "population": 28622,
+    "lat": 48.8214,
+    "lon": 2.2869,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 18.5,
+        "min": 29
+      },
+      "cdg": {
+        "km": 36.4,
+        "min": 45
+      },
+      "beauvais": {
+        "km": 93,
+        "min": 82
+      }
+    },
+    "parisCentre": {
+      "km": 7.2,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "malakoff",
+      "issy-les-moulineaux",
+      "chatillon",
+      "montrouge",
+      "bagneux"
+    ]
+  },
+  {
+    "insee": "92077",
+    "slug": "ville-d-avray",
+    "nom": "Ville-d'Avray",
+    "codePostal": "92410",
+    "departement": "92",
+    "population": 11089,
+    "lat": 48.8215,
+    "lon": 2.1759,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 27,
+        "min": 40
+      },
+      "cdg": {
+        "km": 43.7,
+        "min": 52
+      },
+      "beauvais": {
+        "km": 98.2,
+        "min": 80
+      }
+    },
+    "parisCentre": {
+      "km": 15.6,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "chaville",
+      "sevres",
+      "viroflay",
+      "garches",
+      "saint-cloud"
+    ]
+  },
+  {
+    "insee": "92078",
+    "slug": "villeneuve-la-garenne",
+    "nom": "Villeneuve-la-Garenne",
+    "codePostal": "92390",
+    "departement": "92",
+    "population": 26021,
+    "lat": 48.9354,
+    "lon": 2.3231,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 38.6,
+        "min": 46
+      },
+      "cdg": {
+        "km": 22.7,
+        "min": 25
+      },
+      "beauvais": {
+        "km": 76.5,
+        "min": 53
+      }
+    },
+    "parisCentre": {
+      "km": 10.9,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "epinay-sur-seine",
+      "gennevilliers",
+      "saint-ouen-sur-seine",
+      "villetaneuse",
+      "asnieres-sur-seine"
+    ]
+  },
+  {
+    "insee": "93001",
+    "slug": "aubervilliers",
+    "nom": "Aubervilliers",
+    "codePostal": "93300",
+    "departement": "93",
+    "population": 88365,
+    "lat": 48.9128,
+    "lon": 2.3886,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 34.5,
+        "min": 42
+      },
+      "cdg": {
+        "km": 18.5,
+        "min": 25
+      },
+      "beauvais": {
+        "km": 76.3,
+        "min": 64
+      }
+    },
+    "parisCentre": {
+      "km": 7.8,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "pantin",
+      "la-courneuve",
+      "saint-denis",
+      "le-pre-saint-gervais",
+      "bobigny"
+    ]
+  },
+  {
+    "insee": "93005",
+    "slug": "aulnay-sous-bois",
+    "nom": "Aulnay-sous-Bois",
+    "codePostal": "93600",
+    "departement": "93",
+    "population": 87599,
+    "lat": 48.9457,
+    "lon": 2.4918,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 33.1,
+        "min": 38
+      },
+      "cdg": {
+        "km": 11.8,
+        "min": 16
+      },
+      "beauvais": {
+        "km": 81.1,
+        "min": 58
+      }
+    },
+    "parisCentre": {
+      "km": 20.5,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "le-blanc-mesnil",
+      "sevran",
+      "villepinte",
+      "drancy",
+      "livry-gargan"
+    ]
+  },
+  {
+    "insee": "93006",
+    "slug": "bagnolet",
+    "nom": "Bagnolet",
+    "codePostal": "93170",
+    "departement": "93",
+    "population": 43086,
+    "lat": 48.8671,
+    "lon": 2.4252,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 19.5,
+        "min": 37
+      },
+      "cdg": {
+        "km": 24,
+        "min": 24
+      },
+      "beauvais": {
+        "km": 95.6,
+        "min": 68
+      }
+    },
+    "parisCentre": {
+      "km": 6.7,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "les-lilas",
+      "montreuil",
+      "romainville",
+      "le-pre-saint-gervais",
+      "vincennes"
+    ]
+  },
+  {
+    "insee": "93007",
+    "slug": "le-blanc-mesnil",
+    "nom": "Le Blanc-Mesnil",
+    "codePostal": "93150",
+    "departement": "93",
+    "population": 62376,
+    "lat": 48.9372,
+    "lon": 2.4576,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.3,
+        "min": 38
+      },
+      "cdg": {
+        "km": 14.9,
+        "min": 17
+      },
+      "beauvais": {
+        "km": 89.3,
+        "min": 60
+      }
+    },
+    "parisCentre": {
+      "km": 18,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "drancy",
+      "le-bourget",
+      "aulnay-sous-bois",
+      "dugny",
+      "bobigny"
+    ]
+  },
+  {
+    "insee": "93008",
+    "slug": "bobigny",
+    "nom": "Bobigny",
+    "codePostal": "93000",
+    "departement": "93",
+    "population": 56927,
+    "lat": 48.9073,
+    "lon": 2.4432,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 28.6,
+        "min": 36
+      },
+      "cdg": {
+        "km": 18.5,
+        "min": 22
+      },
+      "beauvais": {
+        "km": 90.1,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 10.6,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "drancy",
+      "noisy-le-sec",
+      "romainville",
+      "pantin",
+      "bondy"
+    ]
+  },
+  {
+    "insee": "93010",
+    "slug": "bondy",
+    "nom": "Bondy",
+    "codePostal": "93140",
+    "departement": "93",
+    "population": 50595,
+    "lat": 48.9036,
+    "lon": 2.4846,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 27.2,
+        "min": 34
+      },
+      "cdg": {
+        "km": 16.7,
+        "min": 19
+      },
+      "beauvais": {
+        "km": 88.3,
+        "min": 61
+      }
+    },
+    "parisCentre": {
+      "km": 14.6,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "les-pavillons-sous-bois",
+      "noisy-le-sec",
+      "villemomble",
+      "le-raincy",
+      "bobigny"
+    ]
+  },
+  {
+    "insee": "93013",
+    "slug": "le-bourget",
+    "nom": "Le Bourget",
+    "codePostal": "93350",
+    "departement": "93",
+    "population": 15925,
+    "lat": 48.9378,
+    "lon": 2.4287,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 32.3,
+        "min": 38
+      },
+      "cdg": {
+        "km": 13.1,
+        "min": 14
+      },
+      "beauvais": {
+        "km": 87.5,
+        "min": 57
+      }
+    },
+    "parisCentre": {
+      "km": 16.2,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "dugny",
+      "drancy",
+      "le-blanc-mesnil",
+      "la-courneuve",
+      "bobigny"
+    ]
+  },
+  {
+    "insee": "93014",
+    "slug": "clichy-sous-bois",
+    "nom": "Clichy-sous-Bois",
+    "codePostal": "93390",
+    "departement": "93",
+    "population": 29354,
+    "lat": 48.9081,
+    "lon": 2.5432,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.4,
+        "min": 40
+      },
+      "cdg": {
+        "km": 21.2,
+        "min": 24
+      },
+      "beauvais": {
+        "km": 92.8,
+        "min": 68
+      }
+    },
+    "parisCentre": {
+      "km": 18.7,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "livry-gargan",
+      "montfermeil",
+      "le-raincy",
+      "les-pavillons-sous-bois",
+      "gagny"
+    ]
+  },
+  {
+    "insee": "93027",
+    "slug": "la-courneuve",
+    "nom": "La Courneuve",
+    "codePostal": "93120",
+    "departement": "93",
+    "population": 47167,
+    "lat": 48.9341,
+    "lon": 2.3986,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 33.4,
+        "min": 40
+      },
+      "cdg": {
+        "km": 15.9,
+        "min": 21
+      },
+      "beauvais": {
+        "km": 74.4,
+        "min": 62
+      }
+    },
+    "parisCentre": {
+      "km": 11.2,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "le-bourget",
+      "saint-denis",
+      "aubervilliers",
+      "dugny",
+      "stains"
+    ]
+  },
+  {
+    "insee": "93029",
+    "slug": "drancy",
+    "nom": "Drancy",
+    "codePostal": "93700",
+    "departement": "93",
+    "population": 72390,
+    "lat": 48.925,
+    "lon": 2.4446,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 30.5,
+        "min": 36
+      },
+      "cdg": {
+        "km": 15.4,
+        "min": 18
+      },
+      "beauvais": {
+        "km": 89.9,
+        "min": 61
+      }
+    },
+    "parisCentre": {
+      "km": 12.1,
+      "min": 31
+    },
+    "gares": [],
+    "nearby": [
+      "le-blanc-mesnil",
+      "le-bourget",
+      "bobigny",
+      "dugny",
+      "la-courneuve"
+    ]
+  },
+  {
+    "insee": "93030",
+    "slug": "dugny",
+    "nom": "Dugny",
+    "codePostal": "93440",
+    "departement": "93",
+    "population": 11700,
+    "lat": 48.9494,
+    "lon": 2.4255,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 34.1,
+        "min": 42
+      },
+      "cdg": {
+        "km": 14.4,
+        "min": 18
+      },
+      "beauvais": {
+        "km": 82.9,
+        "min": 60
+      }
+    },
+    "parisCentre": {
+      "km": 16.2,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "le-bourget",
+      "la-courneuve",
+      "le-blanc-mesnil",
+      "garges-les-gonesse",
+      "stains"
+    ]
+  },
+  {
+    "insee": "93031",
+    "slug": "epinay-sur-seine",
+    "nom": "Épinay-sur-Seine",
+    "codePostal": "93800",
+    "departement": "93",
+    "population": 52833,
+    "lat": 48.9544,
+    "lon": 2.3172,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 39.8,
+        "min": 49
+      },
+      "cdg": {
+        "km": 23,
+        "min": 26
+      },
+      "beauvais": {
+        "km": 75.2,
+        "min": 55
+      }
+    },
+    "parisCentre": {
+      "km": 14.7,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "deuil-la-barre",
+      "villetaneuse",
+      "enghien-les-bains",
+      "villeneuve-la-garenne",
+      "montmagny"
+    ]
+  },
+  {
+    "insee": "93032",
+    "slug": "gagny",
+    "nom": "Gagny",
+    "codePostal": "93220",
+    "departement": "93",
+    "population": 42313,
+    "lat": 48.8826,
+    "lon": 2.545,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 28,
+        "min": 37
+      },
+      "cdg": {
+        "km": 23.5,
+        "min": 27
+      },
+      "beauvais": {
+        "km": 95.1,
+        "min": 71
+      }
+    },
+    "parisCentre": {
+      "km": 17.7,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "neuilly-sur-marne",
+      "montfermeil",
+      "le-raincy",
+      "villemomble",
+      "clichy-sous-bois"
+    ]
+  },
+  {
+    "insee": "93045",
+    "slug": "les-lilas",
+    "nom": "Les Lilas",
+    "codePostal": "93260",
+    "departement": "93",
+    "population": 23843,
+    "lat": 48.8821,
+    "lon": 2.4207,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 28.2,
+        "min": 35
+      },
+      "cdg": {
+        "km": 22.9,
+        "min": 24
+      },
+      "beauvais": {
+        "km": 94.5,
+        "min": 68
+      }
+    },
+    "parisCentre": {
+      "km": 7.1,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "le-pre-saint-gervais",
+      "romainville",
+      "bagnolet",
+      "pantin",
+      "noisy-le-sec"
+    ]
+  },
+  {
+    "insee": "93046",
+    "slug": "livry-gargan",
+    "nom": "Livry-Gargan",
+    "codePostal": "93190",
+    "departement": "93",
+    "population": 47228,
+    "lat": 48.9184,
+    "lon": 2.5351,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.3,
+        "min": 40
+      },
+      "cdg": {
+        "km": 18,
+        "min": 27
+      },
+      "beauvais": {
+        "km": 86.6,
+        "min": 68
+      }
+    },
+    "parisCentre": {
+      "km": 18.7,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "clichy-sous-bois",
+      "sevran",
+      "les-pavillons-sous-bois",
+      "le-raincy",
+      "montfermeil"
+    ]
+  },
+  {
+    "insee": "93047",
+    "slug": "montfermeil",
+    "nom": "Montfermeil",
+    "codePostal": "93370",
+    "departement": "93",
+    "population": 28703,
+    "lat": 48.8976,
+    "lon": 2.5678,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.6,
+        "min": 44
+      },
+      "cdg": {
+        "km": 21.8,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 90.4,
+        "min": 75
+      }
+    },
+    "parisCentre": {
+      "km": 20.6,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "clichy-sous-bois",
+      "gagny",
+      "chelles",
+      "livry-gargan",
+      "le-raincy"
+    ]
+  },
+  {
+    "insee": "93048",
+    "slug": "montreuil",
+    "nom": "Montreuil",
+    "codePostal": "93100",
+    "departement": "93",
+    "population": 111934,
+    "lat": 48.8637,
+    "lon": 2.4491,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 23.3,
+        "min": 33
+      },
+      "cdg": {
+        "km": 22.4,
+        "min": 24
+      },
+      "beauvais": {
+        "km": 94,
+        "min": 68
+      }
+    },
+    "parisCentre": {
+      "km": 9.7,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "bagnolet",
+      "vincennes",
+      "fontenay-sous-bois",
+      "romainville",
+      "les-lilas"
+    ]
+  },
+  {
+    "insee": "93049",
+    "slug": "neuilly-plaisance",
+    "nom": "Neuilly-Plaisance",
+    "codePostal": "93360",
+    "departement": "93",
+    "population": 21941,
+    "lat": 48.8641,
+    "lon": 2.5097,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 21.9,
+        "min": 32
+      },
+      "cdg": {
+        "km": 22.6,
+        "min": 25
+      },
+      "beauvais": {
+        "km": 94.2,
+        "min": 69
+      }
+    },
+    "parisCentre": {
+      "km": 18.4,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "rosny-sous-bois",
+      "le-perreux-sur-marne",
+      "neuilly-sur-marne",
+      "villemomble",
+      "bry-sur-marne"
+    ]
+  },
+  {
+    "insee": "93050",
+    "slug": "neuilly-sur-marne",
+    "nom": "Neuilly-sur-Marne",
+    "codePostal": "93330",
+    "departement": "93",
+    "population": 39800,
+    "lat": 48.8645,
+    "lon": 2.5419,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 25.3,
+        "min": 34
+      },
+      "cdg": {
+        "km": 25.5,
+        "min": 30
+      },
+      "beauvais": {
+        "km": 97.1,
+        "min": 74
+      }
+    },
+    "parisCentre": {
+      "km": 21.8,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "gagny",
+      "neuilly-plaisance",
+      "bry-sur-marne",
+      "villemomble",
+      "le-perreux-sur-marne"
+    ]
+  },
+  {
+    "insee": "93051",
+    "slug": "noisy-le-grand",
+    "nom": "Noisy-le-Grand",
+    "codePostal": "93160",
+    "departement": "93",
+    "population": 72978,
+    "lat": 48.8327,
+    "lon": 2.556,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 22.5,
+        "min": 29
+      },
+      "cdg": {
+        "km": 29.7,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 101.3,
+        "min": 75
+      }
+    },
+    "parisCentre": {
+      "km": 19,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "villiers-sur-marne",
+      "bry-sur-marne",
+      "champigny-sur-marne",
+      "le-plessis-trevise",
+      "champs-sur-marne"
+    ]
+  },
+  {
+    "insee": "93053",
+    "slug": "noisy-le-sec",
+    "nom": "Noisy-le-Sec",
+    "codePostal": "93130",
+    "departement": "93",
+    "population": 45510,
+    "lat": 48.8917,
+    "lon": 2.4578,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 25.5,
+        "min": 33
+      },
+      "cdg": {
+        "km": 18.1,
+        "min": 24
+      },
+      "beauvais": {
+        "km": 89.7,
+        "min": 66
+      }
+    },
+    "parisCentre": {
+      "km": 11,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "romainville",
+      "bobigny",
+      "bondy",
+      "rosny-sous-bois",
+      "les-lilas"
+    ]
+  },
+  {
+    "insee": "93055",
+    "slug": "pantin",
+    "nom": "Pantin",
+    "codePostal": "93500",
+    "departement": "93",
+    "population": 61929,
+    "lat": 48.9006,
+    "lon": 2.4085,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 31.6,
+        "min": 38
+      },
+      "cdg": {
+        "km": 20.6,
+        "min": 23
+      },
+      "beauvais": {
+        "km": 92.2,
+        "min": 67
+      }
+    },
+    "parisCentre": {
+      "km": 8.1,
+      "min": 24
+    },
+    "gares": [],
+    "nearby": [
+      "le-pre-saint-gervais",
+      "aubervilliers",
+      "les-lilas",
+      "bobigny",
+      "romainville"
+    ]
+  },
+  {
+    "insee": "93057",
+    "slug": "les-pavillons-sous-bois",
+    "nom": "Les Pavillons-sous-Bois",
+    "codePostal": "93320",
+    "departement": "93",
+    "population": 25804,
+    "lat": 48.907,
+    "lon": 2.5057,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 28.5,
+        "min": 36
+      },
+      "cdg": {
+        "km": 18.4,
+        "min": 22
+      },
+      "beauvais": {
+        "km": 90,
+        "min": 64
+      }
+    },
+    "parisCentre": {
+      "km": 15.9,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "bondy",
+      "le-raincy",
+      "villemomble",
+      "livry-gargan",
+      "clichy-sous-bois"
+    ]
+  },
+  {
+    "insee": "93061",
+    "slug": "le-pre-saint-gervais",
+    "nom": "Le Pré-Saint-Gervais",
+    "codePostal": "93310",
+    "departement": "93",
+    "population": 16993,
+    "lat": 48.884,
+    "lon": 2.4054,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 20.9,
+        "min": 38
+      },
+      "cdg": {
+        "km": 24.1,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 87.2,
+        "min": 69
+      }
+    },
+    "parisCentre": {
+      "km": 7.4,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "les-lilas",
+      "pantin",
+      "bagnolet",
+      "romainville",
+      "aubervilliers"
+    ]
+  },
+  {
+    "insee": "93062",
+    "slug": "le-raincy",
+    "nom": "Le Raincy",
+    "codePostal": "93340",
+    "departement": "93",
+    "population": 14735,
+    "lat": 48.8959,
+    "lon": 2.5196,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 26.9,
+        "min": 36
+      },
+      "cdg": {
+        "km": 19.9,
+        "min": 25
+      },
+      "beauvais": {
+        "km": 91.5,
+        "min": 67
+      }
+    },
+    "parisCentre": {
+      "km": 16.2,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "villemomble",
+      "les-pavillons-sous-bois",
+      "clichy-sous-bois",
+      "gagny",
+      "bondy"
+    ]
+  },
+  {
+    "insee": "93063",
+    "slug": "romainville",
+    "nom": "Romainville",
+    "codePostal": "93230",
+    "departement": "93",
+    "population": 37152,
+    "lat": 48.8849,
+    "lon": 2.4391,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 27.4,
+        "min": 33
+      },
+      "cdg": {
+        "km": 22.1,
+        "min": 22
+      },
+      "beauvais": {
+        "km": 93.7,
+        "min": 66
+      }
+    },
+    "parisCentre": {
+      "km": 8.5,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "les-lilas",
+      "noisy-le-sec",
+      "bagnolet",
+      "le-pre-saint-gervais",
+      "montreuil"
+    ]
+  },
+  {
+    "insee": "93064",
+    "slug": "rosny-sous-bois",
+    "nom": "Rosny-sous-Bois",
+    "codePostal": "93110",
+    "departement": "93",
+    "population": 47180,
+    "lat": 48.8744,
+    "lon": 2.4872,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 23.4,
+        "min": 29
+      },
+      "cdg": {
+        "km": 20.6,
+        "min": 21
+      },
+      "beauvais": {
+        "km": 92.2,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 19.9,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "neuilly-plaisance",
+      "villemomble",
+      "fontenay-sous-bois",
+      "noisy-le-sec",
+      "montreuil"
+    ]
+  },
+  {
+    "insee": "93066",
+    "slug": "saint-denis",
+    "nom": "Saint-Denis",
+    "codePostal": "93200",
+    "departement": "93",
+    "population": 149077,
+    "lat": 48.9378,
+    "lon": 2.3657,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 35.1,
+        "min": 42
+      },
+      "cdg": {
+        "km": 18.2,
+        "min": 20
+      },
+      "beauvais": {
+        "km": 71.5,
+        "min": 57
+      }
+    },
+    "parisCentre": {
+      "km": 12.4,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "la-courneuve",
+      "villetaneuse",
+      "stains",
+      "villeneuve-la-garenne",
+      "aubervilliers"
+    ]
+  },
+  {
+    "insee": "93070",
+    "slug": "saint-ouen-sur-seine",
+    "nom": "Saint-Ouen-sur-Seine",
+    "codePostal": "93400",
+    "departement": "93",
+    "population": 53615,
+    "lat": 48.9118,
+    "lon": 2.3329,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 37.5,
+        "min": 46
+      },
+      "cdg": {
+        "km": 24.1,
+        "min": 23
+      },
+      "beauvais": {
+        "km": 79.9,
+        "min": 59
+      }
+    },
+    "parisCentre": {
+      "km": 7.4,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "clichy",
+      "villeneuve-la-garenne",
+      "asnieres-sur-seine",
+      "saint-denis",
+      "levallois-perret"
+    ]
+  },
+  {
+    "insee": "93071",
+    "slug": "sevran",
+    "nom": "Sevran",
+    "codePostal": "93270",
+    "departement": "93",
+    "population": 52535,
+    "lat": 48.9378,
+    "lon": 2.5311,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 33,
+        "min": 42
+      },
+      "cdg": {
+        "km": 16.6,
+        "min": 23
+      },
+      "beauvais": {
+        "km": 84.3,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 20.4,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "villepinte",
+      "livry-gargan",
+      "aulnay-sous-bois",
+      "clichy-sous-bois",
+      "les-pavillons-sous-bois"
+    ]
+  },
+  {
+    "insee": "93072",
+    "slug": "stains",
+    "nom": "Stains",
+    "codePostal": "93240",
+    "departement": "93",
+    "population": 41388,
+    "lat": 48.9578,
+    "lon": 2.3868,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 37.4,
+        "min": 45
+      },
+      "cdg": {
+        "km": 16.5,
+        "min": 23
+      },
+      "beauvais": {
+        "km": 71.1,
+        "min": 56
+      }
+    },
+    "parisCentre": {
+      "km": 15.8,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "garges-les-gonesse",
+      "saint-denis",
+      "la-courneuve",
+      "dugny",
+      "montmagny"
+    ]
+  },
+  {
+    "insee": "93073",
+    "slug": "tremblay-en-france",
+    "nom": "Tremblay-en-France",
+    "codePostal": "93290",
+    "departement": "93",
+    "population": 38348,
+    "lat": 48.9744,
+    "lon": 2.5481,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 42.5,
+        "min": 50
+      },
+      "cdg": {
+        "km": 7.9,
+        "min": 26
+      },
+      "beauvais": {
+        "km": 79.5,
+        "min": 61
+      }
+    },
+    "parisCentre": {
+      "km": 29.4,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "villepinte",
+      "sevran",
+      "mitry-mory",
+      "aulnay-sous-bois",
+      "livry-gargan"
+    ]
+  },
+  {
+    "insee": "93077",
+    "slug": "villemomble",
+    "nom": "Villemomble",
+    "codePostal": "93250",
+    "departement": "93",
+    "population": 29795,
+    "lat": 48.8866,
+    "lon": 2.5085,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 25.2,
+        "min": 32
+      },
+      "cdg": {
+        "km": 20.3,
+        "min": 20
+      },
+      "beauvais": {
+        "km": 91.9,
+        "min": 65
+      }
+    },
+    "parisCentre": {
+      "km": 14.5,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "le-raincy",
+      "rosny-sous-bois",
+      "les-pavillons-sous-bois",
+      "neuilly-plaisance",
+      "bondy"
+    ]
+  },
+  {
+    "insee": "93078",
+    "slug": "villepinte",
+    "nom": "Villepinte",
+    "codePostal": "93420",
+    "departement": "93",
+    "population": 41470,
+    "lat": 48.956,
+    "lon": 2.5323,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 34.4,
+        "min": 43
+      },
+      "cdg": {
+        "km": 15.1,
+        "min": 19
+      },
+      "beauvais": {
+        "km": 86.5,
+        "min": 60
+      }
+    },
+    "parisCentre": {
+      "km": 21.8,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "sevran",
+      "tremblay-en-france",
+      "aulnay-sous-bois",
+      "livry-gargan",
+      "clichy-sous-bois"
+    ]
+  },
+  {
+    "insee": "93079",
+    "slug": "villetaneuse",
+    "nom": "Villetaneuse",
+    "codePostal": "93430",
+    "departement": "93",
+    "population": 12530,
+    "lat": 48.9574,
+    "lon": 2.3441,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 39.1,
+        "min": 50
+      },
+      "cdg": {
+        "km": 22.3,
+        "min": 26
+      },
+      "beauvais": {
+        "km": 69.6,
+        "min": 53
+      }
+    },
+    "parisCentre": {
+      "km": 14,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "montmagny",
+      "deuil-la-barre",
+      "epinay-sur-seine",
+      "saint-denis",
+      "villeneuve-la-garenne"
+    ]
+  },
+  {
+    "insee": "94002",
+    "slug": "alfortville",
+    "nom": "Alfortville",
+    "codePostal": "94140",
+    "departement": "94",
+    "population": 45531,
+    "lat": 48.7963,
+    "lon": 2.4214,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 8.7,
+        "min": 20
+      },
+      "cdg": {
+        "km": 32.6,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 104.2,
+        "min": 79
+      }
+    },
+    "parisCentre": {
+      "km": 9.9,
+      "min": 25
+    },
+    "gares": [],
+    "nearby": [
+      "maisons-alfort",
+      "vitry-sur-seine",
+      "creteil",
+      "saint-maurice",
+      "ivry-sur-seine"
+    ]
+  },
+  {
+    "insee": "94003",
+    "slug": "arcueil",
+    "nom": "Arcueil",
+    "codePostal": "94110",
+    "departement": "94",
+    "population": 22200,
+    "lat": 48.8053,
+    "lon": 2.3328,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.8,
+        "min": 24
+      },
+      "cdg": {
+        "km": 33.3,
+        "min": 42
+      },
+      "beauvais": {
+        "km": 104.9,
+        "min": 86
+      }
+    },
+    "parisCentre": {
+      "km": 7.4,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "gentilly",
+      "cachan",
+      "montrouge",
+      "le-kremlin-bicetre",
+      "bagneux"
+    ]
+  },
+  {
+    "insee": "94004",
+    "slug": "boissy-saint-leger",
+    "nom": "Boissy-Saint-Léger",
+    "codePostal": "94470",
+    "departement": "94",
+    "population": 17325,
+    "lat": 48.7453,
+    "lon": 2.5251,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 10.8,
+        "min": 23
+      },
+      "cdg": {
+        "km": 41,
+        "min": 42
+      },
+      "beauvais": {
+        "km": 112.6,
+        "min": 86
+      }
+    },
+    "parisCentre": {
+      "km": 22.7,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "limeil-brevannes",
+      "villecresnes",
+      "sucy-en-brie",
+      "bonneuil-sur-marne",
+      "yerres"
+    ]
+  },
+  {
+    "insee": "94011",
+    "slug": "bonneuil-sur-marne",
+    "nom": "Bonneuil-sur-Marne",
+    "codePostal": "94380",
+    "departement": "94",
+    "population": 18270,
+    "lat": 48.7721,
+    "lon": 2.493,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 11.6,
+        "min": 25
+      },
+      "cdg": {
+        "km": 38.7,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 110.3,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 20.5,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "limeil-brevannes",
+      "saint-maur-des-fosses",
+      "sucy-en-brie",
+      "creteil",
+      "valenton"
+    ]
+  },
+  {
+    "insee": "94015",
+    "slug": "bry-sur-marne",
+    "nom": "Bry-sur-Marne",
+    "codePostal": "94360",
+    "departement": "94",
+    "population": 18503,
+    "lat": 48.8392,
+    "lon": 2.5224,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 20.7,
+        "min": 30
+      },
+      "cdg": {
+        "km": 26.7,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 98.3,
+        "min": 76
+      }
+    },
+    "parisCentre": {
+      "km": 17.2,
+      "min": 31
+    },
+    "gares": [],
+    "nearby": [
+      "le-perreux-sur-marne",
+      "villiers-sur-marne",
+      "champigny-sur-marne",
+      "noisy-le-grand",
+      "neuilly-plaisance"
+    ]
+  },
+  {
+    "insee": "94016",
+    "slug": "cachan",
+    "nom": "Cachan",
+    "codePostal": "94230",
+    "departement": "94",
+    "population": 31103,
+    "lat": 48.7914,
+    "lon": 2.3318,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.9,
+        "min": 24
+      },
+      "cdg": {
+        "km": 34.5,
+        "min": 44
+      },
+      "beauvais": {
+        "km": 106.1,
+        "min": 88
+      }
+    },
+    "parisCentre": {
+      "km": 8.7,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "arcueil",
+      "bourg-la-reine",
+      "l-hay-les-roses",
+      "bagneux",
+      "villejuif"
+    ]
+  },
+  {
+    "insee": "94017",
+    "slug": "champigny-sur-marne",
+    "nom": "Champigny-sur-Marne",
+    "codePostal": "94500",
+    "departement": "94",
+    "population": 78072,
+    "lat": 48.8173,
+    "lon": 2.5206,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 20.2,
+        "min": 28
+      },
+      "cdg": {
+        "km": 27.4,
+        "min": 30
+      },
+      "beauvais": {
+        "km": 99,
+        "min": 74
+      }
+    },
+    "parisCentre": {
+      "km": 16.6,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "villiers-sur-marne",
+      "bry-sur-marne",
+      "saint-maur-des-fosses",
+      "chennevieres-sur-marne",
+      "noisy-le-grand"
+    ]
+  },
+  {
+    "insee": "94018",
+    "slug": "charenton-le-pont",
+    "nom": "Charenton-le-Pont",
+    "codePostal": "94220",
+    "departement": "94",
+    "population": 28830,
+    "lat": 48.8229,
+    "lon": 2.405,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 12.8,
+        "min": 27
+      },
+      "cdg": {
+        "km": 31.6,
+        "min": 34
+      },
+      "beauvais": {
+        "km": 103.2,
+        "min": 78
+      }
+    },
+    "parisCentre": {
+      "km": 6.8,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "ivry-sur-seine",
+      "saint-mande",
+      "saint-maurice",
+      "alfortville",
+      "maisons-alfort"
+    ]
+  },
+  {
+    "insee": "94019",
+    "slug": "chennevieres-sur-marne",
+    "nom": "Chennevières-sur-Marne",
+    "codePostal": "94430",
+    "departement": "94",
+    "population": 18710,
+    "lat": 48.7951,
+    "lon": 2.5443,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 17.6,
+        "min": 36
+      },
+      "cdg": {
+        "km": 31.2,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 102.8,
+        "min": 81
+      }
+    },
+    "parisCentre": {
+      "km": 20.5,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "ormesson-sur-marne",
+      "le-plessis-trevise",
+      "sucy-en-brie",
+      "champigny-sur-marne",
+      "la-queue-en-brie"
+    ]
+  },
+  {
+    "insee": "94021",
+    "slug": "chevilly-larue",
+    "nom": "Chevilly-Larue",
+    "codePostal": "94550",
+    "departement": "94",
+    "population": 19826,
+    "lat": 48.7679,
+    "lon": 2.3507,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 8.3,
+        "min": 19
+      },
+      "cdg": {
+        "km": 36.8,
+        "min": 43
+      },
+      "beauvais": {
+        "km": 108.4,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 12.2,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "l-hay-les-roses",
+      "fresnes",
+      "thiais",
+      "bourg-la-reine",
+      "villejuif"
+    ]
+  },
+  {
+    "insee": "94022",
+    "slug": "choisy-le-roi",
+    "nom": "Choisy-le-Roi",
+    "codePostal": "94600",
+    "departement": "94",
+    "population": 45946,
+    "lat": 48.7635,
+    "lon": 2.4202,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 6,
+        "min": 20
+      },
+      "cdg": {
+        "km": 37.7,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 109.3,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 19.4,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "thiais",
+      "orly",
+      "valenton",
+      "creteil",
+      "vitry-sur-seine"
+    ]
+  },
+  {
+    "insee": "94028",
+    "slug": "creteil",
+    "nom": "Créteil",
+    "codePostal": "94000",
+    "departement": "94",
+    "population": 93397,
+    "lat": 48.7845,
+    "lon": 2.4523,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 9.3,
+        "min": 21
+      },
+      "cdg": {
+        "km": 31.9,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 103.5,
+        "min": 77
+      }
+    },
+    "parisCentre": {
+      "km": 13.6,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "maisons-alfort",
+      "alfortville",
+      "bonneuil-sur-marne",
+      "choisy-le-roi",
+      "saint-maur-des-fosses"
+    ]
+  },
+  {
+    "insee": "94033",
+    "slug": "fontenay-sous-bois",
+    "nom": "Fontenay-sous-Bois",
+    "codePostal": "94120",
+    "departement": "94",
+    "population": 53757,
+    "lat": 48.8503,
+    "lon": 2.4736,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 21.3,
+        "min": 28
+      },
+      "cdg": {
+        "km": 24.3,
+        "min": 27
+      },
+      "beauvais": {
+        "km": 95.9,
+        "min": 71
+      }
+    },
+    "parisCentre": {
+      "km": 17.8,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "nogent-sur-marne",
+      "montreuil",
+      "le-perreux-sur-marne",
+      "vincennes",
+      "rosny-sous-bois"
+    ]
+  },
+  {
+    "insee": "94034",
+    "slug": "fresnes",
+    "nom": "Fresnes",
+    "codePostal": "94260",
+    "departement": "94",
+    "population": 29528,
+    "lat": 48.7572,
+    "lon": 2.3263,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 9.8,
+        "min": 18
+      },
+      "cdg": {
+        "km": 43.4,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 115,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 16.6,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "chevilly-larue",
+      "antony",
+      "l-hay-les-roses",
+      "bourg-la-reine",
+      "sceaux"
+    ]
+  },
+  {
+    "insee": "94037",
+    "slug": "gentilly",
+    "nom": "Gentilly",
+    "codePostal": "94250",
+    "departement": "94",
+    "population": 19963,
+    "lat": 48.812,
+    "lon": 2.3426,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 14.8,
+        "min": 24
+      },
+      "cdg": {
+        "km": 32,
+        "min": 38
+      },
+      "beauvais": {
+        "km": 103.7,
+        "min": 82
+      }
+    },
+    "parisCentre": {
+      "km": 5.8,
+      "min": 26
+    },
+    "gares": [],
+    "nearby": [
+      "arcueil",
+      "le-kremlin-bicetre",
+      "montrouge",
+      "cachan",
+      "villejuif"
+    ]
+  },
+  {
+    "insee": "94038",
+    "slug": "l-hay-les-roses",
+    "nom": "L'Haÿ-les-Roses",
+    "codePostal": "94240",
+    "departement": "94",
+    "population": 31188,
+    "lat": 48.7777,
+    "lon": 2.3416,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 10.1,
+        "min": 22
+      },
+      "cdg": {
+        "km": 45.2,
+        "min": 45
+      },
+      "beauvais": {
+        "km": 116.8,
+        "min": 89
+      }
+    },
+    "parisCentre": {
+      "km": 11.1,
+      "min": 30
+    },
+    "gares": [],
+    "nearby": [
+      "chevilly-larue",
+      "cachan",
+      "bourg-la-reine",
+      "villejuif",
+      "fresnes"
+    ]
+  },
+  {
+    "insee": "94041",
+    "slug": "ivry-sur-seine",
+    "nom": "Ivry-sur-Seine",
+    "codePostal": "94200",
+    "departement": "94",
+    "population": 65064,
+    "lat": 48.8125,
+    "lon": 2.3872,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 11.5,
+        "min": 23
+      },
+      "cdg": {
+        "km": 32.9,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 104.5,
+        "min": 77
+      }
+    },
+    "parisCentre": {
+      "km": 7.4,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "charenton-le-pont",
+      "le-kremlin-bicetre",
+      "vitry-sur-seine",
+      "villejuif",
+      "alfortville"
+    ]
+  },
+  {
+    "insee": "94042",
+    "slug": "joinville-le-pont",
+    "nom": "Joinville-le-Pont",
+    "codePostal": "94340",
+    "departement": "94",
+    "population": 20525,
+    "lat": 48.8199,
+    "lon": 2.4685,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 15.2,
+        "min": 28
+      },
+      "cdg": {
+        "km": 27.2,
+        "min": 30
+      },
+      "beauvais": {
+        "km": 98.8,
+        "min": 74
+      }
+    },
+    "parisCentre": {
+      "km": 11.2,
+      "min": 22
+    },
+    "gares": [],
+    "nearby": [
+      "saint-maurice",
+      "nogent-sur-marne",
+      "saint-maur-des-fosses",
+      "maisons-alfort",
+      "fontenay-sous-bois"
+    ]
+  },
+  {
+    "insee": "94043",
+    "slug": "le-kremlin-bicetre",
+    "nom": "Le Kremlin-Bicêtre",
+    "codePostal": "94270",
+    "departement": "94",
+    "population": 24110,
+    "lat": 48.8087,
+    "lon": 2.356,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 14.9,
+        "min": 26
+      },
+      "cdg": {
+        "km": 32,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 103.7,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 7.5,
+      "min": 31
+    },
+    "gares": [],
+    "nearby": [
+      "gentilly",
+      "villejuif",
+      "arcueil",
+      "ivry-sur-seine",
+      "cachan"
+    ]
+  },
+  {
+    "insee": "94044",
+    "slug": "limeil-brevannes",
+    "nom": "Limeil-Brévannes",
+    "codePostal": "94450",
+    "departement": "94",
+    "population": 27406,
+    "lat": 48.7463,
+    "lon": 2.4924,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 9.2,
+        "min": 21
+      },
+      "cdg": {
+        "km": 38.5,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 110.2,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 20.3,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "boissy-saint-leger",
+      "valenton",
+      "bonneuil-sur-marne",
+      "villeneuve-saint-georges",
+      "yerres"
+    ]
+  },
+  {
+    "insee": "94046",
+    "slug": "maisons-alfort",
+    "nom": "Maisons-Alfort",
+    "codePostal": "94700",
+    "departement": "94",
+    "population": 56799,
+    "lat": 48.8017,
+    "lon": 2.44,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 12.7,
+        "min": 23
+      },
+      "cdg": {
+        "km": 31.5,
+        "min": 34
+      },
+      "beauvais": {
+        "km": 103.1,
+        "min": 78
+      }
+    },
+    "parisCentre": {
+      "km": 10.9,
+      "min": 25
+    },
+    "gares": [],
+    "nearby": [
+      "alfortville",
+      "saint-maurice",
+      "creteil",
+      "joinville-le-pont",
+      "charenton-le-pont"
+    ]
+  },
+  {
+    "insee": "94052",
+    "slug": "nogent-sur-marne",
+    "nom": "Nogent-sur-Marne",
+    "codePostal": "94130",
+    "departement": "94",
+    "population": 32455,
+    "lat": 48.837,
+    "lon": 2.4811,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 19,
+        "min": 30
+      },
+      "cdg": {
+        "km": 24.3,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 95.9,
+        "min": 73
+      }
+    },
+    "parisCentre": {
+      "km": 15.5,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "fontenay-sous-bois",
+      "le-perreux-sur-marne",
+      "joinville-le-pont",
+      "bry-sur-marne",
+      "vincennes"
+    ]
+  },
+  {
+    "insee": "94054",
+    "slug": "orly",
+    "nom": "Orly",
+    "codePostal": "94310",
+    "departement": "94",
+    "population": 24658,
+    "lat": 48.7402,
+    "lon": 2.403,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 2.2,
+        "min": 10
+      },
+      "cdg": {
+        "km": 39.7,
+        "min": 43
+      },
+      "beauvais": {
+        "km": 111.3,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 21.5,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "villeneuve-le-roi",
+      "thiais",
+      "choisy-le-roi",
+      "villeneuve-saint-georges",
+      "athis-mons"
+    ]
+  },
+  {
+    "insee": "94055",
+    "slug": "ormesson-sur-marne",
+    "nom": "Ormesson-sur-Marne",
+    "codePostal": "94490",
+    "departement": "94",
+    "population": 10977,
+    "lat": 48.7873,
+    "lon": 2.5371,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 15.7,
+        "min": 32
+      },
+      "cdg": {
+        "km": 31.5,
+        "min": 38
+      },
+      "beauvais": {
+        "km": 103.1,
+        "min": 82
+      }
+    },
+    "parisCentre": {
+      "km": 20.8,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "chennevieres-sur-marne",
+      "sucy-en-brie",
+      "champigny-sur-marne",
+      "saint-maur-des-fosses",
+      "bonneuil-sur-marne"
+    ]
+  },
+  {
+    "insee": "94058",
+    "slug": "le-perreux-sur-marne",
+    "nom": "Le Perreux-sur-Marne",
+    "codePostal": "94170",
+    "departement": "94",
+    "population": 35260,
+    "lat": 48.8433,
+    "lon": 2.5045,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 19,
+        "min": 30
+      },
+      "cdg": {
+        "km": 23.3,
+        "min": 25
+      },
+      "beauvais": {
+        "km": 94.9,
+        "min": 69
+      }
+    },
+    "parisCentre": {
+      "km": 15.5,
+      "min": 28
+    },
+    "gares": [],
+    "nearby": [
+      "bry-sur-marne",
+      "nogent-sur-marne",
+      "neuilly-plaisance",
+      "fontenay-sous-bois",
+      "champigny-sur-marne"
+    ]
+  },
+  {
+    "insee": "94059",
+    "slug": "le-plessis-trevise",
+    "nom": "Le Plessis-Trévise",
+    "codePostal": "94420",
+    "departement": "94",
+    "population": 21112,
+    "lat": 48.808,
+    "lon": 2.5763,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 19.9,
+        "min": 40
+      },
+      "cdg": {
+        "km": 32.1,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 103.7,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 21.3,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "chennevieres-sur-marne",
+      "villiers-sur-marne",
+      "noisy-le-grand",
+      "la-queue-en-brie",
+      "ormesson-sur-marne"
+    ]
+  },
+  {
+    "insee": "94060",
+    "slug": "la-queue-en-brie",
+    "nom": "La Queue-en-Brie",
+    "codePostal": "94510",
+    "departement": "94",
+    "population": 12241,
+    "lat": 48.7769,
+    "lon": 2.5855,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 17.6,
+        "min": 38
+      },
+      "cdg": {
+        "km": 47.3,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 118.7,
+        "min": 84
+      }
+    },
+    "parisCentre": {
+      "km": 33.3,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "pontault-combault",
+      "le-plessis-trevise",
+      "chennevieres-sur-marne",
+      "sucy-en-brie",
+      "ormesson-sur-marne"
+    ]
+  },
+  {
+    "insee": "94067",
+    "slug": "saint-mande",
+    "nom": "Saint-Mandé",
+    "codePostal": "94160",
+    "departement": "94",
+    "population": 21071,
+    "lat": 48.8414,
+    "lon": 2.4195,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 18.7,
+        "min": 32
+      },
+      "cdg": {
+        "km": 26.3,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 98,
+        "min": 75
+      }
+    },
+    "parisCentre": {
+      "km": 8.4,
+      "min": 23
+    },
+    "gares": [],
+    "nearby": [
+      "vincennes",
+      "charenton-le-pont",
+      "bagnolet",
+      "saint-maurice",
+      "montreuil"
+    ]
+  },
+  {
+    "insee": "94068",
+    "slug": "saint-maur-des-fosses",
+    "nom": "Saint-Maur-des-Fossés",
+    "codePostal": "94100",
+    "departement": "94",
+    "population": 76572,
+    "lat": 48.7999,
+    "lon": 2.4921,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.4,
+        "min": 31
+      },
+      "cdg": {
+        "km": 29.2,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 100.8,
+        "min": 81
+      }
+    },
+    "parisCentre": {
+      "km": 13.8,
+      "min": 31
+    },
+    "gares": [],
+    "nearby": [
+      "joinville-le-pont",
+      "champigny-sur-marne",
+      "bonneuil-sur-marne",
+      "creteil",
+      "ormesson-sur-marne"
+    ]
+  },
+  {
+    "insee": "94069",
+    "slug": "saint-maurice",
+    "nom": "Saint-Maurice",
+    "codePostal": "94410",
+    "departement": "94",
+    "population": 14506,
+    "lat": 48.8179,
+    "lon": 2.4423,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 17,
+        "min": 27
+      },
+      "cdg": {
+        "km": 31.8,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 103.4,
+        "min": 76
+      }
+    },
+    "parisCentre": {
+      "km": 9.2,
+      "min": 19
+    },
+    "gares": [],
+    "nearby": [
+      "maisons-alfort",
+      "joinville-le-pont",
+      "charenton-le-pont",
+      "alfortville",
+      "saint-mande"
+    ]
+  },
+  {
+    "insee": "94071",
+    "slug": "sucy-en-brie",
+    "nom": "Sucy-en-Brie",
+    "codePostal": "94370",
+    "departement": "94",
+    "population": 27764,
+    "lat": 48.7688,
+    "lon": 2.5374,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.5,
+        "min": 30
+      },
+      "cdg": {
+        "km": 34.7,
+        "min": 44
+      },
+      "beauvais": {
+        "km": 106.3,
+        "min": 88
+      }
+    },
+    "parisCentre": {
+      "km": 23.9,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "ormesson-sur-marne",
+      "boissy-saint-leger",
+      "chennevieres-sur-marne",
+      "bonneuil-sur-marne",
+      "la-queue-en-brie"
+    ]
+  },
+  {
+    "insee": "94073",
+    "slug": "thiais",
+    "nom": "Thiais",
+    "codePostal": "94320",
+    "departement": "94",
+    "population": 32918,
+    "lat": 48.7605,
+    "lon": 2.3869,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 5.5,
+        "min": 19
+      },
+      "cdg": {
+        "km": 39.5,
+        "min": 38
+      },
+      "beauvais": {
+        "km": 111.1,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 21.2,
+      "min": 29
+    },
+    "gares": [],
+    "nearby": [
+      "choisy-le-roi",
+      "orly",
+      "chevilly-larue",
+      "vitry-sur-seine",
+      "villeneuve-le-roi"
+    ]
+  },
+  {
+    "insee": "94074",
+    "slug": "valenton",
+    "nom": "Valenton",
+    "codePostal": "94460",
+    "departement": "94",
+    "population": 14406,
+    "lat": 48.7497,
+    "lon": 2.46,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 7.5,
+        "min": 24
+      },
+      "cdg": {
+        "km": 37.7,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 109.3,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 19.4,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "villeneuve-saint-georges",
+      "limeil-brevannes",
+      "choisy-le-roi",
+      "bonneuil-sur-marne",
+      "creteil"
+    ]
+  },
+  {
+    "insee": "94075",
+    "slug": "villecresnes",
+    "nom": "Villecresnes",
+    "codePostal": "94440",
+    "departement": "94",
+    "population": 11647,
+    "lat": 48.7221,
+    "lon": 2.5328,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 13.2,
+        "min": 28
+      },
+      "cdg": {
+        "km": 43.4,
+        "min": 43
+      },
+      "beauvais": {
+        "km": 115,
+        "min": 88
+      }
+    },
+    "parisCentre": {
+      "km": 25.2,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "boissy-saint-leger",
+      "yerres",
+      "brunoy",
+      "epinay-sous-senart",
+      "limeil-brevannes"
+    ]
+  },
+  {
+    "insee": "94076",
+    "slug": "villejuif",
+    "nom": "Villejuif",
+    "codePostal": "94800",
+    "departement": "94",
+    "population": 60183,
+    "lat": 48.7934,
+    "lon": 2.3603,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 10.6,
+        "min": 22
+      },
+      "cdg": {
+        "km": 33.7,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 105.3,
+        "min": 85
+      }
+    },
+    "parisCentre": {
+      "km": 8.7,
+      "min": 25
+    },
+    "gares": [],
+    "nearby": [
+      "le-kremlin-bicetre",
+      "cachan",
+      "l-hay-les-roses",
+      "arcueil",
+      "gentilly"
+    ]
+  },
+  {
+    "insee": "94077",
+    "slug": "villeneuve-le-roi",
+    "nom": "Villeneuve-le-Roi",
+    "codePostal": "94290",
+    "departement": "94",
+    "population": 21000,
+    "lat": 48.732,
+    "lon": 2.4076,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 1.1,
+        "min": 6
+      },
+      "cdg": {
+        "km": 40.5,
+        "min": 43
+      },
+      "beauvais": {
+        "km": 112.1,
+        "min": 87
+      }
+    },
+    "parisCentre": {
+      "km": 22.2,
+      "min": 34
+    },
+    "gares": [],
+    "nearby": [
+      "orly",
+      "athis-mons",
+      "villeneuve-saint-georges",
+      "thiais",
+      "choisy-le-roi"
+    ]
+  },
+  {
+    "insee": "94078",
+    "slug": "villeneuve-saint-georges",
+    "nom": "Villeneuve-Saint-Georges",
+    "codePostal": "94190",
+    "departement": "94",
+    "population": 36221,
+    "lat": 48.7389,
+    "lon": 2.4493,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 5.4,
+        "min": 18
+      },
+      "cdg": {
+        "km": 38.8,
+        "min": 40
+      },
+      "beauvais": {
+        "km": 110.4,
+        "min": 84
+      }
+    },
+    "parisCentre": {
+      "km": 20.5,
+      "min": 31
+    },
+    "gares": [],
+    "nearby": [
+      "valenton",
+      "villeneuve-le-roi",
+      "limeil-brevannes",
+      "orly",
+      "choisy-le-roi"
+    ]
+  },
+  {
+    "insee": "94079",
+    "slug": "villiers-sur-marne",
+    "nom": "Villiers-sur-Marne",
+    "codePostal": "94350",
+    "departement": "94",
+    "population": 33162,
+    "lat": 48.8278,
+    "lon": 2.5482,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 23,
+        "min": 31
+      },
+      "cdg": {
+        "km": 30.2,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 101.8,
+        "min": 77
+      }
+    },
+    "parisCentre": {
+      "km": 19.5,
+      "min": 32
+    },
+    "gares": [],
+    "nearby": [
+      "noisy-le-grand",
+      "bry-sur-marne",
+      "champigny-sur-marne",
+      "le-plessis-trevise",
+      "le-perreux-sur-marne"
+    ]
+  },
+  {
+    "insee": "94080",
+    "slug": "vincennes",
+    "nom": "Vincennes",
+    "codePostal": "94300",
+    "departement": "94",
+    "population": 48193,
+    "lat": 48.8471,
+    "lon": 2.4383,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 20.3,
+        "min": 34
+      },
+      "cdg": {
+        "km": 24.9,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 96.5,
+        "min": 73
+      }
+    },
+    "parisCentre": {
+      "km": 8.1,
+      "min": 23
+    },
+    "gares": [],
+    "nearby": [
+      "saint-mande",
+      "montreuil",
+      "bagnolet",
+      "fontenay-sous-bois",
+      "saint-maurice"
+    ]
+  },
+  {
+    "insee": "94081",
+    "slug": "vitry-sur-seine",
+    "nom": "Vitry-sur-Seine",
+    "codePostal": "94400",
+    "departement": "94",
+    "population": 93963,
+    "lat": 48.7893,
+    "lon": 2.3951,
+    "inFixedZone": true,
+    "airports": {
+      "orly": {
+        "km": 8,
+        "min": 25
+      },
+      "cdg": {
+        "km": 34.9,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 106.5,
+        "min": 83
+      }
+    },
+    "parisCentre": {
+      "km": 10.7,
+      "min": 27
+    },
+    "gares": [],
+    "nearby": [
+      "alfortville",
+      "villejuif",
+      "ivry-sur-seine",
+      "thiais",
+      "choisy-le-roi"
+    ]
+  },
+  {
+    "insee": "95018",
+    "slug": "argenteuil",
+    "nom": "Argenteuil",
+    "codePostal": "95100",
+    "departement": "95",
+    "population": 106130,
+    "lat": 48.9501,
+    "lon": 2.2478,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 45.3,
+        "min": 55
+      },
+      "cdg": {
+        "km": 29.4,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 73.8,
+        "min": 54
+      }
+    },
+    "parisCentre": {
+      "km": 17.5,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "sannois",
+      "colombes",
+      "saint-gratien",
+      "gennevilliers",
+      "bezons"
+    ]
+  },
+  {
+    "insee": "95019",
+    "slug": "arnouville",
+    "nom": "Arnouville",
+    "codePostal": "95400",
+    "departement": "95",
+    "population": 15023,
+    "lat": 48.9867,
+    "lon": 2.4168,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40.3,
+        "min": 46
+      },
+      "cdg": {
+        "km": 13.6,
+        "min": 21
+      },
+      "beauvais": {
+        "km": 69.9,
+        "min": 56
+      }
+    },
+    "parisCentre": {
+      "km": 19.6,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "garges-les-gonesse",
+      "sarcelles",
+      "villiers-le-bel",
+      "gonesse",
+      "stains"
+    ]
+  },
+  {
+    "insee": "95052",
+    "slug": "beaumont-sur-oise",
+    "nom": "Beaumont-sur-Oise",
+    "codePostal": "95260",
+    "departement": "95",
+    "population": 10232,
+    "lat": 49.1372,
+    "lon": 2.2953,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 69,
+        "min": 67
+      },
+      "cdg": {
+        "km": 34.2,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 49.5,
+        "min": 37
+      }
+    },
+    "parisCentre": {
+      "km": 45.1,
+      "min": 56
+    },
+    "gares": [],
+    "nearby": [
+      "persan",
+      "l-isle-adam",
+      "domont",
+      "taverny",
+      "saint-leu-la-foret"
+    ]
+  },
+  {
+    "insee": "95063",
+    "slug": "bezons",
+    "nom": "Bezons",
+    "codePostal": "95870",
+    "departement": "95",
+    "population": 36434,
+    "lat": 48.925,
+    "lon": 2.2147,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 42.9,
+        "min": 51
+      },
+      "cdg": {
+        "km": 32.1,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 79.6,
+        "min": 59
+      }
+    },
+    "parisCentre": {
+      "km": 14.1,
+      "min": 33
+    },
+    "gares": [],
+    "nearby": [
+      "houilles",
+      "colombes",
+      "carrieres-sur-seine",
+      "la-garenne-colombes",
+      "nanterre"
+    ]
+  },
+  {
+    "insee": "95127",
+    "slug": "cergy",
+    "nom": "Cergy",
+    "codePostal": "95000",
+    "departement": "95",
+    "population": 70906,
+    "lat": 49.0373,
+    "lon": 2.0455,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 63.8,
+        "min": 67
+      },
+      "cdg": {
+        "km": 46.5,
+        "min": 42
+      },
+      "beauvais": {
+        "km": 70.1,
+        "min": 52
+      }
+    },
+    "parisCentre": {
+      "km": 34.9,
+      "min": 47
+    },
+    "gares": [],
+    "nearby": [
+      "vaureal",
+      "jouy-le-moutier",
+      "osny",
+      "pontoise",
+      "eragny-sur-oise"
+    ]
+  },
+  {
+    "insee": "95176",
+    "slug": "cormeilles-en-parisis",
+    "nom": "Cormeilles-en-Parisis",
+    "codePostal": "95240",
+    "departement": "95",
+    "population": 27292,
+    "lat": 48.9701,
+    "lon": 2.201,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 50.2,
+        "min": 58
+      },
+      "cdg": {
+        "km": 34.3,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 72.1,
+        "min": 54
+      }
+    },
+    "parisCentre": {
+      "km": 21.3,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "franconville",
+      "montigny-les-cormeilles",
+      "sannois",
+      "argenteuil",
+      "maisons-laffitte"
+    ]
+  },
+  {
+    "insee": "95197",
+    "slug": "deuil-la-barre",
+    "nom": "Deuil-la-Barre",
+    "codePostal": "95170",
+    "departement": "95",
+    "population": 23099,
+    "lat": 48.9704,
+    "lon": 2.327,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 41.6,
+        "min": 54
+      },
+      "cdg": {
+        "km": 24.7,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 70,
+        "min": 54
+      }
+    },
+    "parisCentre": {
+      "km": 16.5,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "montmagny",
+      "enghien-les-bains",
+      "villetaneuse",
+      "epinay-sur-seine",
+      "montmorency"
+    ]
+  },
+  {
+    "insee": "95199",
+    "slug": "domont",
+    "nom": "Domont",
+    "codePostal": "95330",
+    "departement": "95",
+    "population": 16065,
+    "lat": 49.0289,
+    "lon": 2.3243,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 62.9,
+        "min": 63
+      },
+      "cdg": {
+        "km": 28,
+        "min": 30
+      },
+      "beauvais": {
+        "km": 62.4,
+        "min": 46
+      }
+    },
+    "parisCentre": {
+      "km": 27.6,
+      "min": 48
+    },
+    "gares": [],
+    "nearby": [
+      "saint-brice-sous-foret",
+      "montmorency",
+      "soisy-sous-montmorency",
+      "eaubonne",
+      "saint-leu-la-foret"
+    ]
+  },
+  {
+    "insee": "95203",
+    "slug": "eaubonne",
+    "nom": "Eaubonne",
+    "codePostal": "95600",
+    "departement": "95",
+    "population": 26211,
+    "lat": 48.9912,
+    "lon": 2.2781,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49.8,
+        "min": 59
+      },
+      "cdg": {
+        "km": 28.1,
+        "min": 38
+      },
+      "beauvais": {
+        "km": 69.1,
+        "min": 53
+      }
+    },
+    "parisCentre": {
+      "km": 20.9,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "ermont",
+      "soisy-sous-montmorency",
+      "saint-gratien",
+      "sannois",
+      "enghien-les-bains"
+    ]
+  },
+  {
+    "insee": "95210",
+    "slug": "enghien-les-bains",
+    "nom": "Enghien-les-Bains",
+    "codePostal": "95880",
+    "departement": "95",
+    "population": 11432,
+    "lat": 48.9706,
+    "lon": 2.305,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 42.4,
+        "min": 54
+      },
+      "cdg": {
+        "km": 25.5,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 75.4,
+        "min": 55
+      }
+    },
+    "parisCentre": {
+      "km": 17.3,
+      "min": 39
+    },
+    "gares": [],
+    "nearby": [
+      "saint-gratien",
+      "deuil-la-barre",
+      "epinay-sur-seine",
+      "soisy-sous-montmorency",
+      "montmorency"
+    ]
+  },
+  {
+    "insee": "95218",
+    "slug": "eragny-sur-oise",
+    "nom": "Éragny-sur-Oise",
+    "codePostal": "95610",
+    "departement": "95",
+    "population": 18436,
+    "lat": 49.0224,
+    "lon": 2.1002,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 60.2,
+        "min": 62
+      },
+      "cdg": {
+        "km": 42.8,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 66.4,
+        "min": 46
+      }
+    },
+    "parisCentre": {
+      "km": 31.3,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "conflans-sainte-honorine",
+      "pontoise",
+      "saint-ouen-l-aumone",
+      "cergy",
+      "herblay-sur-seine"
+    ]
+  },
+  {
+    "insee": "95219",
+    "slug": "ermont",
+    "nom": "Ermont",
+    "codePostal": "95120",
+    "departement": "95",
+    "population": 29489,
+    "lat": 48.9891,
+    "lon": 2.258,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49.5,
+        "min": 57
+      },
+      "cdg": {
+        "km": 33.6,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 67.4,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 20.6,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "eaubonne",
+      "sannois",
+      "franconville",
+      "saint-gratien",
+      "soisy-sous-montmorency"
+    ]
+  },
+  {
+    "insee": "95250",
+    "slug": "fosses",
+    "nom": "Fosses",
+    "codePostal": "95470",
+    "departement": "95",
+    "population": 10570,
+    "lat": 49.1003,
+    "lon": 2.5043,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 53.1,
+        "min": 56
+      },
+      "cdg": {
+        "km": 16.7,
+        "min": 26
+      },
+      "beauvais": {
+        "km": 75.2,
+        "min": 57
+      }
+    },
+    "parisCentre": {
+      "km": 40,
+      "min": 49
+    },
+    "gares": [],
+    "nearby": [
+      "louvres",
+      "goussainville",
+      "villiers-le-bel",
+      "gonesse",
+      "dammartin-en-goele"
+    ]
+  },
+  {
+    "insee": "95252",
+    "slug": "franconville",
+    "nom": "Franconville",
+    "codePostal": "95130",
+    "departement": "95",
+    "population": 37754,
+    "lat": 48.9879,
+    "lon": 2.2235,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49,
+        "min": 56
+      },
+      "cdg": {
+        "km": 33.1,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 66.5,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 20.1,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "montigny-les-cormeilles",
+      "ermont",
+      "cormeilles-en-parisis",
+      "sannois",
+      "saint-leu-la-foret"
+    ]
+  },
+  {
+    "insee": "95268",
+    "slug": "garges-les-gonesse",
+    "nom": "Garges-lès-Gonesse",
+    "codePostal": "95140",
+    "departement": "95",
+    "population": 41791,
+    "lat": 48.9696,
+    "lon": 2.4035,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 41.5,
+        "min": 45
+      },
+      "cdg": {
+        "km": 14.8,
+        "min": 20
+      },
+      "beauvais": {
+        "km": 70,
+        "min": 54
+      }
+    },
+    "parisCentre": {
+      "km": 17.4,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "stains",
+      "arnouville",
+      "dugny",
+      "sarcelles",
+      "la-courneuve"
+    ]
+  },
+  {
+    "insee": "95277",
+    "slug": "gonesse",
+    "nom": "Gonesse",
+    "codePostal": "95500",
+    "departement": "95",
+    "population": 27707,
+    "lat": 48.9856,
+    "lon": 2.4602,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 37.7,
+        "min": 41
+      },
+      "cdg": {
+        "km": 8.7,
+        "min": 14
+      },
+      "beauvais": {
+        "km": 78.6,
+        "min": 54
+      }
+    },
+    "parisCentre": {
+      "km": 24.6,
+      "min": 35
+    },
+    "gares": [],
+    "nearby": [
+      "arnouville",
+      "garges-les-gonesse",
+      "goussainville",
+      "dugny",
+      "villiers-le-bel"
+    ]
+  },
+  {
+    "insee": "95280",
+    "slug": "goussainville",
+    "nom": "Goussainville",
+    "codePostal": "95190",
+    "departement": "95",
+    "population": 31301,
+    "lat": 49.0266,
+    "lon": 2.4683,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 42.6,
+        "min": 49
+      },
+      "cdg": {
+        "km": 9.2,
+        "min": 19
+      },
+      "beauvais": {
+        "km": 69.2,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 26.8,
+      "min": 42
+    },
+    "gares": [],
+    "nearby": [
+      "louvres",
+      "gonesse",
+      "villiers-le-bel",
+      "arnouville",
+      "sarcelles"
+    ]
+  },
+  {
+    "insee": "95306",
+    "slug": "herblay-sur-seine",
+    "nom": "Herblay-sur-Seine",
+    "codePostal": "95220",
+    "departement": "95",
+    "population": 31779,
+    "lat": 49.0052,
+    "lon": 2.1556,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 54.1,
+        "min": 56
+      },
+      "cdg": {
+        "km": 38.3,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 69.5,
+        "min": 47
+      }
+    },
+    "parisCentre": {
+      "km": 25.2,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "pierrelaye",
+      "montigny-les-cormeilles",
+      "conflans-sainte-honorine",
+      "acheres",
+      "eragny-sur-oise"
+    ]
+  },
+  {
+    "insee": "95313",
+    "slug": "l-isle-adam",
+    "nom": "L'Isle-Adam",
+    "codePostal": "95290",
+    "departement": "95",
+    "population": 12493,
+    "lat": 49.1078,
+    "lon": 2.2352,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 66.5,
+        "min": 61
+      },
+      "cdg": {
+        "km": 31.6,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 51.9,
+        "min": 35
+      }
+    },
+    "parisCentre": {
+      "km": 39.3,
+      "min": 48
+    },
+    "gares": [],
+    "nearby": [
+      "persan",
+      "beaumont-sur-oise",
+      "taverny",
+      "saint-leu-la-foret",
+      "saint-ouen-l-aumone"
+    ]
+  },
+  {
+    "insee": "95323",
+    "slug": "jouy-le-moutier",
+    "nom": "Jouy-le-Moutier",
+    "codePostal": "95280",
+    "departement": "95",
+    "population": 17854,
+    "lat": 49.0118,
+    "lon": 2.0357,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 61.2,
+        "min": 73
+      },
+      "cdg": {
+        "km": 48.7,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 72.3,
+        "min": 57
+      }
+    },
+    "parisCentre": {
+      "km": 37.2,
+      "min": 53
+    },
+    "gares": [],
+    "nearby": [
+      "vaureal",
+      "cergy",
+      "chanteloup-les-vignes",
+      "andresy",
+      "triel-sur-seine"
+    ]
+  },
+  {
+    "insee": "95351",
+    "slug": "louvres",
+    "nom": "Louvres",
+    "codePostal": "95380",
+    "departement": "95",
+    "population": 12560,
+    "lat": 49.0444,
+    "lon": 2.5011,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 46,
+        "min": 50
+      },
+      "cdg": {
+        "km": 11.2,
+        "min": 20
+      },
+      "beauvais": {
+        "km": 73.4,
+        "min": 51
+      }
+    },
+    "parisCentre": {
+      "km": 30.2,
+      "min": 44
+    },
+    "gares": [],
+    "nearby": [
+      "goussainville",
+      "fosses",
+      "gonesse",
+      "villiers-le-bel",
+      "tremblay-en-france"
+    ]
+  },
+  {
+    "insee": "95424",
+    "slug": "montigny-les-cormeilles",
+    "nom": "Montigny-lès-Cormeilles",
+    "codePostal": "95370",
+    "departement": "95",
+    "population": 22457,
+    "lat": 48.9934,
+    "lon": 2.1937,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 51.5,
+        "min": 57
+      },
+      "cdg": {
+        "km": 35.6,
+        "min": 37
+      },
+      "beauvais": {
+        "km": 66.3,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 22.6,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "franconville",
+      "cormeilles-en-parisis",
+      "herblay-sur-seine",
+      "pierrelaye",
+      "taverny"
+    ]
+  },
+  {
+    "insee": "95427",
+    "slug": "montmagny",
+    "nom": "Montmagny",
+    "codePostal": "95360",
+    "departement": "95",
+    "population": 15105,
+    "lat": 48.9677,
+    "lon": 2.3471,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 40.8,
+        "min": 51
+      },
+      "cdg": {
+        "km": 20.8,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 68.3,
+        "min": 50
+      }
+    },
+    "parisCentre": {
+      "km": 15.1,
+      "min": 36
+    },
+    "gares": [],
+    "nearby": [
+      "villetaneuse",
+      "deuil-la-barre",
+      "epinay-sur-seine",
+      "enghien-les-bains",
+      "stains"
+    ]
+  },
+  {
+    "insee": "95428",
+    "slug": "montmorency",
+    "nom": "Montmorency",
+    "codePostal": "95160",
+    "departement": "95",
+    "population": 21763,
+    "lat": 48.9922,
+    "lon": 2.322,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 44.6,
+        "min": 58
+      },
+      "cdg": {
+        "km": 22.1,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 67.6,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 19.4,
+      "min": 46
+    },
+    "gares": [],
+    "nearby": [
+      "soisy-sous-montmorency",
+      "saint-brice-sous-foret",
+      "deuil-la-barre",
+      "enghien-les-bains",
+      "eaubonne"
+    ]
+  },
+  {
+    "insee": "95476",
+    "slug": "osny",
+    "nom": "Osny",
+    "codePostal": "95520",
+    "departement": "95",
+    "population": 17954,
+    "lat": 49.0668,
+    "lon": 2.0618,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 66.1,
+        "min": 68
+      },
+      "cdg": {
+        "km": 48.8,
+        "min": 43
+      },
+      "beauvais": {
+        "km": 72.4,
+        "min": 53
+      }
+    },
+    "parisCentre": {
+      "km": 37.2,
+      "min": 48
+    },
+    "gares": [],
+    "nearby": [
+      "pontoise",
+      "cergy",
+      "vaureal",
+      "saint-ouen-l-aumone",
+      "eragny-sur-oise"
+    ]
+  },
+  {
+    "insee": "95487",
+    "slug": "persan",
+    "nom": "Persan",
+    "codePostal": "95340",
+    "departement": "95",
+    "population": 14359,
+    "lat": 49.1479,
+    "lon": 2.2672,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 71.7,
+        "min": 67
+      },
+      "cdg": {
+        "km": 36.8,
+        "min": 35
+      },
+      "beauvais": {
+        "km": 45.8,
+        "min": 35
+      }
+    },
+    "parisCentre": {
+      "km": 45.3,
+      "min": 56
+    },
+    "gares": [],
+    "nearby": [
+      "beaumont-sur-oise",
+      "l-isle-adam",
+      "domont",
+      "taverny",
+      "saint-leu-la-foret"
+    ]
+  },
+  {
+    "insee": "95488",
+    "slug": "pierrelaye",
+    "nom": "Pierrelaye",
+    "codePostal": "95220",
+    "departement": "95",
+    "population": 10130,
+    "lat": 49.0185,
+    "lon": 2.1629,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 57,
+        "min": 61
+      },
+      "cdg": {
+        "km": 41.7,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 65.3,
+        "min": 48
+      }
+    },
+    "parisCentre": {
+      "km": 28.1,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "herblay-sur-seine",
+      "montigny-les-cormeilles",
+      "saint-ouen-l-aumone",
+      "taverny",
+      "eragny-sur-oise"
+    ]
+  },
+  {
+    "insee": "95500",
+    "slug": "pontoise",
+    "nom": "Pontoise",
+    "codePostal": "95000",
+    "departement": "95",
+    "population": 31970,
+    "lat": 49.0488,
+    "lon": 2.0996,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 62.5,
+        "min": 67
+      },
+      "cdg": {
+        "km": 42.7,
+        "min": 39
+      },
+      "beauvais": {
+        "km": 66.3,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 33.6,
+      "min": 47
+    },
+    "gares": [],
+    "nearby": [
+      "saint-ouen-l-aumone",
+      "eragny-sur-oise",
+      "osny",
+      "cergy",
+      "conflans-sainte-honorine"
+    ]
+  },
+  {
+    "insee": "95539",
+    "slug": "saint-brice-sous-foret",
+    "nom": "Saint-Brice-sous-Forêt",
+    "codePostal": "95350",
+    "departement": "95",
+    "population": 15063,
+    "lat": 49.0034,
+    "lon": 2.3453,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 44.1,
+        "min": 56
+      },
+      "cdg": {
+        "km": 29.5,
+        "min": 28
+      },
+      "beauvais": {
+        "km": 63.9,
+        "min": 44
+      }
+    },
+    "parisCentre": {
+      "km": 22.5,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "montmorency",
+      "sarcelles",
+      "domont",
+      "soisy-sous-montmorency",
+      "deuil-la-barre"
+    ]
+  },
+  {
+    "insee": "95555",
+    "slug": "saint-gratien",
+    "nom": "Saint-Gratien",
+    "codePostal": "95210",
+    "departement": "95",
+    "population": 21336,
+    "lat": 48.9679,
+    "lon": 2.285,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 46.4,
+        "min": 54
+      },
+      "cdg": {
+        "km": 26,
+        "min": 32
+      },
+      "beauvais": {
+        "km": 72.5,
+        "min": 51
+      }
+    },
+    "parisCentre": {
+      "km": 17.5,
+      "min": 37
+    },
+    "gares": [],
+    "nearby": [
+      "enghien-les-bains",
+      "sannois",
+      "soisy-sous-montmorency",
+      "eaubonne",
+      "epinay-sur-seine"
+    ]
+  },
+  {
+    "insee": "95563",
+    "slug": "saint-leu-la-foret",
+    "nom": "Saint-Leu-la-Forêt",
+    "codePostal": "95320",
+    "departement": "95",
+    "population": 16138,
+    "lat": 49.0211,
+    "lon": 2.243,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 52.5,
+        "min": 61
+      },
+      "cdg": {
+        "km": 32.2,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 59.7,
+        "min": 45
+      }
+    },
+    "parisCentre": {
+      "km": 23.6,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "taverny",
+      "ermont",
+      "franconville",
+      "eaubonne",
+      "montigny-les-cormeilles"
+    ]
+  },
+  {
+    "insee": "95572",
+    "slug": "saint-ouen-l-aumone",
+    "nom": "Saint-Ouen-l'Aumône",
+    "codePostal": "95310",
+    "departement": "95",
+    "population": 25578,
+    "lat": 49.045,
+    "lon": 2.1293,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 60.8,
+        "min": 61
+      },
+      "cdg": {
+        "km": 38.8,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 62.4,
+        "min": 41
+      }
+    },
+    "parisCentre": {
+      "km": 31.9,
+      "min": 41
+    },
+    "gares": [],
+    "nearby": [
+      "pontoise",
+      "eragny-sur-oise",
+      "pierrelaye",
+      "herblay-sur-seine",
+      "conflans-sainte-honorine"
+    ]
+  },
+  {
+    "insee": "95582",
+    "slug": "sannois",
+    "nom": "Sannois",
+    "codePostal": "95110",
+    "departement": "95",
+    "population": 26924,
+    "lat": 48.9731,
+    "lon": 2.2509,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 48.6,
+        "min": 56
+      },
+      "cdg": {
+        "km": 32.7,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 69.1,
+        "min": 49
+      }
+    },
+    "parisCentre": {
+      "km": 19.7,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "ermont",
+      "saint-gratien",
+      "argenteuil",
+      "franconville",
+      "eaubonne"
+    ]
+  },
+  {
+    "insee": "95585",
+    "slug": "sarcelles",
+    "nom": "Sarcelles",
+    "codePostal": "95200",
+    "departement": "95",
+    "population": 59173,
+    "lat": 48.9925,
+    "lon": 2.3858,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 44.7,
+        "min": 50
+      },
+      "cdg": {
+        "km": 18,
+        "min": 25
+      },
+      "beauvais": {
+        "km": 67.6,
+        "min": 48
+      }
+    },
+    "parisCentre": {
+      "km": 20.5,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "villiers-le-bel",
+      "arnouville",
+      "garges-les-gonesse",
+      "saint-brice-sous-foret",
+      "stains"
+    ]
+  },
+  {
+    "insee": "95598",
+    "slug": "soisy-sous-montmorency",
+    "nom": "Soisy-sous-Montmorency",
+    "codePostal": "95230",
+    "departement": "95",
+    "population": 18008,
+    "lat": 48.9888,
+    "lon": 2.3003,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 49,
+        "min": 58
+      },
+      "cdg": {
+        "km": 26.8,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 70,
+        "min": 54
+      }
+    },
+    "parisCentre": {
+      "km": 20.2,
+      "min": 38
+    },
+    "gares": [],
+    "nearby": [
+      "montmorency",
+      "eaubonne",
+      "enghien-les-bains",
+      "saint-gratien",
+      "deuil-la-barre"
+    ]
+  },
+  {
+    "insee": "95607",
+    "slug": "taverny",
+    "nom": "Taverny",
+    "codePostal": "95150",
+    "departement": "95",
+    "population": 27593,
+    "lat": 49.0274,
+    "lon": 2.2179,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 54.2,
+        "min": 60
+      },
+      "cdg": {
+        "km": 38.6,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 62.2,
+        "min": 43
+      }
+    },
+    "parisCentre": {
+      "km": 25.4,
+      "min": 40
+    },
+    "gares": [],
+    "nearby": [
+      "saint-leu-la-foret",
+      "pierrelaye",
+      "montigny-les-cormeilles",
+      "franconville",
+      "ermont"
+    ]
+  },
+  {
+    "insee": "95637",
+    "slug": "vaureal",
+    "nom": "Vauréal",
+    "codePostal": "95490",
+    "departement": "95",
+    "population": 16079,
+    "lat": 49.0293,
+    "lon": 2.0254,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 65.8,
+        "min": 71
+      },
+      "cdg": {
+        "km": 48.5,
+        "min": 46
+      },
+      "beauvais": {
+        "km": 72.1,
+        "min": 56
+      }
+    },
+    "parisCentre": {
+      "km": 36.9,
+      "min": 51
+    },
+    "gares": [],
+    "nearby": [
+      "cergy",
+      "jouy-le-moutier",
+      "osny",
+      "eragny-sur-oise",
+      "chanteloup-les-vignes"
+    ]
+  },
+  {
+    "insee": "95680",
+    "slug": "villiers-le-bel",
+    "nom": "Villiers-le-Bel",
+    "codePostal": "95400",
+    "departement": "95",
+    "population": 30053,
+    "lat": 49.008,
+    "lon": 2.4036,
+    "inFixedZone": false,
+    "airports": {
+      "orly": {
+        "km": 42.2,
+        "min": 51
+      },
+      "cdg": {
+        "km": 18.4,
+        "min": 24
+      },
+      "beauvais": {
+        "km": 70.8,
+        "min": 50
+      }
+    },
+    "parisCentre": {
+      "km": 22.7,
+      "min": 43
+    },
+    "gares": [],
+    "nearby": [
+      "sarcelles",
+      "arnouville",
+      "garges-les-gonesse",
+      "saint-brice-sous-foret",
+      "gonesse"
+    ]
   }
 ]

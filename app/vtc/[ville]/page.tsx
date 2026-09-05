@@ -2,11 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import communesData from "@/data/communes.json";
+import { AEROPORTS } from "@/data/aeroports";
 import type { Commune } from "@/data/commune";
-import { AIRPORT_FARES, BUSINESS, IDF_DEPARTEMENTS, telHref, waHref } from "@/lib/constants";
+import { departementSlug } from "@/lib/communes";
+import { AIRPORT_FARES, BUSINESS, IDF_DEPARTEMENTS, SITE_URL } from "@/lib/constants";
+import { breadcrumbJsonLd, cityArea, faqJsonLd, serviceJsonLd } from "@/lib/jsonld";
+import { Breadcrumb } from "@/components/seo/breadcrumb";
+import { CtaButtons, CtaCall } from "@/components/seo/cta-buttons";
+import { CommuneLinks } from "@/components/seo/commune-links";
 
 const communes = communesData as Commune[];
 const bySlug = new Map(communes.map((c) => [c.slug, c]));
+
+// Un département n'a de page dédiée qu'à partir de 2 communes couvertes
+// (cf. app/vtc/departement/[departement]/page.tsx).
+const MIN_COMMUNES = 2;
 
 // SSG : une page statique par commune, 404 pour tout slug inconnu (pas de rendu à la demande).
 export const dynamicParams = false;
@@ -24,8 +34,7 @@ export async function generateMetadata({
   const c = bySlug.get(ville);
   if (!c) return {};
 
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const url = `${base}/vtc/${c.slug}`;
+  const url = `${SITE_URL}/vtc/${c.slug}`;
   const title = `VTC ${c.nom} (${c.departement}) — Chauffeur privé 24h/24 | ${BUSINESS.name}`;
   const description = c.inFixedZone
     ? `Chauffeur VTC à ${c.nom} : transfert aéroport à prix fixe (Orly ${AIRPORT_FARES.ORLY} €, CDG ${AIRPORT_FARES.CDG} €), gares, trajets affaires et longue distance, 24h/24 et 7j/7. Réservez en direct.`
@@ -39,14 +48,33 @@ export async function generateMetadata({
   };
 }
 
-function AirportLeg({ label, leg, fixedFare }: { label: string; leg: Commune["airports"]["orly"]; fixedFare?: number }) {
+function AirportLeg({
+  label,
+  href,
+  leg,
+  fixedFare,
+}: {
+  label: string;
+  href?: string;
+  leg: Commune["airports"]["orly"];
+  fixedFare?: number;
+}) {
   return (
     <div className="flex items-center justify-between border-b border-border py-4 last:border-b-0 dark:border-zinc-800">
       <div className="flex items-center gap-3">
         <span aria-hidden="true" className="material-symbols-outlined text-accent">
           flight_takeoff
         </span>
-        <span className="font-semibold text-primary dark:text-zinc-50">{label}</span>
+        {href ? (
+          <Link
+            href={href}
+            className="font-semibold text-primary underline-offset-4 hover:underline dark:text-zinc-50"
+          >
+            {label}
+          </Link>
+        ) : (
+          <span className="font-semibold text-primary dark:text-zinc-50">{label}</span>
+        )}
       </div>
       <div className="text-right">
         <p className="text-sm text-muted dark:text-zinc-400">
@@ -71,65 +99,94 @@ export default async function VillePage({
   const c = bySlug.get(ville);
   if (!c) notFound();
 
+  const departementNom = IDF_DEPARTEMENTS[c.departement] ?? c.departement;
   const nearbyCommunes = c.nearby
     .map((slug) => bySlug.get(slug))
     .filter((x): x is Commune => x !== undefined);
+  const departementHasPage =
+    communes.filter((x) => x.departement === c.departement).length >= MIN_COMMUNES;
+
+  const crumbs = [
+    { name: "Accueil", path: "/" },
+    { name: "Zones desservies", path: "/vtc" },
+    ...(departementHasPage
+      ? [{ name: departementNom, path: `/vtc/departement/${departementSlug(c.departement)}` }]
+      : []),
+    { name: c.nom, path: `/vtc/${c.slug}` },
+  ];
+
+  const faq = [
+    {
+      question: `Combien coûte un VTC de ${c.nom} à l'aéroport ?`,
+      answer: c.inFixedZone
+        ? `${c.nom} est en zone de tarif fixe : ${AIRPORT_FARES.ORLY} € vers Orly, ${AIRPORT_FARES.CDG} € vers Roissy-Charles de Gaulle et ${AIRPORT_FARES.BEAUVAIS} € vers Beauvais, quelle que soit l'heure — nuit, week-end et jours fériés compris.`
+        : `${c.nom} se situe au-delà de la zone de tarif fixe (Paris et proche banlieue). Le prix de votre transfert est établi sur devis et confirmé au téléphone avant la réservation, sans surprise à l'arrivée.`,
+    },
+    {
+      question: `Combien de temps faut-il pour aller de ${c.nom} à Paris ?`,
+      answer: `Comptez environ ${c.parisCentre.min} minutes de route pour rejoindre le centre de Paris depuis ${c.nom}, soit à peu près ${c.parisCentre.km} km. Prévoyez une marge aux heures de pointe.`,
+    },
+    {
+      question: `Peut-on réserver un VTC à ${c.nom} la nuit ou un jour férié ?`,
+      answer: `Oui. ${BUSINESS.name} intervient ${BUSINESS.hours}, en réservation immédiate comme anticipée. Appelez le ${BUSINESS.phone} ou écrivez sur WhatsApp : vous parlez directement à votre chauffeur.`,
+    },
+  ];
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: BUSINESS.name,
-            telephone: BUSINESS.phone,
-            areaServed: { "@type": "City", name: c.nom },
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
-              ],
-              opens: "00:00",
-              closes: "23:59",
-            },
-          }),
+          __html: JSON.stringify([
+            serviceJsonLd({
+              name: `VTC à ${c.nom}`,
+              areaServed: cityArea(c.nom),
+              url: `${SITE_URL}/vtc/${c.slug}`,
+              // Le tarif fixe n'est annoncé que dans la zone où il s'applique
+              // (Paris et proche banlieue) — ailleurs, le prix est sur devis.
+              offers: c.inFixedZone
+                ? AEROPORTS.map((a) => ({
+                    name: `Transfert ${a.nom} depuis ${c.nom}`,
+                    price: AIRPORT_FARES[a.fareKey],
+                  }))
+                : undefined,
+            }),
+            breadcrumbJsonLd(crumbs),
+            faqJsonLd(faq),
+          ]),
         }}
       />
 
       <section className="mx-auto max-w-7xl px-6 py-12 md:py-20">
-        <p className="text-xs font-semibold tracking-widest text-muted uppercase dark:text-zinc-400">
-          {c.nom} ({c.codePostal}) · {IDF_DEPARTEMENTS[c.departement] ?? c.departement} · Île-de-France
+        <Breadcrumb items={crumbs} />
+        <p className="mt-6 text-xs font-semibold tracking-widest text-muted uppercase dark:text-zinc-400">
+          {c.nom} ({c.codePostal}) · {departementNom} · Île-de-France
         </p>
         <h1 className="font-headline mt-2 max-w-2xl text-3xl font-semibold tracking-tight text-primary md:text-5xl md:font-bold md:tracking-tighter dark:text-zinc-50">
           VTC à {c.nom} — chauffeur privé 24h/24 et 7j/7
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted dark:text-zinc-400">
           Basé à {BUSINESS.city}, votre chauffeur privé dessert {c.nom} et l&apos;ensemble du
-          département {IDF_DEPARTEMENTS[c.departement] ?? c.departement}. Réservation immédiate
-          ou anticipée, en direct avec votre chauffeur, disponible {BUSINESS.hours}.
+          département{" "}
+          {departementHasPage ? (
+            <Link
+              href={`/vtc/departement/${departementSlug(c.departement)}`}
+              className="underline underline-offset-4 hover:text-primary dark:hover:text-zinc-50"
+            >
+              {departementNom}
+            </Link>
+          ) : (
+            departementNom
+          )}
+          . Réservation immédiate ou anticipée, en direct avec votre chauffeur, disponible{" "}
+          {BUSINESS.hours}.
         </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a
-            href={telHref(BUSINESS.phone)}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-standard bg-primary px-6 text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-deep-midnight dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
-          >
-            <span aria-hidden="true" className="material-symbols-outlined text-base!">
-              call
-            </span>
-            Appeler pour réserver — {BUSINESS.phone}
-          </a>
-          <a
-            href={waHref(BUSINESS.whatsapp)}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-standard border border-border-input px-6 text-xs font-semibold tracking-widest text-primary uppercase transition-colors hover:bg-surface-low dark:border-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-800"
-          >
-            <span aria-hidden="true" className="material-symbols-outlined text-base!">
-              chat
-            </span>
-            Réserver par WhatsApp
-          </a>
+        <div className="mt-8">
+          <CtaButtons
+            label="Appeler pour réserver"
+            waText={`Bonjour, je souhaite réserver un VTC à ${c.nom}.`}
+          />
         </div>
       </section>
 
@@ -154,21 +211,15 @@ export default async function VillePage({
           </p>
 
           <div className="mt-8 rounded-card border border-border bg-surface p-8 ambient-shadow dark:border-zinc-800 dark:bg-zinc-950">
-            <AirportLeg
-              label="Aéroport d'Orly"
-              leg={c.airports.orly}
-              fixedFare={c.inFixedZone ? AIRPORT_FARES.ORLY : undefined}
-            />
-            <AirportLeg
-              label="Roissy-Charles de Gaulle"
-              leg={c.airports.cdg}
-              fixedFare={c.inFixedZone ? AIRPORT_FARES.CDG : undefined}
-            />
-            <AirportLeg
-              label="Aéroport de Paris-Beauvais"
-              leg={c.airports.beauvais}
-              fixedFare={c.inFixedZone ? AIRPORT_FARES.BEAUVAIS : undefined}
-            />
+            {AEROPORTS.map((a) => (
+              <AirportLeg
+                key={a.slug}
+                label={a.nom}
+                href={`/vtc/aeroport/${a.slug}`}
+                leg={c.airports[a.key]}
+                fixedFare={c.inFixedZone ? AIRPORT_FARES[a.fareKey] : undefined}
+              />
+            ))}
             <AirportLeg label="Paris centre" leg={c.parisCentre} />
 
             {!c.inFixedZone && (
@@ -179,17 +230,7 @@ export default async function VillePage({
             )}
           </div>
 
-          <div className="mt-8 text-center">
-            <a
-              href={telHref(BUSINESS.phone)}
-              className="inline-flex min-h-11 items-center gap-2 rounded-standard bg-accent px-8 py-4 text-xs font-semibold tracking-widest text-primary uppercase transition-colors hover:opacity-90"
-            >
-              <span aria-hidden="true" className="material-symbols-outlined text-base!">
-                call
-              </span>
-              Réservez votre trajet depuis {c.nom}
-            </a>
-          </div>
+          <CtaCall label={`Réservez votre trajet depuis ${c.nom}`} />
         </div>
       </section>
 
@@ -199,21 +240,38 @@ export default async function VillePage({
             <h2 className="font-headline text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50">
               Communes proches également desservies
             </h2>
-            <ul className="mt-6 flex flex-wrap gap-3">
-              {nearbyCommunes.map((n) => (
-                <li key={n.slug}>
-                  <Link
-                    href={`/vtc/${n.slug}`}
-                    className="inline-flex min-h-11 items-center rounded-standard border border-border bg-surface px-4 text-sm font-medium text-primary transition-colors hover:bg-surface-low dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-50 dark:hover:bg-zinc-900"
-                  >
-                    VTC {n.nom}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <CommuneLinks communes={nearbyCommunes} prefix="VTC " />
           </>
         )}
-        <p className="mt-6 text-sm text-muted dark:text-zinc-400">
+
+        <h2 className="font-headline mt-12 text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50">
+          Questions fréquentes sur le VTC à {c.nom}
+        </h2>
+        <dl className="mt-6 max-w-3xl space-y-6">
+          {faq.map((item) => (
+            <div key={item.question}>
+              <dt className="font-semibold text-primary dark:text-zinc-50">{item.question}</dt>
+              <dd className="mt-2 text-muted dark:text-zinc-400">{item.answer}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <p className="mt-10 text-sm text-muted dark:text-zinc-400">
+          {departementHasPage && (
+            <>
+              <Link
+                href={`/vtc/departement/${departementSlug(c.departement)}`}
+                className="underline hover:text-primary dark:hover:text-zinc-50"
+              >
+                VTC en {departementNom}
+              </Link>
+              {" · "}
+            </>
+          )}
+          <Link href="/vtc/aeroport" className="underline hover:text-primary dark:hover:text-zinc-50">
+            Transferts aéroport
+          </Link>
+          {" · "}
           <Link href="/vtc" className="underline hover:text-primary dark:hover:text-zinc-50">
             Voir toutes les villes desservies
           </Link>

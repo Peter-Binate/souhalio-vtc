@@ -1,0 +1,668 @@
+[
+  {
+    "uic": "87686030",
+    "slug": "paris-gare-de-lyon",
+    "nom": "Paris Gare de Lyon",
+    "nomCourt": "Gare de Lyon",
+    "commune": "Paris 12e",
+    "codeInsee": "75112",
+    "departement": "75",
+    "lat": 48.844888,
+    "lon": 2.37352,
+    "inFixedZone": true,
+    "dessertes": [
+      "TGV Sud-Est : Lyon, Marseille, Nice, Montpellier",
+      "Alpes et stations de ski (Chambéry, Bourg-Saint-Maurice)",
+      "International : Genève, Turin, Milan"
+    ],
+    "presentation": "Deuxième gare de France par la fréquentation, la Gare de Lyon dessert tout le sud-est du pays et l'Italie. Ses deux halls (1 et 2) et le hall Méditerranée sont distants de plusieurs centaines de mètres : indiquer son hall à la réservation fait gagner un temps précieux avec des bagages.",
+    "airports": {
+      "orly": {
+        "km": 16.2,
+        "min": 34
+      },
+      "cdg": {
+        "km": 27.8,
+        "min": 33
+      },
+      "beauvais": {
+        "km": 99.4,
+        "min": 77
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 5.1,
+        "min": 22
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 5.8,
+        "min": 23
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 6.4,
+        "min": 27
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 4.6,
+        "min": 20
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 1.7,
+        "min": 8
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 1.4,
+        "min": 6
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 21.1,
+        "min": 30
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 41.9,
+        "min": 38
+      }
+    ]
+  },
+  {
+    "uic": "87271031",
+    "slug": "paris-gare-du-nord",
+    "nom": "Paris Gare du Nord",
+    "nomCourt": "Gare du Nord",
+    "commune": "Paris 10e",
+    "codeInsee": "75110",
+    "departement": "75",
+    "lat": 48.880185,
+    "lon": 2.355151,
+    "inFixedZone": true,
+    "dessertes": [
+      "Eurostar : Londres, Bruxelles, Amsterdam",
+      "TGV Nord : Lille, Dunkerque, Calais",
+      "TER Hauts-de-France et RER B / D"
+    ],
+    "presentation": "Première gare d'Europe par le trafic voyageurs, et le point de départ des liaisons internationales vers Londres, Bruxelles et Amsterdam. L'enregistrement Eurostar impose d'arriver largement en avance : c'est la gare où une prise en charge à l'heure compte le plus.",
+    "airports": {
+      "orly": {
+        "km": 20.6,
+        "min": 41
+      },
+      "cdg": {
+        "km": 25,
+        "min": 29
+      },
+      "beauvais": {
+        "km": 84.5,
+        "min": 70
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 5.4,
+        "min": 22
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 6.5,
+        "min": 29
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 2.9,
+        "min": 13
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 0.6,
+        "min": 3
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 5.1,
+        "min": 23
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 6.4,
+        "min": 26
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 25.5,
+        "min": 40
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 46.2,
+        "min": 49
+      }
+    ]
+  },
+  {
+    "uic": "87391102",
+    "slug": "paris-montparnasse",
+    "nom": "Paris Montparnasse",
+    "nomCourt": "Gare Montparnasse",
+    "commune": "Paris 15e",
+    "codeInsee": "75115",
+    "departement": "75",
+    "lat": 48.841172,
+    "lon": 2.320514,
+    "inFixedZone": true,
+    "dessertes": [
+      "TGV Atlantique : Bordeaux, Nantes, Rennes, Brest",
+      "Toulouse et le Sud-Ouest via Bordeaux",
+      "Le Mans, Angers, Laval"
+    ],
+    "presentation": "Porte d'entrée de l'ouest et du sud-ouest de la France. La gare s'étend sur plusieurs niveaux et deux ensembles (Montparnasse 1-2-3 et Pasteur) ; connaître son point de dépose évite une longue traversée à pied.",
+    "airports": {
+      "orly": {
+        "km": 18.2,
+        "min": 30
+      },
+      "cdg": {
+        "km": 30.5,
+        "min": 45
+      },
+      "beauvais": {
+        "km": 88.5,
+        "min": 82
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 5.5,
+        "min": 22
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 6.7,
+        "min": 28
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 5.6,
+        "min": 24
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 6.4,
+        "min": 26
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 4.5,
+        "min": 17
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 5.6,
+        "min": 24
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 19.1,
+        "min": 27
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 47.2,
+        "min": 47
+      }
+    ]
+  },
+  {
+    "uic": "87384008",
+    "slug": "paris-saint-lazare",
+    "nom": "Paris Saint-Lazare",
+    "nomCourt": "Gare Saint-Lazare",
+    "commune": "Paris 8e",
+    "codeInsee": "75108",
+    "departement": "75",
+    "lat": 48.876242,
+    "lon": 2.325331,
+    "inFixedZone": true,
+    "dessertes": [
+      "Normandie : Rouen, Le Havre, Caen, Cherbourg",
+      "Deauville-Trouville et la côte normande",
+      "Transilien lignes J et L"
+    ],
+    "presentation": "Gare des liaisons normandes, au cœur du quartier d'affaires de l'Opéra et des grands magasins. Très fréquentée aux heures de pointe, elle demande d'anticiper le trajet retour vers un rendez-vous professionnel.",
+    "airports": {
+      "orly": {
+        "km": 22.7,
+        "min": 41
+      },
+      "cdg": {
+        "km": 26.8,
+        "min": 31
+      },
+      "beauvais": {
+        "km": 83.4,
+        "min": 68
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 5.7,
+        "min": 24
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 2.5,
+        "min": 10
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 4.7,
+        "min": 21
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 2.6,
+        "min": 11
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 5.6,
+        "min": 25
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 6.7,
+        "min": 28
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 23.6,
+        "min": 38
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 46.6,
+        "min": 50
+      }
+    ]
+  },
+  {
+    "uic": "87113001",
+    "slug": "paris-gare-de-l-est",
+    "nom": "Paris Est",
+    "nomCourt": "Gare de l'Est",
+    "commune": "Paris 10e",
+    "codeInsee": "75110",
+    "departement": "75",
+    "lat": 48.876742,
+    "lon": 2.358424,
+    "inFixedZone": true,
+    "dessertes": [
+      "TGV Est : Strasbourg, Nancy, Metz, Reims",
+      "International : Luxembourg, Francfort, Stuttgart, Munich",
+      "Trains de nuit vers les Alpes et les Pyrénées"
+    ],
+    "presentation": "Gare des liaisons vers le Grand Est, le Luxembourg et l'Allemagne. Elle jouxte la Gare du Nord (une dizaine de minutes à pied), ce qui en fait un point de correspondance fréquent entre deux trajets longue distance.",
+    "airports": {
+      "orly": {
+        "km": 20.3,
+        "min": 41
+      },
+      "cdg": {
+        "km": 25.2,
+        "min": 30
+      },
+      "beauvais": {
+        "km": 84.7,
+        "min": 71
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 5.1,
+        "min": 21
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 1,
+        "min": 5
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 6.2,
+        "min": 28
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 3.1,
+        "min": 14
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 4.9,
+        "min": 22
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 6.1,
+        "min": 25
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 25.2,
+        "min": 40
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 46,
+        "min": 48
+      }
+    ]
+  },
+  {
+    "uic": "87547026",
+    "slug": "paris-gare-d-austerlitz",
+    "nom": "Paris Austerlitz",
+    "nomCourt": "Gare d'Austerlitz",
+    "commune": "Paris 13e",
+    "codeInsee": "75113",
+    "departement": "75",
+    "lat": 48.842285,
+    "lon": 2.364891,
+    "inFixedZone": true,
+    "dessertes": [
+      "Ligne POLT : Orléans, Limoges, Brive, Toulouse",
+      "Trains de nuit : Pyrénées, Alpes, Nice, Briançon",
+      "RER C et Transilien"
+    ],
+    "presentation": "Gare du centre de la France et point de départ des trains de nuit. Les départs et arrivées nocturnes, hors des horaires de transports en commun, en font une gare où le VTC est souvent la seule option praticable.",
+    "airports": {
+      "orly": {
+        "km": 16.2,
+        "min": 33
+      },
+      "cdg": {
+        "km": 28.8,
+        "min": 36
+      },
+      "beauvais": {
+        "km": 100.4,
+        "min": 81
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 1,
+        "min": 5
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 5.5,
+        "min": 24
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 4.2,
+        "min": 16
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 5.8,
+        "min": 26
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 5,
+        "min": 22
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 2,
+        "min": 10
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 19.5,
+        "min": 31
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 41.9,
+        "min": 38
+      }
+    ]
+  },
+  {
+    "uic": "87686667",
+    "slug": "paris-gare-de-bercy",
+    "nom": "Paris Bercy Bourgogne - Pays d'Auvergne",
+    "nomCourt": "Gare de Bercy",
+    "commune": "Paris 12e",
+    "codeInsee": "75112",
+    "departement": "75",
+    "lat": 48.83917,
+    "lon": 2.38278,
+    "inFixedZone": true,
+    "dessertes": [
+      "Bourgogne et Auvergne : Dijon, Nevers, Clermont-Ferrand",
+      "Certains départs Ouigo",
+      "Service auto-train (véhicules accompagnés)"
+    ],
+    "presentation": "Gare Bercy Bourgogne-Pays d'Auvergne, à quelques centaines de mètres de la Gare de Lyon. Plus petite et moins bien signalée, elle est régulièrement confondue avec sa grande voisine : vérifier laquelle figure sur son billet évite une correspondance en catastrophe.",
+    "airports": {
+      "orly": {
+        "km": 15.5,
+        "min": 32
+      },
+      "cdg": {
+        "km": 27.9,
+        "min": 34
+      },
+      "beauvais": {
+        "km": 99.5,
+        "min": 79
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 1.5,
+        "min": 6
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 6.2,
+        "min": 27
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 6,
+        "min": 24
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 7.4,
+        "min": 32
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 5.8,
+        "min": 24
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 2.1,
+        "min": 9
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 20.4,
+        "min": 28
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 41.2,
+        "min": 36
+      }
+    ]
+  },
+  {
+    "uic": "87393702",
+    "slug": "massy-tgv",
+    "nom": "Massy TGV",
+    "nomCourt": "Massy TGV",
+    "commune": "Massy (91)",
+    "codeInsee": "91377",
+    "departement": "91",
+    "lat": 48.725758,
+    "lon": 2.261254,
+    "inFixedZone": false,
+    "dessertes": [
+      "Liaisons province-province sans passer par Paris",
+      "Lille, Lyon, Bordeaux, Marseille, Rennes, Nantes",
+      "Correspondance RER B et C à Massy-Palaiseau"
+    ],
+    "presentation": "Gare d'interconnexion du sud francilien : elle permet de rejoindre la province sans traverser Paris. Elle est distincte de la gare de Massy-Palaiseau (RER), située à quelques centaines de mètres — une confusion fréquente au moment de la dépose.",
+    "airports": {
+      "orly": {
+        "km": 18,
+        "min": 26
+      },
+      "cdg": {
+        "km": 51.5,
+        "min": 48
+      },
+      "beauvais": {
+        "km": 123.1,
+        "min": 92
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 22.4,
+        "min": 28
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 25.3,
+        "min": 41
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 20.5,
+        "min": 27
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 24.6,
+        "min": 40
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 24.9,
+        "min": 40
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 20.1,
+        "min": 28
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 22.1,
+        "min": 28
+      },
+      {
+        "slug": "marne-la-vallee-chessy",
+        "km": 57.8,
+        "min": 47
+      }
+    ]
+  },
+  {
+    "uic": "87111849",
+    "slug": "marne-la-vallee-chessy",
+    "nom": "Marne-la-Vallée Chessy",
+    "nomCourt": "Marne-la-Vallée Chessy",
+    "commune": "Chessy (77)",
+    "codeInsee": "77111",
+    "departement": "77",
+    "lat": 48.869856,
+    "lon": 2.78272,
+    "inFixedZone": false,
+    "dessertes": [
+      "Gare de Disneyland Paris",
+      "TGV directs depuis Lille, Lyon, Bordeaux, Rennes",
+      "RER A vers Paris"
+    ],
+    "presentation": "Gare de Disneyland Paris, à l'est de l'Île-de-France, desservie en direct par des TGV de province. Le trajet depuis Paris dépasse largement la demi-heure : c'est une destination à réserver à l'avance, notamment pour un départ tôt le matin.",
+    "airports": {
+      "orly": {
+        "km": 46.5,
+        "min": 44
+      },
+      "cdg": {
+        "km": 42,
+        "min": 41
+      },
+      "beauvais": {
+        "km": 113.4,
+        "min": 85
+      }
+    },
+    "versGares": [
+      {
+        "slug": "paris-gare-de-lyon",
+        "km": 40.6,
+        "min": 35
+      },
+      {
+        "slug": "paris-gare-du-nord",
+        "km": 45.4,
+        "min": 48
+      },
+      {
+        "slug": "paris-montparnasse",
+        "km": 46.3,
+        "min": 47
+      },
+      {
+        "slug": "paris-saint-lazare",
+        "km": 46.5,
+        "min": 52
+      },
+      {
+        "slug": "paris-gare-de-l-est",
+        "km": 44.9,
+        "min": 47
+      },
+      {
+        "slug": "paris-gare-d-austerlitz",
+        "km": 41.2,
+        "min": 37
+      },
+      {
+        "slug": "paris-gare-de-bercy",
+        "km": 40.3,
+        "min": 35
+      },
+      {
+        "slug": "massy-tgv",
+        "km": 56.1,
+        "min": 48
+      }
+    ]
+  }
+]
