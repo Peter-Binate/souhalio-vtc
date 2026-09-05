@@ -271,6 +271,21 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
   - [x] Aucune trace résiduelle de Formspree dans le code (`.ts`/`.tsx`) — seules des mentions historiques subsistent dans `CHANGELOG.md`/`docs/adr/`/PRPs archivés
 - **Réf. :** `PRPs/LP-20-migration-formspree-resend.md`, `docs/adr/0003-proxy-resend-route-handler.md`, `ai_docs/patterns.md`
 
+### [x] LP-24 — Navigation globale & metadata des pages sans contenu propre
+
+**En tant que** visiteur arrivant par un moteur de recherche sur une page ville/gare/aéroport, **je veux** une navigation qui fonctionne, **afin de** pouvoir explorer le site au lieu de repartir.
+
+- **Inclus :** `components/layout/header.tsx` (liens absolus `/#…`, marque cliquable, entrée « Zones » vers `/vtc`) ; `app/globals.css` (`scroll-padding-top`, décalage sous le header sticky) ; `app/not-found.tsx` (404 dédiée, metadata propre, `noindex, follow`) ; canonical de l'accueil (`app/page.tsx`) ; accord des articles de département (`lib/constants.ts`, `lib/communes.ts`).
+- **Exclus :** menu de navigation mobile (aucun n'existe aujourd'hui, y compris sur l'accueil — choix de design à confirmer avec le client) ; état actif `aria-current` sur le lien courant (imposerait `"use client"` sur le header, cf. `CLAUDE.md`).
+- **Critères d'acceptation :**
+  - [x] Les liens de l'en-tête fonctionnent depuis n'importe quelle page (vérifié sur build de production depuis une page département et une page gare)
+  - [x] Un saut d'ancre ne place plus le titre visé sous le header sticky (mesuré : titre à 252 px, bas du header à 65 px)
+  - [x] Les pages SEO sont atteignables depuis l'en-tête, pas seulement depuis le footer
+  - [x] La page 404 ne reprend plus le titre ni la meta description de l'accueil
+  - [x] Toutes les pages indexables déclarent une meta description et une canonical
+  - [~] Rendu ≤ 768 px : validé par mesure DOM (737 px nécessaires au palier `md`), **non capturé visuellement** — `resize_window` sans effet sur `window.innerWidth` dans cette session
+- **Réf. :** `CHANGELOG.md`
+
 ---
 
 ## Backlog « nice-to-have » (non planifié)

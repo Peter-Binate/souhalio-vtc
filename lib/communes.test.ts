@@ -3,6 +3,8 @@ import {
   averageMinutes,
   byPopulationDesc,
   departementCodeFromSlug,
+  departementDe,
+  departementLe,
   departementSlug,
   departementStats,
   fastestTo,
@@ -201,5 +203,33 @@ describe("departementSlug / departementCodeFromSlug", () => {
 
   it("renvoie undefined pour un slug inconnu", () => {
     expect(departementCodeFromSlug("rhone")).toBeUndefined();
+  });
+});
+
+describe("departementLe / departementDe", () => {
+  it("accorde l'article au genre et au nombre du département", () => {
+    expect(departementLe("94")).toBe("le Val-de-Marne");
+    expect(departementLe("77")).toBe("la Seine-et-Marne");
+    expect(departementLe("78")).toBe("les Yvelines");
+    expect(departementLe("91")).toBe("l'Essonne"); // élision : jamais « le Essonne »
+  });
+
+  it("contracte correctement l'article avec « de »", () => {
+    expect(departementDe("94")).toBe("du Val-de-Marne");
+    expect(departementDe("78")).toBe("des Yvelines");
+    expect(departementDe("91")).toBe("de l'Essonne");
+    expect(departementDe("93")).toBe("de la Seine-Saint-Denis");
+  });
+
+  it("couvre les 8 départements franciliens", () => {
+    for (const code of ["75", "77", "78", "91", "92", "93", "94", "95"]) {
+      expect(departementLe(code)).not.toBe(code);
+      expect(departementDe(code)).not.toBe(`de ${code}`);
+    }
+  });
+
+  it("retombe sur un repli lisible pour un code inconnu", () => {
+    expect(departementLe("99")).toBe("99");
+    expect(departementDe("99")).toBe("de 99");
   });
 });

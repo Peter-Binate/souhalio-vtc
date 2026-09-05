@@ -7,6 +7,8 @@ import type { Commune } from "@/data/commune";
 import {
   byPopulationDesc,
   departementCodeFromSlug,
+  departementDe,
+  departementLe,
   departementSlug,
   departementStats,
   sortByNom,
@@ -25,6 +27,12 @@ const communes = communesData as Commune[];
 // c'est exactement le contenu mince que Google traite en « doorway page »
 // (cf. programmatic-seo.md § garde-fous).
 const MIN_COMMUNES = 2;
+
+// `departementLe` renvoie une forme de milieu de phrase ("le Val-de-Marne") ; en tête de
+// phrase il faut la majuscule ("Le Val-de-Marne…", "L'Essonne…").
+function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
 
 function communesOf(code: string): Commune[] {
   return sortByNom(communes.filter((c) => c.departement === code));
@@ -62,7 +70,7 @@ export async function generateMetadata({
 
   const url = `${SITE_URL}/vtc/departement/${departement}`;
   const title = `VTC ${found.nom} (${found.code}) — chauffeur privé 24h/24 | ${BUSINESS.name}`;
-  const description = `Chauffeur VTC dans le ${found.nom} : ${found.list.length} communes desservies, transferts Orly, Roissy-CDG et Beauvais, gares et longue distance, 24h/24 et 7j/7. Réservez en direct.`;
+  const description = `Chauffeur VTC dans ${departementLe(found.code)} : ${found.list.length} communes desservies, transferts Orly, Roissy-CDG et Beauvais, gares et longue distance, 24h/24 et 7j/7. Réservez en direct.`;
 
   return {
     title,
@@ -82,6 +90,9 @@ export default async function DepartementPage({
   if (!found) notFound();
 
   const { code, nom, list } = found;
+  // Formes accordées ("le Val-de-Marne" / "l'Essonne" / "les Yvelines") — cf. lib/constants.ts.
+  const leDep = departementLe(code);
+  const duDep = departementDe(code);
   const stats = departementStats(list);
   const principales = byPopulationDesc(list, 6);
   const autresDepartements = eligibleCodes().filter((c) => c !== code);
@@ -95,17 +106,17 @@ export default async function DepartementPage({
 
   const faq = [
     {
-      question: `Quel est le tarif d'un transfert aéroport depuis le ${nom} ?`,
+      question: `Quel est le tarif d'un transfert aéroport depuis ${leDep} ?`,
       answer: stats.inFixedZone
-        ? `Le ${nom} est en zone de tarif fixe : ${AIRPORT_FARES.ORLY} € vers Orly, ${AIRPORT_FARES.CDG} € vers Roissy-Charles de Gaulle et ${AIRPORT_FARES.BEAUVAIS} € vers Beauvais, quelle que soit l'heure.`
-        : `Le ${nom} se situe au-delà de la zone de tarif fixe (Paris et proche banlieue). Le prix est établi sur devis et confirmé au téléphone avant la réservation, sans surprise à l'arrivée.`,
+        ? `${leDep} est en zone de tarif fixe : ${AIRPORT_FARES.ORLY} € vers Orly, ${AIRPORT_FARES.CDG} € vers Roissy-Charles de Gaulle et ${AIRPORT_FARES.BEAUVAIS} € vers Beauvais, quelle que soit l'heure.`
+        : `${leDep} se situe au-delà de la zone de tarif fixe (Paris et proche banlieue). Le prix est établi sur devis et confirmé au téléphone avant la réservation, sans surprise à l'arrivée.`,
     },
     {
-      question: `Combien de temps faut-il pour rejoindre Roissy-CDG depuis le ${nom} ?`,
-      answer: `Comptez en moyenne ${stats.averageMinutes.cdg} minutes de route depuis les communes du ${nom} que nous desservons, et environ ${stats.averageMinutes.orly} minutes vers Orly. Le détail commune par commune figure sur cette page.`,
+      question: `Combien de temps faut-il pour rejoindre Roissy-CDG depuis ${leDep} ?`,
+      answer: `Comptez en moyenne ${stats.averageMinutes.cdg} minutes de route depuis les communes ${duDep} que nous desservons, et environ ${stats.averageMinutes.orly} minutes vers Orly. Le détail commune par commune figure sur cette page.`,
     },
     {
-      question: `Réservez-vous la nuit et les jours fériés dans le ${nom} ?`,
+      question: `Réservez-vous la nuit et les jours fériés dans ${leDep} ?`,
       answer: `Oui. ${BUSINESS.name} intervient ${BUSINESS.hours}, en réservation immédiate comme anticipée, par téléphone au ${BUSINESS.phone} ou par WhatsApp.`,
     },
   ];
@@ -117,12 +128,12 @@ export default async function DepartementPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([
             serviceJsonLd({
-              name: `VTC dans le ${nom}`,
+              name: `VTC dans ${leDep}`,
               areaServed: adminArea(nom),
               url: `${SITE_URL}/vtc/departement/${departement}`,
               offers: stats.inFixedZone
                 ? AEROPORTS.map((a) => ({
-                    name: `Transfert ${a.nom} depuis le ${nom}`,
+                    name: `Transfert ${a.nom} depuis ${leDep}`,
                     price: AIRPORT_FARES[a.fareKey],
                   }))
                 : undefined,
@@ -139,12 +150,12 @@ export default async function DepartementPage({
           {nom} ({code}) · Île-de-France
         </p>
         <h1 className="font-headline mt-2 max-w-3xl text-3xl font-semibold tracking-tight text-primary md:text-5xl md:font-bold md:tracking-tighter dark:text-zinc-50">
-          VTC dans le {nom} — chauffeur privé 24h/24 et 7j/7
+          VTC dans {leDep} — chauffeur privé 24h/24 et 7j/7
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted dark:text-zinc-400">
           Basé à {BUSINESS.city}, votre chauffeur dessert{" "}
           <strong>
-            {list.length} communes du {nom}
+            {list.length} communes {duDep}
           </strong>{" "}
           — soit environ {stats.population.toLocaleString("fr-FR")} habitants. Transferts
           aéroport et gare, trajets affaires et longue distance, en réservation immédiate ou
@@ -180,7 +191,7 @@ export default async function DepartementPage({
         <div className="mt-8">
           <CtaButtons
             label="Appeler pour réserver"
-            waText={`Bonjour, je souhaite réserver un VTC dans le ${nom}.`}
+            waText={`Bonjour, je souhaite réserver un VTC dans ${leDep}.`}
           />
         </div>
       </section>
@@ -188,12 +199,12 @@ export default async function DepartementPage({
       <section className="border-y border-border bg-surface-low py-12 md:py-20 dark:border-zinc-800 dark:bg-zinc-900/40">
         <div className="mx-auto max-w-4xl px-6">
           <h2 className="font-headline text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50">
-            Tarifs aéroport depuis le {nom}
+            Tarifs aéroport depuis {leDep}
           </h2>
           <p className="mt-4 text-lg text-muted dark:text-zinc-400">
             {stats.inFixedZone ? (
               <>
-                Le {nom} fait partie de la zone <strong>Paris et proche banlieue</strong> : vos
+                {capitalize(leDep)} fait partie de la zone <strong>Paris et proche banlieue</strong> : vos
                 transferts aéroport y sont facturés à un <strong>prix fixe connu à
                 l&apos;avance</strong> — Orly {AIRPORT_FARES.ORLY} €, Roissy-CDG{" "}
                 {AIRPORT_FARES.CDG} €, Beauvais {AIRPORT_FARES.BEAUVAIS} € — quelle que soit
@@ -201,7 +212,7 @@ export default async function DepartementPage({
               </>
             ) : (
               <>
-                Le {nom} se situe <strong>au-delà de la zone à tarif fixe</strong> (Paris et
+                {capitalize(leDep)} se situe <strong>au-delà de la zone à tarif fixe</strong> (Paris et
                 proche banlieue). Votre transfert fait l&apos;objet d&apos;une{" "}
                 <strong>estimation confirmée en un appel</strong>, arrêtée avant la
                 réservation : le prix annoncé est celui que vous payez.
@@ -220,16 +231,16 @@ export default async function DepartementPage({
               { key: "cdg", label: "Roissy-CDG" },
               { key: "beauvais", label: "Beauvais" },
             ]}
-            caption={`Distance et durée de trajet depuis les communes du ${nom} vers Paris centre et les trois aéroports parisiens`}
+            caption={`Distance et durée de trajet depuis les communes ${duDep} vers Paris centre et les trois aéroports parisiens`}
           />
 
-          <CtaCall label={`Réservez votre trajet dans le ${nom}`} />
+          <CtaCall label={`Réservez votre trajet dans ${leDep}`} />
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-12 md:py-20">
         <h2 className="font-headline text-2xl font-semibold text-primary md:text-3xl dark:text-zinc-50">
-          Principales villes desservies dans le {nom}
+          Principales villes desservies dans {leDep}
         </h2>
         <CommuneLinks communes={principales} prefix="VTC " />
 
@@ -265,7 +276,7 @@ export default async function DepartementPage({
                 href={`/vtc/departement/${departementSlug(c)}`}
                 className="inline-flex min-h-11 items-center rounded-standard border border-border bg-surface px-4 text-sm font-medium text-primary transition-colors hover:bg-surface-low dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-50 dark:hover:bg-zinc-900"
               >
-                VTC {IDF_DEPARTEMENTS[c]}
+                VTC dans {departementLe(c)}
               </Link>
             </li>
           ))}

@@ -85,6 +85,34 @@ export const IDF_DEPARTEMENTS: Record<string, string> = {
   "95": "Val-d'Oise",
 };
 
+// Formes prépositionnelles des départements franciliens. Le genre et le nombre varient
+// ("le Val-de-Marne", "la Seine-et-Marne", "les Yvelines", "l'Essonne") : un gabarit unique
+// du type `dans le ${nom}` écrit des fautes en dur dans les <h1> et les meta descriptions
+// des pages département ("VTC dans le Essonne"). Deux formes suffisent à couvrir les
+// tournures utilisées : l'article défini et l'article contracté avec « de ».
+// Paris n'a pas d'article (et pas de page département : une seule commune couverte).
+export const IDF_DEPARTEMENT_LE: Record<string, string> = {
+  "75": "Paris",
+  "77": "la Seine-et-Marne",
+  "78": "les Yvelines",
+  "91": "l'Essonne",
+  "92": "les Hauts-de-Seine",
+  "93": "la Seine-Saint-Denis",
+  "94": "le Val-de-Marne",
+  "95": "le Val-d'Oise",
+};
+
+export const IDF_DEPARTEMENT_DE: Record<string, string> = {
+  "75": "de Paris",
+  "77": "de la Seine-et-Marne",
+  "78": "des Yvelines",
+  "91": "de l'Essonne",
+  "92": "des Hauts-de-Seine",
+  "93": "de la Seine-Saint-Denis",
+  "94": "du Val-de-Marne",
+  "95": "du Val-d'Oise",
+};
+
 // Helpers CTA — normalisent un numéro brut en lien tel:/wa.me exploitable.
 export const telHref = (raw: string) => `tel:${raw.replace(/[^\d+]/g, "")}`;
 export const waHref = (raw: string, text?: string) => {

@@ -1,7 +1,7 @@
 // Helpers purs sur le jeu de communes enrichi (data/communes.json) — alimentent les pages
 // SEO programmatiques : ville (LP-19), hub département (LP-23) et aéroport (LP-21).
 // Aucune I/O, aucun état : tout est testable unitairement (cf. lib/communes.test.ts).
-import { IDF_DEPARTEMENTS } from "@/lib/constants";
+import { IDF_DEPARTEMENT_DE, IDF_DEPARTEMENT_LE, IDF_DEPARTEMENTS } from "@/lib/constants";
 import type { Commune, Leg } from "@/schemas/commune";
 
 export type AirportKey = "orly" | "cdg" | "beauvais";
@@ -97,4 +97,14 @@ export function departementSlug(code: string): string {
 /** Inverse de `departementSlug` ; `undefined` si le slug ne correspond à aucun département IDF. */
 export function departementCodeFromSlug(slug: string): string | undefined {
   return Object.keys(IDF_DEPARTEMENTS).find((code) => departementSlug(code) === slug);
+}
+
+/** Département précédé de son article défini : "le Val-de-Marne", "l'Essonne", "les Yvelines". */
+export function departementLe(code: string): string {
+  return IDF_DEPARTEMENT_LE[code] ?? IDF_DEPARTEMENTS[code] ?? code;
+}
+
+/** Département précédé de « de » contracté : "du Val-de-Marne", "de l'Essonne", "des Yvelines". */
+export function departementDe(code: string): string {
+  return IDF_DEPARTEMENT_DE[code] ?? `de ${IDF_DEPARTEMENTS[code] ?? code}`;
 }

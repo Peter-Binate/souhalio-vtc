@@ -51,6 +51,18 @@
   }
 }
 
+/*
+ * Ancres de navigation : le header est `sticky top-0` sur 4rem (h-16). Sans décalage,
+ * un saut vers #services / #pricing / #contact place le titre visé SOUS le header.
+ * `scroll-padding-top` s'applique à toute navigation par ancre, y compris celle qui suit
+ * un changement de page (« Services » depuis une page ville → /#services).
+ * Pas de `scroll-behavior: smooth` : sur une navigation inter-pages, l'animation fait
+ * défiler toute la page d'accueil pendant plusieurs secondes avant d'atteindre l'ancre.
+ */
+html {
+  scroll-padding-top: 5rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
