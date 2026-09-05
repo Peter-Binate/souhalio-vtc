@@ -29,7 +29,7 @@ Fonctionnalité phare : un **simulateur d'itinéraire** (carte + estimation de p
 - Node.js ≥ 20
 - Un compte **MapTiler** (clé API, restreinte par domaine)
 - Un compte **OpenRouteService** (clé API)
-- Un compte **Formspree** (formulaire de contact, LP-14) — [formspree.io](https://formspree.io)
+- Un compte **Resend** (formulaire de contact, LP-20) — [resend.com](https://resend.com)
 
 ---
 
@@ -58,10 +58,11 @@ Voir `.env.local.example`.
 |---|---|---|
 | `NEXT_PUBLIC_MAPTILER_KEY` | **Client** (publique) | Fond de carte MapLibre + géocodage. **À restreindre par domaine** dans le dashboard MapTiler. |
 | `ORS_API_KEY` | **Serveur uniquement** | Appels OpenRouteService depuis le Route Handler. **Ne jamais préfixer `NEXT_PUBLIC_`.** |
-| `NEXT_PUBLIC_FORMSPREE_FORM_ID` | **Client** (publique) | Formulaire de contact (LP-14) — endpoint public Formspree, posté directement depuis le navigateur. |
+| `RESEND_API_KEY` | **Serveur uniquement** | Formulaire de contact (LP-20) — envoi de l'email de notification depuis le Route Handler `app/api/contact`. **Ne jamais préfixer `NEXT_PUBLIC_`.** |
+| `RESEND_FROM_EMAIL` | **Serveur uniquement** | Adresse d'expédition Resend (LP-20) — domaine vérifié en prod, `onboarding@resend.dev` (sandbox) en dev. |
 | `NEXT_PUBLIC_SITE_URL` | **Client** (publique) | URL canonique du site (LP-15) — `metadataBase`, OpenGraph, `robots.txt`, `sitemap.xml`. À remplacer par le vrai domaine avant mise en production. |
 
-> 🔒 La clé ORS ne doit **jamais** transiter côté navigateur. Tout appel ORS passe par `app/api/route`.
+> 🔒 Les clés ORS et Resend ne doivent **jamais** transiter côté navigateur. Tout appel ORS passe par `app/api/route`, tout envoi d'email par `app/api/contact`.
 
 ---
 
@@ -85,6 +86,7 @@ app/
   page.tsx                # assemble les sections de la landing page
   globals.css             # Tailwind + tokens de thème
   api/route/route.ts      # PROXY OpenRouteService (serveur, clé secrète)
+  api/contact/route.ts    # PROXY Resend (serveur, clé secrète) — formulaire de contact
 components/
   ui/                     # composants shadcn/ui
   sections/               # une section = un composant (hero, tarifs, services…)
@@ -95,6 +97,7 @@ lib/
   pricing.ts              # estimation de prix (grille + override aéroport)
   ky.ts                   # instances ky
   ors.ts                  # client ORS (serveur)
+  resend.ts               # client Resend (serveur) — envoi email formulaire de contact
   query-client.tsx        # provider TanStack Query
 schemas/
   itinerary.ts            # schémas Zod (formulaire + réponses API)

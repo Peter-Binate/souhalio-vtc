@@ -1,13 +1,13 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { formspreeApi } from "@/lib/ky";
+import { internalApi } from "@/lib/ky";
 import { submitContactForm } from "./contact";
 import type { ContactFormValues } from "@/schemas/contact";
 
 vi.mock("@/lib/ky", () => ({
-  formspreeApi: { post: vi.fn() },
+  internalApi: { post: vi.fn() },
 }));
 
-const mockedPost = vi.mocked(formspreeApi.post);
+const mockedPost = vi.mocked(internalApi.post);
 
 const values: ContactFormValues = {
   nom: "Jean Dupont",
@@ -19,28 +19,23 @@ const values: ContactFormValues = {
 describe("submitContactForm", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID = "test-form-id";
     mockedPost.mockReturnValue({
       json: () => Promise.resolve({ ok: true }),
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any);
   });
 
-  it("poste vers l'endpoint Formspree construit depuis NEXT_PUBLIC_FORMSPREE_FORM_ID", async () => {
+  it("poste vers le Route Handler interne /api/contact", async () => {
     await submitContactForm(values);
 
-    expect(mockedPost).toHaveBeenCalledWith(
-      "https://formspree.io/f/test-form-id",
-      expect.objectContaining({
-        json: values,
-        headers: { Accept: "application/json" },
-      }),
-    );
+    expect(mockedPost).toHaveBeenCalledWith("api/contact", {
+      json: values,
+    });
   });
 
   it("propage une erreur réseau (le hook appelant gère le repli CTA téléphone)", async () => {
     mockedPost.mockImplementation(() => {
-      throw new Error("Formspree indisponible");
+      throw new Error("/api/contact indisponible");
     });
 
     await expect(submitContactForm(values)).rejects.toThrow();

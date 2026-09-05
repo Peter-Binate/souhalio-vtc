@@ -30,7 +30,7 @@ Ce dossier `ai_docs/` regroupe la documentation destinée à un agent de codage 
 
 - `CLAUDE.md` — instructions et règles absolues pour l'agent.
 - `README.md` — install, variables d'env, scripts, déploiement.
-- `.env.local.example` — clés attendues (`NEXT_PUBLIC_MAPTILER_KEY`, `ORS_API_KEY`).
+- `.env.local.example` — clés attendues (`NEXT_PUBLIC_MAPTILER_KEY`, `ORS_API_KEY`, `RESEND_API_KEY`, `RESEND_FROM_EMAIL`).
 - `wording.md` — deck de copywriting complet (accroches, textes, CTA par section) : **source des textes**.
 
 ## Workflows Claude Code (`.claude/commands/`)
@@ -56,6 +56,7 @@ docs/
     0000-template.md   # gabarit
     0001-…             # proxy ORS via Route Handler (décision actée)
     0002-…             # stack front-end & cartographie (décision actée)
+    0003-…             # proxy Resend via Route Handler (décision actée, LP-20)
 wording.md
 ```
 
@@ -64,6 +65,7 @@ Le backlog (`docs/BACKLOG.md`) est déjà découpé en tickets `LP-01` → `LP-1
 ## Rappels clés (les erreurs les plus probables)
 
 - 🔒 **Clé ORS = serveur uniquement**, via `app/api/route`. Jamais `NEXT_PUBLIC_`, jamais d'appel ORS depuis un composant.
+- 🔒 **Clé Resend = serveur uniquement**, via `app/api/contact` (`lib/resend.ts`). Même règle : jamais `NEXT_PUBLIC_`, jamais d'appel Resend depuis un composant (LP-20).
 - 🧭 **Ordre des coordonnées `[lon, lat]`** partout (ORS **et** MapLibre) — piège n°1.
 - 🗺️ **MapLibre est client-only** : `dynamic(..., { ssr: false })` + import du CSS, sinon crash SSR.
 - ✅ **Valider aux frontières avec Zod** : formulaire **et** réponses ORS/MapTiler.

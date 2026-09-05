@@ -230,10 +230,9 @@ export function Contact() {
                   className="mt-0.5 h-4 w-4 shrink-0 rounded border-border-input text-primary focus:ring-primary dark:border-zinc-700"
                 />
                 <label htmlFor="contact-consentement" className="text-xs leading-relaxed text-muted dark:text-zinc-400">
-                  J&apos;accepte que les informations de ce formulaire soient transmises à{" "}
-                  <strong>Formspree</strong> (service tiers utilisé pour le traitement des
-                  demandes de réservation) dans le seul but de traiter ma demande. Aucune donnée
-                  n&apos;est conservée par ce site.
+                  J&apos;accepte que les informations de ce formulaire soient utilisées
+                  uniquement pour traiter ma demande de réservation (envoi d&apos;un email à
+                  votre chauffeur). Aucune donnée n&apos;est conservée par ce site.
                 </label>
               </div>
               {errors.consentement && (

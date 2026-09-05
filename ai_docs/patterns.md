@@ -90,6 +90,7 @@ export async function POST(req: Request) {
 ```
 
 - Clé secrète (`ORS_API_KEY`) lue **uniquement** dans ce fichier. Message d'erreur **générique**, jamais l'erreur brute du service externe.
+- Second exemple : `app/api/contact/route.ts` + `lib/resend.ts` (LP-20) — même forme exacte, `RESEND_API_KEY` lue uniquement dans `lib/resend.ts`, réutilise `contactSchema` (`schemas/contact.ts`) déjà utilisé côté client.
 
 ## 6. Server Component de section (contenu statique)
 

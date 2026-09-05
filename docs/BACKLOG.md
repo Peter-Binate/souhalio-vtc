@@ -217,6 +217,24 @@ Références transverses : `CLAUDE.md`, `ai_docs/index.md`, `ai_docs/patterns.md
 
 ---
 
+## Phase 8 — Fiabilité (fournisseurs externes)
+
+### [~] LP-20 — Migration formulaire de contact : Formspree → Resend
+
+**En tant que** chauffeur, **je veux** recevoir les demandes du formulaire de contact par email via Resend, **afin de** ne plus dépendre de Formspree pour traiter les réservations.
+
+- **Inclus :** `app/api/contact/route.ts` (Route Handler proxy, sur le modèle `/api/route`), `lib/resend.ts` (client serveur), `lib/contact.ts` mis à jour pour poster vers `/api/contact`, suppression de `formspreeApi` (`lib/ky.ts`), mise à jour de la mention RGPD (`components/sections/contact.tsx`).
+- **Exclus :** email de confirmation au visiteur, template HTML (`@react-email/components`), toute persistance de données.
+- **Critères d'acceptation :**
+  - [~] `POST /api/contact` envoie un email à `BUSINESS.email` via Resend pour une soumission valide — logique testée et validée par tests unitaires (SDK Resend mocké) ; **envoi réel non vérifié** faute de clé Resend valide disponible pendant l'implémentation. À confirmer avec une vraie clé `RESEND_API_KEY`/`RESEND_FROM_EMAIL` (cf. `SETUP-ENV.md`).
+  - [x] `RESEND_API_KEY` utilisée uniquement côté serveur (absente du bundle client) — vérifié en navigateur (HTML + bundle JS)
+  - [x] Entrée invalide → 400 ; échec Resend → 502 avec message générique (jamais l'erreur brute) — vérifié par tests + `curl` + navigateur (clé placeholder)
+  - [x] Comportement UI existant inchangé (succès/erreur, repli CTA téléphone) — repli erreur vérifié en navigateur ; chemin succès inchangé dans le code (`contact.tsx` non modifié hors mention RGPD)
+  - [x] Aucune trace résiduelle de Formspree dans le code (`.ts`/`.tsx`) — seules des mentions historiques subsistent dans `CHANGELOG.md`/`docs/adr/`/PRPs archivés
+- **Réf. :** `PRPs/LP-20-migration-formspree-resend.md`, `docs/adr/0003-proxy-resend-route-handler.md`, `ai_docs/patterns.md`
+
+---
+
 ## Backlog « nice-to-have » (non planifié)
 
 - [ ] Estimation de prix chiffrée avec vraie grille tarifaire (remplacer la grille fictive)

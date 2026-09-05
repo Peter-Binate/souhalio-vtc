@@ -1,6 +1,6 @@
 # Configuration de `.env.local`
 
-Tuto pour obtenir les vraies clés API MapTiler et OpenRouteService et remplir `.env.local`.
+Tuto pour obtenir les vraies clés API MapTiler, OpenRouteService et Resend et remplir `.env.local`.
 
 ## 1. MapTiler → `NEXT_PUBLIC_MAPTILER_KEY`
 
@@ -36,18 +36,34 @@ Cette clé calcule l'itinéraire (distance, durée, tracé). Elle doit rester **
    ```
    ⚠️ Pas de préfixe `NEXT_PUBLIC_`, pas de guillemets autour de la valeur dans `.env.local`.
 
-## 3. Résultat attendu dans `.env.local`
+## 3. Resend → `RESEND_API_KEY` / `RESEND_FROM_EMAIL`
+
+Ces variables envoient l'email de notification du formulaire de contact (LP-20). `RESEND_API_KEY` doit rester **strictement serveur** (utilisée uniquement dans `lib/resend.ts`, importé uniquement par `app/api/contact/route.ts`).
+
+1. Va sur **https://resend.com/signup** et crée un compte (gratuit — 100 emails/jour, 3000/mois sur le plan gratuit).
+2. Une fois connecté, va dans **API Keys** (`https://resend.com/api-keys`) → **Create API Key**.
+3. Donne-lui un nom (ex. `soualiho-vtc-dev`), permission **Sending access** suffit. Copie la clé générée (une chaîne du type `re_AbCdEfGh...`, affichée une seule fois) et colle-la dans `.env.local` :
+   ```
+   RESEND_API_KEY=re_AbCdEfGh...
+   ```
+   ⚠️ Pas de préfixe `NEXT_PUBLIC_`, pas de guillemets autour de la valeur dans `.env.local`.
+4. **Adresse d'expédition (`RESEND_FROM_EMAIL`)** : Resend exige que l'adresse `from` appartienne à un domaine vérifié (**Domains** → **Add Domain**, puis ajouter les enregistrements DNS fournis).
+   - En dev/test, tant qu'aucun domaine n'est vérifié, utilise le domaine sandbox fourni par Resend : `RESEND_FROM_EMAIL=onboarding@resend.dev` (envoi limité, généralement seulement vers l'adresse email du compte Resend — suffisant pour tester le circuit).
+   - En prod, remplace par une adresse de ton propre domaine vérifié (ex. `contact@ton-domaine.example`).
+
+## 4. Résultat attendu dans `.env.local`
 
 ```bash
 NEXT_PUBLIC_MAPTILER_KEY=ta_vraie_cle_maptiler
 ORS_API_KEY=ta_vraie_cle_ors
-NEXT_PUBLIC_FORMSPREE_FORM_ID=your_formspree_form_id   # optionnel pour l'instant (LP-14)
+RESEND_API_KEY=ta_vraie_cle_resend
+RESEND_FROM_EMAIL=onboarding@resend.dev                  # ou ton adresse de domaine vérifié en prod
 NEXT_PUBLIC_SITE_URL=https://your-domain.example        # optionnel pour l'instant
 ```
 
-Tu peux laisser Formspree et l'URL du site en placeholder pour tester juste le simulateur d'itinéraire.
+Tu peux laisser l'URL du site en placeholder pour tester juste le simulateur d'itinéraire ; Resend est nécessaire dès que tu veux tester l'envoi réel du formulaire de contact.
 
-## 4. Vérifier que ça fonctionne
+## 5. Vérifier que ça fonctionne
 
 ```bash
 npm run dev
@@ -58,8 +74,9 @@ Puis ouvre `http://localhost:3000` :
 - **Carte visible** (tuiles MapTiler qui se chargent) → la clé MapTiler est valide.
 - **Autocomplétion d'adresse** qui renvoie des suggestions → géocodage MapTiler OK.
 - **Calcul d'un itinéraire** (départ + destination) qui affiche un tracé + distance/durée → `/api/route` a bien parlé à ORS.
+- **Envoi du formulaire de contact** (section « Réservez votre trajet ») → message de succès affiché → `/api/contact` a bien parlé à Resend (vérifie la réception de l'email dans la boîte `BUSINESS.email`, ou dans les **Logs** du dashboard Resend).
 
-Test direct du Route Handler (sans passer par l'UI) :
+Test direct des Route Handlers (sans passer par l'UI) :
 
 ```bash
 curl -X POST http://localhost:3000/api/route \
@@ -69,8 +86,16 @@ curl -X POST http://localhost:3000/api/route \
 
 → doit renvoyer un JSON `{ geometry, distanceKm, durationMin }`. Une erreur 502 signifie que `ORS_API_KEY` est absente/invalide dans `.env.local` (relance `npm run dev` après toute modif de `.env.local`, Next.js ne recharge pas les env vars à chaud).
 
-## 5. Rappels sécurité
+```bash
+curl -X POST http://localhost:3000/api/contact \
+  -H "Content-Type: application/json" \
+  -d '{"nom":"Jean Test","telephone":"0612345678","email":"jean@example.com","consentement":true}'
+```
 
-- Ouvre les **DevTools → Network** sur `http://localhost:3000`, filtre les requêtes : tu dois voir `api.maptiler.com` (clé publique visible, normal) mais **jamais** de requête directe vers `api.openrouteservice.org` — seulement des appels à `/api/route` en interne. Si tu vois `ORS_API_KEY` dans le bundle JS (View Source / Sources), c'est une fuite à corriger immédiatement.
+→ doit renvoyer `{ "ok": true }`. Une erreur 502 signifie que `RESEND_API_KEY`/`RESEND_FROM_EMAIL` est absente/invalide, ou que l'adresse `from` n'appartient pas à un domaine vérifié.
+
+## 6. Rappels sécurité
+
+- Ouvre les **DevTools → Network** sur `http://localhost:3000`, filtre les requêtes : tu dois voir `api.maptiler.com` (clé publique visible, normal) mais **jamais** de requête directe vers `api.openrouteservice.org` ou `api.resend.com` — seulement des appels à `/api/route`/`/api/contact` en interne. Si tu vois `ORS_API_KEY` ou `RESEND_API_KEY` dans le bundle JS (View Source / Sources), c'est une fuite à corriger immédiatement.
 - Ne commite jamais `.env.local` (déjà protégé par `.gitignore`).
-- En prod (Vercel), configure les deux variables dans **Project Settings → Environment Variables** — ne les mets jamais en dur dans le code.
+- En prod (Vercel), configure toutes les variables dans **Project Settings → Environment Variables** — ne les mets jamais en dur dans le code.
